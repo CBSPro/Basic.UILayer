@@ -282,3 +282,11 @@ C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.UILayer.vbproj.Res
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.exe
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.xml
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.pdb
+E:\Basic\Basic.UILayer.git\Basic\bin\Debug\Basic.exe.config
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.exe
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.xml
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.pdb
