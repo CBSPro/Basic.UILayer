@@ -1,0 +1,34 @@
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\bin\Debug\Basic.BLL.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\bin\Debug\Basic.BLL.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\bin\Debug\Basic.BLL.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\obj\Debug\Basic.BLL.Resources.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\obj\Debug\Basic.BLL.vbproj.GenerateResource.Cache
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\obj\Debug\Basic.BLL.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\obj\Debug\Basic.BLL.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.BLL\obj\Debug\Basic.BLL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\bin\Debug\Basic.BLL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\bin\Debug\Basic.BLL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\bin\Debug\Basic.BLL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\obj\Debug\Basic.BLL.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\obj\Debug\Basic.BLL.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\obj\Debug\Basic.BLL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\obj\Debug\Basic.BLL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.BLL\obj\Debug\Basic.BLL.pdb
+D:\Basic\Basic.BLL\bin\Debug\Basic.BLL.dll
+D:\Basic\Basic.BLL\bin\Debug\Basic.BLL.pdb
+D:\Basic\Basic.BLL\bin\Debug\Basic.BLL.xml
+D:\Basic\Basic.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Basic\Basic.BLL\obj\Debug\Basic.BLL.Resources.resources
+D:\Basic\Basic.BLL\obj\Debug\GenerateResource.read.1.tlog
+D:\Basic\Basic.BLL\obj\Debug\GenerateResource.write.1.tlog
+D:\Basic\Basic.BLL\obj\Debug\Basic.BLL.dll
+D:\Basic\Basic.BLL\obj\Debug\Basic.BLL.xml
+D:\Basic\Basic.BLL\obj\Debug\Basic.BLL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\bin\Debug\Basic.BLL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\bin\Debug\Basic.BLL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\bin\Debug\Basic.BLL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.pdb

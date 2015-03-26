@@ -1,0 +1,276 @@
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.Resources.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.GenerateResource.Cache
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.exe
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.exe
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmLogin.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmMdi.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.Help.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbprojResolveAssemblyReference.cache
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.Constants.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.DAL.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.Constants.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.Constants.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.DAL.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Basic.DAL.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\Interop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\bin\Debug\AxInterop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.Form1.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.exe.config
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.exe
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Reports.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\crystaldecisions.windows.forms.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.DAL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Reports.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Basic.Reports.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\Interop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\bin\Debug\AxInterop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbprojResolveAssemblyReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmExportTB.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmReport.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_IncStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_List.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtTBall.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PTrans.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmSRH_ACCode.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmSRH_Vouchers.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmAccounts.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmACStatus.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmBranch.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmBudget.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRepDefinition.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmINV_Status.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmPostedPass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmPostedVouchers.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_Aging.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_CodesStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PostedVoucher.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRPT_TrialBal.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmVoucherDetail.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmAccPostAll.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmJV.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmRecPay.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.Form1.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmLogin.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmMdi.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.Grid_Help.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.exe
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic\obj\x86\Debug\Basic.pdb
+D:\Basic\Basic\bin\Debug\Basic.exe.config
+D:\Basic\Basic\bin\Debug\Basic.exe
+D:\Basic\Basic\bin\Debug\Basic.pdb
+D:\Basic\Basic\bin\Debug\Basic.xml
+D:\Basic\Basic\bin\Debug\Basic.BLL.dll
+D:\Basic\Basic\bin\Debug\Basic.Constants.dll
+D:\Basic\Basic\bin\Debug\Basic.DAL.dll
+D:\Basic\Basic\bin\Debug\Basic.Reports.dll
+D:\Basic\Basic\bin\Debug\Basic.BLL.pdb
+D:\Basic\Basic\bin\Debug\Basic.BLL.xml
+D:\Basic\Basic\bin\Debug\Basic.Constants.pdb
+D:\Basic\Basic\bin\Debug\Basic.Constants.xml
+D:\Basic\Basic\bin\Debug\Basic.DAL.pdb
+D:\Basic\Basic\bin\Debug\Basic.DAL.xml
+D:\Basic\Basic\bin\Debug\Basic.Reports.pdb
+D:\Basic\Basic\bin\Debug\Basic.Reports.xml
+D:\Basic\Basic\bin\Debug\Interop.FPSpreadADO.dll
+D:\Basic\Basic\bin\Debug\AxInterop.FPSpreadADO.dll
+D:\Basic\Basic\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Basic\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+D:\Basic\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+D:\Basic\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+D:\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+D:\Basic\Basic\obj\x86\Debug\Basic.Resources.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmExportTB.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmReport.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_IncStat.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_List.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtStat.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtTBall.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PTrans.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmSRH_ACCode.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmSRH_Vouchers.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmAccounts.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmACStatus.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmBranch.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmBudget.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRepDefinition.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmINV_Status.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmPostedPass.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmPostedVouchers.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_Aging.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_CodesStat.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PostedVoucher.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRPT_TrialBal.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmVoucherDetail.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmAccPostAll.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmJV.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmRecPay.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.Form1.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmLogin.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmMdi.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.frmUsers.resources
+D:\Basic\Basic\obj\x86\Debug\Basic.Grid_Help.resources
+D:\Basic\Basic\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Basic\Basic\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Basic\Basic\obj\x86\Debug\Basic.exe
+D:\Basic\Basic\obj\x86\Debug\Basic.xml
+D:\Basic\Basic\obj\x86\Debug\Basic.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.exe.config
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.exe
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.xml
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.exe
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.xml
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.BLL.dll
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Constants.dll
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.DAL.dll
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Reports.dll
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.BLL.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.BLL.xml
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Constants.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Constants.xml
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.DAL.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.DAL.xml
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Reports.pdb
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Basic.Reports.xml
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\Interop.FPSpreadADO.dll
+D:\Basic2 try for access constants\Basic\Basic\bin\Debug\AxInterop.FPSpreadADO.dll
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.Resources.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmExportTB.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmReport.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_IncStat.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_List.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtStat.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtTBall.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PTrans.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmSRH_ACCode.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmSRH_Vouchers.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmAccounts.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmACStatus.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmBranch.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmBudget.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRepDefinition.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmINV_Status.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmPostedPass.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmPostedVouchers.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_Aging.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_CodesStat.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PostedVoucher.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRPT_TrialBal.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmVoucherDetail.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmAccPostAll.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmJV.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmRecPay.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.Form1.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmLogin.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmMdi.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.frmUsers.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\Basic.Grid_Help.resources
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Basic2 try for access constants\Basic\Basic\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.exe.config
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.exe
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.exe
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.BLL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Reports.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.BLL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.BLL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.DAL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Reports.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Basic.Reports.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\Interop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\bin\Debug\AxInterop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbprojResolveAssemblyReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmExportTB.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmReport.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_IncStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_List.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PrtTBall.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PTrans.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmSRH_ACCode.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmSRH_Vouchers.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmAccounts.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmACStatus.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmBranch.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmBudget.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRepDefinition.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmINV_Status.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmPostedPass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmPostedVouchers.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_Aging.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_CodesStat.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_PostedVoucher.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRPT_TrialBal.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmVoucherDetail.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmAccPostAll.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmJV.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmRecPay.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.Form1.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmLogin.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmMdi.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmUsers.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.Grid_Help.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.GenerateResource.Cache

@@ -1,0 +1,50 @@
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.DAL.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.DAL.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.DAL.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.vbproj.GenerateResource.Cache
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.Constants.dll
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.Constants.pdb
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\bin\Debug\Basic.Constants.xml
+C:\Users\Aneela Tariq\Desktop\Basic\Basic.DAL\obj\Debug\Basic.DAL.vbprojResolveAssemblyReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.DAL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\bin\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.vbprojResolveAssemblyReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Basic\Basic.DAL\obj\Debug\Basic.DAL.pdb
+D:\Basic\Basic.DAL\bin\Debug\Basic.DAL.dll
+D:\Basic\Basic.DAL\bin\Debug\Basic.DAL.pdb
+D:\Basic\Basic.DAL\bin\Debug\Basic.DAL.xml
+D:\Basic\Basic.DAL\bin\Debug\Basic.Constants.dll
+D:\Basic\Basic.DAL\bin\Debug\Basic.Constants.pdb
+D:\Basic\Basic.DAL\bin\Debug\Basic.Constants.xml
+D:\Basic\Basic.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Basic\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+D:\Basic\Basic.DAL\obj\Debug\GenerateResource.read.1.tlog
+D:\Basic\Basic.DAL\obj\Debug\GenerateResource.write.1.tlog
+D:\Basic\Basic.DAL\obj\Debug\Basic.DAL.dll
+D:\Basic\Basic.DAL\obj\Debug\Basic.DAL.xml
+D:\Basic\Basic.DAL\obj\Debug\Basic.DAL.pdb
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.DAL.dll
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.DAL.pdb
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.DAL.xml
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.Constants.dll
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.Constants.pdb
+D:\Basic2 try for access constants\Basic\Basic.DAL\bin\Debug\Basic.Constants.xml
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\GenerateResource.read.1.tlog
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\GenerateResource.write.1.tlog
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.dll
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.xml
+D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.pdb

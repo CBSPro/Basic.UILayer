@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BFD1BA4-EA9C-4013-AFB5-39BD37B81CD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Basic.My.MyApplication</StartupObject>
+    <RootNamespace>Basic</RootNamespace>
+    <AssemblyName>Basic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmExportTB.Designer.vb">
+      <DependentUpon>frmExportTB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmExportTB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_IncStat.Designer.vb">
+      <DependentUpon>frmRPT_IncStat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_IncStat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_List.Designer.vb">
+      <DependentUpon>frmRPT_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtStat.Designer.vb">
+      <DependentUpon>frmRPT_PrtStat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtStat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtTBall.Designer.vb">
+      <DependentUpon>frmRPT_PrtTBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtTBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PTrans.Designer.vb">
+      <DependentUpon>frmRPT_PTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmSRH_ACCode.Designer.vb">
+      <DependentUpon>frmSRH_ACCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmSRH_ACCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\SearchForms\frmSRH_Vouchers.Designer.vb">
+      <DependentUpon>frmSRH_Vouchers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\SearchForms\frmSRH_Vouchers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmAccounts.Designer.vb">
+      <DependentUpon>frmAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmACStatus.Designer.vb">
+      <DependentUpon>frmACStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmACStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmBranch.Designer.vb">
+      <DependentUpon>frmBranch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmBranch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmBudget.Designer.vb">
+      <DependentUpon>frmBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmRepDefinition.Designer.vb">
+      <DependentUpon>frmRepDefinition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\Accounts\frmRepDefinition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmINV_Status.Designer.vb">
+      <DependentUpon>frmINV_Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmINV_Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmPostedPass.Designer.vb">
+      <DependentUpon>frmPostedPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmPostedPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmPostedVouchers.Designer.vb">
+      <DependentUpon>frmPostedVouchers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmPostedVouchers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_Aging.Designer.vb">
+      <DependentUpon>frmRPT_Aging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_Aging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_CodesStat.Designer.vb">
+      <DependentUpon>frmRPT_CodesStat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_CodesStat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PostedVoucher.Designer.vb">
+      <DependentUpon>frmRPT_PostedVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PostedVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_TrialBal.Designer.vb">
+      <DependentUpon>frmRPT_TrialBal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_TrialBal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmVoucherDetail.Designer.vb">
+      <DependentUpon>frmVoucherDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmVoucherDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmAccPostAll.Designer.vb">
+      <DependentUpon>frmAccPostAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\Accounts\frmAccPostAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\PortFolio\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIDialogues\PortFolio\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\Accounts\frmJV.designer.vb">
+      <DependentUpon>frmJV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\Accounts\frmJV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\Accounts\frmRecPay.Designer.vb">
+      <DependentUpon>frmRecPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\Accounts\frmRecPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmBackUp.Designer.vb">
+      <DependentUpon>frmBackUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmBackUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmChangePass.Designer.vb">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmChangeUPass.Designer.vb">
+      <DependentUpon>frmChangeUPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmChangeUPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmMdi.Designer.vb">
+      <DependentUpon>frmMdi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmMdi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmSysParms.Designer.vb">
+      <DependentUpon>frmSysParms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmSysParms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\frmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProjStandard\Help.designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIProjStandard\Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmExportTB.resx">
+      <DependentUpon>frmExportTB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_IncStat.resx">
+      <DependentUpon>frmRPT_IncStat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_List.resx">
+      <DependentUpon>frmRPT_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtStat.resx">
+      <DependentUpon>frmRPT_PrtStat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PrtTBall.resx">
+      <DependentUpon>frmRPT_PrtTBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PTrans.resx">
+      <DependentUpon>frmRPT_PTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmSRH_ACCode.resx">
+      <DependentUpon>frmSRH_ACCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\SearchForms\frmSRH_Vouchers.resx">
+      <DependentUpon>frmSRH_Vouchers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmAccounts.resx">
+      <DependentUpon>frmAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmACStatus.resx">
+      <DependentUpon>frmACStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmBranch.resx">
+      <DependentUpon>frmBranch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmBudget.resx">
+      <DependentUpon>frmBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmRepDefinition.resx">
+      <DependentUpon>frmRepDefinition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmINV_Status.resx">
+      <DependentUpon>frmINV_Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmPostedPass.resx">
+      <DependentUpon>frmPostedPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmPostedVouchers.resx">
+      <DependentUpon>frmPostedVouchers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_Aging.resx">
+      <DependentUpon>frmRPT_Aging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_CodesStat.resx">
+      <DependentUpon>frmRPT_CodesStat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_PostedVoucher.resx">
+      <DependentUpon>frmRPT_PostedVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\Rpt_Dialouges\Accounts\frmRPT_TrialBal.resx">
+      <DependentUpon>frmRPT_TrialBal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmVoucherDetail.resx">
+      <DependentUpon>frmVoucherDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmAccPostAll.resx">
+      <DependentUpon>frmAccPostAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UITransactions\Accounts\frmJV.resx">
+      <DependentUpon>frmJV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UITransactions\Accounts\frmRecPay.resx">
+      <DependentUpon>frmRecPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmBackUp.resx">
+      <DependentUpon>frmBackUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmChangePass.resx">
+      <DependentUpon>frmChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmChangeUPass.resx">
+      <DependentUpon>frmChangeUPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmMdi.resx">
+      <DependentUpon>frmMdi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmSysParms.resx">
+      <DependentUpon>frmSysParms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProjStandard\Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Basic.BLL\Basic.BLL.vbproj">
+      <Project>{846659C1-C327-4904-B330-AFB385F9A7D5}</Project>
+      <Name>Basic.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Basic.Constants\Basic.Constants.vbproj">
+      <Project>{55277C73-4267-423D-9811-704BA4C79E05}</Project>
+      <Name>Basic.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Basic.DAL\Basic.DAL.vbproj">
+      <Project>{275E78B4-8CB7-4437-AA44-3B6EA132D944}</Project>
+      <Name>Basic.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Basic.Reports\Basic.Reports.vbproj">
+      <Project>{3E233473-7622-453C-9EB3-5AD7B2A0309D}</Project>
+      <Name>Basic.Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxFPSpreadADO">
+      <Guid>{F856EC8B-F03C-4515-BDC6-64CBD617566A}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FPSpreadADO">
+      <Guid>{F856EC8B-F03C-4515-BDC6-64CBD617566A}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FPUSpreadADO">
+      <Guid>{B9411660-10E6-4A53-BE96-7FED334704FA}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
