@@ -290,3 +290,11 @@ E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComRe
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.exe
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.xml
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\bin\Debug\Basic.exe.config
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.exe
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.pdb

@@ -231,6 +231,42 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmGroupOfcompany.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScrip.Designer.vb">
+      <DependentUpon>frmScrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScrip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.Designer.vb">
+      <DependentUpon>frmScripIndexSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripMarket.Designer.vb">
+      <DependentUpon>frmScripMarket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripMarket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmSector.Designer.vb">
+      <DependentUpon>frmSector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmSector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmSettlementmodesvb.Designer.vb">
+      <DependentUpon>frmSettlementmodesvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmSettlementmodesvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.Designer.vb">
+      <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIDialogues\Accounts\frmINV_Status.Designer.vb">
       <DependentUpon>frmINV_Status.vb</DependentUpon>
     </Compile>
@@ -430,6 +466,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmGroupOfcompany.resx">
       <DependentUpon>frmGroupOfcompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScrip.resx">
+      <DependentUpon>frmScrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.resx">
+      <DependentUpon>frmScripIndexSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScripMarket.resx">
+      <DependentUpon>frmScripMarket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmSector.resx">
+      <DependentUpon>frmSector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmSettlementmodesvb.resx">
+      <DependentUpon>frmSettlementmodesvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.resx">
+      <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmINV_Status.resx">
       <DependentUpon>frmINV_Status.vb</DependentUpon>
