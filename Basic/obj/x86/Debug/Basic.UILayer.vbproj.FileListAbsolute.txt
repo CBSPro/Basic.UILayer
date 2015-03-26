@@ -274,3 +274,11 @@ D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\B
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.frmUsers.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.Grid_Help.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic\obj\x86\Debug\Basic.UILayer.vbproj.GenerateResource.Cache
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\bin\Debug\Basic.exe.config
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.exe
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.xml
+C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.pdb

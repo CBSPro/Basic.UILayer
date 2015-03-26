@@ -189,6 +189,48 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\Form4.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmBroker.Designer.vb">
+      <DependentUpon>frmBroker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmBroker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmCalendar.Designer.vb">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmCustodian.Designer.vb">
+      <DependentUpon>frmCustodian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmCustodian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFund.Designer.vb">
+      <DependentUpon>frmFund.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFund.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFundWiseControl.Designer.vb">
+      <DependentUpon>frmFundWiseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFundWiseControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFutureScrip.Designer.vb">
+      <DependentUpon>frmFutureScrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmFutureScrip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmGroupOfcompany.Designer.vb">
+      <DependentUpon>frmGroupOfcompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\frmGroupOfcompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIDialogues\Accounts\frmINV_Status.Designer.vb">
       <DependentUpon>frmINV_Status.vb</DependentUpon>
     </Compile>
@@ -370,6 +412,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\Accounts\frmRepDefinition.resx">
       <DependentUpon>frmRepDefinition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmBroker.resx">
+      <DependentUpon>frmBroker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmCalendar.resx">
+      <DependentUpon>frmCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmFund.resx">
+      <DependentUpon>frmFund.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmFundWiseControl.resx">
+      <DependentUpon>frmFundWiseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmFutureScrip.resx">
+      <DependentUpon>frmFutureScrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmGroupOfcompany.resx">
+      <DependentUpon>frmGroupOfcompany.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmINV_Status.resx">
       <DependentUpon>frmINV_Status.vb</DependentUpon>
