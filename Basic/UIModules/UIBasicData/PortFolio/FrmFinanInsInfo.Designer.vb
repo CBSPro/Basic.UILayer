@@ -44,30 +44,40 @@ Partial Class FrmFinanInsInfo
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.txtDesc = New System.Windows.Forms.TextBox()
+        Me.txtBankAc = New System.Windows.Forms.TextBox()
+        Me.txtrate = New System.Windows.Forms.TextBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.txtrate = New System.Windows.Forms.TextBox()
-        Me.txtBankAc = New System.Windows.Forms.TextBox()
-        Me.txtDesc = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -335,6 +345,72 @@ Partial Class FrmFinanInsInfo
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(200, 142)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(134, 20)
+        Me.RadioButton2.TabIndex = 51
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Cheque for SGL"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(126, 144)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(61, 20)
+        Me.RadioButton1.TabIndex = 50
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Bank"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'txtDesc
+        '
+        Me.txtDesc.Location = New System.Drawing.Point(127, 201)
+        Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.Size = New System.Drawing.Size(570, 22)
+        Me.txtDesc.TabIndex = 49
+        '
+        'txtBankAc
+        '
+        Me.txtBankAc.Location = New System.Drawing.Point(126, 170)
+        Me.txtBankAc.Name = "txtBankAc"
+        Me.txtBankAc.Size = New System.Drawing.Size(570, 22)
+        Me.txtBankAc.TabIndex = 48
+        '
+        'txtrate
+        '
+        Me.txtrate.Location = New System.Drawing.Point(126, 117)
+        Me.txtrate.Name = "txtrate"
+        Me.txtrate.Size = New System.Drawing.Size(146, 22)
+        Me.txtrate.TabIndex = 47
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(340, 84)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(146, 24)
+        Me.ComboBox2.TabIndex = 46
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(126, 86)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
+        Me.ComboBox1.TabIndex = 45
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(123, 56)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(570, 22)
+        Me.txtName.TabIndex = 44
+        '
         'Label16
         '
         Me.Label16.AutoSize = True
@@ -385,6 +461,16 @@ Partial Class FrmFinanInsInfo
         Me.Label9.TabIndex = 34
         Me.Label9.Text = "Bank Account No"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(22, 95)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(95, 13)
+        Me.Label30.TabIndex = 30
+        Me.Label30.Text = "Institution Type"
         '
         'Label10
         '
@@ -443,93 +529,108 @@ Partial Class FrmFinanInsInfo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 31)
+        Me.Label1.Location = New System.Drawing.Point(33, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = " System Code"
         '
-        'txtName
+        'GroupBox1
         '
-        Me.txtName.Location = New System.Drawing.Point(123, 56)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(570, 22)
-        Me.txtName.TabIndex = 44
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Location = New System.Drawing.Point(360, 411)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(719, 161)
+        Me.GroupBox1.TabIndex = 43
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Branch Details"
         '
-        'Label30
+        'TextBox1
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(22, 95)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(95, 13)
-        Me.Label30.TabIndex = 30
-        Me.Label30.Text = "Institution Type"
+        Me.TextBox1.Location = New System.Drawing.Point(122, 57)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(570, 20)
+        Me.TextBox1.TabIndex = 48
         '
-        'ComboBox1
+        'Label2
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(126, 86)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox1.TabIndex = 45
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(210, 25)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(83, 13)
+        Me.Label2.TabIndex = 47
+        Me.Label2.Text = "Branch Name"
         '
-        'ComboBox2
+        'TextBox2
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(340, 84)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox2.TabIndex = 46
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(122, 25)
+        Me.TextBox2.MaxLength = 3
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(46, 22)
+        Me.TextBox2.TabIndex = 45
+        Me.TextBox2.Tag = "Enter Description"
         '
-        'txtrate
+        'Label4
         '
-        Me.txtrate.Location = New System.Drawing.Point(126, 117)
-        Me.txtrate.Name = "txtrate"
-        Me.txtrate.Size = New System.Drawing.Size(146, 22)
-        Me.txtrate.TabIndex = 47
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(36, 29)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(84, 13)
+        Me.Label4.TabIndex = 46
+        Me.Label4.Text = " System Code"
         '
-        'txtBankAc
+        'Label6
         '
-        Me.txtBankAc.Location = New System.Drawing.Point(126, 170)
-        Me.txtBankAc.Name = "txtBankAc"
-        Me.txtBankAc.Size = New System.Drawing.Size(570, 22)
-        Me.txtBankAc.TabIndex = 48
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(42, 57)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
+        Me.Label6.TabIndex = 49
+        Me.Label6.Text = "Address"
         '
-        'txtDesc
+        'TextBox3
         '
-        Me.txtDesc.Location = New System.Drawing.Point(127, 201)
-        Me.txtDesc.Name = "txtDesc"
-        Me.txtDesc.Size = New System.Drawing.Size(570, 22)
-        Me.txtDesc.TabIndex = 49
+        Me.TextBox3.Location = New System.Drawing.Point(299, 22)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(396, 20)
+        Me.TextBox3.TabIndex = 50
         '
-        'RadioButton1
+        'TextBox5
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(126, 144)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(61, 20)
-        Me.RadioButton1.TabIndex = 50
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Bank"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.TextBox5.Location = New System.Drawing.Point(122, 94)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(396, 20)
+        Me.TextBox5.TabIndex = 52
         '
-        'RadioButton2
+        'Label7
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(200, 142)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(134, 20)
-        Me.RadioButton2.TabIndex = 51
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Cheque for SGL"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(45, 94)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(52, 13)
+        Me.Label7.TabIndex = 53
+        Me.Label7.Text = "Address"
         '
         'FrmFinanInsInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1082, 619)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
@@ -542,6 +643,8 @@ Partial Class FrmFinanInsInfo
         Me.GpBtns.ResumeLayout(False)
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -586,4 +689,13 @@ Partial Class FrmFinanInsInfo
     Friend WithEvents txtDesc As System.Windows.Forms.TextBox
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
 End Class
