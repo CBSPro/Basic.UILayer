@@ -43,9 +43,31 @@ Partial Class FrmFinanInsInfo
         Me.btnView = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtsysCode = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.txtrate = New System.Windows.Forms.TextBox()
+        Me.txtBankAc = New System.Windows.Forms.TextBox()
+        Me.txtDesc = New System.Windows.Forms.TextBox()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
+        Me.GpData.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -284,11 +306,231 @@ Partial Class FrmFinanInsInfo
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'GpData
+        '
+        Me.GpData.Controls.Add(Me.RadioButton2)
+        Me.GpData.Controls.Add(Me.RadioButton1)
+        Me.GpData.Controls.Add(Me.txtDesc)
+        Me.GpData.Controls.Add(Me.txtBankAc)
+        Me.GpData.Controls.Add(Me.txtrate)
+        Me.GpData.Controls.Add(Me.ComboBox2)
+        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.txtName)
+        Me.GpData.Controls.Add(Me.Label16)
+        Me.GpData.Controls.Add(Me.CheckBox4)
+        Me.GpData.Controls.Add(Me.CheckBox3)
+        Me.GpData.Controls.Add(Me.CheckBox2)
+        Me.GpData.Controls.Add(Me.Label9)
+        Me.GpData.Controls.Add(Me.Label30)
+        Me.GpData.Controls.Add(Me.Label10)
+        Me.GpData.Controls.Add(Me.Label26)
+        Me.GpData.Controls.Add(Me.Label3)
+        Me.GpData.Controls.Add(Me.Label5)
+        Me.GpData.Controls.Add(Me.txtsysCode)
+        Me.GpData.Controls.Add(Me.Label1)
+        Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GpData.Location = New System.Drawing.Point(359, 130)
+        Me.GpData.Name = "GpData"
+        Me.GpData.Size = New System.Drawing.Size(722, 274)
+        Me.GpData.TabIndex = 42
+        Me.GpData.TabStop = False
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(37, 151)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(80, 13)
+        Me.Label16.TabIndex = 43
+        Me.Label16.Text = "Print Options"
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(494, 232)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(121, 20)
+        Me.CheckBox4.TabIndex = 38
+        Me.CheckBox4.Text = "Is Associated"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(244, 232)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(125, 20)
+        Me.CheckBox3.TabIndex = 37
+        Me.CheckBox3.Text = "Active for TFC"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(418, 232)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(70, 20)
+        Me.CheckBox2.TabIndex = 36
+        Me.CheckBox2.Text = "Active"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(10, 179)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(107, 13)
+        Me.Label9.TabIndex = 34
+        Me.Label9.Text = "Bank Account No"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(278, 95)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(58, 13)
+        Me.Label10.TabIndex = 29
+        Me.Label10.Text = "Company"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(78, 59)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(39, 13)
+        Me.Label26.TabIndex = 21
+        Me.Label26.Text = "Name"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(73, 119)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 13)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Rating"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(46, 206)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Description"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'txtsysCode
+        '
+        Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsysCode.Location = New System.Drawing.Point(123, 31)
+        Me.txtsysCode.MaxLength = 3
+        Me.txtsysCode.Name = "txtsysCode"
+        Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
+        Me.txtsysCode.TabIndex = 0
+        Me.txtsysCode.Tag = "Enter Description"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(33, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(84, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = " System Code"
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(123, 56)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(570, 22)
+        Me.txtName.TabIndex = 44
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(22, 95)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(95, 13)
+        Me.Label30.TabIndex = 30
+        Me.Label30.Text = "Institution Type"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(126, 86)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
+        Me.ComboBox1.TabIndex = 45
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(340, 84)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(146, 24)
+        Me.ComboBox2.TabIndex = 46
+        '
+        'txtrate
+        '
+        Me.txtrate.Location = New System.Drawing.Point(126, 117)
+        Me.txtrate.Name = "txtrate"
+        Me.txtrate.Size = New System.Drawing.Size(146, 22)
+        Me.txtrate.TabIndex = 47
+        '
+        'txtBankAc
+        '
+        Me.txtBankAc.Location = New System.Drawing.Point(126, 170)
+        Me.txtBankAc.Name = "txtBankAc"
+        Me.txtBankAc.Size = New System.Drawing.Size(570, 22)
+        Me.txtBankAc.TabIndex = 48
+        '
+        'txtDesc
+        '
+        Me.txtDesc.Location = New System.Drawing.Point(127, 201)
+        Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.Size = New System.Drawing.Size(570, 22)
+        Me.txtDesc.TabIndex = 49
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(126, 144)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(61, 20)
+        Me.RadioButton1.TabIndex = 50
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Bank"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(200, 142)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(134, 20)
+        Me.RadioButton2.TabIndex = 51
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Cheque for SGL"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'FrmFinanInsInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1082, 619)
+        Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
@@ -298,6 +540,8 @@ Partial Class FrmFinanInsInfo
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GpBtns.ResumeLayout(False)
+        Me.GpData.ResumeLayout(False)
+        Me.GpData.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -321,4 +565,25 @@ Partial Class FrmFinanInsInfo
     Friend WithEvents btnView As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents GpData As System.Windows.Forms.GroupBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtrate As System.Windows.Forms.TextBox
+    Friend WithEvents txtBankAc As System.Windows.Forms.TextBox
+    Friend WithEvents txtDesc As System.Windows.Forms.TextBox
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
 End Class
