@@ -52,24 +52,15 @@ Partial Class frmCalendar
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-<<<<<<< .mine
-        Me.Label6 = New System.Windows.Forms.Label()
-=======
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
->>>>>>> .r19
         Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-<<<<<<< .mine
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-=======
-        Me.Label22 = New System.Windows.Forms.Label()
->>>>>>> .r19
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -402,7 +393,7 @@ Partial Class frmCalendar
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker4)
         Me.GroupBox1.Controls.Add(Me.Label17)
@@ -417,18 +408,6 @@ Partial Class frmCalendar
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Period Properties"
         '
-<<<<<<< .mine
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(149, 44)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(80, 13)
-        Me.Label6.TabIndex = 37
-        Me.Label6.Text = "System Code"
-        '
-=======
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -450,7 +429,6 @@ Partial Class frmCalendar
         Me.Label6.TabIndex = 37
         Me.Label6.Text = "System Code"
         '
->>>>>>> .r19
         'DateTimePicker4
         '
         Me.DateTimePicker4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -503,39 +481,18 @@ Partial Class frmCalendar
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(229, 94)
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Location = New System.Drawing.Point(232, 94)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(471, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(399, 22)
         Me.TextBox1.TabIndex = 38
-        '
-<<<<<<< .mine
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(232, 35)
-        Me.TextBox5.MaxLength = 3
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(138, 22)
-        Me.TextBox5.TabIndex = 49
-        Me.TextBox5.Tag = "Enter Description"
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(232, 63)
-        Me.TextBox2.MaxLength = 3
+        Me.TextBox2.Location = New System.Drawing.Point(232, 68)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(466, 22)
-        Me.TextBox2.TabIndex = 50
-        Me.TextBox2.Tag = "Enter Description"
+        Me.TextBox2.Size = New System.Drawing.Size(399, 22)
+        Me.TextBox2.TabIndex = 41
         '
-=======
->>>>>>> .r19
         'frmCalendar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -588,6 +545,7 @@ Partial Class frmCalendar
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label17 As System.Windows.Forms.Label
@@ -596,5 +554,4 @@ Partial Class frmCalendar
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
 End Class

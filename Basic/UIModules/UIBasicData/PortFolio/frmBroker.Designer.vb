@@ -44,7 +44,6 @@ Partial Class frmBroker
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-<<<<<<< .mine
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
@@ -52,26 +51,13 @@ Partial Class frmBroker
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
-=======
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
->>>>>>> .r19
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -99,7 +85,6 @@ Partial Class frmBroker
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -351,7 +336,6 @@ Partial Class frmBroker
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox10)
         Me.GpData.Controls.Add(Me.TextBox9)
         Me.GpData.Controls.Add(Me.TextBox8)
         Me.GpData.Controls.Add(Me.TextBox7)
@@ -368,11 +352,13 @@ Partial Class frmBroker
         Me.GpData.Controls.Add(Me.CheckBox2)
         Me.GpData.Controls.Add(Me.CheckBox1)
         Me.GpData.Controls.Add(Me.Label9)
+        Me.GpData.Controls.Add(Me.Label7)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label10)
         Me.GpData.Controls.Add(Me.ComboBox3)
         Me.GpData.Controls.Add(Me.Label19)
         Me.GpData.Controls.Add(Me.Label12)
+        Me.GpData.Controls.Add(Me.Label28)
         Me.GpData.Controls.Add(Me.Label26)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.Label3)
@@ -387,9 +373,6 @@ Partial Class frmBroker
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
         '
-<<<<<<< .mine
-        'Label16
-=======
         'Label16
         '
         Me.Label16.AutoSize = True
@@ -399,39 +382,6 @@ Partial Class frmBroker
         Me.Label16.Size = New System.Drawing.Size(93, 13)
         Me.Label16.TabIndex = 43
         Me.Label16.Text = "CFS Limits (Rs)"
-        '
-        'Label15
-        '
-        Me.Label15.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(123, 166)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(95, 22)
-        Me.Label15.TabIndex = 42
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label14
-        '
-        Me.Label14.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(123, 138)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(95, 22)
-        Me.Label14.TabIndex = 41
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label13
-        '
-        Me.Label13.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(565, 190)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(129, 22)
-        Me.Label13.TabIndex = 40
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label11
         '
@@ -493,17 +443,6 @@ Partial Class frmBroker
         Me.Label9.TabIndex = 34
         Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label8
-        '
-        Me.Label8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(564, 111)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(129, 22)
-        Me.Label8.TabIndex = 33
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label7
         '
@@ -515,78 +454,6 @@ Partial Class frmBroker
         Me.Label7.Size = New System.Drawing.Size(179, 22)
         Me.Label7.TabIndex = 32
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label31
->>>>>>> .r19
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(24, 136)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(93, 13)
-        Me.Label16.TabIndex = 43
-        Me.Label16.Text = "CFS Limits (Rs)"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(441, 195)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(120, 13)
-        Me.Label11.TabIndex = 39
-        Me.Label11.Text = "NCSS Trading Code"
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(264, 196)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(121, 20)
-        Me.CheckBox4.TabIndex = 38
-        Me.CheckBox4.Text = "Is Associated"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(264, 162)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(125, 20)
-        Me.CheckBox3.TabIndex = 37
-        Me.CheckBox3.Text = "Active for TFC"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(264, 137)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(70, 20)
-        Me.CheckBox2.TabIndex = 36
-        Me.CheckBox2.Text = "Active"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(264, 112)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(131, 20)
-        Me.CheckBox1.TabIndex = 35
-        Me.CheckBox1.Text = "Primary Dealer"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(27, 158)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(90, 26)
-        Me.Label9.TabIndex = 34
-        Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label30
         '
@@ -611,9 +478,9 @@ Partial Class frmBroker
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(123, 190)
+        Me.ComboBox3.Location = New System.Drawing.Point(123, 191)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(112, 24)
+        Me.ComboBox3.Size = New System.Drawing.Size(95, 24)
         Me.ComboBox3.TabIndex = 28
         '
         'Label19
@@ -637,6 +504,17 @@ Partial Class frmBroker
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Defined For"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label28
+        '
+        Me.Label28.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(511, 33)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(183, 22)
+        Me.Label28.TabIndex = 23
+        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label26
         '
@@ -826,123 +704,66 @@ Partial Class frmBroker
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(258, 31)
-        Me.TextBox1.MaxLength = 3
+        Me.TextBox1.Location = New System.Drawing.Point(123, 59)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(177, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(570, 22)
         Me.TextBox1.TabIndex = 44
-        Me.TextBox1.Tag = "Enter Description"
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(511, 31)
-        Me.TextBox2.MaxLength = 3
+        Me.TextBox2.Location = New System.Drawing.Point(123, 84)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(182, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(570, 22)
         Me.TextBox2.TabIndex = 45
-        Me.TextBox2.Tag = "Enter Description"
         '
         'TextBox3
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(123, 59)
-        Me.TextBox3.MaxLength = 3
+        Me.TextBox3.Location = New System.Drawing.Point(123, 110)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(570, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(95, 22)
         Me.TextBox3.TabIndex = 46
-        Me.TextBox3.Tag = "Enter Description"
         '
         'TextBox4
         '
-        Me.TextBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(123, 84)
-        Me.TextBox4.MaxLength = 3
+        Me.TextBox4.Location = New System.Drawing.Point(123, 138)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(570, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(95, 22)
         Me.TextBox4.TabIndex = 47
-        Me.TextBox4.Tag = "Enter Description"
         '
         'TextBox5
         '
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(123, 110)
-        Me.TextBox5.MaxLength = 3
+        Me.TextBox5.Location = New System.Drawing.Point(123, 166)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(112, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(95, 22)
         Me.TextBox5.TabIndex = 48
-        Me.TextBox5.Tag = "Enter Description"
         '
         'TextBox6
         '
-        Me.TextBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(123, 135)
-        Me.TextBox6.MaxLength = 3
+        Me.TextBox6.Location = New System.Drawing.Point(512, 113)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(112, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(181, 22)
         Me.TextBox6.TabIndex = 49
-        Me.TextBox6.Tag = "Enter Description"
         '
         'TextBox7
         '
-        Me.TextBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(123, 161)
-        Me.TextBox7.MaxLength = 3
+        Me.TextBox7.Location = New System.Drawing.Point(512, 141)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(112, 22)
+        Me.TextBox7.Size = New System.Drawing.Size(181, 22)
         Me.TextBox7.TabIndex = 50
-        Me.TextBox7.Tag = "Enter Description"
         '
         'TextBox8
         '
-        Me.TextBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(501, 111)
-        Me.TextBox8.MaxLength = 3
+        Me.TextBox8.Location = New System.Drawing.Point(567, 190)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(192, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(126, 22)
         Me.TextBox8.TabIndex = 51
-        Me.TextBox8.Tag = "Enter Description"
         '
         'TextBox9
         '
-        Me.TextBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(501, 141)
-        Me.TextBox9.MaxLength = 3
+        Me.TextBox9.Location = New System.Drawing.Point(123, 221)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(192, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(570, 22)
         Me.TextBox9.TabIndex = 52
-        Me.TextBox9.Tag = "Enter Description"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(567, 194)
-        Me.TextBox10.MaxLength = 3
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(126, 22)
-        Me.TextBox10.TabIndex = 53
-        Me.TextBox10.Tag = "Enter Description"
         '
         'frmBroker
         '
@@ -994,11 +815,13 @@ Partial Class frmBroker
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -1024,7 +847,6 @@ Partial Class frmBroker
     Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
     Friend WithEvents AxfpSpread2 As AxFPSpreadADO.AxfpSpread
     Friend WithEvents AxfpSpread3 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
