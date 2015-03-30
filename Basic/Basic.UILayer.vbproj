@@ -267,6 +267,12 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmTaxParm.Designer.vb">
+      <DependentUpon>FrmTaxParm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmTaxParm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\Trustee.Designer.vb">
       <DependentUpon>Trustee.vb</DependentUpon>
     </Compile>
@@ -496,6 +502,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.resx">
       <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\FrmTaxParm.resx">
+      <DependentUpon>FrmTaxParm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\Trustee.resx">
       <DependentUpon>Trustee.vb</DependentUpon>
