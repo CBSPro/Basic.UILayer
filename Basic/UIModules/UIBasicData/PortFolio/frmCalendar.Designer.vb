@@ -44,23 +44,23 @@ Partial Class frmCalendar
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.cmbYear2 = New System.Windows.Forms.ComboBox()
+        Me.txtsysCode = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbYear1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtsysCodePproperty = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
+        Me.enDate = New System.Windows.Forms.DateTimePicker()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
+        Me.stDate = New System.Windows.Forms.DateTimePicker()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -306,11 +306,11 @@ Partial Class frmCalendar
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.ComboBox1)
-        Me.GpData.Controls.Add(Me.Label3)
+        Me.GpData.Controls.Add(Me.txtDescription)
+        Me.GpData.Controls.Add(Me.cmbYear2)
+        Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label7)
-        Me.GpData.Controls.Add(Me.ComboBox2)
+        Me.GpData.Controls.Add(Me.cmbYear1)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
         Me.GpData.Controls.Add(Me.Label1)
@@ -322,24 +322,31 @@ Partial Class frmCalendar
         Me.GpData.TabStop = False
         Me.GpData.Text = "Calender Information"
         '
-        'ComboBox1
+        'txtDescription
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(329, 62)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(89, 24)
-        Me.ComboBox1.TabIndex = 37
+        Me.txtDescription.Location = New System.Drawing.Point(232, 94)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(399, 22)
+        Me.txtDescription.TabIndex = 38
         '
-        'Label3
+        'cmbYear2
         '
-        Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(232, 36)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(140, 22)
-        Me.Label3.TabIndex = 36
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmbYear2.FormattingEnabled = True
+        Me.cmbYear2.Location = New System.Drawing.Point(329, 62)
+        Me.cmbYear2.Name = "cmbYear2"
+        Me.cmbYear2.Size = New System.Drawing.Size(89, 24)
+        Me.cmbYear2.TabIndex = 37
+        '
+        'txtsysCode
+        '
+        Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsysCode.Location = New System.Drawing.Point(232, 36)
+        Me.txtsysCode.Name = "txtsysCode"
+        Me.txtsysCode.Size = New System.Drawing.Size(140, 22)
+        Me.txtsysCode.TabIndex = 36
+        Me.txtsysCode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label7
         '
@@ -351,13 +358,13 @@ Partial Class frmCalendar
         Me.Label7.TabIndex = 32
         Me.Label7.Text = "Description"
         '
-        'ComboBox2
+        'cmbYear1
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(232, 64)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(89, 24)
-        Me.ComboBox2.TabIndex = 20
+        Me.cmbYear1.FormattingEnabled = True
+        Me.cmbYear1.Location = New System.Drawing.Point(232, 64)
+        Me.cmbYear1.Name = "cmbYear1"
+        Me.cmbYear1.Size = New System.Drawing.Size(89, 24)
+        Me.cmbYear1.TabIndex = 20
         '
         'Label2
         '
@@ -392,12 +399,12 @@ Partial Class frmCalendar
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txtName)
+        Me.GroupBox1.Controls.Add(Me.txtsysCodePproperty)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker4)
+        Me.GroupBox1.Controls.Add(Me.enDate)
         Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker5)
+        Me.GroupBox1.Controls.Add(Me.stDate)
         Me.GroupBox1.Controls.Add(Me.Label18)
         Me.GroupBox1.Controls.Add(Me.Label19)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -408,16 +415,23 @@ Partial Class frmCalendar
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Period Properties"
         '
-        'Label4
+        'txtName
         '
-        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(232, 39)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(140, 22)
-        Me.Label4.TabIndex = 40
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.txtName.Location = New System.Drawing.Point(232, 68)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(399, 22)
+        Me.txtName.TabIndex = 41
+        '
+        'txtsysCodePproperty
+        '
+        Me.txtsysCodePproperty.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtsysCodePproperty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtsysCodePproperty.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsysCodePproperty.Location = New System.Drawing.Point(232, 39)
+        Me.txtsysCodePproperty.Name = "txtsysCodePproperty"
+        Me.txtsysCodePproperty.Size = New System.Drawing.Size(140, 22)
+        Me.txtsysCodePproperty.TabIndex = 40
+        Me.txtsysCodePproperty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label6
         '
@@ -429,14 +443,14 @@ Partial Class frmCalendar
         Me.Label6.TabIndex = 37
         Me.Label6.Text = "System Code"
         '
-        'DateTimePicker4
+        'enDate
         '
-        Me.DateTimePicker4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker4.Location = New System.Drawing.Point(232, 128)
-        Me.DateTimePicker4.Name = "DateTimePicker4"
-        Me.DateTimePicker4.Size = New System.Drawing.Size(95, 22)
-        Me.DateTimePicker4.TabIndex = 29
+        Me.enDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.enDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.enDate.Location = New System.Drawing.Point(232, 128)
+        Me.enDate.Name = "enDate"
+        Me.enDate.Size = New System.Drawing.Size(95, 22)
+        Me.enDate.TabIndex = 29
         '
         'Label17
         '
@@ -449,14 +463,14 @@ Partial Class frmCalendar
         Me.Label17.Text = "End Date"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'DateTimePicker5
+        'stDate
         '
-        Me.DateTimePicker5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker5.Location = New System.Drawing.Point(232, 98)
-        Me.DateTimePicker5.Name = "DateTimePicker5"
-        Me.DateTimePicker5.Size = New System.Drawing.Size(95, 22)
-        Me.DateTimePicker5.TabIndex = 27
+        Me.stDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.stDate.Location = New System.Drawing.Point(232, 98)
+        Me.stDate.Name = "stDate"
+        Me.stDate.Size = New System.Drawing.Size(95, 22)
+        Me.stDate.TabIndex = 27
         '
         'Label18
         '
@@ -478,20 +492,6 @@ Partial Class frmCalendar
         Me.Label19.Size = New System.Drawing.Size(39, 13)
         Me.Label19.TabIndex = 15
         Me.Label19.Text = "Name"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(232, 94)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(399, 22)
-        Me.TextBox1.TabIndex = 38
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(232, 68)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(399, 22)
-        Me.TextBox2.TabIndex = 41
         '
         'frmCalendar
         '
@@ -538,20 +538,20 @@ Partial Class frmCalendar
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbYear1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents cmbYear2 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtsysCode As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtsysCodePproperty As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker4 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents enDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker5 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents stDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
 End Class

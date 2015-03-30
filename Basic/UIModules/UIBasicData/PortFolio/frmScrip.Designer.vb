@@ -44,12 +44,15 @@ Partial Class frmScrip
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtSymbol = New System.Windows.Forms.TextBox()
+        Me.chkDelisted = New System.Windows.Forms.CheckBox()
+        Me.chkTransactionReport = New System.Windows.Forms.CheckBox()
+        Me.chkListedinstock = New System.Windows.Forms.CheckBox()
+        Me.chkFutureTrade = New System.Windows.Forms.CheckBox()
+        Me.chkCDCelig = New System.Windows.Forms.CheckBox()
+        Me.chkGrpOfcomp = New System.Windows.Forms.CheckBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -58,24 +61,21 @@ Partial Class frmScrip
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.dtpStartDate = New System.Windows.Forms.DateTimePicker()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.dtpDelistedDate = New System.Windows.Forms.DateTimePicker()
+        Me.cmbGroupofCompany = New System.Windows.Forms.ComboBox()
+        Me.CmbSector = New System.Windows.Forms.ComboBox()
+        Me.cmbSystemCode = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtFaceValue = New System.Windows.Forms.TextBox()
+        Me.txtPaidUpCapital = New System.Windows.Forms.TextBox()
+        Me.txtAuthorizeCapital = New System.Windows.Forms.TextBox()
+        Me.txtCompCode = New System.Windows.Forms.TextBox()
+        Me.txtSecurityCode = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -320,15 +320,20 @@ Partial Class frmScrip
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox2)
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.TextBox3)
-        Me.GpData.Controls.Add(Me.CheckBox6)
-        Me.GpData.Controls.Add(Me.CheckBox5)
-        Me.GpData.Controls.Add(Me.CheckBox4)
-        Me.GpData.Controls.Add(Me.CheckBox3)
-        Me.GpData.Controls.Add(Me.CheckBox2)
-        Me.GpData.Controls.Add(Me.CheckBox1)
+        Me.GpData.Controls.Add(Me.txtSecurityCode)
+        Me.GpData.Controls.Add(Me.txtCompCode)
+        Me.GpData.Controls.Add(Me.txtAuthorizeCapital)
+        Me.GpData.Controls.Add(Me.txtPaidUpCapital)
+        Me.GpData.Controls.Add(Me.txtFaceValue)
+        Me.GpData.Controls.Add(Me.txtDescription)
+        Me.GpData.Controls.Add(Me.txtName)
+        Me.GpData.Controls.Add(Me.txtSymbol)
+        Me.GpData.Controls.Add(Me.chkDelisted)
+        Me.GpData.Controls.Add(Me.chkTransactionReport)
+        Me.GpData.Controls.Add(Me.chkListedinstock)
+        Me.GpData.Controls.Add(Me.chkFutureTrade)
+        Me.GpData.Controls.Add(Me.chkCDCelig)
+        Me.GpData.Controls.Add(Me.chkGrpOfcomp)
         Me.GpData.Controls.Add(Me.Label18)
         Me.GpData.Controls.Add(Me.Label17)
         Me.GpData.Controls.Add(Me.Label16)
@@ -337,15 +342,10 @@ Partial Class frmScrip
         Me.GpData.Controls.Add(Me.Label13)
         Me.GpData.Controls.Add(Me.Label12)
         Me.GpData.Controls.Add(Me.Label11)
-        Me.GpData.Controls.Add(Me.dtpStartDate)
-        Me.GpData.Controls.Add(Me.Label9)
-        Me.GpData.Controls.Add(Me.Label8)
-        Me.GpData.Controls.Add(Me.ComboBox3)
-        Me.GpData.Controls.Add(Me.Label7)
-        Me.GpData.Controls.Add(Me.Label5)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
-        Me.GpData.Controls.Add(Me.Label6)
+        Me.GpData.Controls.Add(Me.dtpDelistedDate)
+        Me.GpData.Controls.Add(Me.cmbGroupofCompany)
+        Me.GpData.Controls.Add(Me.CmbSector)
+        Me.GpData.Controls.Add(Me.cmbSystemCode)
         Me.GpData.Controls.Add(Me.Label3)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
@@ -359,65 +359,101 @@ Partial Class frmScrip
         Me.GpData.TabIndex = 38
         Me.GpData.TabStop = False
         '
-        'CheckBox6
+        'txtDescription
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(527, 335)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(85, 20)
-        Me.CheckBox6.TabIndex = 41
-        Me.CheckBox6.Text = "Delisted"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(152, 368)
+        Me.txtDescription.MaxLength = 3
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(538, 22)
+        Me.txtDescription.TabIndex = 54
+        Me.txtDescription.Tag = "Enter Description"
         '
-        'CheckBox5
+        'txtName
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(527, 287)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(181, 20)
-        Me.CheckBox5.TabIndex = 40
-        Me.CheckBox5.Text = "Transaction Reporting"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(152, 102)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.TabIndex = 53
+        Me.txtName.Tag = "Enter Description"
         '
-        'CheckBox4
+        'txtSymbol
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(527, 256)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(197, 20)
-        Me.CheckBox4.TabIndex = 39
-        Me.CheckBox4.Text = "Listed in stock exchange"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.txtSymbol.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSymbol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSymbol.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSymbol.Location = New System.Drawing.Point(152, 72)
+        Me.txtSymbol.MaxLength = 3
+        Me.txtSymbol.Name = "txtSymbol"
+        Me.txtSymbol.Size = New System.Drawing.Size(309, 22)
+        Me.txtSymbol.TabIndex = 52
+        Me.txtSymbol.Tag = "Enter Description"
         '
-        'CheckBox3
+        'chkDelisted
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(527, 224)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(116, 20)
-        Me.CheckBox3.TabIndex = 38
-        Me.CheckBox3.Text = "Future Trade"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.chkDelisted.AutoSize = True
+        Me.chkDelisted.Location = New System.Drawing.Point(527, 335)
+        Me.chkDelisted.Name = "chkDelisted"
+        Me.chkDelisted.Size = New System.Drawing.Size(85, 20)
+        Me.chkDelisted.TabIndex = 41
+        Me.chkDelisted.Text = "Delisted"
+        Me.chkDelisted.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'chkTransactionReport
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(527, 193)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(115, 20)
-        Me.CheckBox2.TabIndex = 37
-        Me.CheckBox2.Text = "CDC Eligible"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.chkTransactionReport.AutoSize = True
+        Me.chkTransactionReport.Location = New System.Drawing.Point(527, 287)
+        Me.chkTransactionReport.Name = "chkTransactionReport"
+        Me.chkTransactionReport.Size = New System.Drawing.Size(181, 20)
+        Me.chkTransactionReport.TabIndex = 40
+        Me.chkTransactionReport.Text = "Transaction Reporting"
+        Me.chkTransactionReport.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'chkListedinstock
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(527, 161)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(155, 20)
-        Me.CheckBox1.TabIndex = 36
-        Me.CheckBox1.Text = "Group of Company"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkListedinstock.AutoSize = True
+        Me.chkListedinstock.Location = New System.Drawing.Point(527, 256)
+        Me.chkListedinstock.Name = "chkListedinstock"
+        Me.chkListedinstock.Size = New System.Drawing.Size(197, 20)
+        Me.chkListedinstock.TabIndex = 39
+        Me.chkListedinstock.Text = "Listed in stock exchange"
+        Me.chkListedinstock.UseVisualStyleBackColor = True
+        '
+        'chkFutureTrade
+        '
+        Me.chkFutureTrade.AutoSize = True
+        Me.chkFutureTrade.Location = New System.Drawing.Point(527, 224)
+        Me.chkFutureTrade.Name = "chkFutureTrade"
+        Me.chkFutureTrade.Size = New System.Drawing.Size(116, 20)
+        Me.chkFutureTrade.TabIndex = 38
+        Me.chkFutureTrade.Text = "Future Trade"
+        Me.chkFutureTrade.UseVisualStyleBackColor = True
+        '
+        'chkCDCelig
+        '
+        Me.chkCDCelig.AutoSize = True
+        Me.chkCDCelig.Location = New System.Drawing.Point(527, 193)
+        Me.chkCDCelig.Name = "chkCDCelig"
+        Me.chkCDCelig.Size = New System.Drawing.Size(115, 20)
+        Me.chkCDCelig.TabIndex = 37
+        Me.chkCDCelig.Text = "CDC Eligible"
+        Me.chkCDCelig.UseVisualStyleBackColor = True
+        '
+        'chkGrpOfcomp
+        '
+        Me.chkGrpOfcomp.AutoSize = True
+        Me.chkGrpOfcomp.Location = New System.Drawing.Point(527, 161)
+        Me.chkGrpOfcomp.Name = "chkGrpOfcomp"
+        Me.chkGrpOfcomp.Size = New System.Drawing.Size(155, 20)
+        Me.chkGrpOfcomp.TabIndex = 36
+        Me.chkGrpOfcomp.Text = "Group of Company"
+        Me.chkGrpOfcomp.UseVisualStyleBackColor = True
         '
         'Label18
         '
@@ -499,93 +535,38 @@ Partial Class frmScrip
         Me.Label11.TabIndex = 28
         Me.Label11.Text = "Authorized Capital"
         '
-        'dtpStartDate
+        'dtpDelistedDate
         '
-        Me.dtpStartDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpStartDate.Location = New System.Drawing.Point(152, 340)
-        Me.dtpStartDate.Name = "dtpStartDate"
-        Me.dtpStartDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpStartDate.TabIndex = 26
+        Me.dtpDelistedDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpDelistedDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDelistedDate.Location = New System.Drawing.Point(152, 340)
+        Me.dtpDelistedDate.Name = "dtpDelistedDate"
+        Me.dtpDelistedDate.Size = New System.Drawing.Size(95, 22)
+        Me.dtpDelistedDate.TabIndex = 26
         '
-        'Label9
+        'cmbGroupofCompany
         '
-        Me.Label9.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(152, 314)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(95, 22)
-        Me.Label9.TabIndex = 25
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmbGroupofCompany.FormattingEnabled = True
+        Me.cmbGroupofCompany.Location = New System.Drawing.Point(152, 252)
+        Me.cmbGroupofCompany.Name = "cmbGroupofCompany"
+        Me.cmbGroupofCompany.Size = New System.Drawing.Size(230, 24)
+        Me.cmbGroupofCompany.TabIndex = 23
         '
-        'Label8
+        'CmbSector
         '
-        Me.Label8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(152, 284)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 22)
-        Me.Label8.TabIndex = 24
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CmbSector.FormattingEnabled = True
+        Me.CmbSector.Location = New System.Drawing.Point(152, 128)
+        Me.CmbSector.Name = "CmbSector"
+        Me.CmbSector.Size = New System.Drawing.Size(230, 24)
+        Me.CmbSector.TabIndex = 20
         '
-        'ComboBox3
+        'cmbSystemCode
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(152, 252)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(230, 24)
-        Me.ComboBox3.TabIndex = 23
-        '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(152, 221)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(95, 22)
-        Me.Label7.TabIndex = 22
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(152, 189)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(95, 22)
-        Me.Label5.TabIndex = 21
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(152, 128)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(230, 24)
-        Me.ComboBox2.TabIndex = 20
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(152, 39)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(213, 24)
-        Me.ComboBox1.TabIndex = 19
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(152, 157)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(95, 22)
-        Me.Label6.TabIndex = 16
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmbSystemCode.FormattingEnabled = True
+        Me.cmbSystemCode.Location = New System.Drawing.Point(152, 39)
+        Me.cmbSystemCode.Name = "cmbSystemCode"
+        Me.cmbSystemCode.Size = New System.Drawing.Size(213, 24)
+        Me.cmbSystemCode.TabIndex = 19
         '
         'Label3
         '
@@ -650,41 +631,65 @@ Partial Class frmScrip
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "System Code"
         '
-        'TextBox3
+        'txtFaceValue
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(152, 72)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
+        Me.txtFaceValue.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtFaceValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFaceValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFaceValue.Location = New System.Drawing.Point(152, 158)
+        Me.txtFaceValue.MaxLength = 3
+        Me.txtFaceValue.Name = "txtFaceValue"
+        Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
+        Me.txtFaceValue.TabIndex = 55
+        Me.txtFaceValue.Tag = "Enter Description"
         '
-        'TextBox1
+        'txtPaidUpCapital
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(152, 102)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox1.TabIndex = 53
-        Me.TextBox1.Tag = "Enter Description"
+        Me.txtPaidUpCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPaidUpCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPaidUpCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPaidUpCapital.Location = New System.Drawing.Point(152, 190)
+        Me.txtPaidUpCapital.MaxLength = 3
+        Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
+        Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtPaidUpCapital.TabIndex = 56
+        Me.txtPaidUpCapital.Tag = "Enter Description"
         '
-        'TextBox2
+        'txtAuthorizeCapital
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(152, 368)
-        Me.TextBox2.MaxLength = 3
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(538, 22)
-        Me.TextBox2.TabIndex = 54
-        Me.TextBox2.Tag = "Enter Description"
+        Me.txtAuthorizeCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtAuthorizeCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAuthorizeCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAuthorizeCapital.Location = New System.Drawing.Point(152, 226)
+        Me.txtAuthorizeCapital.MaxLength = 3
+        Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
+        Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtAuthorizeCapital.TabIndex = 57
+        Me.txtAuthorizeCapital.Tag = "Enter Description"
+        '
+        'txtCompCode
+        '
+        Me.txtCompCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtCompCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCompCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCompCode.Location = New System.Drawing.Point(152, 282)
+        Me.txtCompCode.MaxLength = 3
+        Me.txtCompCode.Name = "txtCompCode"
+        Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtCompCode.TabIndex = 58
+        Me.txtCompCode.Tag = "Enter Description"
+        '
+        'txtSecurityCode
+        '
+        Me.txtSecurityCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSecurityCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSecurityCode.Location = New System.Drawing.Point(152, 309)
+        Me.txtSecurityCode.MaxLength = 3
+        Me.txtSecurityCode.Name = "txtSecurityCode"
+        Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtSecurityCode.TabIndex = 59
+        Me.txtSecurityCode.Tag = "Enter Description"
         '
         'frmScrip
         '
@@ -727,20 +732,15 @@ Partial Class frmScrip
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbGroupofCompany As System.Windows.Forms.ComboBox
+    Friend WithEvents CmbSector As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSystemCode As System.Windows.Forms.ComboBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
@@ -749,14 +749,19 @@ Partial Class frmScrip
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents dtpStartDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents dtpDelistedDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents chkDelisted As System.Windows.Forms.CheckBox
+    Friend WithEvents chkTransactionReport As System.Windows.Forms.CheckBox
+    Friend WithEvents chkListedinstock As System.Windows.Forms.CheckBox
+    Friend WithEvents chkFutureTrade As System.Windows.Forms.CheckBox
+    Friend WithEvents chkCDCelig As System.Windows.Forms.CheckBox
+    Friend WithEvents chkGrpOfcomp As System.Windows.Forms.CheckBox
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtSymbol As System.Windows.Forms.TextBox
+    Friend WithEvents txtSecurityCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtCompCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtAuthorizeCapital As System.Windows.Forms.TextBox
+    Friend WithEvents txtPaidUpCapital As System.Windows.Forms.TextBox
+    Friend WithEvents txtFaceValue As System.Windows.Forms.TextBox
 End Class

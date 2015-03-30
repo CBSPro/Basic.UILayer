@@ -44,16 +44,16 @@ Partial Class frmFundWiseControl
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.chkCompany = New System.Windows.Forms.ComboBox()
+        Me.fpgrid = New AxFPSpreadADO.AxfpSpread()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fpgrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -294,16 +294,28 @@ Partial Class frmFundWiseControl
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox3)
+        Me.GpData.Controls.Add(Me.txtDescription)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label25)
-        Me.GpData.Controls.Add(Me.ComboBox2)
+        Me.GpData.Controls.Add(Me.chkCompany)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(355, 119)
         Me.GpData.Name = "GpData"
         Me.GpData.Size = New System.Drawing.Size(722, 102)
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
+        '
+        'txtDescription
+        '
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(165, 61)
+        Me.txtDescription.MaxLength = 3
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(309, 22)
+        Me.txtDescription.TabIndex = 52
+        Me.txtDescription.Tag = "Enter Description"
         '
         'Label30
         '
@@ -325,41 +337,29 @@ Partial Class frmFundWiseControl
         Me.Label25.TabIndex = 20
         Me.Label25.Text = "Company"
         '
-        'ComboBox2
+        'chkCompany
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(165, 31)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(230, 24)
-        Me.ComboBox2.TabIndex = 18
+        Me.chkCompany.FormattingEnabled = True
+        Me.chkCompany.Location = New System.Drawing.Point(165, 31)
+        Me.chkCompany.Name = "chkCompany"
+        Me.chkCompany.Size = New System.Drawing.Size(230, 24)
+        Me.chkCompany.TabIndex = 18
         '
-        'AxfpSpread1
+        'fpgrid
         '
-        Me.AxfpSpread1.DataSource = Nothing
-        Me.AxfpSpread1.Location = New System.Drawing.Point(358, 232)
-        Me.AxfpSpread1.Name = "AxfpSpread1"
-        Me.AxfpSpread1.OcxState = CType(resources.GetObject("AxfpSpread1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxfpSpread1.Size = New System.Drawing.Size(719, 359)
-        Me.AxfpSpread1.TabIndex = 40
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(165, 61)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
+        Me.fpgrid.DataSource = Nothing
+        Me.fpgrid.Location = New System.Drawing.Point(358, 232)
+        Me.fpgrid.Name = "fpgrid"
+        Me.fpgrid.OcxState = CType(resources.GetObject("fpgrid.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpgrid.Size = New System.Drawing.Size(719, 359)
+        Me.fpgrid.TabIndex = 40
         '
         'frmFundWiseControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1097, 611)
-        Me.Controls.Add(Me.AxfpSpread1)
+        Me.Controls.Add(Me.fpgrid)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
@@ -372,7 +372,7 @@ Partial Class frmFundWiseControl
         Me.GpBtns.ResumeLayout(False)
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fpgrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -398,8 +398,8 @@ Partial Class frmFundWiseControl
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents chkCompany As System.Windows.Forms.ComboBox
     Friend WithEvents Label30 As System.Windows.Forms.Label
-    Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents fpgrid As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
 End Class

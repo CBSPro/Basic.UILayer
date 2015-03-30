@@ -44,26 +44,26 @@ Partial Class frmFutureScrip
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtSymbol = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpSettDate = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtpStartDate = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbPeriod = New System.Windows.Forms.ComboBox()
+        Me.cmbYear = New System.Windows.Forms.ComboBox()
+        Me.cmbShare = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -309,20 +309,20 @@ Partial Class frmFutureScrip
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox2)
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.TextBox3)
+        Me.GpData.Controls.Add(Me.txtDescription)
+        Me.GpData.Controls.Add(Me.txtSymbol)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label9)
         Me.GpData.Controls.Add(Me.Label7)
-        Me.GpData.Controls.Add(Me.DateTimePicker2)
+        Me.GpData.Controls.Add(Me.dtpSettDate)
         Me.GpData.Controls.Add(Me.Label6)
-        Me.GpData.Controls.Add(Me.DateTimePicker1)
+        Me.GpData.Controls.Add(Me.dtpEndDate)
         Me.GpData.Controls.Add(Me.Label5)
         Me.GpData.Controls.Add(Me.dtpStartDate)
         Me.GpData.Controls.Add(Me.Label12)
-        Me.GpData.Controls.Add(Me.ComboBox3)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.cmbPeriod)
+        Me.GpData.Controls.Add(Me.cmbYear)
+        Me.GpData.Controls.Add(Me.cmbShare)
         Me.GpData.Controls.Add(Me.Label3)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
@@ -335,29 +335,41 @@ Partial Class frmFutureScrip
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
         '
-        'TextBox2
+        'txtDescription
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(109, 165)
-        Me.TextBox2.MaxLength = 3
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(603, 22)
-        Me.TextBox2.TabIndex = 54
-        Me.TextBox2.Tag = "Enter Description"
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(109, 165)
+        Me.txtDescription.MaxLength = 3
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(603, 22)
+        Me.txtDescription.TabIndex = 54
+        Me.txtDescription.Tag = "Enter Description"
         '
-        'TextBox1
+        'txtSymbol
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(498, 109)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(214, 22)
-        Me.TextBox1.TabIndex = 53
-        Me.TextBox1.Tag = "Enter Description"
+        Me.txtSymbol.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSymbol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSymbol.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSymbol.Location = New System.Drawing.Point(498, 109)
+        Me.txtSymbol.MaxLength = 3
+        Me.txtSymbol.Name = "txtSymbol"
+        Me.txtSymbol.Size = New System.Drawing.Size(214, 22)
+        Me.txtSymbol.TabIndex = 53
+        Me.txtSymbol.Tag = "Enter Description"
+        '
+        'txtName
+        '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(109, 109)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.TabIndex = 52
+        Me.txtName.Tag = "Enter Description"
         '
         'Label9
         '
@@ -379,14 +391,14 @@ Partial Class frmFutureScrip
         Me.Label7.TabIndex = 32
         Me.Label7.Text = "Description"
         '
-        'DateTimePicker2
+        'dtpSettDate
         '
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(448, 137)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(95, 22)
-        Me.DateTimePicker2.TabIndex = 31
+        Me.dtpSettDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpSettDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpSettDate.Location = New System.Drawing.Point(448, 137)
+        Me.dtpSettDate.Name = "dtpSettDate"
+        Me.dtpSettDate.Size = New System.Drawing.Size(95, 22)
+        Me.dtpSettDate.TabIndex = 31
         '
         'Label6
         '
@@ -399,14 +411,14 @@ Partial Class frmFutureScrip
         Me.Label6.Text = "Sett. Date"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'DateTimePicker1
+        'dtpEndDate
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(279, 138)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(95, 22)
-        Me.DateTimePicker1.TabIndex = 29
+        Me.dtpEndDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpEndDate.Location = New System.Drawing.Point(279, 138)
+        Me.dtpEndDate.Name = "dtpEndDate"
+        Me.dtpEndDate.Size = New System.Drawing.Size(95, 22)
+        Me.dtpEndDate.TabIndex = 29
         '
         'Label5
         '
@@ -439,29 +451,29 @@ Partial Class frmFutureScrip
         Me.Label12.Text = "Start Date"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'ComboBox3
+        'cmbPeriod
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(112, 80)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(145, 24)
-        Me.ComboBox3.TabIndex = 21
+        Me.cmbPeriod.FormattingEnabled = True
+        Me.cmbPeriod.Location = New System.Drawing.Point(112, 80)
+        Me.cmbPeriod.Name = "cmbPeriod"
+        Me.cmbPeriod.Size = New System.Drawing.Size(145, 24)
+        Me.cmbPeriod.TabIndex = 21
         '
-        'ComboBox2
+        'cmbYear
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(112, 52)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(145, 24)
-        Me.ComboBox2.TabIndex = 20
+        Me.cmbYear.FormattingEnabled = True
+        Me.cmbYear.Location = New System.Drawing.Point(112, 52)
+        Me.cmbYear.Name = "cmbYear"
+        Me.cmbYear.Size = New System.Drawing.Size(145, 24)
+        Me.cmbYear.TabIndex = 20
         '
-        'ComboBox1
+        'cmbShare
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(112, 24)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 24)
-        Me.ComboBox1.TabIndex = 19
+        Me.cmbShare.FormattingEnabled = True
+        Me.cmbShare.Location = New System.Drawing.Point(112, 24)
+        Me.cmbShare.Name = "cmbShare"
+        Me.cmbShare.Size = New System.Drawing.Size(209, 24)
+        Me.cmbShare.TabIndex = 19
         '
         'Label3
         '
@@ -523,18 +535,6 @@ Partial Class frmFutureScrip
         Me.AxfpSpread1.Size = New System.Drawing.Size(726, 254)
         Me.AxfpSpread1.TabIndex = 40
         '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(109, 109)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
-        '
         'frmFutureScrip
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -578,24 +578,24 @@ Partial Class frmFutureScrip
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbYear As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbShare As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbPeriod As System.Windows.Forms.ComboBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpSettDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpEndDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents dtpStartDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtSymbol As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
 End Class

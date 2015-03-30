@@ -28,6 +28,8 @@ Partial Class frmGroupOfcompany
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtMnemonic = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -49,14 +51,12 @@ Partial Class frmGroupOfcompany
         Me.btnView = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.fpGrid = New AxFPSpreadADO.AxfpSpread()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
         Me.GpBtns.SuspendLayout()
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fpGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -108,8 +108,8 @@ Partial Class frmGroupOfcompany
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.TextBox3)
+        Me.GpData.Controls.Add(Me.txtMnemonic)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
         Me.GpData.Controls.Add(Me.Label4)
@@ -121,6 +121,30 @@ Partial Class frmGroupOfcompany
         Me.GpData.Size = New System.Drawing.Size(722, 168)
         Me.GpData.TabIndex = 37
         Me.GpData.TabStop = False
+        '
+        'txtMnemonic
+        '
+        Me.txtMnemonic.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtMnemonic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtMnemonic.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMnemonic.Location = New System.Drawing.Point(187, 70)
+        Me.txtMnemonic.MaxLength = 3
+        Me.txtMnemonic.Name = "txtMnemonic"
+        Me.txtMnemonic.Size = New System.Drawing.Size(309, 22)
+        Me.txtMnemonic.TabIndex = 53
+        Me.txtMnemonic.Tag = "Enter Description"
+        '
+        'txtName
+        '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(187, 44)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(501, 22)
+        Me.txtName.TabIndex = 52
+        Me.txtName.Tag = "Enter Description"
         '
         'Label2
         '
@@ -364,45 +388,21 @@ Partial Class frmGroupOfcompany
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'AxfpSpread1
+        'fpGrid
         '
-        Me.AxfpSpread1.DataSource = Nothing
-        Me.AxfpSpread1.Location = New System.Drawing.Point(357, 305)
-        Me.AxfpSpread1.Name = "AxfpSpread1"
-        Me.AxfpSpread1.OcxState = CType(resources.GetObject("AxfpSpread1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxfpSpread1.Size = New System.Drawing.Size(721, 285)
-        Me.AxfpSpread1.TabIndex = 39
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(187, 44)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(501, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(187, 70)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox1.TabIndex = 53
-        Me.TextBox1.Tag = "Enter Description"
+        Me.fpGrid.DataSource = Nothing
+        Me.fpGrid.Location = New System.Drawing.Point(357, 305)
+        Me.fpGrid.Name = "fpGrid"
+        Me.fpGrid.OcxState = CType(resources.GetObject("fpGrid.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpGrid.Size = New System.Drawing.Size(721, 285)
+        Me.fpGrid.TabIndex = 39
         '
         'frmGroupOfcompany
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1095, 609)
-        Me.Controls.Add(Me.AxfpSpread1)
+        Me.Controls.Add(Me.fpGrid)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.Search)
@@ -415,7 +415,7 @@ Partial Class frmGroupOfcompany
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
         Me.GpBtns.ResumeLayout(False)
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fpGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -445,7 +445,7 @@ Partial Class frmGroupOfcompany
     Friend WithEvents btnView As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents fpGrid As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents txtMnemonic As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
 End Class
