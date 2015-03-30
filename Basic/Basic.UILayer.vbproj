@@ -201,6 +201,12 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmCustodian.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmExpoAndMargn.Designer.vb">
+      <DependentUpon>FrmExpoAndMargn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmExpoAndMargn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\FrmFinanInfo.Designer.vb">
       <DependentUpon>FrmFinanInfo.vb</DependentUpon>
     </Compile>
@@ -469,6 +475,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmCustodian.resx">
       <DependentUpon>frmCustodian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\FrmExpoAndMargn.resx">
+      <DependentUpon>FrmExpoAndMargn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\FrmFinanInfo.resx">
       <DependentUpon>FrmFinanInfo.vb</DependentUpon>
