@@ -44,6 +44,15 @@ Partial Class frmBroker
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtNCSS = New System.Windows.Forms.TextBox()
+        Me.txtFax = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtIAS = New System.Windows.Forms.TextBox()
+        Me.txtCFS = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.txtAdress = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
@@ -51,13 +60,11 @@ Partial Class frmBroker
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbDefine = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -67,35 +74,28 @@ Partial Class frmBroker
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.fpgrid1 = New AxFPSpreadADO.AxfpSpread()
+        Me.cmb2 = New System.Windows.Forms.ComboBox()
+        Me.cmb1 = New System.Windows.Forms.ComboBox()
+        Me.radiobtn2 = New System.Windows.Forms.RadioButton()
+        Me.radiobtn1 = New System.Windows.Forms.RadioButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.AxfpSpread2 = New AxFPSpreadADO.AxfpSpread()
+        Me.fpgrid2 = New AxFPSpreadADO.AxfpSpread()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.AxfpSpread3 = New AxFPSpreadADO.AxfpSpread()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.fpgrid3 = New AxFPSpreadADO.AxfpSpread()
+        Me.txtBrokerCode = New System.Windows.Forms.TextBox()
+        Me.txtMnemo = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fpgrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
-        CType(Me.AxfpSpread2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fpgrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
-        CType(Me.AxfpSpread3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.fpgrid3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -336,15 +336,17 @@ Partial Class frmBroker
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox9)
-        Me.GpData.Controls.Add(Me.TextBox8)
-        Me.GpData.Controls.Add(Me.TextBox7)
-        Me.GpData.Controls.Add(Me.TextBox6)
-        Me.GpData.Controls.Add(Me.TextBox5)
-        Me.GpData.Controls.Add(Me.TextBox4)
-        Me.GpData.Controls.Add(Me.TextBox3)
-        Me.GpData.Controls.Add(Me.TextBox2)
-        Me.GpData.Controls.Add(Me.TextBox1)
+        Me.GpData.Controls.Add(Me.txtMnemo)
+        Me.GpData.Controls.Add(Me.txtBrokerCode)
+        Me.GpData.Controls.Add(Me.txtDescription)
+        Me.GpData.Controls.Add(Me.txtNCSS)
+        Me.GpData.Controls.Add(Me.txtFax)
+        Me.GpData.Controls.Add(Me.txtEmail)
+        Me.GpData.Controls.Add(Me.txtIAS)
+        Me.GpData.Controls.Add(Me.txtCFS)
+        Me.GpData.Controls.Add(Me.txtPhone)
+        Me.GpData.Controls.Add(Me.txtAdress)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label16)
         Me.GpData.Controls.Add(Me.Label11)
         Me.GpData.Controls.Add(Me.CheckBox4)
@@ -352,13 +354,11 @@ Partial Class frmBroker
         Me.GpData.Controls.Add(Me.CheckBox2)
         Me.GpData.Controls.Add(Me.CheckBox1)
         Me.GpData.Controls.Add(Me.Label9)
-        Me.GpData.Controls.Add(Me.Label7)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label10)
-        Me.GpData.Controls.Add(Me.ComboBox3)
+        Me.GpData.Controls.Add(Me.cmbDefine)
         Me.GpData.Controls.Add(Me.Label19)
         Me.GpData.Controls.Add(Me.Label12)
-        Me.GpData.Controls.Add(Me.Label28)
         Me.GpData.Controls.Add(Me.Label26)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.Label3)
@@ -372,6 +372,69 @@ Partial Class frmBroker
         Me.GpData.Size = New System.Drawing.Size(722, 274)
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
+        '
+        'txtDescription
+        '
+        Me.txtDescription.Location = New System.Drawing.Point(123, 221)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(570, 22)
+        Me.txtDescription.TabIndex = 52
+        '
+        'txtNCSS
+        '
+        Me.txtNCSS.Location = New System.Drawing.Point(567, 190)
+        Me.txtNCSS.Name = "txtNCSS"
+        Me.txtNCSS.Size = New System.Drawing.Size(126, 22)
+        Me.txtNCSS.TabIndex = 51
+        '
+        'txtFax
+        '
+        Me.txtFax.Location = New System.Drawing.Point(512, 141)
+        Me.txtFax.Name = "txtFax"
+        Me.txtFax.Size = New System.Drawing.Size(181, 22)
+        Me.txtFax.TabIndex = 50
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(512, 113)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(181, 22)
+        Me.txtEmail.TabIndex = 49
+        '
+        'txtIAS
+        '
+        Me.txtIAS.Location = New System.Drawing.Point(123, 166)
+        Me.txtIAS.Name = "txtIAS"
+        Me.txtIAS.Size = New System.Drawing.Size(95, 22)
+        Me.txtIAS.TabIndex = 48
+        '
+        'txtCFS
+        '
+        Me.txtCFS.Location = New System.Drawing.Point(123, 138)
+        Me.txtCFS.Name = "txtCFS"
+        Me.txtCFS.Size = New System.Drawing.Size(95, 22)
+        Me.txtCFS.TabIndex = 47
+        '
+        'txtPhone
+        '
+        Me.txtPhone.Location = New System.Drawing.Point(123, 110)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(95, 22)
+        Me.txtPhone.TabIndex = 46
+        '
+        'txtAdress
+        '
+        Me.txtAdress.Location = New System.Drawing.Point(123, 84)
+        Me.txtAdress.Name = "txtAdress"
+        Me.txtAdress.Size = New System.Drawing.Size(570, 22)
+        Me.txtAdress.TabIndex = 45
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(123, 59)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(570, 22)
+        Me.txtName.TabIndex = 44
         '
         'Label16
         '
@@ -444,17 +507,6 @@ Partial Class frmBroker
         Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(255, 30)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(179, 22)
-        Me.Label7.TabIndex = 32
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'Label30
         '
         Me.Label30.AutoSize = True
@@ -475,13 +527,13 @@ Partial Class frmBroker
         Me.Label10.TabIndex = 29
         Me.Label10.Text = "Email"
         '
-        'ComboBox3
+        'cmbDefine
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(123, 191)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(95, 24)
-        Me.ComboBox3.TabIndex = 28
+        Me.cmbDefine.FormattingEnabled = True
+        Me.cmbDefine.Location = New System.Drawing.Point(123, 191)
+        Me.cmbDefine.Name = "cmbDefine"
+        Me.cmbDefine.Size = New System.Drawing.Size(95, 24)
+        Me.cmbDefine.TabIndex = 28
         '
         'Label19
         '
@@ -504,17 +556,6 @@ Partial Class frmBroker
         Me.Label12.TabIndex = 24
         Me.Label12.Text = "Defined For"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label28
-        '
-        Me.Label28.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(511, 33)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(183, 22)
-        Me.Label28.TabIndex = 23
-        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label26
         '
@@ -603,11 +644,11 @@ Partial Class frmBroker
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage3.Controls.Add(Me.AxfpSpread1)
-        Me.TabPage3.Controls.Add(Me.ComboBox2)
-        Me.TabPage3.Controls.Add(Me.ComboBox1)
-        Me.TabPage3.Controls.Add(Me.RadioButton2)
-        Me.TabPage3.Controls.Add(Me.RadioButton1)
+        Me.TabPage3.Controls.Add(Me.fpgrid1)
+        Me.TabPage3.Controls.Add(Me.cmb2)
+        Me.TabPage3.Controls.Add(Me.cmb1)
+        Me.TabPage3.Controls.Add(Me.radiobtn2)
+        Me.TabPage3.Controls.Add(Me.radiobtn1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
@@ -615,57 +656,57 @@ Partial Class frmBroker
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Standard Brokerage Rate"
         '
-        'AxfpSpread1
+        'fpgrid1
         '
-        Me.AxfpSpread1.DataSource = Nothing
-        Me.AxfpSpread1.Location = New System.Drawing.Point(6, 43)
-        Me.AxfpSpread1.Name = "AxfpSpread1"
-        Me.AxfpSpread1.OcxState = CType(resources.GetObject("AxfpSpread1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxfpSpread1.Size = New System.Drawing.Size(705, 115)
-        Me.AxfpSpread1.TabIndex = 31
+        Me.fpgrid1.DataSource = Nothing
+        Me.fpgrid1.Location = New System.Drawing.Point(6, 43)
+        Me.fpgrid1.Name = "fpgrid1"
+        Me.fpgrid1.OcxState = CType(resources.GetObject("fpgrid1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpgrid1.Size = New System.Drawing.Size(705, 115)
+        Me.fpgrid1.TabIndex = 31
         '
-        'ComboBox2
+        'cmb2
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(432, 13)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox2.TabIndex = 30
+        Me.cmb2.FormattingEnabled = True
+        Me.cmb2.Location = New System.Drawing.Point(432, 13)
+        Me.cmb2.Name = "cmb2"
+        Me.cmb2.Size = New System.Drawing.Size(100, 21)
+        Me.cmb2.TabIndex = 30
         '
-        'ComboBox1
+        'cmb1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(274, 13)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 29
+        Me.cmb1.FormattingEnabled = True
+        Me.cmb1.Location = New System.Drawing.Point(274, 13)
+        Me.cmb1.Name = "cmb1"
+        Me.cmb1.Size = New System.Drawing.Size(100, 21)
+        Me.cmb1.TabIndex = 29
         '
-        'RadioButton2
+        'radiobtn2
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(135, 17)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radiobtn2.AutoSize = True
+        Me.radiobtn2.Location = New System.Drawing.Point(135, 17)
+        Me.radiobtn2.Name = "radiobtn2"
+        Me.radiobtn2.Size = New System.Drawing.Size(90, 17)
+        Me.radiobtn2.TabIndex = 1
+        Me.radiobtn2.TabStop = True
+        Me.radiobtn2.Text = "RadioButton2"
+        Me.radiobtn2.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'radiobtn1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(29, 17)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radiobtn1.AutoSize = True
+        Me.radiobtn1.Location = New System.Drawing.Point(29, 17)
+        Me.radiobtn1.Name = "radiobtn1"
+        Me.radiobtn1.Size = New System.Drawing.Size(90, 17)
+        Me.radiobtn1.TabIndex = 0
+        Me.radiobtn1.TabStop = True
+        Me.radiobtn1.Text = "RadioButton1"
+        Me.radiobtn1.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage2.Controls.Add(Me.AxfpSpread2)
+        Me.TabPage2.Controls.Add(Me.fpgrid2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
@@ -673,19 +714,19 @@ Partial Class frmBroker
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Agreed Brokerage Rate"
         '
-        'AxfpSpread2
+        'fpgrid2
         '
-        Me.AxfpSpread2.DataSource = Nothing
-        Me.AxfpSpread2.Location = New System.Drawing.Point(20, 24)
-        Me.AxfpSpread2.Name = "AxfpSpread2"
-        Me.AxfpSpread2.OcxState = CType(resources.GetObject("AxfpSpread2.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxfpSpread2.Size = New System.Drawing.Size(679, 133)
-        Me.AxfpSpread2.TabIndex = 0
+        Me.fpgrid2.DataSource = Nothing
+        Me.fpgrid2.Location = New System.Drawing.Point(20, 24)
+        Me.fpgrid2.Name = "fpgrid2"
+        Me.fpgrid2.OcxState = CType(resources.GetObject("fpgrid2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpgrid2.Size = New System.Drawing.Size(679, 133)
+        Me.fpgrid2.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage1.Controls.Add(Me.AxfpSpread3)
+        Me.TabPage1.Controls.Add(Me.fpgrid3)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -693,77 +734,28 @@ Partial Class frmBroker
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "PortFolio Limits"
         '
-        'AxfpSpread3
+        'fpgrid3
         '
-        Me.AxfpSpread3.DataSource = Nothing
-        Me.AxfpSpread3.Location = New System.Drawing.Point(6, 21)
-        Me.AxfpSpread3.Name = "AxfpSpread3"
-        Me.AxfpSpread3.OcxState = CType(resources.GetObject("AxfpSpread3.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxfpSpread3.Size = New System.Drawing.Size(693, 134)
-        Me.AxfpSpread3.TabIndex = 0
+        Me.fpgrid3.DataSource = Nothing
+        Me.fpgrid3.Location = New System.Drawing.Point(6, 21)
+        Me.fpgrid3.Name = "fpgrid3"
+        Me.fpgrid3.OcxState = CType(resources.GetObject("fpgrid3.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpgrid3.Size = New System.Drawing.Size(693, 134)
+        Me.fpgrid3.TabIndex = 0
         '
-        'TextBox1
+        'txtBrokerCode
         '
-        Me.TextBox1.Location = New System.Drawing.Point(123, 59)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(570, 22)
-        Me.TextBox1.TabIndex = 44
+        Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
+        Me.txtBrokerCode.Name = "txtBrokerCode"
+        Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
+        Me.txtBrokerCode.TabIndex = 53
         '
-        'TextBox2
+        'txtMnemo
         '
-        Me.TextBox2.Location = New System.Drawing.Point(123, 84)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(570, 22)
-        Me.TextBox2.TabIndex = 45
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(123, 110)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(95, 22)
-        Me.TextBox3.TabIndex = 46
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(123, 138)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(95, 22)
-        Me.TextBox4.TabIndex = 47
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(123, 166)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(95, 22)
-        Me.TextBox5.TabIndex = 48
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(512, 113)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(181, 22)
-        Me.TextBox6.TabIndex = 49
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(512, 141)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(181, 22)
-        Me.TextBox7.TabIndex = 50
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(567, 190)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(126, 22)
-        Me.TextBox8.TabIndex = 51
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(123, 221)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(570, 22)
-        Me.TextBox9.TabIndex = 52
+        Me.txtMnemo.Location = New System.Drawing.Point(512, 30)
+        Me.txtMnemo.Name = "txtMnemo"
+        Me.txtMnemo.Size = New System.Drawing.Size(181, 22)
+        Me.txtMnemo.TabIndex = 54
         '
         'frmBroker
         '
@@ -786,11 +778,11 @@ Partial Class frmBroker
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.AxfpSpread1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fpgrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
-        CType(Me.AxfpSpread2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fpgrid2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
-        CType(Me.AxfpSpread3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.fpgrid3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -815,13 +807,11 @@ Partial Class frmBroker
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbDefine As System.Windows.Forms.ComboBox
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -840,20 +830,22 @@ Partial Class frmBroker
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents AxfpSpread2 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents AxfpSpread3 As AxFPSpreadADO.AxfpSpread
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents cmb2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmb1 As System.Windows.Forms.ComboBox
+    Friend WithEvents radiobtn2 As System.Windows.Forms.RadioButton
+    Friend WithEvents radiobtn1 As System.Windows.Forms.RadioButton
+    Friend WithEvents fpgrid1 As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents fpgrid2 As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents fpgrid3 As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtNCSS As System.Windows.Forms.TextBox
+    Friend WithEvents txtFax As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
+    Friend WithEvents txtIAS As System.Windows.Forms.TextBox
+    Friend WithEvents txtCFS As System.Windows.Forms.TextBox
+    Friend WithEvents txtPhone As System.Windows.Forms.TextBox
+    Friend WithEvents txtAdress As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtMnemo As System.Windows.Forms.TextBox
+    Friend WithEvents txtBrokerCode As System.Windows.Forms.TextBox
 End Class
