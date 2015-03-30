@@ -44,11 +44,11 @@ Partial Class frmFundWiseControl
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -294,7 +294,7 @@ Partial Class frmFundWiseControl
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.Label31)
+        Me.GpData.Controls.Add(Me.TextBox3)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label25)
         Me.GpData.Controls.Add(Me.ComboBox2)
@@ -304,17 +304,6 @@ Partial Class frmFundWiseControl
         Me.GpData.Size = New System.Drawing.Size(722, 102)
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
-        '
-        'Label31
-        '
-        Me.Label31.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(165, 58)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(309, 22)
-        Me.Label31.TabIndex = 31
-        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label30
         '
@@ -352,6 +341,18 @@ Partial Class frmFundWiseControl
         Me.AxfpSpread1.OcxState = CType(resources.GetObject("AxfpSpread1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxfpSpread1.Size = New System.Drawing.Size(719, 359)
         Me.AxfpSpread1.TabIndex = 40
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(165, 61)
+        Me.TextBox3.MaxLength = 3
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
+        Me.TextBox3.TabIndex = 52
+        Me.TextBox3.Tag = "Enter Description"
         '
         'frmFundWiseControl
         '
@@ -398,7 +399,7 @@ Partial Class frmFundWiseControl
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label31 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

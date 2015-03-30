@@ -34,7 +34,6 @@ Partial Class frmSettlementmodesvb
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblVNo = New System.Windows.Forms.Label()
         Me.GpBtns = New System.Windows.Forms.GroupBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnBottom = New System.Windows.Forms.Button()
@@ -51,7 +50,8 @@ Partial Class frmSettlementmodesvb
         Me.btnView = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
@@ -107,14 +107,14 @@ Partial Class frmSettlementmodesvb
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.Label5)
+        Me.GpData.Controls.Add(Me.TextBox1)
+        Me.GpData.Controls.Add(Me.TextBox3)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.ListBox1)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Controls.Add(Me.Label3)
-        Me.GpData.Controls.Add(Me.lblVNo)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(358, 120)
         Me.GpData.Name = "GpData"
@@ -182,17 +182,6 @@ Partial Class frmSettlementmodesvb
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Name"
-        '
-        'lblVNo
-        '
-        Me.lblVNo.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblVNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblVNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVNo.Location = New System.Drawing.Point(215, 82)
-        Me.lblVNo.Name = "lblVNo"
-        Me.lblVNo.Size = New System.Drawing.Size(328, 22)
-        Me.lblVNo.TabIndex = 32
-        Me.lblVNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GpBtns
         '
@@ -383,16 +372,29 @@ Partial Class frmSettlementmodesvb
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'Label5
+        'TextBox3
         '
-        Me.Label5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(215, 109)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 22)
-        Me.Label5.TabIndex = 40
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(215, 84)
+        Me.TextBox3.MaxLength = 3
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
+        Me.TextBox3.TabIndex = 52
+        Me.TextBox3.Tag = "Enter Description"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(215, 111)
+        Me.TextBox1.MaxLength = 3
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(98, 22)
+        Me.TextBox1.TabIndex = 53
+        Me.TextBox1.Tag = "Enter Description"
         '
         'frmSettlementmodesvb
         '
@@ -425,7 +427,6 @@ Partial Class frmSettlementmodesvb
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents lblVNo As System.Windows.Forms.Label
     Friend WithEvents GpBtns As System.Windows.Forms.GroupBox
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnBottom As System.Windows.Forms.Button
@@ -442,5 +443,6 @@ Partial Class frmSettlementmodesvb
     Friend WithEvents btnView As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

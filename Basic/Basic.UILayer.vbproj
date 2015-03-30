@@ -243,12 +243,6 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmScrip.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.Designer.vb">
-      <DependentUpon>frmScripIndexSetup.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\frmScripMarket.Designer.vb">
       <DependentUpon>frmScripMarket.vb</DependentUpon>
     </Compile>
@@ -271,6 +265,12 @@
       <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
     </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\Trustee.Designer.vb">
+      <DependentUpon>Trustee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\Trustee.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UIModules\UIDialogues\Accounts\frmINV_Status.Designer.vb">
@@ -485,9 +485,6 @@
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScrip.resx">
       <DependentUpon>frmScrip.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScripIndexSetup.resx">
-      <DependentUpon>frmScripIndexSetup.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmScripMarket.resx">
       <DependentUpon>frmScripMarket.vb</DependentUpon>
     </EmbeddedResource>
@@ -499,6 +496,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.resx">
       <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\Trustee.resx">
+      <DependentUpon>Trustee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIDialogues\Accounts\frmINV_Status.resx">
       <DependentUpon>frmINV_Status.vb</DependentUpon>

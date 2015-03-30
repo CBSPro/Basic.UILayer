@@ -28,13 +28,13 @@ Partial Class frmScripIndexSetup
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblVNo = New System.Windows.Forms.Label()
         Me.GpBtns = New System.Windows.Forms.GroupBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnBottom = New System.Windows.Forms.Button()
@@ -51,7 +51,7 @@ Partial Class frmScripIndexSetup
         Me.btnView = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
@@ -107,6 +107,7 @@ Partial Class frmScripIndexSetup
         '
         'GpData
         '
+        Me.GpData.Controls.Add(Me.TextBox3)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.ListBox1)
         Me.GpData.Controls.Add(Me.Label2)
@@ -114,13 +115,22 @@ Partial Class frmScripIndexSetup
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Controls.Add(Me.Label3)
-        Me.GpData.Controls.Add(Me.lblVNo)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(358, 123)
         Me.GpData.Name = "GpData"
         Me.GpData.Size = New System.Drawing.Size(712, 249)
         Me.GpData.TabIndex = 40
         Me.GpData.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(126, 120)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.TabIndex = 39
+        Me.Label4.Text = "Description"
         '
         'ListBox1
         '
@@ -180,17 +190,6 @@ Partial Class frmScripIndexSetup
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 33
         Me.Label3.Text = "Name"
-        '
-        'lblVNo
-        '
-        Me.lblVNo.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblVNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblVNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVNo.Location = New System.Drawing.Point(215, 54)
-        Me.lblVNo.Name = "lblVNo"
-        Me.lblVNo.Size = New System.Drawing.Size(328, 22)
-        Me.lblVNo.TabIndex = 32
-        Me.lblVNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GpBtns
         '
@@ -381,15 +380,17 @@ Partial Class frmScripIndexSetup
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'Label4
+        'TextBox3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(126, 120)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 13)
-        Me.Label4.TabIndex = 39
-        Me.Label4.Text = "Description"
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(215, 56)
+        Me.TextBox3.MaxLength = 3
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
+        Me.TextBox3.TabIndex = 52
+        Me.TextBox3.Tag = "Enter Description"
         '
         'frmScripIndexSetup
         '
@@ -433,11 +434,11 @@ Partial Class frmScripIndexSetup
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents lblVNo As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

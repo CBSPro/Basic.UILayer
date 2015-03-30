@@ -30,8 +30,6 @@ Partial Class frmGroupOfcompany
         Me.GpData = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
-        Me.lblBrName = New System.Windows.Forms.Label()
-        Me.lblVNo = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -52,6 +50,8 @@ Partial Class frmGroupOfcompany
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.AxfpSpread1 = New AxFPSpreadADO.AxfpSpread()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
@@ -108,10 +108,10 @@ Partial Class frmGroupOfcompany
         '
         'GpData
         '
+        Me.GpData.Controls.Add(Me.TextBox1)
+        Me.GpData.Controls.Add(Me.TextBox3)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
-        Me.GpData.Controls.Add(Me.lblBrName)
-        Me.GpData.Controls.Add(Me.lblVNo)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
@@ -142,28 +142,6 @@ Partial Class frmGroupOfcompany
         Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
         Me.LBLPosted.TabIndex = 13
         Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblBrName
-        '
-        Me.lblBrName.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblBrName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblBrName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBrName.Location = New System.Drawing.Point(188, 43)
-        Me.lblBrName.Name = "lblBrName"
-        Me.lblBrName.Size = New System.Drawing.Size(328, 22)
-        Me.lblBrName.TabIndex = 12
-        Me.lblBrName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblVNo
-        '
-        Me.lblVNo.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lblVNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblVNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblVNo.Location = New System.Drawing.Point(188, 70)
-        Me.lblVNo.Name = "lblVNo"
-        Me.lblVNo.Size = New System.Drawing.Size(95, 22)
-        Me.lblVNo.TabIndex = 8
-        Me.lblVNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label4
         '
@@ -395,6 +373,30 @@ Partial Class frmGroupOfcompany
         Me.AxfpSpread1.Size = New System.Drawing.Size(721, 285)
         Me.AxfpSpread1.TabIndex = 39
         '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(187, 44)
+        Me.TextBox3.MaxLength = 3
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(501, 22)
+        Me.TextBox3.TabIndex = 52
+        Me.TextBox3.Tag = "Enter Description"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(187, 70)
+        Me.TextBox1.MaxLength = 3
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(309, 22)
+        Me.TextBox1.TabIndex = 53
+        Me.TextBox1.Tag = "Enter Description"
+        '
         'frmGroupOfcompany
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -424,8 +426,6 @@ Partial Class frmGroupOfcompany
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
-    Friend WithEvents lblBrName As System.Windows.Forms.Label
-    Friend WithEvents lblVNo As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -446,4 +446,6 @@ Partial Class frmGroupOfcompany
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents AxfpSpread1 As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class
