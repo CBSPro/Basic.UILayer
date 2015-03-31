@@ -22,37 +22,55 @@ Partial Class FrmSetUpCertif
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmSetUpCertif))
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.Search = New System.Windows.Forms.GroupBox()
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.txtBankAc = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtBankAc = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GpBtns = New System.Windows.Forms.GroupBox()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnBottom = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnPrevious = New System.Windows.Forms.Button()
+        Me.btnTop = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnFind = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnPost = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnView = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GpBtns.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -116,31 +134,30 @@ Partial Class FrmSetUpCertif
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GpData.Location = New System.Drawing.Point(355, 63)
+        Me.GpData.Location = New System.Drawing.Point(355, 108)
         Me.GpData.Name = "GpData"
         Me.GpData.Size = New System.Drawing.Size(722, 206)
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
-        'DateTimePicker1
+        'CheckBox1
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(122, 85)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 20)
-        Me.DateTimePicker1.TabIndex = 57
-        Me.DateTimePicker1.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(36, 178)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.CheckBox1.Size = New System.Drawing.Size(163, 20)
+        Me.CheckBox1.TabIndex = 59
+        Me.CheckBox1.Text = "Issuance Certificate"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'Label4
+        'ComboBox5
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(45, 91)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 13)
-        Me.Label4.TabIndex = 56
-        Me.Label4.Text = "Issue Date"
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(122, 59)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(146, 24)
+        Me.ComboBox5.TabIndex = 58
         '
         'Label2
         '
@@ -160,13 +177,6 @@ Partial Class FrmSetUpCertif
         Me.ComboBox3.Size = New System.Drawing.Size(146, 24)
         Me.ComboBox3.TabIndex = 53
         '
-        'txtBankAc
-        '
-        Me.txtBankAc.Location = New System.Drawing.Point(122, 28)
-        Me.txtBankAc.Name = "txtBankAc"
-        Me.txtBankAc.Size = New System.Drawing.Size(146, 20)
-        Me.txtBankAc.TabIndex = 48
-        '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
@@ -182,27 +192,6 @@ Partial Class FrmSetUpCertif
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
         Me.ComboBox1.TabIndex = 45
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(64, 61)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(49, 13)
-        Me.Label9.TabIndex = 34
-        Me.Label9.Text = "Amount"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(32, 31)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(85, 13)
-        Me.Label30.TabIndex = 30
-        Me.Label30.Text = "Certificate No"
         '
         'Label10
         '
@@ -234,17 +223,6 @@ Partial Class FrmSetUpCertif
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Institution Type"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(37, 115)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(76, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "No. Of Days"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
         'txtsysCode
         '
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -267,24 +245,64 @@ Partial Class FrmSetUpCertif
         Me.Label1.TabIndex = 0
         Me.Label1.Text = " System Code"
         '
-        'ComboBox5
+        'DateTimePicker1
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(122, 59)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox5.TabIndex = 58
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(122, 85)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 20)
+        Me.DateTimePicker1.TabIndex = 57
+        Me.DateTimePicker1.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
-        'CheckBox1
+        'Label4
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(36, 178)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.CheckBox1.Size = New System.Drawing.Size(163, 20)
-        Me.CheckBox1.TabIndex = 59
-        Me.CheckBox1.Text = "Issuance Certificate"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(45, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(68, 13)
+        Me.Label4.TabIndex = 56
+        Me.Label4.Text = "Issue Date"
+        '
+        'txtBankAc
+        '
+        Me.txtBankAc.Location = New System.Drawing.Point(122, 28)
+        Me.txtBankAc.Name = "txtBankAc"
+        Me.txtBankAc.Size = New System.Drawing.Size(146, 20)
+        Me.txtBankAc.TabIndex = 48
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(64, 61)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(49, 13)
+        Me.Label9.TabIndex = 34
+        Me.Label9.Text = "Amount"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(32, 31)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(85, 13)
+        Me.Label30.TabIndex = 30
+        Me.Label30.Text = "Certificate No"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(37, 115)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(76, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "No. Of Days"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'GroupBox1
         '
@@ -298,36 +316,12 @@ Partial Class FrmSetUpCertif
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.txtBankAc)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(355, 275)
+        Me.GroupBox1.Location = New System.Drawing.Point(355, 320)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(722, 176)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Certificate Details"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(122, 54)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox1.TabIndex = 58
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(122, 112)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox2.TabIndex = 59
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 145)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 13)
-        Me.Label6.TabIndex = 60
-        Me.Label6.Text = "Maturity Date"
         '
         'DateTimePicker2
         '
@@ -339,11 +333,225 @@ Partial Class FrmSetUpCertif
         Me.DateTimePicker2.TabIndex = 61
         Me.DateTimePicker2.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(32, 145)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(83, 13)
+        Me.Label6.TabIndex = 60
+        Me.Label6.Text = "Maturity Date"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(122, 112)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox2.TabIndex = 59
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(122, 54)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox1.TabIndex = 58
+        '
+        'GpBtns
+        '
+        Me.GpBtns.Controls.Add(Me.btnExit)
+        Me.GpBtns.Controls.Add(Me.btnBottom)
+        Me.GpBtns.Controls.Add(Me.btnNext)
+        Me.GpBtns.Controls.Add(Me.btnPrevious)
+        Me.GpBtns.Controls.Add(Me.btnTop)
+        Me.GpBtns.Controls.Add(Me.btnRefresh)
+        Me.GpBtns.Controls.Add(Me.btnFind)
+        Me.GpBtns.Controls.Add(Me.btnCancel)
+        Me.GpBtns.Controls.Add(Me.btnSave)
+        Me.GpBtns.Controls.Add(Me.btnPrint)
+        Me.GpBtns.Controls.Add(Me.btnPost)
+        Me.GpBtns.Controls.Add(Me.btnDelete)
+        Me.GpBtns.Controls.Add(Me.btnView)
+        Me.GpBtns.Controls.Add(Me.btnEdit)
+        Me.GpBtns.Controls.Add(Me.btnAdd)
+        Me.GpBtns.Location = New System.Drawing.Point(355, 54)
+        Me.GpBtns.Name = "GpBtns"
+        Me.GpBtns.Size = New System.Drawing.Size(722, 58)
+        Me.GpBtns.TabIndex = 45
+        Me.GpBtns.TabStop = False
+        '
+        'btnExit
+        '
+        Me.btnExit.Image = CType(resources.GetObject("btnExit.Image"), System.Drawing.Image)
+        Me.btnExit.Location = New System.Drawing.Point(657, 11)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(46, 39)
+        Me.btnExit.TabIndex = 22
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'btnBottom
+        '
+        Me.btnBottom.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBottom.Image = CType(resources.GetObject("btnBottom.Image"), System.Drawing.Image)
+        Me.btnBottom.Location = New System.Drawing.Point(605, 11)
+        Me.btnBottom.Name = "btnBottom"
+        Me.btnBottom.Size = New System.Drawing.Size(48, 39)
+        Me.btnBottom.TabIndex = 34
+        Me.btnBottom.Text = "&Bottom"
+        Me.btnBottom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnBottom.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Image = CType(resources.GetObject("btnNext.Image"), System.Drawing.Image)
+        Me.btnNext.Location = New System.Drawing.Point(560, 11)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(46, 39)
+        Me.btnNext.TabIndex = 33
+        Me.btnNext.Text = "&Next"
+        Me.btnNext.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'btnPrevious
+        '
+        Me.btnPrevious.Image = CType(resources.GetObject("btnPrevious.Image"), System.Drawing.Image)
+        Me.btnPrevious.Location = New System.Drawing.Point(515, 11)
+        Me.btnPrevious.Name = "btnPrevious"
+        Me.btnPrevious.Size = New System.Drawing.Size(46, 39)
+        Me.btnPrevious.TabIndex = 33
+        Me.btnPrevious.Text = "&Prev."
+        Me.btnPrevious.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnPrevious.UseVisualStyleBackColor = True
+        '
+        'btnTop
+        '
+        Me.btnTop.Image = CType(resources.GetObject("btnTop.Image"), System.Drawing.Image)
+        Me.btnTop.Location = New System.Drawing.Point(470, 11)
+        Me.btnTop.Name = "btnTop"
+        Me.btnTop.Size = New System.Drawing.Size(46, 39)
+        Me.btnTop.TabIndex = 31
+        Me.btnTop.Text = "&Top"
+        Me.btnTop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnTop.UseVisualStyleBackColor = True
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.Image = CType(resources.GetObject("btnRefresh.Image"), System.Drawing.Image)
+        Me.btnRefresh.Location = New System.Drawing.Point(420, 11)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(46, 39)
+        Me.btnRefresh.TabIndex = 30
+        Me.btnRefresh.Text = "&Ref."
+        Me.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnRefresh.UseVisualStyleBackColor = True
+        '
+        'btnFind
+        '
+        Me.btnFind.Image = CType(resources.GetObject("btnFind.Image"), System.Drawing.Image)
+        Me.btnFind.Location = New System.Drawing.Point(228, 11)
+        Me.btnFind.Name = "btnFind"
+        Me.btnFind.Size = New System.Drawing.Size(46, 39)
+        Me.btnFind.TabIndex = 29
+        Me.btnFind.Text = "&View"
+        Me.btnFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnFind.UseVisualStyleBackColor = True
+        '
+        'btnCancel
+        '
+        Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
+        Me.btnCancel.Location = New System.Drawing.Point(323, 11)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(48, 39)
+        Me.btnCancel.TabIndex = 5
+        Me.btnCancel.Text = "&Cancel"
+        Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'btnSave
+        '
+        Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
+        Me.btnSave.Location = New System.Drawing.Point(278, 11)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(46, 39)
+        Me.btnSave.TabIndex = 16
+        Me.btnSave.Text = "&Save"
+        Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Image = CType(resources.GetObject("btnPrint.Image"), System.Drawing.Image)
+        Me.btnPrint.Location = New System.Drawing.Point(183, 11)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(46, 39)
+        Me.btnPrint.TabIndex = 28
+        Me.btnPrint.Text = "Pr&int"
+        Me.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
+        'btnPost
+        '
+        Me.btnPost.Image = CType(resources.GetObject("btnPost.Image"), System.Drawing.Image)
+        Me.btnPost.Location = New System.Drawing.Point(138, 11)
+        Me.btnPost.Name = "btnPost"
+        Me.btnPost.Size = New System.Drawing.Size(46, 39)
+        Me.btnPost.TabIndex = 27
+        Me.btnPost.Text = "P&ost"
+        Me.btnPost.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnPost.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Image = CType(resources.GetObject("btnDelete.Image"), System.Drawing.Image)
+        Me.btnDelete.Location = New System.Drawing.Point(93, 11)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(46, 39)
+        Me.btnDelete.TabIndex = 26
+        Me.btnDelete.Text = "&Delete"
+        Me.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
+        'btnView
+        '
+        Me.btnView.Image = CType(resources.GetObject("btnView.Image"), System.Drawing.Image)
+        Me.btnView.Location = New System.Drawing.Point(375, 11)
+        Me.btnView.Name = "btnView"
+        Me.btnView.Size = New System.Drawing.Size(46, 39)
+        Me.btnView.TabIndex = 25
+        Me.btnView.Text = "&Filter"
+        Me.btnView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnView.UseVisualStyleBackColor = True
+        '
+        'btnEdit
+        '
+        Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
+        Me.btnEdit.Location = New System.Drawing.Point(48, 11)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(46, 39)
+        Me.btnEdit.TabIndex = 24
+        Me.btnEdit.Text = "&Edit"
+        Me.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnEdit.UseVisualStyleBackColor = True
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
+        Me.btnAdd.Location = New System.Drawing.Point(3, 11)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(46, 39)
+        Me.btnAdd.TabIndex = 23
+        Me.btnAdd.Text = "&Add"
+        Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
         'FrmSetUpCertif
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1083, 607)
+        Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.Search)
@@ -357,6 +565,7 @@ Partial Class FrmSetUpCertif
         Me.GpData.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GpBtns.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -387,4 +596,20 @@ Partial Class FrmSetUpCertif
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents GpBtns As System.Windows.Forms.GroupBox
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnBottom As System.Windows.Forms.Button
+    Friend WithEvents btnNext As System.Windows.Forms.Button
+    Friend WithEvents btnPrevious As System.Windows.Forms.Button
+    Friend WithEvents btnTop As System.Windows.Forms.Button
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnFind As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents btnPrint As System.Windows.Forms.Button
+    Friend WithEvents btnPost As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
+    Friend WithEvents btnView As System.Windows.Forms.Button
+    Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
 End Class
