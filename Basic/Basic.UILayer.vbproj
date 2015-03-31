@@ -267,6 +267,12 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmSettlementmodesvb.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmSetUpCertif.Designer.vb">
+      <DependentUpon>FrmSetUpCertif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmSetUpCertif.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.Designer.vb">
       <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
     </Compile>
@@ -508,6 +514,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmSettlementmodesvb.resx">
       <DependentUpon>frmSettlementmodesvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\FrmSetUpCertif.resx">
+      <DependentUpon>FrmSetUpCertif.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmStockMarketInfo.resx">
       <DependentUpon>frmStockMarketInfo.vb</DependentUpon>
