@@ -375,12 +375,6 @@
     <Compile Include="UIModules\UITransactions\Accounts\frmRecPay.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UIModules\UITransactions\PortFolio\Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UIModules\UITransactions\PortFolio\Form3.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UIProjStandard\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -618,7 +612,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UIModules\UITransactions\PortFolio\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Basic.BLL\Basic.BLL.vbproj">
       <Project>{846659C1-C327-4904-B330-AFB385F9A7D5}</Project>
