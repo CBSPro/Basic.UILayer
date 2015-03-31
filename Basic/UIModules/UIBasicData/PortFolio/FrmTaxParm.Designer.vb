@@ -44,23 +44,23 @@ Partial Class FrmTaxParm
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbTaxType = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbFund = New System.Windows.Forms.ComboBox()
+        Me.dptConfigDate = New System.Windows.Forms.DateTimePicker()
+        Me.cmbOrdMod = New System.Windows.Forms.ComboBox()
+        Me.cmbSecuType = New System.Windows.Forms.ComboBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.fpTaxParm = New AxFPSpreadADO.AxfpSpread()
+        Me.txtTaxAmnt = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtTaxPercent = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnFetch = New System.Windows.Forms.Button()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -307,12 +307,12 @@ Partial Class FrmTaxParm
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.ComboBox4)
+        Me.GpData.Controls.Add(Me.cmbTaxType)
         Me.GpData.Controls.Add(Me.Label2)
-        Me.GpData.Controls.Add(Me.ComboBox3)
-        Me.GpData.Controls.Add(Me.DateTimePicker1)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.cmbFund)
+        Me.GpData.Controls.Add(Me.dptConfigDate)
+        Me.GpData.Controls.Add(Me.cmbOrdMod)
+        Me.GpData.Controls.Add(Me.cmbSecuType)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label10)
         Me.GpData.Controls.Add(Me.Label26)
@@ -324,21 +324,56 @@ Partial Class FrmTaxParm
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
-        'ComboBox2
+        'cmbTaxType
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(330, 89)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(140, 24)
-        Me.ComboBox2.TabIndex = 46
+        Me.cmbTaxType.FormattingEnabled = True
+        Me.cmbTaxType.Location = New System.Drawing.Point(122, 95)
+        Me.cmbTaxType.Name = "cmbTaxType"
+        Me.cmbTaxType.Size = New System.Drawing.Size(110, 24)
+        Me.cmbTaxType.TabIndex = 55
         '
-        'ComboBox1
+        'Label2
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 65)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(110, 24)
-        Me.ComboBox1.TabIndex = 45
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(51, 106)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Tax Type"
+        '
+        'cmbFund
+        '
+        Me.cmbFund.FormattingEnabled = True
+        Me.cmbFund.Location = New System.Drawing.Point(330, 33)
+        Me.cmbFund.Name = "cmbFund"
+        Me.cmbFund.Size = New System.Drawing.Size(140, 24)
+        Me.cmbFund.TabIndex = 53
+        '
+        'dptConfigDate
+        '
+        Me.dptConfigDate.CustomFormat = "dd/MM/yyyy"
+        Me.dptConfigDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dptConfigDate.Location = New System.Drawing.Point(122, 35)
+        Me.dptConfigDate.Name = "dptConfigDate"
+        Me.dptConfigDate.Size = New System.Drawing.Size(110, 22)
+        Me.dptConfigDate.TabIndex = 52
+        '
+        'cmbOrdMod
+        '
+        Me.cmbOrdMod.FormattingEnabled = True
+        Me.cmbOrdMod.Location = New System.Drawing.Point(330, 89)
+        Me.cmbOrdMod.Name = "cmbOrdMod"
+        Me.cmbOrdMod.Size = New System.Drawing.Size(140, 24)
+        Me.cmbOrdMod.TabIndex = 46
+        '
+        'cmbSecuType
+        '
+        Me.cmbSecuType.FormattingEnabled = True
+        Me.cmbSecuType.Location = New System.Drawing.Point(122, 65)
+        Me.cmbSecuType.Name = "cmbSecuType"
+        Me.cmbSecuType.Size = New System.Drawing.Size(110, 24)
+        Me.cmbSecuType.TabIndex = 45
         '
         'Label30
         '
@@ -380,80 +415,35 @@ Partial Class FrmTaxParm
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Config. Date"
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(122, 35)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(110, 22)
-        Me.DateTimePicker1.TabIndex = 52
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(330, 33)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(140, 24)
-        Me.ComboBox3.TabIndex = 53
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 106)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 13)
-        Me.Label2.TabIndex = 54
-        Me.Label2.Text = "Tax Type"
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(122, 95)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(110, 24)
-        Me.ComboBox4.TabIndex = 55
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.fpTaxParm)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.txtTaxAmnt)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtTaxPercent)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnFetch)
         Me.GroupBox1.Location = New System.Drawing.Point(355, 261)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(722, 340)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         '
-        'Button1
+        'fpTaxParm
         '
-        Me.Button1.Location = New System.Drawing.Point(36, 10)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Fetch"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.fpTaxParm.DataSource = Nothing
+        Me.fpTaxParm.Location = New System.Drawing.Point(16, 73)
+        Me.fpTaxParm.Name = "fpTaxParm"
+        Me.fpTaxParm.OcxState = CType(resources.GetObject("fpTaxParm.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpTaxParm.Size = New System.Drawing.Size(700, 261)
+        Me.fpTaxParm.TabIndex = 60
         '
-        'Label3
+        'txtTaxAmnt
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(27, 43)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 13)
-        Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Tax (Percent)"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(122, 36)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 57
+        Me.txtTaxAmnt.Location = New System.Drawing.Point(330, 40)
+        Me.txtTaxAmnt.Name = "txtTaxAmnt"
+        Me.txtTaxAmnt.Size = New System.Drawing.Size(100, 20)
+        Me.txtTaxAmnt.TabIndex = 59
         '
         'Label4
         '
@@ -465,21 +455,31 @@ Partial Class FrmTaxParm
         Me.Label4.TabIndex = 58
         Me.Label4.Text = "Tax (Amount)"
         '
-        'TextBox2
+        'txtTaxPercent
         '
-        Me.TextBox2.Location = New System.Drawing.Point(330, 40)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 59
+        Me.txtTaxPercent.Location = New System.Drawing.Point(122, 36)
+        Me.txtTaxPercent.Name = "txtTaxPercent"
+        Me.txtTaxPercent.Size = New System.Drawing.Size(100, 20)
+        Me.txtTaxPercent.TabIndex = 57
         '
-        'fpTaxParm
+        'Label3
         '
-        Me.fpTaxParm.DataSource = Nothing
-        Me.fpTaxParm.Location = New System.Drawing.Point(16, 73)
-        Me.fpTaxParm.Name = "fpTaxParm"
-        Me.fpTaxParm.OcxState = CType(resources.GetObject("fpTaxParm.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpTaxParm.Size = New System.Drawing.Size(700, 261)
-        Me.fpTaxParm.TabIndex = 60
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(27, 43)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(84, 13)
+        Me.Label3.TabIndex = 56
+        Me.Label3.Text = "Tax (Percent)"
+        '
+        'btnFetch
+        '
+        Me.btnFetch.Location = New System.Drawing.Point(36, 10)
+        Me.btnFetch.Name = "btnFetch"
+        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
+        Me.btnFetch.TabIndex = 0
+        Me.btnFetch.Text = "Fetch"
+        Me.btnFetch.UseVisualStyleBackColor = True
         '
         'FrmTaxParm
         '
@@ -526,21 +526,21 @@ Partial Class FrmTaxParm
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbOrdMod As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSecuType As System.Windows.Forms.ComboBox
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents dptConfigDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmbFund As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbTaxType As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnFetch As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTaxPercent As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTaxAmnt As System.Windows.Forms.TextBox
     Friend WithEvents fpTaxParm As AxFPSpreadADO.AxfpSpread
 End Class

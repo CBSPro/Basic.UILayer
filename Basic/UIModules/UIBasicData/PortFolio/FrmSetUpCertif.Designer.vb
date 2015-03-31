@@ -28,28 +28,28 @@ Partial Class FrmSetUpCertif
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.cbIssuCertific = New System.Windows.Forms.CheckBox()
+        Me.cmbInstuType = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbBranch = New System.Windows.Forms.ComboBox()
+        Me.cmbInstitute = New System.Windows.Forms.ComboBox()
+        Me.cmbInstituteType = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpIssue = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtBankAc = New System.Windows.Forms.TextBox()
+        Me.txtCertificateNo = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpMaturityDate = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtNoOfDays = New System.Windows.Forms.TextBox()
+        Me.txtAmnt = New System.Windows.Forms.TextBox()
         Me.GpBtns = New System.Windows.Forms.GroupBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnBottom = New System.Windows.Forms.Button()
@@ -122,12 +122,12 @@ Partial Class FrmSetUpCertif
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.CheckBox1)
-        Me.GpData.Controls.Add(Me.ComboBox5)
+        Me.GpData.Controls.Add(Me.cbIssuCertific)
+        Me.GpData.Controls.Add(Me.cmbInstuType)
         Me.GpData.Controls.Add(Me.Label2)
-        Me.GpData.Controls.Add(Me.ComboBox3)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.cmbBranch)
+        Me.GpData.Controls.Add(Me.cmbInstitute)
+        Me.GpData.Controls.Add(Me.cmbInstituteType)
         Me.GpData.Controls.Add(Me.Label10)
         Me.GpData.Controls.Add(Me.Label26)
         Me.GpData.Controls.Add(Me.Label3)
@@ -140,24 +140,24 @@ Partial Class FrmSetUpCertif
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
-        'CheckBox1
+        'cbIssuCertific
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(36, 178)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.CheckBox1.Size = New System.Drawing.Size(163, 20)
-        Me.CheckBox1.TabIndex = 59
-        Me.CheckBox1.Text = "Issuance Certificate"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.cbIssuCertific.AutoSize = True
+        Me.cbIssuCertific.Location = New System.Drawing.Point(36, 178)
+        Me.cbIssuCertific.Name = "cbIssuCertific"
+        Me.cbIssuCertific.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.cbIssuCertific.Size = New System.Drawing.Size(163, 20)
+        Me.cbIssuCertific.TabIndex = 59
+        Me.cbIssuCertific.Text = "Issuance Certificate"
+        Me.cbIssuCertific.UseVisualStyleBackColor = True
         '
-        'ComboBox5
+        'cmbInstuType
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(122, 59)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox5.TabIndex = 58
+        Me.cmbInstuType.FormattingEnabled = True
+        Me.cmbInstuType.Location = New System.Drawing.Point(122, 59)
+        Me.cmbInstuType.Name = "cmbInstuType"
+        Me.cmbInstuType.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstuType.TabIndex = 58
         '
         'Label2
         '
@@ -169,29 +169,29 @@ Partial Class FrmSetUpCertif
         Me.Label2.TabIndex = 55
         Me.Label2.Text = "Institute"
         '
-        'ComboBox3
+        'cmbBranch
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(122, 148)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox3.TabIndex = 53
+        Me.cmbBranch.FormattingEnabled = True
+        Me.cmbBranch.Location = New System.Drawing.Point(122, 148)
+        Me.cmbBranch.Name = "cmbBranch"
+        Me.cmbBranch.Size = New System.Drawing.Size(146, 24)
+        Me.cmbBranch.TabIndex = 53
         '
-        'ComboBox2
+        'cmbInstitute
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(122, 116)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox2.TabIndex = 46
+        Me.cmbInstitute.FormattingEnabled = True
+        Me.cmbInstitute.Location = New System.Drawing.Point(122, 116)
+        Me.cmbInstitute.Name = "cmbInstitute"
+        Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstitute.TabIndex = 46
         '
-        'ComboBox1
+        'cmbInstituteType
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 86)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox1.TabIndex = 45
+        Me.cmbInstituteType.FormattingEnabled = True
+        Me.cmbInstituteType.Location = New System.Drawing.Point(122, 86)
+        Me.cmbInstituteType.Name = "cmbInstituteType"
+        Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstituteType.TabIndex = 45
         '
         'Label10
         '
@@ -245,15 +245,15 @@ Partial Class FrmSetUpCertif
         Me.Label1.TabIndex = 0
         Me.Label1.Text = " System Code"
         '
-        'DateTimePicker1
+        'dtpIssue
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(122, 85)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 20)
-        Me.DateTimePicker1.TabIndex = 57
-        Me.DateTimePicker1.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
+        Me.dtpIssue.CustomFormat = "dd/MM/yyyy"
+        Me.dtpIssue.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpIssue.Location = New System.Drawing.Point(122, 85)
+        Me.dtpIssue.Name = "dtpIssue"
+        Me.dtpIssue.Size = New System.Drawing.Size(146, 20)
+        Me.dtpIssue.TabIndex = 57
+        Me.dtpIssue.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
         'Label4
         '
@@ -265,12 +265,12 @@ Partial Class FrmSetUpCertif
         Me.Label4.TabIndex = 56
         Me.Label4.Text = "Issue Date"
         '
-        'txtBankAc
+        'txtCertificateNo
         '
-        Me.txtBankAc.Location = New System.Drawing.Point(122, 28)
-        Me.txtBankAc.Name = "txtBankAc"
-        Me.txtBankAc.Size = New System.Drawing.Size(146, 20)
-        Me.txtBankAc.TabIndex = 48
+        Me.txtCertificateNo.Location = New System.Drawing.Point(122, 28)
+        Me.txtCertificateNo.Name = "txtCertificateNo"
+        Me.txtCertificateNo.Size = New System.Drawing.Size(146, 20)
+        Me.txtCertificateNo.TabIndex = 48
         '
         'Label9
         '
@@ -306,15 +306,15 @@ Partial Class FrmSetUpCertif
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
+        Me.GroupBox1.Controls.Add(Me.dtpMaturityDate)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtNoOfDays)
+        Me.GroupBox1.Controls.Add(Me.txtAmnt)
         Me.GroupBox1.Controls.Add(Me.Label30)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.dtpIssue)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.txtBankAc)
+        Me.GroupBox1.Controls.Add(Me.txtCertificateNo)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Location = New System.Drawing.Point(355, 320)
         Me.GroupBox1.Name = "GroupBox1"
@@ -323,15 +323,15 @@ Partial Class FrmSetUpCertif
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Certificate Details"
         '
-        'DateTimePicker2
+        'dtpMaturityDate
         '
-        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(122, 138)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(146, 20)
-        Me.DateTimePicker2.TabIndex = 61
-        Me.DateTimePicker2.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
+        Me.dtpMaturityDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpMaturityDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpMaturityDate.Location = New System.Drawing.Point(122, 138)
+        Me.dtpMaturityDate.Name = "dtpMaturityDate"
+        Me.dtpMaturityDate.Size = New System.Drawing.Size(146, 20)
+        Me.dtpMaturityDate.TabIndex = 61
+        Me.dtpMaturityDate.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
         'Label6
         '
@@ -343,19 +343,19 @@ Partial Class FrmSetUpCertif
         Me.Label6.TabIndex = 60
         Me.Label6.Text = "Maturity Date"
         '
-        'TextBox2
+        'txtNoOfDays
         '
-        Me.TextBox2.Location = New System.Drawing.Point(122, 112)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox2.TabIndex = 59
+        Me.txtNoOfDays.Location = New System.Drawing.Point(122, 112)
+        Me.txtNoOfDays.Name = "txtNoOfDays"
+        Me.txtNoOfDays.Size = New System.Drawing.Size(146, 20)
+        Me.txtNoOfDays.TabIndex = 59
         '
-        'TextBox1
+        'txtAmnt
         '
-        Me.TextBox1.Location = New System.Drawing.Point(122, 54)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox1.TabIndex = 58
+        Me.txtAmnt.Location = New System.Drawing.Point(122, 54)
+        Me.txtAmnt.Name = "txtAmnt"
+        Me.txtAmnt.Size = New System.Drawing.Size(146, 20)
+        Me.txtAmnt.TabIndex = 58
         '
         'GpBtns
         '
@@ -574,9 +574,9 @@ Partial Class FrmSetUpCertif
     Friend WithEvents GVHelp As System.Windows.Forms.DataGridView
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents txtBankAc As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtCertificateNo As System.Windows.Forms.TextBox
+    Friend WithEvents cmbInstitute As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbInstituteType As System.Windows.Forms.ComboBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -585,17 +585,17 @@ Partial Class FrmSetUpCertif
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbBranch As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents dtpIssue As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmbInstuType As System.Windows.Forms.ComboBox
+    Friend WithEvents cbIssuCertific As System.Windows.Forms.CheckBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtAmnt As System.Windows.Forms.TextBox
+    Friend WithEvents txtNoOfDays As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpMaturityDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents GpBtns As System.Windows.Forms.GroupBox
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnBottom As System.Windows.Forms.Button

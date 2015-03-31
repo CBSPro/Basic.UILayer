@@ -27,12 +27,18 @@ Partial Class FrmExpoAndMargn
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.dtpValid = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbInstitute = New System.Windows.Forms.ComboBox()
+        Me.cmbInstituteType = New System.Windows.Forms.ComboBox()
+        Me.rbMargin = New System.Windows.Forms.RadioButton()
+        Me.rbBorrow = New System.Windows.Forms.RadioButton()
+        Me.rbLending = New System.Windows.Forms.RadioButton()
         Me.txtDesc = New System.Windows.Forms.TextBox()
-        Me.txtBankAc = New System.Windows.Forms.TextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtAmnt = New System.Windows.Forms.TextBox()
+        Me.cmbFund = New System.Windows.Forms.ComboBox()
+        Me.cmbMode = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -41,12 +47,6 @@ Partial Class FrmExpoAndMargn
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpData.SuspendLayout()
@@ -101,18 +101,18 @@ Partial Class FrmExpoAndMargn
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.DateTimePicker1)
+        Me.GpData.Controls.Add(Me.dtpValid)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.Label2)
-        Me.GpData.Controls.Add(Me.ComboBox4)
-        Me.GpData.Controls.Add(Me.ComboBox3)
-        Me.GpData.Controls.Add(Me.RadioButton3)
-        Me.GpData.Controls.Add(Me.RadioButton2)
-        Me.GpData.Controls.Add(Me.RadioButton1)
+        Me.GpData.Controls.Add(Me.cmbInstitute)
+        Me.GpData.Controls.Add(Me.cmbInstituteType)
+        Me.GpData.Controls.Add(Me.rbMargin)
+        Me.GpData.Controls.Add(Me.rbBorrow)
+        Me.GpData.Controls.Add(Me.rbLending)
         Me.GpData.Controls.Add(Me.txtDesc)
-        Me.GpData.Controls.Add(Me.txtBankAc)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.txtAmnt)
+        Me.GpData.Controls.Add(Me.cmbFund)
+        Me.GpData.Controls.Add(Me.cmbMode)
         Me.GpData.Controls.Add(Me.Label9)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label10)
@@ -128,58 +128,116 @@ Partial Class FrmExpoAndMargn
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
-        'RadioButton2
+        'dtpValid
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(278, 61)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(164, 20)
-        Me.RadioButton2.TabIndex = 51
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Borrowing Exposure"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.dtpValid.CustomFormat = "dd/MM/yyyy"
+        Me.dtpValid.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpValid.Location = New System.Drawing.Point(122, 211)
+        Me.dtpValid.Name = "dtpValid"
+        Me.dtpValid.Size = New System.Drawing.Size(146, 22)
+        Me.dtpValid.TabIndex = 57
+        Me.dtpValid.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
-        'RadioButton1
+        'Label4
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(122, 61)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(150, 20)
-        Me.RadioButton1.TabIndex = 50
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Lending Exposure"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(31, 219)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(79, 13)
+        Me.Label4.TabIndex = 56
+        Me.Label4.Text = "Validity Date"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(64, 189)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
+        Me.Label2.TabIndex = 55
+        Me.Label2.Text = "Institute"
+        '
+        'cmbInstitute
+        '
+        Me.cmbInstitute.FormattingEnabled = True
+        Me.cmbInstitute.Location = New System.Drawing.Point(122, 178)
+        Me.cmbInstitute.Name = "cmbInstitute"
+        Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstitute.TabIndex = 54
+        '
+        'cmbInstituteType
+        '
+        Me.cmbInstituteType.FormattingEnabled = True
+        Me.cmbInstituteType.Location = New System.Drawing.Point(122, 148)
+        Me.cmbInstituteType.Name = "cmbInstituteType"
+        Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstituteType.TabIndex = 53
+        '
+        'rbMargin
+        '
+        Me.rbMargin.AutoSize = True
+        Me.rbMargin.Location = New System.Drawing.Point(448, 61)
+        Me.rbMargin.Name = "rbMargin"
+        Me.rbMargin.Size = New System.Drawing.Size(73, 20)
+        Me.rbMargin.TabIndex = 52
+        Me.rbMargin.TabStop = True
+        Me.rbMargin.Text = "Margin"
+        Me.rbMargin.UseVisualStyleBackColor = True
+        '
+        'rbBorrow
+        '
+        Me.rbBorrow.AutoSize = True
+        Me.rbBorrow.Location = New System.Drawing.Point(278, 61)
+        Me.rbBorrow.Name = "rbBorrow"
+        Me.rbBorrow.Size = New System.Drawing.Size(164, 20)
+        Me.rbBorrow.TabIndex = 51
+        Me.rbBorrow.TabStop = True
+        Me.rbBorrow.Text = "Borrowing Exposure"
+        Me.rbBorrow.UseVisualStyleBackColor = True
+        '
+        'rbLending
+        '
+        Me.rbLending.AutoSize = True
+        Me.rbLending.Location = New System.Drawing.Point(122, 61)
+        Me.rbLending.Name = "rbLending"
+        Me.rbLending.Size = New System.Drawing.Size(150, 20)
+        Me.rbLending.TabIndex = 50
+        Me.rbLending.TabStop = True
+        Me.rbLending.Text = "Lending Exposure"
+        Me.rbLending.UseVisualStyleBackColor = True
         '
         'txtDesc
         '
         Me.txtDesc.Location = New System.Drawing.Point(122, 283)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.txtDesc.Size = New System.Drawing.Size(146, 42)
         Me.txtDesc.TabIndex = 49
         '
-        'txtBankAc
+        'txtAmnt
         '
-        Me.txtBankAc.Location = New System.Drawing.Point(122, 252)
-        Me.txtBankAc.Name = "txtBankAc"
-        Me.txtBankAc.Size = New System.Drawing.Size(146, 22)
-        Me.txtBankAc.TabIndex = 48
+        Me.txtAmnt.Location = New System.Drawing.Point(122, 252)
+        Me.txtAmnt.Name = "txtAmnt"
+        Me.txtAmnt.Size = New System.Drawing.Size(146, 22)
+        Me.txtAmnt.TabIndex = 48
         '
-        'ComboBox2
+        'cmbFund
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(122, 116)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox2.TabIndex = 46
+        Me.cmbFund.FormattingEnabled = True
+        Me.cmbFund.Location = New System.Drawing.Point(122, 116)
+        Me.cmbFund.Name = "cmbFund"
+        Me.cmbFund.Size = New System.Drawing.Size(146, 24)
+        Me.cmbFund.TabIndex = 46
         '
-        'ComboBox1
+        'cmbMode
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 86)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox1.TabIndex = 45
+        Me.cmbMode.FormattingEnabled = True
+        Me.cmbMode.Location = New System.Drawing.Point(122, 86)
+        Me.cmbMode.Name = "cmbMode"
+        Me.cmbMode.Size = New System.Drawing.Size(146, 24)
+        Me.cmbMode.TabIndex = 45
         '
         'Label9
         '
@@ -265,63 +323,6 @@ Partial Class FrmExpoAndMargn
         Me.Label1.TabIndex = 0
         Me.Label1.Text = " System Code"
         '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(448, 61)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(73, 20)
-        Me.RadioButton3.TabIndex = 52
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Margin"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(122, 148)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox3.TabIndex = 53
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(122, 178)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(146, 24)
-        Me.ComboBox4.TabIndex = 54
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(64, 189)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
-        Me.Label2.TabIndex = 55
-        Me.Label2.Text = "Institute"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(31, 219)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 13)
-        Me.Label4.TabIndex = 56
-        Me.Label4.Text = "Validity Date"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(122, 211)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 22)
-        Me.DateTimePicker1.TabIndex = 57
-        Me.DateTimePicker1.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
-        '
         'FrmExpoAndMargn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -345,12 +346,12 @@ Partial Class FrmExpoAndMargn
     Friend WithEvents GVHelp As System.Windows.Forms.DataGridView
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbBorrow As System.Windows.Forms.RadioButton
+    Friend WithEvents rbLending As System.Windows.Forms.RadioButton
     Friend WithEvents txtDesc As System.Windows.Forms.TextBox
-    Friend WithEvents txtBankAc As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtAmnt As System.Windows.Forms.TextBox
+    Friend WithEvents cmbFund As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbMode As System.Windows.Forms.ComboBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -359,10 +360,10 @@ Partial Class FrmExpoAndMargn
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents rbMargin As System.Windows.Forms.RadioButton
+    Friend WithEvents cmbInstituteType As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbInstitute As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpValid As System.Windows.Forms.DateTimePicker
 End Class

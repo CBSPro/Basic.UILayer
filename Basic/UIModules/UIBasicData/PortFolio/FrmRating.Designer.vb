@@ -29,7 +29,7 @@ Partial Class FrmRating
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
         Me.txtDesc = New System.Windows.Forms.TextBox()
-        Me.txtBankAc = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
@@ -106,7 +106,7 @@ Partial Class FrmRating
         'GpData
         '
         Me.GpData.Controls.Add(Me.txtDesc)
-        Me.GpData.Controls.Add(Me.txtBankAc)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label9)
         Me.GpData.Controls.Add(Me.Label5)
         Me.GpData.Controls.Add(Me.txtsysCode)
@@ -127,12 +127,12 @@ Partial Class FrmRating
         Me.txtDesc.Size = New System.Drawing.Size(347, 65)
         Me.txtDesc.TabIndex = 49
         '
-        'txtBankAc
+        'txtName
         '
-        Me.txtBankAc.Location = New System.Drawing.Point(122, 59)
-        Me.txtBankAc.Name = "txtBankAc"
-        Me.txtBankAc.Size = New System.Drawing.Size(347, 22)
-        Me.txtBankAc.TabIndex = 48
+        Me.txtName.Location = New System.Drawing.Point(122, 59)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(347, 22)
+        Me.txtName.TabIndex = 48
         '
         'Label9
         '
@@ -393,7 +393,7 @@ Partial Class FrmRating
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents txtDesc As System.Windows.Forms.TextBox
-    Friend WithEvents txtBankAc As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
