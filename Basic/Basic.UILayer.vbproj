@@ -195,6 +195,12 @@
     <Compile Include="UIModules\UIBasicData\PortFolio\frmCalendar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmCreditRateComp.Designer.vb">
+      <DependentUpon>FrmCreditRateComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UIBasicData\PortFolio\FrmCreditRateComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UIBasicData\PortFolio\frmCustodian.Designer.vb">
       <DependentUpon>frmCustodian.vb</DependentUpon>
     </Compile>
@@ -484,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmCalendar.resx">
       <DependentUpon>frmCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\FrmCreditRateComp.resx">
+      <DependentUpon>FrmCreditRateComp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UIBasicData\PortFolio\frmCustodian.resx">
       <DependentUpon>frmCustodian.vb</DependentUpon>

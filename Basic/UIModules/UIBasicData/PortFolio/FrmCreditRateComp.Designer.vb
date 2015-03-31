@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmFinanInfo
+Partial Class FrmCreditRateComp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class FrmFinanInfo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFinanInfo))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCreditRateComp))
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.Search = New System.Windows.Forms.GroupBox()
         Me.GVHelp = New System.Windows.Forms.DataGridView()
@@ -51,10 +51,27 @@ Partial Class FrmFinanInfo
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmbRating = New System.Windows.Forms.ComboBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmbEntity = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtSysCode2 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cmbEntType = New System.Windows.Forms.ComboBox()
+        Me.cmbRatingType = New System.Windows.Forms.ComboBox()
+        Me.cmbRating2 = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -66,7 +83,7 @@ Partial Class FrmFinanInfo
         Me.LblTypeValid.Name = "LblTypeValid"
         Me.LblTypeValid.Size = New System.Drawing.Size(1076, 52)
         Me.LblTypeValid.TabIndex = 34
-        Me.LblTypeValid.Text = "Financial Type Information"
+        Me.LblTypeValid.Text = "Credit Rating Company Information"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Search
@@ -295,6 +312,8 @@ Partial Class FrmFinanInfo
         '
         'GpData
         '
+        Me.GpData.Controls.Add(Me.cmbRating)
+        Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.txtDescrip)
         Me.GpData.Controls.Add(Me.Label3)
@@ -305,7 +324,7 @@ Partial Class FrmFinanInfo
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(532, 182)
+        Me.GpData.Size = New System.Drawing.Size(532, 140)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
@@ -318,17 +337,16 @@ Partial Class FrmFinanInfo
         '
         'txtDescrip
         '
-        Me.txtDescrip.Location = New System.Drawing.Point(187, 75)
-        Me.txtDescrip.Multiline = True
+        Me.txtDescrip.Location = New System.Drawing.Point(187, 103)
         Me.txtDescrip.Name = "txtDescrip"
-        Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
+        Me.txtDescrip.Size = New System.Drawing.Size(326, 22)
         Me.txtDescrip.TabIndex = 17
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 80)
+        Me.Label3.Location = New System.Drawing.Point(108, 108)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 15
@@ -363,7 +381,7 @@ Partial Class FrmFinanInfo
         Me.txtsysCode.Location = New System.Drawing.Point(187, 17)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
-        Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
+        Me.txtsysCode.Size = New System.Drawing.Size(121, 22)
         Me.txtsysCode.TabIndex = 0
         Me.txtsysCode.Tag = "Enter Description"
         '
@@ -377,23 +395,194 @@ Partial Class FrmFinanInfo
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "System Code"
         '
-        'FrmFinanInfo
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(140, 78)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Rating"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'cmbRating
+        '
+        Me.cmbRating.FormattingEnabled = True
+        Me.cmbRating.Location = New System.Drawing.Point(187, 73)
+        Me.cmbRating.Name = "cmbRating"
+        Me.cmbRating.Size = New System.Drawing.Size(121, 24)
+        Me.cmbRating.TabIndex = 44
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.cmbRating2)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.cmbRatingType)
+        Me.GroupBox1.Controls.Add(Me.cmbEntType)
+        Me.GroupBox1.Controls.Add(Me.cmbEntity)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.txtSysCode2)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(359, 269)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(532, 140)
+        Me.GroupBox1.TabIndex = 45
+        Me.GroupBox1.TabStop = False
+        '
+        'cmbEntity
+        '
+        Me.cmbEntity.FormattingEnabled = True
+        Me.cmbEntity.Location = New System.Drawing.Point(187, 73)
+        Me.cmbEntity.Name = "cmbEntity"
+        Me.cmbEntity.Size = New System.Drawing.Size(121, 24)
+        Me.cmbEntity.TabIndex = 44
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(140, 78)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 19
+        Me.Label5.Text = "Entity"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(108, 108)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(76, 13)
+        Me.Label6.TabIndex = 15
+        Me.Label6.Text = "Rating Type"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(108, 50)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(71, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Entity Type"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label8
+        '
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Red
+        Me.Label8.Location = New System.Drawing.Point(575, 18)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(137, 42)
+        Me.Label8.TabIndex = 13
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtSysCode2
+        '
+        Me.txtSysCode2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSysCode2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSysCode2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSysCode2.Location = New System.Drawing.Point(187, 17)
+        Me.txtSysCode2.MaxLength = 3
+        Me.txtSysCode2.Name = "txtSysCode2"
+        Me.txtSysCode2.Size = New System.Drawing.Size(121, 22)
+        Me.txtSysCode2.TabIndex = 0
+        Me.txtSysCode2.Tag = "Enter Description"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(99, 21)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(80, 13)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "System Code"
+        '
+        'cmbEntType
+        '
+        Me.cmbEntType.FormattingEnabled = True
+        Me.cmbEntType.Location = New System.Drawing.Point(187, 43)
+        Me.cmbEntType.Name = "cmbEntType"
+        Me.cmbEntType.Size = New System.Drawing.Size(121, 24)
+        Me.cmbEntType.TabIndex = 45
+        '
+        'cmbRatingType
+        '
+        Me.cmbRatingType.FormattingEnabled = True
+        Me.cmbRatingType.Location = New System.Drawing.Point(187, 103)
+        Me.cmbRatingType.Name = "cmbRatingType"
+        Me.cmbRatingType.Size = New System.Drawing.Size(121, 24)
+        Me.cmbRatingType.TabIndex = 46
+        '
+        'cmbRating2
+        '
+        Me.cmbRating2.FormattingEnabled = True
+        Me.cmbRating2.Location = New System.Drawing.Point(405, 97)
+        Me.cmbRating2.Name = "cmbRating2"
+        Me.cmbRating2.Size = New System.Drawing.Size(121, 24)
+        Me.cmbRating2.TabIndex = 48
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(355, 108)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(44, 13)
+        Me.Label10.TabIndex = 47
+        Me.Label10.Text = "Rating"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(324, 26)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(75, 13)
+        Me.Label11.TabIndex = 49
+        Me.Label11.Text = "Rating Date"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(764, 295)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(108, 20)
+        Me.DateTimePicker1.TabIndex = 50
+        '
+        'FrmCreditRateComp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1079, 562)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
-        Me.Name = "FrmFinanInfo"
-        Me.Text = "FrmFinanInfo"
+        Me.Name = "FrmCreditRateComp"
+        Me.Text = "Credit Rating Company Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GpBtns.ResumeLayout(False)
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -425,4 +614,20 @@ Partial Class FrmFinanInfo
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents cmbRating As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents cmbEntity As System.Windows.Forms.ComboBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtSysCode2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents cmbEntType As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbRatingType As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbRating2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
 End Class
