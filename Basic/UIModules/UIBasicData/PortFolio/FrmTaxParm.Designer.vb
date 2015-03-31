@@ -492,7 +492,7 @@ Partial Class FrmTaxParm
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmTaxParm"
-        Me.Text = "FrmTaxParm"
+        Me.Text = "Tax Parmameters"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

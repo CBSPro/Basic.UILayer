@@ -103,7 +103,7 @@ Partial Class FrmFinanInsInfo
         Me.LblTypeValid.Name = "LblTypeValid"
         Me.LblTypeValid.Size = New System.Drawing.Size(1076, 52)
         Me.LblTypeValid.TabIndex = 35
-        Me.LblTypeValid.Text = "Financial Type Information"
+        Me.LblTypeValid.Text = "Financial Institution Information"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Search
@@ -786,7 +786,7 @@ Partial Class FrmFinanInsInfo
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmFinanInsInfo"
-        Me.Text = "FrmFinanInsInfo"
+        Me.Text = "Financial Institution Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

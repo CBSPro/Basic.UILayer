@@ -557,7 +557,7 @@ Partial Class FrmSetUpCertif
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmSetUpCertif"
-        Me.Text = "FrmExpoAndMargn"
+        Me.Text = "Setup Certificate Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

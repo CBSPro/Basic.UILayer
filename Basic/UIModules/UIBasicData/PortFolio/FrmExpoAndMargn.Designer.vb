@@ -332,7 +332,7 @@ Partial Class FrmExpoAndMargn
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmExpoAndMargn"
-        Me.Text = "FrmExpoAndMargn"
+        Me.Text = "Set Exposure And Margin Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

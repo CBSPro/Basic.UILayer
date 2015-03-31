@@ -44,15 +44,15 @@ Partial Class frmCustodian
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtDescrip = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtDescrip = New System.Windows.Forms.TextBox()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.GpBtns.SuspendLayout()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -313,6 +313,28 @@ Partial Class frmCustodian
         Me.GpData.TabIndex = 41
         Me.GpData.TabStop = False
         '
+        'txtAddress
+        '
+        Me.txtAddress.Location = New System.Drawing.Point(187, 74)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(326, 22)
+        Me.txtAddress.TabIndex = 19
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(187, 45)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(326, 22)
+        Me.txtName.TabIndex = 18
+        '
+        'txtDescrip
+        '
+        Me.txtDescrip.Location = New System.Drawing.Point(187, 103)
+        Me.txtDescrip.Multiline = True
+        Me.txtDescrip.Name = "txtDescrip"
+        Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
+        Me.txtDescrip.TabIndex = 17
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -376,28 +398,6 @@ Partial Class frmCustodian
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "System Code"
         '
-        'txtDescrip
-        '
-        Me.txtDescrip.Location = New System.Drawing.Point(187, 103)
-        Me.txtDescrip.Multiline = True
-        Me.txtDescrip.Name = "txtDescrip"
-        Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
-        Me.txtDescrip.TabIndex = 17
-        '
-        'txtName
-        '
-        Me.txtName.Location = New System.Drawing.Point(187, 45)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(326, 22)
-        Me.txtName.TabIndex = 18
-        '
-        'txtAddress
-        '
-        Me.txtAddress.Location = New System.Drawing.Point(187, 74)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(326, 22)
-        Me.txtAddress.TabIndex = 19
-        '
         'frmCustodian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -408,7 +408,7 @@ Partial Class frmCustodian
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmCustodian"
-        Me.Text = "frmCustodian"
+        Me.Text = "Custodian Information"
         Me.GpBtns.ResumeLayout(False)
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

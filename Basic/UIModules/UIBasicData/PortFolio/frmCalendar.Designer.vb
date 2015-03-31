@@ -504,7 +504,7 @@ Partial Class frmCalendar
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmCalendar"
-        Me.Text = "frmCalendar"
+        Me.Text = "Calendar"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

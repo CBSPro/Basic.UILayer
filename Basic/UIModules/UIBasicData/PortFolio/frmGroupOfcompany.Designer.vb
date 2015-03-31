@@ -408,7 +408,7 @@ Partial Class frmGroupOfcompany
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmGroupOfcompany"
-        Me.Text = "frmGroupOfcompany"
+        Me.Text = "Group Of companies Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,3 +1,3 @@
-﻿Public Class frmScripIndexSetup
+﻿Public Class frmScripMarket
 
 End Class

@@ -365,7 +365,7 @@ Partial Class frmFundWiseControl
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmFundWiseControl"
-        Me.Text = "frmFundWiseControl"
+        Me.Text = "Fund Wise Control"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

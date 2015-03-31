@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmScripIndexSetup
+Partial Class frmScripMarket
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmScripIndexSetup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmScripIndexSetup))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmScripMarket))
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.Search = New System.Windows.Forms.GroupBox()
         Me.GVHelp = New System.Windows.Forms.DataGridView()
@@ -351,7 +351,7 @@ Partial Class frmScripIndexSetup
         Me.AxfpSpread1.Size = New System.Drawing.Size(712, 380)
         Me.AxfpSpread1.TabIndex = 42
         '
-        'frmScripIndexSetup
+        'frmScripMarket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -361,8 +361,8 @@ Partial Class frmScripIndexSetup
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
-        Me.Name = "frmScripIndexSetup"
-        Me.Text = "frmScripIndexSetup"
+        Me.Name = "frmScripMarket"
+        Me.Text = "Scrip Market Setup"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

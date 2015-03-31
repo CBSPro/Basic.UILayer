@@ -44,6 +44,8 @@ Partial Class frmBroker
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtMnemo = New System.Windows.Forms.TextBox()
+        Me.txtBrokerCode = New System.Windows.Forms.TextBox()
         Me.txtDescription = New System.Windows.Forms.TextBox()
         Me.txtNCSS = New System.Windows.Forms.TextBox()
         Me.txtFax = New System.Windows.Forms.TextBox()
@@ -83,8 +85,6 @@ Partial Class frmBroker
         Me.fpgrid2 = New AxFPSpreadADO.AxfpSpread()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.fpgrid3 = New AxFPSpreadADO.AxfpSpread()
-        Me.txtBrokerCode = New System.Windows.Forms.TextBox()
-        Me.txtMnemo = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -372,6 +372,20 @@ Partial Class frmBroker
         Me.GpData.Size = New System.Drawing.Size(722, 274)
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
+        '
+        'txtMnemo
+        '
+        Me.txtMnemo.Location = New System.Drawing.Point(512, 30)
+        Me.txtMnemo.Name = "txtMnemo"
+        Me.txtMnemo.Size = New System.Drawing.Size(181, 22)
+        Me.txtMnemo.TabIndex = 54
+        '
+        'txtBrokerCode
+        '
+        Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
+        Me.txtBrokerCode.Name = "txtBrokerCode"
+        Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
+        Me.txtBrokerCode.TabIndex = 53
         '
         'txtDescription
         '
@@ -743,20 +757,6 @@ Partial Class frmBroker
         Me.fpgrid3.Size = New System.Drawing.Size(693, 134)
         Me.fpgrid3.TabIndex = 0
         '
-        'txtBrokerCode
-        '
-        Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
-        Me.txtBrokerCode.Name = "txtBrokerCode"
-        Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
-        Me.txtBrokerCode.TabIndex = 53
-        '
-        'txtMnemo
-        '
-        Me.txtMnemo.Location = New System.Drawing.Point(512, 30)
-        Me.txtMnemo.Name = "txtMnemo"
-        Me.txtMnemo.Size = New System.Drawing.Size(181, 22)
-        Me.txtMnemo.TabIndex = 54
-        '
         'frmBroker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -768,7 +768,7 @@ Partial Class frmBroker
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmBroker"
-        Me.Text = "frmBroker"
+        Me.Text = "Broker Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

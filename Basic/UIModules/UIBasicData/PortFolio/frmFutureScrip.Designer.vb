@@ -546,7 +546,7 @@ Partial Class frmFutureScrip
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmFutureScrip"
-        Me.Text = "frmFutureScrip"
+        Me.Text = "Future Scrip"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

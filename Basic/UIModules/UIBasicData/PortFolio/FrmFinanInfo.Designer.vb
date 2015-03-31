@@ -387,7 +387,7 @@ Partial Class FrmFinanInfo
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmFinanInfo"
-        Me.Text = "FrmFinanInfo"
+        Me.Text = "Financial Type Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

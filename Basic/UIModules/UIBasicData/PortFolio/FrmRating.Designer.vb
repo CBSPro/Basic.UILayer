@@ -377,7 +377,7 @@ Partial Class FrmRating
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmRating"
-        Me.Text = "FrmExpoAndMargn"
+        Me.Text = "Rating Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

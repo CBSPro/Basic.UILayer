@@ -44,6 +44,11 @@ Partial Class frmScrip
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtSecurityCode = New System.Windows.Forms.TextBox()
+        Me.txtCompCode = New System.Windows.Forms.TextBox()
+        Me.txtAuthorizeCapital = New System.Windows.Forms.TextBox()
+        Me.txtPaidUpCapital = New System.Windows.Forms.TextBox()
+        Me.txtFaceValue = New System.Windows.Forms.TextBox()
         Me.txtDescription = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtSymbol = New System.Windows.Forms.TextBox()
@@ -71,11 +76,6 @@ Partial Class frmScrip
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtFaceValue = New System.Windows.Forms.TextBox()
-        Me.txtPaidUpCapital = New System.Windows.Forms.TextBox()
-        Me.txtAuthorizeCapital = New System.Windows.Forms.TextBox()
-        Me.txtCompCode = New System.Windows.Forms.TextBox()
-        Me.txtSecurityCode = New System.Windows.Forms.TextBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -359,6 +359,66 @@ Partial Class frmScrip
         Me.GpData.TabIndex = 38
         Me.GpData.TabStop = False
         '
+        'txtSecurityCode
+        '
+        Me.txtSecurityCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSecurityCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSecurityCode.Location = New System.Drawing.Point(152, 309)
+        Me.txtSecurityCode.MaxLength = 3
+        Me.txtSecurityCode.Name = "txtSecurityCode"
+        Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtSecurityCode.TabIndex = 59
+        Me.txtSecurityCode.Tag = "Enter Description"
+        '
+        'txtCompCode
+        '
+        Me.txtCompCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtCompCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCompCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCompCode.Location = New System.Drawing.Point(152, 282)
+        Me.txtCompCode.MaxLength = 3
+        Me.txtCompCode.Name = "txtCompCode"
+        Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtCompCode.TabIndex = 58
+        Me.txtCompCode.Tag = "Enter Description"
+        '
+        'txtAuthorizeCapital
+        '
+        Me.txtAuthorizeCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtAuthorizeCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAuthorizeCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAuthorizeCapital.Location = New System.Drawing.Point(152, 226)
+        Me.txtAuthorizeCapital.MaxLength = 3
+        Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
+        Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtAuthorizeCapital.TabIndex = 57
+        Me.txtAuthorizeCapital.Tag = "Enter Description"
+        '
+        'txtPaidUpCapital
+        '
+        Me.txtPaidUpCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPaidUpCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPaidUpCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPaidUpCapital.Location = New System.Drawing.Point(152, 190)
+        Me.txtPaidUpCapital.MaxLength = 3
+        Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
+        Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtPaidUpCapital.TabIndex = 56
+        Me.txtPaidUpCapital.Tag = "Enter Description"
+        '
+        'txtFaceValue
+        '
+        Me.txtFaceValue.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtFaceValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFaceValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFaceValue.Location = New System.Drawing.Point(152, 158)
+        Me.txtFaceValue.MaxLength = 3
+        Me.txtFaceValue.Name = "txtFaceValue"
+        Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
+        Me.txtFaceValue.TabIndex = 55
+        Me.txtFaceValue.Tag = "Enter Description"
+        '
         'txtDescription
         '
         Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
@@ -631,66 +691,6 @@ Partial Class frmScrip
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "System Code"
         '
-        'txtFaceValue
-        '
-        Me.txtFaceValue.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtFaceValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtFaceValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFaceValue.Location = New System.Drawing.Point(152, 158)
-        Me.txtFaceValue.MaxLength = 3
-        Me.txtFaceValue.Name = "txtFaceValue"
-        Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
-        Me.txtFaceValue.TabIndex = 55
-        Me.txtFaceValue.Tag = "Enter Description"
-        '
-        'txtPaidUpCapital
-        '
-        Me.txtPaidUpCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtPaidUpCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPaidUpCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPaidUpCapital.Location = New System.Drawing.Point(152, 190)
-        Me.txtPaidUpCapital.MaxLength = 3
-        Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
-        Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtPaidUpCapital.TabIndex = 56
-        Me.txtPaidUpCapital.Tag = "Enter Description"
-        '
-        'txtAuthorizeCapital
-        '
-        Me.txtAuthorizeCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtAuthorizeCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtAuthorizeCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAuthorizeCapital.Location = New System.Drawing.Point(152, 226)
-        Me.txtAuthorizeCapital.MaxLength = 3
-        Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
-        Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtAuthorizeCapital.TabIndex = 57
-        Me.txtAuthorizeCapital.Tag = "Enter Description"
-        '
-        'txtCompCode
-        '
-        Me.txtCompCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtCompCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCompCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCompCode.Location = New System.Drawing.Point(152, 282)
-        Me.txtCompCode.MaxLength = 3
-        Me.txtCompCode.Name = "txtCompCode"
-        Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtCompCode.TabIndex = 58
-        Me.txtCompCode.Tag = "Enter Description"
-        '
-        'txtSecurityCode
-        '
-        Me.txtSecurityCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSecurityCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSecurityCode.Location = New System.Drawing.Point(152, 309)
-        Me.txtSecurityCode.MaxLength = 3
-        Me.txtSecurityCode.Name = "txtSecurityCode"
-        Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtSecurityCode.TabIndex = 59
-        Me.txtSecurityCode.Tag = "Enter Description"
-        '
         'frmScrip
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -701,7 +701,7 @@ Partial Class frmScrip
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmScrip"
-        Me.Text = "frmScrip"
+        Me.Text = "Scrip"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
