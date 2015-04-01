@@ -53,3 +53,19 @@ D:\Basic2 try for access constants\Basic\Basic.Reports\obj\Debug\GenerateResourc
 D:\Basic2 try for access constants\Basic\Basic.Reports\obj\Debug\Basic.Reports.dll
 D:\Basic2 try for access constants\Basic\Basic.Reports\obj\Debug\Basic.Reports.xml
 D:\Basic2 try for access constants\Basic\Basic.Reports\obj\Debug\Basic.Reports.pdb
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Reports.dll
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Reports.pdb
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Reports.xml
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Constants.dll
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.DAL.dll
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Constants.pdb
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.Constants.xml
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.DAL.pdb
+E:\Basic\Basic.UILayer.git\Basic.Reports\bin\Debug\Basic.DAL.xml
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\Basic.Reports.Resources.resources
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\GenerateResource.read.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\GenerateResource.write.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\Basic.Reports.dll
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\Basic.Reports.xml
+E:\Basic\Basic.UILayer.git\Basic.Reports\obj\Debug\Basic.Reports.pdb

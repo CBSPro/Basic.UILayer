@@ -32,3 +32,13 @@ D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\B
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.dll
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.xml
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\Current Filter\Basic\Basic.BLL\obj\Debug\Basic.BLL.pdb
+E:\Basic\Basic.UILayer.git\Basic.BLL\bin\Debug\Basic.BLL.dll
+E:\Basic\Basic.UILayer.git\Basic.BLL\bin\Debug\Basic.BLL.pdb
+E:\Basic\Basic.UILayer.git\Basic.BLL\bin\Debug\Basic.BLL.xml
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\ResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\Basic.BLL.Resources.resources
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\GenerateResource.read.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\GenerateResource.write.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\Basic.BLL.dll
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\Basic.BLL.xml
+E:\Basic\Basic.UILayer.git\Basic.BLL\obj\Debug\Basic.BLL.pdb

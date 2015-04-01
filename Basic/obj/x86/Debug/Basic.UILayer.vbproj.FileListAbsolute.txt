@@ -282,14 +282,6 @@ C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.UILayer.vbproj.Res
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.exe
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.xml
 C:\Users\Aneela Tariq\Desktop\pagal\Basic\obj\x86\Debug\Basic.pdb
-E:\Basic\Basic.UILayer.git\Basic\bin\Debug\Basic.exe.config
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.exe
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.xml
-E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.pdb
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\bin\Debug\Basic.exe.config
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
@@ -307,3 +299,68 @@ C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.exe
 C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.xml
 C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.pdb
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.UILayer.vbprojResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Interop.FPUSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\AxInterop.FPSpreadADO.dll
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.UILayer.vbproj.ResolveComReference.cache
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.Resources.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmExportTB.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmReport.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_IncStat.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_List.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_PrtStat.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_PrtTBall.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_PTrans.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmSRH_ACCode.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmSRH_Vouchers.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmAccounts.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmACStatus.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmBranch.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmBudget.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRepDefinition.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmBroker.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmCalendar.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmCreditRateComp.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmCustodian.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmExpoAndMargn.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmFinanInfo.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmFinanInsInfo.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmFund.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmFundWiseControl.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmFutureScrip.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmGroupOfcompany.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmRating.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmScrip.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmScripMarket.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmSector.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmSettlementmodesvb.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmSetUpCertif.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmScripIndexSetup.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmTaxParm.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.Trustee.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmINV_Status.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmPostedPass.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmPostedVouchers.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_Aging.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_CodesStat.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_PostedVoucher.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRPT_TrialBal.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmVoucherDetail.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmAccPostAll.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmJV.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmRecPay.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmOrderExec.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmSetCalendar.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.Form1.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmBackUp.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmChangePass.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmChangeUPass.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmLogin.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmMdi.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmSysParms.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmUsers.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.Grid_Help.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Basic\Basic.UILayer.git\Basic\bin\Debug\Basic.exe.config

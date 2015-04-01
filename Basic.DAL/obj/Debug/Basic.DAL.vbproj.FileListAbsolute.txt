@@ -48,3 +48,16 @@ D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\GenerateResource.wr
 D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.dll
 D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.xml
 D:\Basic2 try for access constants\Basic\Basic.DAL\obj\Debug\Basic.DAL.pdb
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.DAL.dll
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.DAL.pdb
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.DAL.xml
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.Constants.dll
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.Constants.pdb
+E:\Basic\Basic.UILayer.git\Basic.DAL\bin\Debug\Basic.Constants.xml
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\GenerateResource.read.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\GenerateResource.write.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.dll
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.xml
+E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.pdb

@@ -1,3 +1,3 @@
-﻿Public Class FrmFinanInfo
+﻿Public Class FrmOrder
 
 End Class

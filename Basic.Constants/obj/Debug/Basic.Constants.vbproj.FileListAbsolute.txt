@@ -34,3 +34,13 @@ D:\Basic2 try for access constants\Basic\Basic.Constants\obj\Debug\GenerateResou
 D:\Basic2 try for access constants\Basic\Basic.Constants\obj\Debug\Basic.Constants.dll
 D:\Basic2 try for access constants\Basic\Basic.Constants\obj\Debug\Basic.Constants.xml
 D:\Basic2 try for access constants\Basic\Basic.Constants\obj\Debug\Basic.Constants.pdb
+E:\Basic\Basic.UILayer.git\Basic.Constants\bin\Debug\Basic.Constants.dll
+E:\Basic\Basic.UILayer.git\Basic.Constants\bin\Debug\Basic.Constants.pdb
+E:\Basic\Basic.UILayer.git\Basic.Constants\bin\Debug\Basic.Constants.xml
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\ResolveAssemblyReference.cache
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.Resources.resources
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\GenerateResource.read.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\GenerateResource.write.1.tlog
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.dll
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.xml
+E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.pdb
