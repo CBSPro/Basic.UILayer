@@ -61,3 +61,15 @@ E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\GenerateResource.write.1.tlog
 E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.dll
 E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.xml
 E:\Basic\Basic.UILayer.git\Basic.DAL\obj\Debug\Basic.DAL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.DAL.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\bin\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.vbprojResolveAssemblyReference.cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.DAL\obj\Debug\Basic.DAL.pdb
