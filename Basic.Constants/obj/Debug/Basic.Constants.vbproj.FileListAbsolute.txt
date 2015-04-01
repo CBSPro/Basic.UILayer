@@ -44,3 +44,11 @@ E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\GenerateResource.write.1.tl
 E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.dll
 E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.xml
 E:\Basic\Basic.UILayer.git\Basic.Constants\obj\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\bin\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\bin\Debug\Basic.Constants.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\bin\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\obj\Debug\Basic.Constants.Resources.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\obj\Debug\Basic.Constants.vbproj.GenerateResource.Cache
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\obj\Debug\Basic.Constants.dll
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\obj\Debug\Basic.Constants.xml
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic.Constants\obj\Debug\Basic.Constants.pdb

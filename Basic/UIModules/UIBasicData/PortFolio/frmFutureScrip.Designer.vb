@@ -454,7 +454,7 @@ Partial Class frmFutureScrip
         'cmbPeriod
         '
         Me.cmbPeriod.FormattingEnabled = True
-        Me.cmbPeriod.Location = New System.Drawing.Point(112, 80)
+        Me.cmbPeriod.Location = New System.Drawing.Point(109, 80)
         Me.cmbPeriod.Name = "cmbPeriod"
         Me.cmbPeriod.Size = New System.Drawing.Size(145, 24)
         Me.cmbPeriod.TabIndex = 21
@@ -462,7 +462,7 @@ Partial Class frmFutureScrip
         'cmbYear
         '
         Me.cmbYear.FormattingEnabled = True
-        Me.cmbYear.Location = New System.Drawing.Point(112, 52)
+        Me.cmbYear.Location = New System.Drawing.Point(109, 52)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(145, 24)
         Me.cmbYear.TabIndex = 20
@@ -470,7 +470,7 @@ Partial Class frmFutureScrip
         'cmbShare
         '
         Me.cmbShare.FormattingEnabled = True
-        Me.cmbShare.Location = New System.Drawing.Point(112, 24)
+        Me.cmbShare.Location = New System.Drawing.Point(109, 24)
         Me.cmbShare.Name = "cmbShare"
         Me.cmbShare.Size = New System.Drawing.Size(209, 24)
         Me.cmbShare.TabIndex = 19

@@ -1,21 +1,50 @@
-﻿Public Class frmSector
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Imports Basic.Constants.ProjConst
+Imports Basic.DAL
+Imports Basic.Reports
+Imports Basic.DAL.Utils
+Public Class frmSector
 
-    Private Sub txtBrCode_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
+
+
+
+    Sub SetEntryMode()
+        btnAdd.Enabled = Flag
+        btnEdit.Enabled = Flag
+        btnView.Enabled = Flag
+        btnDelete.Enabled = Flag
+        btnPost.Enabled = Flag
+        btnPrint.Enabled = Flag
+        btnSave.Enabled = Flag
+        btnCancel.Enabled = Flag
+        btnFind.Enabled = Flag
+        btnRefresh.Enabled = Flag
+        btnTop.Enabled = Flag
+        btnPrevious.Enabled = Flag
+        btnNext.Enabled = Flag
+        btnBottom.Enabled = Flag
+        btnExit.Enabled = Flag
+    End Sub
+
+    Sub ClearAll()
+
+        txtSearch.Text = ""
+        txtsysCode.Text = ""
 
     End Sub
-    Private Sub txtBrCode_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs)
 
+
+
+    Private Sub txtSearch_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSearch.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
     End Sub
-    Private Sub txtPurpose_LostFocus(sender As System.Object, e As System.EventArgs)
 
-    End Sub
-    Private Sub txtPurpose_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs)
-
-    End Sub
-    Private Sub dtpVDate_LostFocus(sender As System.Object, e As System.EventArgs)
-
-    End Sub
-    Private Sub dtpVDate_KeyDown(sender As System.Object, e As System.Windows.Forms.KeyEventArgs)
-
+    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
     End Sub
 End Class

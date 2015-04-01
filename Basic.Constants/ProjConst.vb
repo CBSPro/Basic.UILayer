@@ -251,6 +251,27 @@ Public Class ProjConst
     Public Const mEmpty = "99-99-9999"
 
 
+    '/GLOBAL VARIABLE
+
+    Public Shared mAdd As Boolean
+    Public Shared mEdit As Boolean
+    Public Shared mDelete As Boolean
+    Public Shared mPost As Boolean
+    Public Shared mPrint As Boolean
+
+
+    Public Shared AddMode As Boolean
+    Public Shared EditMode As Boolean
+    Public Shared Flag As Boolean
+    Public Shared rowNum As Integer
+
+
+
+
+
+
+
+
 
 
 
