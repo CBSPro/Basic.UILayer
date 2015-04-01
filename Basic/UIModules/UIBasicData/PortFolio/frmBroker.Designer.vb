@@ -516,16 +516,16 @@ Partial Class frmBroker
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(27, 158)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(90, 26)
+        Me.Label9.Size = New System.Drawing.Size(95, 26)
         Me.Label9.TabIndex = 34
-        Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "No"
+        Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                  No"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label30
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(72, 82)
+        Me.Label30.Location = New System.Drawing.Point(74, 86)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(45, 13)
         Me.Label30.TabIndex = 30
@@ -564,7 +564,7 @@ Partial Class frmBroker
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(44, 192)
+        Me.Label12.Location = New System.Drawing.Point(44, 196)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(73, 13)
         Me.Label12.TabIndex = 24
@@ -575,7 +575,7 @@ Partial Class frmBroker
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(78, 59)
+        Me.Label26.Location = New System.Drawing.Point(80, 63)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(39, 13)
         Me.Label26.TabIndex = 21
@@ -605,7 +605,7 @@ Partial Class frmBroker
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(46, 218)
+        Me.Label5.Location = New System.Drawing.Point(46, 225)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 9
@@ -638,11 +638,12 @@ Partial Class frmBroker
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 31)
+        Me.Label1.Location = New System.Drawing.Point(39, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = " System Code"
+        Me.Label1.Text = "System Code"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TabControl1
         '

@@ -306,3 +306,4 @@ C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.UILayer.vbproj.Resol
 C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.exe
 C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.xml
 C:\Users\Aneela Tariq\Desktop\abc\Basic\obj\x86\Debug\Basic.pdb
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.UILayer.vbprojResolveAssemblyReference.cache
