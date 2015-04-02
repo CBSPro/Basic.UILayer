@@ -381,6 +381,12 @@
     <Compile Include="UIModules\UITransactions\PortFolio\FrmDailyMarkPrice.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\FrmExecConProces.Designer.vb">
+      <DependentUpon>FrmExecConProces.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\FrmExecConProces.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIModules\UITransactions\PortFolio\FrmOrder.Designer.vb">
       <DependentUpon>FrmOrder.vb</DependentUpon>
     </Compile>
@@ -610,6 +616,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UITransactions\PortFolio\FrmDailyMarkPrice.resx">
       <DependentUpon>FrmDailyMarkPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UITransactions\PortFolio\FrmExecConProces.resx">
+      <DependentUpon>FrmExecConProces.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UITransactions\PortFolio\FrmOrder.resx">
       <DependentUpon>FrmOrder.vb</DependentUpon>
