@@ -405,6 +405,12 @@
     <Compile Include="UIModules\UITransactions\PortFolio\FrmSetCalendar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\FrmShareAnnounce.Designer.vb">
+      <DependentUpon>FrmShareAnnounce.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModules\UITransactions\PortFolio\FrmShareAnnounce.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIProjStandard\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -616,6 +622,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIModules\UITransactions\PortFolio\FrmSetCalendar.resx">
       <DependentUpon>FrmSetCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIModules\UITransactions\PortFolio\FrmShareAnnounce.resx">
+      <DependentUpon>FrmShareAnnounce.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIProjStandard\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

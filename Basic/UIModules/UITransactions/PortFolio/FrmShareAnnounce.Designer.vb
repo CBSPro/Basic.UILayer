@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmDailyMarkPrice
+Partial Class FrmShareAnnounce
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class FrmDailyMarkPrice
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmDailyMarkPrice))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmShareAnnounce))
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.Search = New System.Windows.Forms.GroupBox()
         Me.GVHelp = New System.Windows.Forms.DataGridView()
@@ -44,21 +44,18 @@ Partial Class FrmDailyMarkPrice
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.dtpDate = New System.Windows.Forms.DateTimePicker()
-        Me.CmbStokMar = New System.Windows.Forms.ComboBox()
-        Me.cmbSecu = New System.Windows.Forms.ComboBox()
-        Me.btnTransfer = New System.Windows.Forms.Button()
-        Me.btnFetch = New System.Windows.Forms.Button()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtDescrip = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
+        Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.fpPrice = New AxFPSpreadADO.AxfpSpread()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
-        CType(Me.fpPrice, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -70,7 +67,7 @@ Partial Class FrmDailyMarkPrice
         Me.LblTypeValid.Name = "LblTypeValid"
         Me.LblTypeValid.Size = New System.Drawing.Size(1076, 52)
         Me.LblTypeValid.TabIndex = 34
-        Me.LblTypeValid.Text = "Daily Market Price"
+        Me.LblTypeValid.Text = "Share Announcement Detail"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Search
@@ -299,65 +296,34 @@ Partial Class FrmDailyMarkPrice
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.fpPrice)
-        Me.GpData.Controls.Add(Me.dtpDate)
-        Me.GpData.Controls.Add(Me.CmbStokMar)
-        Me.GpData.Controls.Add(Me.cmbSecu)
-        Me.GpData.Controls.Add(Me.btnTransfer)
-        Me.GpData.Controls.Add(Me.btnFetch)
+        Me.GpData.Controls.Add(Me.txtName)
+        Me.GpData.Controls.Add(Me.txtDescrip)
         Me.GpData.Controls.Add(Me.Label3)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
+        Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(724, 376)
+        Me.GpData.Size = New System.Drawing.Size(532, 182)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
-        'dtpDate
+        'txtName
         '
-        Me.dtpDate.CustomFormat = "dd/MM/yyyy"
-        Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpDate.Location = New System.Drawing.Point(151, 71)
-        Me.dtpDate.Name = "dtpDate"
-        Me.dtpDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpDate.TabIndex = 45
+        Me.txtName.Location = New System.Drawing.Point(187, 45)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(326, 22)
+        Me.txtName.TabIndex = 18
         '
-        'CmbStokMar
+        'txtDescrip
         '
-        Me.CmbStokMar.FormattingEnabled = True
-        Me.CmbStokMar.Location = New System.Drawing.Point(150, 45)
-        Me.CmbStokMar.Name = "CmbStokMar"
-        Me.CmbStokMar.Size = New System.Drawing.Size(121, 24)
-        Me.CmbStokMar.TabIndex = 44
-        '
-        'cmbSecu
-        '
-        Me.cmbSecu.FormattingEnabled = True
-        Me.cmbSecu.Location = New System.Drawing.Point(150, 18)
-        Me.cmbSecu.Name = "cmbSecu"
-        Me.cmbSecu.Size = New System.Drawing.Size(121, 24)
-        Me.cmbSecu.TabIndex = 43
-        '
-        'btnTransfer
-        '
-        Me.btnTransfer.Location = New System.Drawing.Point(569, 95)
-        Me.btnTransfer.Name = "btnTransfer"
-        Me.btnTransfer.Size = New System.Drawing.Size(75, 23)
-        Me.btnTransfer.TabIndex = 20
-        Me.btnTransfer.Text = "Transfer"
-        Me.btnTransfer.UseVisualStyleBackColor = True
-        '
-        'btnFetch
-        '
-        Me.btnFetch.Location = New System.Drawing.Point(277, 16)
-        Me.btnFetch.Name = "btnFetch"
-        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 19
-        Me.btnFetch.Text = "Fatech"
-        Me.btnFetch.UseVisualStyleBackColor = True
+        Me.txtDescrip.Location = New System.Drawing.Point(187, 75)
+        Me.txtDescrip.Multiline = True
+        Me.txtDescrip.Name = "txtDescrip"
+        Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
+        Me.txtDescrip.TabIndex = 17
         '
         'Label3
         '
@@ -365,19 +331,19 @@ Partial Class FrmDailyMarkPrice
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(108, 80)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(34, 13)
+        Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Date"
+        Me.Label3.Text = "Description"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(59, 50)
+        Me.Label2.Location = New System.Drawing.Point(140, 48)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 13)
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Stock Market"
+        Me.Label2.Text = "Name"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'LBLPosted
@@ -390,43 +356,54 @@ Partial Class FrmDailyMarkPrice
         Me.LBLPosted.TabIndex = 13
         Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'txtsysCode
+        '
+        Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsysCode.Location = New System.Drawing.Point(187, 17)
+        Me.txtsysCode.MaxLength = 3
+        Me.txtsysCode.Name = "txtsysCode"
+        Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
+        Me.txtsysCode.TabIndex = 0
+        Me.txtsysCode.Tag = "Enter Description"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(89, 21)
+        Me.Label1.Location = New System.Drawing.Point(99, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Security"
+        Me.Label1.Text = "System Code"
         '
-        'fpPrice
+        'ComboBox1
         '
-        Me.fpPrice.DataSource = Nothing
-        Me.fpPrice.Location = New System.Drawing.Point(16, 124)
-        Me.fpPrice.Name = "fpPrice"
-        Me.fpPrice.OcxState = CType(resources.GetObject("fpPrice.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpPrice.Size = New System.Drawing.Size(696, 246)
-        Me.fpPrice.TabIndex = 46
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(546, 363)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 43
         '
-        'FrmDailyMarkPrice
+        'FrmShareAnnounce
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1079, 562)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
-        Me.Name = "FrmDailyMarkPrice"
-        Me.Text = "Daily Market Price"
+        Me.Name = "FrmShareAnnounce"
+        Me.Text = "Share Announcement Detail"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GpBtns.ResumeLayout(False)
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
-        CType(Me.fpPrice, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -451,14 +428,12 @@ Partial Class FrmDailyMarkPrice
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescrip As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
+    Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents cmbSecu As System.Windows.Forms.ComboBox
-    Friend WithEvents btnFetch As System.Windows.Forms.Button
-    Friend WithEvents btnTransfer As System.Windows.Forms.Button
-    Friend WithEvents CmbStokMar As System.Windows.Forms.ComboBox
-    Friend WithEvents dtpDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents fpPrice As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class
