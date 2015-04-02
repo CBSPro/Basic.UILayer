@@ -44,55 +44,55 @@ Partial Class FrmOrder
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.btnCancelOrder = New System.Windows.Forms.Button()
+        Me.btnExpos = New System.Windows.Forms.Button()
+        Me.txtSec = New System.Windows.Forms.TextBox()
+        Me.txtGOC = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtFaceVal = New System.Windows.Forms.TextBox()
+        Me.cmbSymbol = New System.Windows.Forms.ComboBox()
+        Me.cmbSecu = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
-        Me.txtsysCode = New System.Windows.Forms.TextBox()
+        Me.txtRefNo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.dtpValidDate = New System.Windows.Forms.DateTimePicker()
+        Me.cmbCountParty = New System.Windows.Forms.ComboBox()
+        Me.cmbClrType = New System.Windows.Forms.ComboBox()
+        Me.cmbValidity = New System.Windows.Forms.ComboBox()
+        Me.cmbSetlMode = New System.Windows.Forms.ComboBox()
+        Me.dtpOrderDate = New System.Windows.Forms.DateTimePicker()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.cmbSubType = New System.Windows.Forms.ComboBox()
+        Me.cmbFund = New System.Windows.Forms.ComboBox()
+        Me.cmbTrade = New System.Windows.Forms.ComboBox()
+        Me.txtQty = New System.Windows.Forms.TextBox()
+        Me.txtAmnt = New System.Windows.Forms.TextBox()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtRem = New System.Windows.Forms.TextBox()
+        Me.txtUserDef = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -339,22 +339,22 @@ Partial Class FrmOrder
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.Button2)
-        Me.GpData.Controls.Add(Me.Button1)
-        Me.GpData.Controls.Add(Me.TextBox3)
-        Me.GpData.Controls.Add(Me.TextBox2)
+        Me.GpData.Controls.Add(Me.btnCancelOrder)
+        Me.GpData.Controls.Add(Me.btnExpos)
+        Me.GpData.Controls.Add(Me.txtSec)
+        Me.GpData.Controls.Add(Me.txtGOC)
         Me.GpData.Controls.Add(Me.Label7)
         Me.GpData.Controls.Add(Me.Label6)
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.ComboBox2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.txtFaceVal)
+        Me.GpData.Controls.Add(Me.cmbSymbol)
+        Me.GpData.Controls.Add(Me.cmbSecu)
         Me.GpData.Controls.Add(Me.Label5)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label3)
         Me.GpData.Controls.Add(Me.Label2)
         Me.GpData.Controls.Add(Me.LBLPosted)
-        Me.GpData.Controls.Add(Me.txtsysCode)
+        Me.GpData.Controls.Add(Me.txtRefNo)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
@@ -363,6 +363,105 @@ Partial Class FrmOrder
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         Me.GpData.Text = "Approval Information"
+        '
+        'btnCancelOrder
+        '
+        Me.btnCancelOrder.Location = New System.Drawing.Point(306, 131)
+        Me.btnCancelOrder.Name = "btnCancelOrder"
+        Me.btnCancelOrder.Size = New System.Drawing.Size(112, 23)
+        Me.btnCancelOrder.TabIndex = 51
+        Me.btnCancelOrder.Text = "Cancel Order"
+        Me.btnCancelOrder.UseVisualStyleBackColor = True
+        '
+        'btnExpos
+        '
+        Me.btnExpos.Location = New System.Drawing.Point(225, 131)
+        Me.btnExpos.Name = "btnExpos"
+        Me.btnExpos.Size = New System.Drawing.Size(75, 23)
+        Me.btnExpos.TabIndex = 50
+        Me.btnExpos.Text = "Exposure"
+        Me.btnExpos.UseVisualStyleBackColor = True
+        '
+        'txtSec
+        '
+        Me.txtSec.Location = New System.Drawing.Point(411, 44)
+        Me.txtSec.Name = "txtSec"
+        Me.txtSec.Size = New System.Drawing.Size(121, 22)
+        Me.txtSec.TabIndex = 49
+        '
+        'txtGOC
+        '
+        Me.txtGOC.Location = New System.Drawing.Point(411, 17)
+        Me.txtGOC.Name = "txtGOC"
+        Me.txtGOC.Size = New System.Drawing.Size(121, 22)
+        Me.txtGOC.TabIndex = 48
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(361, 44)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(44, 13)
+        Me.Label7.TabIndex = 47
+        Me.Label7.Text = "Sector"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(294, 17)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(111, 13)
+        Me.Label6.TabIndex = 46
+        Me.Label6.Text = "Group of Company"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'txtFaceVal
+        '
+        Me.txtFaceVal.Location = New System.Drawing.Point(84, 131)
+        Me.txtFaceVal.Name = "txtFaceVal"
+        Me.txtFaceVal.Size = New System.Drawing.Size(121, 22)
+        Me.txtFaceVal.TabIndex = 45
+        '
+        'cmbSymbol
+        '
+        Me.cmbSymbol.FormattingEnabled = True
+        Me.cmbSymbol.Location = New System.Drawing.Point(84, 73)
+        Me.cmbSymbol.Name = "cmbSymbol"
+        Me.cmbSymbol.Size = New System.Drawing.Size(121, 24)
+        Me.cmbSymbol.TabIndex = 44
+        '
+        'cmbSecu
+        '
+        Me.cmbSecu.FormattingEnabled = True
+        Me.cmbSecu.Location = New System.Drawing.Point(84, 44)
+        Me.cmbSecu.Name = "cmbSecu"
+        Me.cmbSecu.Size = New System.Drawing.Size(121, 24)
+        Me.cmbSecu.TabIndex = 43
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(6, 131)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 13)
+        Me.Label5.TabIndex = 20
+        Me.Label5.Text = "Face Value"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 73)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(47, 13)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Symbol"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'txtName
         '
@@ -402,17 +501,17 @@ Partial Class FrmOrder
         Me.LBLPosted.TabIndex = 13
         Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtsysCode
+        'txtRefNo
         '
-        Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(84, 17)
-        Me.txtsysCode.MaxLength = 3
-        Me.txtsysCode.Name = "txtsysCode"
-        Me.txtsysCode.Size = New System.Drawing.Size(121, 22)
-        Me.txtsysCode.TabIndex = 0
-        Me.txtsysCode.Tag = "Enter Description"
+        Me.txtRefNo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtRefNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtRefNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRefNo.Location = New System.Drawing.Point(84, 17)
+        Me.txtRefNo.MaxLength = 3
+        Me.txtRefNo.Name = "txtRefNo"
+        Me.txtRefNo.Size = New System.Drawing.Size(121, 22)
+        Me.txtRefNo.TabIndex = 0
+        Me.txtRefNo.Tag = "Enter Description"
         '
         'Label1
         '
@@ -424,110 +523,11 @@ Partial Class FrmOrder
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Ref No."
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(84, 44)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox1.TabIndex = 43
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 73)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 13)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "Symbol"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 131)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 13)
-        Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Face Value"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(84, 73)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox2.TabIndex = 44
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(84, 131)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 22)
-        Me.TextBox1.TabIndex = 45
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(294, 17)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(111, 13)
-        Me.Label6.TabIndex = 46
-        Me.Label6.Text = "Group of Company"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(361, 44)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 13)
-        Me.Label7.TabIndex = 47
-        Me.Label7.Text = "Sector"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(411, 17)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(121, 22)
-        Me.TextBox2.TabIndex = 48
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(411, 44)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 22)
-        Me.TextBox3.TabIndex = 49
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(225, 131)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 50
-        Me.Button1.Text = "Exposure"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(306, 131)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 23)
-        Me.Button2.TabIndex = 51
-        Me.Button2.Text = "Cancel Order"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txtRem)
+        Me.GroupBox1.Controls.Add(Me.txtUserDef)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Location = New System.Drawing.Point(359, 281)
@@ -536,59 +536,21 @@ Partial Class FrmOrder
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 16)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(81, 13)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "User Def. No"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(6, 53)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 13)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "Remarks"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(84, 13)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox4.TabIndex = 22
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(84, 46)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBox5.Size = New System.Drawing.Size(334, 59)
-        Me.TextBox5.TabIndex = 23
-        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox2.Controls.Add(Me.ComboBox10)
-        Me.GroupBox2.Controls.Add(Me.ComboBox9)
-        Me.GroupBox2.Controls.Add(Me.ComboBox8)
-        Me.GroupBox2.Controls.Add(Me.ComboBox7)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox2.Controls.Add(Me.dtpValidDate)
+        Me.GroupBox2.Controls.Add(Me.cmbCountParty)
+        Me.GroupBox2.Controls.Add(Me.cmbClrType)
+        Me.GroupBox2.Controls.Add(Me.cmbValidity)
+        Me.GroupBox2.Controls.Add(Me.cmbSetlMode)
+        Me.GroupBox2.Controls.Add(Me.dtpOrderDate)
         Me.GroupBox2.Controls.Add(Me.ComboBox6)
-        Me.GroupBox2.Controls.Add(Me.ComboBox5)
-        Me.GroupBox2.Controls.Add(Me.ComboBox4)
-        Me.GroupBox2.Controls.Add(Me.ComboBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
+        Me.GroupBox2.Controls.Add(Me.cmbSubType)
+        Me.GroupBox2.Controls.Add(Me.cmbFund)
+        Me.GroupBox2.Controls.Add(Me.cmbTrade)
+        Me.GroupBox2.Controls.Add(Me.txtQty)
+        Me.GroupBox2.Controls.Add(Me.txtAmnt)
+        Me.GroupBox2.Controls.Add(Me.txtPrice)
         Me.GroupBox2.Controls.Add(Me.Label22)
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Controls.Add(Me.Label20)
@@ -608,137 +570,108 @@ Partial Class FrmOrder
         Me.GroupBox2.TabIndex = 24
         Me.GroupBox2.TabStop = False
         '
-        'Label10
+        'dtpValidDate
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(6, 16)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(36, 13)
-        Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Price"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.dtpValidDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpValidDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpValidDate.Location = New System.Drawing.Point(504, 96)
+        Me.dtpValidDate.Name = "dtpValidDate"
+        Me.dtpValidDate.Size = New System.Drawing.Size(120, 20)
+        Me.dtpValidDate.TabIndex = 44
         '
-        'Label11
+        'cmbCountParty
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(6, 45)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 13)
-        Me.Label11.TabIndex = 21
-        Me.Label11.Text = "Amount"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbCountParty.FormattingEnabled = True
+        Me.cmbCountParty.Location = New System.Drawing.Point(505, 153)
+        Me.cmbCountParty.Name = "cmbCountParty"
+        Me.cmbCountParty.Size = New System.Drawing.Size(121, 21)
+        Me.cmbCountParty.TabIndex = 43
         '
-        'Label12
+        'cmbClrType
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(6, 72)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(54, 13)
-        Me.Label12.TabIndex = 22
-        Me.Label12.Text = "Quantity"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbClrType.FormattingEnabled = True
+        Me.cmbClrType.Location = New System.Drawing.Point(504, 122)
+        Me.cmbClrType.Name = "cmbClrType"
+        Me.cmbClrType.Size = New System.Drawing.Size(121, 21)
+        Me.cmbClrType.TabIndex = 42
         '
-        'Label13
+        'cmbValidity
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(6, 96)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(72, 13)
-        Me.Label13.TabIndex = 23
-        Me.Label13.Text = "Trade Type"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbValidity.FormattingEnabled = True
+        Me.cmbValidity.Location = New System.Drawing.Point(504, 72)
+        Me.cmbValidity.Name = "cmbValidity"
+        Me.cmbValidity.Size = New System.Drawing.Size(121, 21)
+        Me.cmbValidity.TabIndex = 41
         '
-        'Label14
+        'cmbSetlMode
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(6, 122)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(35, 13)
-        Me.Label14.TabIndex = 24
-        Me.Label14.Text = "Fund"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbSetlMode.FormattingEnabled = True
+        Me.cmbSetlMode.Location = New System.Drawing.Point(504, 45)
+        Me.cmbSetlMode.Name = "cmbSetlMode"
+        Me.cmbSetlMode.Size = New System.Drawing.Size(121, 21)
+        Me.cmbSetlMode.TabIndex = 40
         '
-        'Label15
+        'dtpOrderDate
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(6, 153)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(61, 13)
-        Me.Label15.TabIndex = 25
-        Me.Label15.Text = "Sub Type"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.dtpOrderDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpOrderDate.Location = New System.Drawing.Point(505, 16)
+        Me.dtpOrderDate.Name = "dtpOrderDate"
+        Me.dtpOrderDate.Size = New System.Drawing.Size(120, 20)
+        Me.dtpOrderDate.TabIndex = 39
         '
-        'Label16
+        'ComboBox6
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(225, 16)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(46, 13)
-        Me.Label16.TabIndex = 26
-        Me.Label16.Text = "Market"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(277, 16)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox6.TabIndex = 38
         '
-        'Label17
+        'cmbSubType
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(408, 16)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(69, 13)
-        Me.Label17.TabIndex = 27
-        Me.Label17.Text = "Order Date"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbSubType.FormattingEnabled = True
+        Me.cmbSubType.Location = New System.Drawing.Point(98, 153)
+        Me.cmbSubType.Name = "cmbSubType"
+        Me.cmbSubType.Size = New System.Drawing.Size(121, 21)
+        Me.cmbSubType.TabIndex = 37
         '
-        'Label18
+        'cmbFund
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(408, 45)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(72, 13)
-        Me.Label18.TabIndex = 28
-        Me.Label18.Text = "Settl. Mode"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbFund.FormattingEnabled = True
+        Me.cmbFund.Location = New System.Drawing.Point(98, 122)
+        Me.cmbFund.Name = "cmbFund"
+        Me.cmbFund.Size = New System.Drawing.Size(121, 21)
+        Me.cmbFund.TabIndex = 36
         '
-        'Label19
+        'cmbTrade
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(408, 72)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(48, 13)
-        Me.Label19.TabIndex = 29
-        Me.Label19.Text = "Validity"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.cmbTrade.FormattingEnabled = True
+        Me.cmbTrade.Location = New System.Drawing.Point(98, 96)
+        Me.cmbTrade.Name = "cmbTrade"
+        Me.cmbTrade.Size = New System.Drawing.Size(121, 21)
+        Me.cmbTrade.TabIndex = 35
         '
-        'Label20
+        'txtQty
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(408, 96)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(79, 13)
-        Me.Label20.TabIndex = 30
-        Me.Label20.Text = "Validity Date"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.txtQty.Location = New System.Drawing.Point(98, 72)
+        Me.txtQty.Name = "txtQty"
+        Me.txtQty.Size = New System.Drawing.Size(121, 20)
+        Me.txtQty.TabIndex = 34
         '
-        'Label21
+        'txtAmnt
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(408, 122)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(63, 13)
-        Me.Label21.TabIndex = 31
-        Me.Label21.Text = "CLR Type"
-        Me.Label21.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.txtAmnt.Location = New System.Drawing.Point(98, 45)
+        Me.txtAmnt.Name = "txtAmnt"
+        Me.txtAmnt.Size = New System.Drawing.Size(121, 20)
+        Me.txtAmnt.TabIndex = 33
+        '
+        'txtPrice
+        '
+        Me.txtPrice.Location = New System.Drawing.Point(98, 16)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(121, 20)
+        Me.txtPrice.TabIndex = 25
         '
         'Label22
         '
@@ -751,110 +684,177 @@ Partial Class FrmOrder
         Me.Label22.Text = "Counter Party"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'TextBox6
+        'Label21
         '
-        Me.TextBox6.Location = New System.Drawing.Point(98, 16)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox6.TabIndex = 25
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(408, 122)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(63, 13)
+        Me.Label21.TabIndex = 31
+        Me.Label21.Text = "CLR Type"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'TextBox7
+        'Label20
         '
-        Me.TextBox7.Location = New System.Drawing.Point(98, 45)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox7.TabIndex = 33
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(408, 96)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(79, 13)
+        Me.Label20.TabIndex = 30
+        Me.Label20.Text = "Validity Date"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'TextBox8
+        'Label19
         '
-        Me.TextBox8.Location = New System.Drawing.Point(98, 72)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox8.TabIndex = 34
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(408, 72)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(48, 13)
+        Me.Label19.TabIndex = 29
+        Me.Label19.Text = "Validity"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox3
+        'Label18
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(98, 96)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox3.TabIndex = 35
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(408, 45)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(72, 13)
+        Me.Label18.TabIndex = 28
+        Me.Label18.Text = "Settl. Mode"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox4
+        'Label17
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(98, 122)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox4.TabIndex = 36
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(408, 16)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(69, 13)
+        Me.Label17.TabIndex = 27
+        Me.Label17.Text = "Order Date"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox5
+        'Label16
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(98, 153)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox5.TabIndex = 37
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(225, 16)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(46, 13)
+        Me.Label16.TabIndex = 26
+        Me.Label16.Text = "Market"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox6
+        'Label15
         '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(277, 16)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox6.TabIndex = 38
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(6, 153)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(61, 13)
+        Me.Label15.TabIndex = 25
+        Me.Label15.Text = "Sub Type"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'DateTimePicker1
+        'Label14
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(505, 16)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(120, 20)
-        Me.DateTimePicker1.TabIndex = 39
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(6, 122)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(35, 13)
+        Me.Label14.TabIndex = 24
+        Me.Label14.Text = "Fund"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox7
+        'Label13
         '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(504, 45)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox7.TabIndex = 40
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(6, 96)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(72, 13)
+        Me.Label13.TabIndex = 23
+        Me.Label13.Text = "Trade Type"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox8
+        'Label12
         '
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(504, 72)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox8.TabIndex = 41
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(6, 72)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(54, 13)
+        Me.Label12.TabIndex = 22
+        Me.Label12.Text = "Quantity"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox9
+        'Label11
         '
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(504, 122)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox9.TabIndex = 42
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(6, 45)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(49, 13)
+        Me.Label11.TabIndex = 21
+        Me.Label11.Text = "Amount"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'ComboBox10
+        'Label10
         '
-        Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Location = New System.Drawing.Point(505, 153)
-        Me.ComboBox10.Name = "ComboBox10"
-        Me.ComboBox10.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox10.TabIndex = 43
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(6, 16)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(36, 13)
+        Me.Label10.TabIndex = 20
+        Me.Label10.Text = "Price"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'DateTimePicker2
+        'txtRem
         '
-        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(504, 96)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(120, 20)
-        Me.DateTimePicker2.TabIndex = 44
+        Me.txtRem.Location = New System.Drawing.Point(84, 46)
+        Me.txtRem.Multiline = True
+        Me.txtRem.Name = "txtRem"
+        Me.txtRem.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.txtRem.Size = New System.Drawing.Size(334, 59)
+        Me.txtRem.TabIndex = 23
         '
-        'FrmFinanInfo
+        'txtUserDef
+        '
+        Me.txtUserDef.Location = New System.Drawing.Point(84, 13)
+        Me.txtUserDef.Name = "txtUserDef"
+        Me.txtUserDef.Size = New System.Drawing.Size(121, 20)
+        Me.txtUserDef.TabIndex = 22
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(6, 53)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(56, 13)
+        Me.Label9.TabIndex = 21
+        Me.Label9.Text = "Remarks"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(6, 16)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(81, 13)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "User Def. No"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'FrmOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -864,7 +864,7 @@ Partial Class FrmOrder
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
-        Me.Name = "FrmFinanInfo"
+        Me.Name = "FrmOrder"
         Me.Text = "Order Placement"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
@@ -904,24 +904,24 @@ Partial Class FrmOrder
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
-    Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtRefNo As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSecu As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSymbol As System.Windows.Forms.ComboBox
+    Friend WithEvents txtFaceVal As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txtGOC As System.Windows.Forms.TextBox
+    Friend WithEvents txtSec As System.Windows.Forms.TextBox
+    Friend WithEvents btnCancelOrder As System.Windows.Forms.Button
+    Friend WithEvents btnExpos As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtRem As System.Windows.Forms.TextBox
+    Friend WithEvents txtUserDef As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
@@ -936,17 +936,17 @@ Partial Class FrmOrder
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtQty As System.Windows.Forms.TextBox
+    Friend WithEvents txtAmnt As System.Windows.Forms.TextBox
+    Friend WithEvents txtPrice As System.Windows.Forms.TextBox
+    Friend WithEvents cmbSubType As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbFund As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbTrade As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox10 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
+    Friend WithEvents dtpOrderDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmbSetlMode As System.Windows.Forms.ComboBox
+    Friend WithEvents dtpValidDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmbCountParty As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbClrType As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbValidity As System.Windows.Forms.ComboBox
 End Class
