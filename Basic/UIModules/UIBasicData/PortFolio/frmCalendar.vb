@@ -6,7 +6,6 @@ Imports Basic.Reports
 Imports Basic.DAL.Utils
 
 
-
 Public Class frmCalendar
 
     Sub SetEntryMode()
@@ -153,7 +152,9 @@ Public Class frmCalendar
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
-
+    Private Sub btnCancel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+      
+    End Sub
     Private Sub btnPost_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPost.Click
         Call SetButtonPrinciple()
         Call SetButton()
