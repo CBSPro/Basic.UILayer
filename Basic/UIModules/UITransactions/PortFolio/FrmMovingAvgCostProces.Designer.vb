@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmSettlementProces
+Partial Class FrmMovingAvgCostProces
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,20 +22,17 @@ Partial Class FrmSettlementProces
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmSettlementProces))
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.GpData = New System.Windows.Forms.GroupBox()
         Me.cmbAllBrok = New System.Windows.Forms.CheckBox()
-        Me.cmbAllSecu = New System.Windows.Forms.CheckBox()
         Me.btnProcess = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.btnFetch = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtpFromDate = New System.Windows.Forms.DateTimePicker()
         Me.dtpToDate = New System.Windows.Forms.DateTimePicker()
-        Me.cmbStatus = New System.Windows.Forms.ComboBox()
         Me.cmbBroker = New System.Windows.Forms.ComboBox()
         Me.cmbFund = New System.Windows.Forms.ComboBox()
         Me.cmbSecu = New System.Windows.Forms.ComboBox()
@@ -43,14 +40,14 @@ Partial Class FrmSettlementProces
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.fpDetail = New AxFPSpreadADO.AxfpSpread()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GpData.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.fpDetail, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -60,17 +57,16 @@ Partial Class FrmSettlementProces
         Me.LblTypeValid.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.LblTypeValid.Location = New System.Drawing.Point(1, 1)
         Me.LblTypeValid.Name = "LblTypeValid"
-        Me.LblTypeValid.Size = New System.Drawing.Size(540, 52)
+        Me.LblTypeValid.Size = New System.Drawing.Size(559, 52)
         Me.LblTypeValid.TabIndex = 34
-        Me.LblTypeValid.Text = "Settlement Proces"
+        Me.LblTypeValid.Text = "Process Moving Average"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GpData
         '
         Me.GpData.Controls.Add(Me.cmbAllBrok)
-        Me.GpData.Controls.Add(Me.cmbAllSecu)
         Me.GpData.Controls.Add(Me.GroupBox1)
-        Me.GpData.Controls.Add(Me.cmbStatus)
+        Me.GpData.Controls.Add(Me.btnProcess)
         Me.GpData.Controls.Add(Me.cmbBroker)
         Me.GpData.Controls.Add(Me.cmbFund)
         Me.GpData.Controls.Add(Me.cmbSecu)
@@ -79,35 +75,25 @@ Partial Class FrmSettlementProces
         Me.GpData.Controls.Add(Me.LBLPosted)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GpData.Location = New System.Drawing.Point(9, 84)
+        Me.GpData.Location = New System.Drawing.Point(9, 57)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(532, 146)
+        Me.GpData.Size = New System.Drawing.Size(551, 148)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
         'cmbAllBrok
         '
         Me.cmbAllBrok.AutoSize = True
-        Me.cmbAllBrok.Location = New System.Drawing.Point(107, 79)
+        Me.cmbAllBrok.Location = New System.Drawing.Point(280, 77)
         Me.cmbAllBrok.Name = "cmbAllBrok"
         Me.cmbAllBrok.Size = New System.Drawing.Size(45, 20)
         Me.cmbAllBrok.TabIndex = 54
         Me.cmbAllBrok.Text = "All"
         Me.cmbAllBrok.UseVisualStyleBackColor = True
         '
-        'cmbAllSecu
-        '
-        Me.cmbAllSecu.AutoSize = True
-        Me.cmbAllSecu.Location = New System.Drawing.Point(107, 47)
-        Me.cmbAllSecu.Name = "cmbAllSecu"
-        Me.cmbAllSecu.Size = New System.Drawing.Size(45, 20)
-        Me.cmbAllSecu.TabIndex = 53
-        Me.cmbAllSecu.Text = "All"
-        Me.cmbAllSecu.UseVisualStyleBackColor = True
-        '
         'btnProcess
         '
-        Me.btnProcess.Location = New System.Drawing.Point(397, 172)
+        Me.btnProcess.Location = New System.Drawing.Point(158, 110)
         Me.btnProcess.Name = "btnProcess"
         Me.btnProcess.Size = New System.Drawing.Size(120, 23)
         Me.btnProcess.TabIndex = 52
@@ -116,65 +102,66 @@ Partial Class FrmSettlementProces
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.btnFetch)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.dtpFromDate)
         Me.GroupBox1.Controls.Add(Me.dtpToDate)
-        Me.GroupBox1.Location = New System.Drawing.Point(326, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(331, 13)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 123)
+        Me.GroupBox1.Size = New System.Drawing.Size(214, 123)
         Me.GroupBox1.TabIndex = 50
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Date"
         '
-        'CheckBox1
+        'Label4
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(6, 25)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(45, 20)
-        Me.CheckBox1.TabIndex = 54
-        Me.CheckBox1.Text = "All"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(-3, 97)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 13)
+        Me.Label4.TabIndex = 53
+        Me.Label4.Text = "Process Date"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'btnFetch
+        'DateTimePicker1
         '
-        Me.btnFetch.Location = New System.Drawing.Point(125, 100)
-        Me.btnFetch.Name = "btnFetch"
-        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 51
-        Me.btnFetch.Text = "Fetch"
-        Me.btnFetch.UseVisualStyleBackColor = True
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(82, 90)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(120, 22)
+        Me.DateTimePicker1.TabIndex = 52
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(17, 72)
+        Me.Label6.Location = New System.Drawing.Point(17, 64)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(22, 13)
+        Me.Label6.Size = New System.Drawing.Size(60, 13)
         Me.Label6.TabIndex = 51
-        Me.Label6.Text = "To"
+        Me.Label6.Text = "End Date"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(5, 48)
+        Me.Label5.Location = New System.Drawing.Point(5, 27)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
+        Me.Label5.Size = New System.Drawing.Size(65, 13)
         Me.Label5.TabIndex = 50
-        Me.Label5.Text = "From"
+        Me.Label5.Text = "Start Date"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'dtpFromDate
         '
         Me.dtpFromDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFromDate.Location = New System.Drawing.Point(80, 41)
+        Me.dtpFromDate.Location = New System.Drawing.Point(80, 20)
         Me.dtpFromDate.Name = "dtpFromDate"
         Me.dtpFromDate.Size = New System.Drawing.Size(120, 22)
         Me.dtpFromDate.TabIndex = 48
@@ -183,23 +170,15 @@ Partial Class FrmSettlementProces
         '
         Me.dtpToDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpToDate.Location = New System.Drawing.Point(80, 68)
+        Me.dtpToDate.Location = New System.Drawing.Point(80, 60)
         Me.dtpToDate.Name = "dtpToDate"
         Me.dtpToDate.Size = New System.Drawing.Size(120, 22)
         Me.dtpToDate.TabIndex = 49
         '
-        'cmbStatus
-        '
-        Me.cmbStatus.FormattingEnabled = True
-        Me.cmbStatus.Location = New System.Drawing.Point(158, 101)
-        Me.cmbStatus.Name = "cmbStatus"
-        Me.cmbStatus.Size = New System.Drawing.Size(160, 24)
-        Me.cmbStatus.TabIndex = 46
-        '
         'cmbBroker
         '
         Me.cmbBroker.FormattingEnabled = True
-        Me.cmbBroker.Location = New System.Drawing.Point(158, 75)
+        Me.cmbBroker.Location = New System.Drawing.Point(118, 75)
         Me.cmbBroker.Name = "cmbBroker"
         Me.cmbBroker.Size = New System.Drawing.Size(160, 24)
         Me.cmbBroker.TabIndex = 45
@@ -207,7 +186,7 @@ Partial Class FrmSettlementProces
         'cmbFund
         '
         Me.cmbFund.FormattingEnabled = True
-        Me.cmbFund.Location = New System.Drawing.Point(158, 45)
+        Me.cmbFund.Location = New System.Drawing.Point(118, 45)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(160, 24)
         Me.cmbFund.TabIndex = 44
@@ -215,7 +194,7 @@ Partial Class FrmSettlementProces
         'cmbSecu
         '
         Me.cmbSecu.FormattingEnabled = True
-        Me.cmbSecu.Location = New System.Drawing.Point(158, 13)
+        Me.cmbSecu.Location = New System.Drawing.Point(118, 13)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(160, 24)
         Me.cmbSecu.TabIndex = 43
@@ -224,17 +203,17 @@ Partial Class FrmSettlementProces
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(17, 50)
+        Me.Label3.Location = New System.Drawing.Point(25, 82)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 13)
+        Me.Label3.Size = New System.Drawing.Size(66, 13)
         Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Transaction"
+        Me.Label3.Text = "Instrument"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(56, 86)
+        Me.Label2.Location = New System.Drawing.Point(56, 20)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 14
@@ -255,70 +234,84 @@ Partial Class FrmSettlementProces
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 18)
+        Me.Label1.Location = New System.Drawing.Point(38, 56)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 13)
+        Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Security Type"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 68)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 13)
-        Me.Label4.TabIndex = 43
-        Me.Label4.Text = "Process Date"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(167, 58)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(160, 20)
-        Me.DateTimePicker1.TabIndex = 49
+        Me.Label1.Text = "Security"
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.fpDetail)
-        Me.GroupBox2.Controls.Add(Me.btnProcess)
-        Me.GroupBox2.Location = New System.Drawing.Point(10, 236)
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.RadioButton3)
+        Me.GroupBox2.Controls.Add(Me.RadioButton2)
+        Me.GroupBox2.Controls.Add(Me.RadioButton1)
+        Me.GroupBox2.Location = New System.Drawing.Point(3, 211)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(523, 201)
-        Me.GroupBox2.TabIndex = 50
+        Me.GroupBox2.Size = New System.Drawing.Size(557, 104)
+        Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Report Options"
         '
-        'fpDetail
+        'RadioButton1
         '
-        Me.fpDetail.DataSource = Nothing
-        Me.fpDetail.Location = New System.Drawing.Point(6, 14)
-        Me.fpDetail.Name = "fpDetail"
-        Me.fpDetail.OcxState = CType(resources.GetObject("fpDetail.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpDetail.Size = New System.Drawing.Size(511, 152)
-        Me.fpDetail.TabIndex = 53
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(10, 20)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(224, 17)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "UnApproved Between Start and End Date"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'FrmSettlementProces
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(10, 43)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(262, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Vouchers Geenrated Between Start and End Date"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(10, 66)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(161, 17)
+        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Unprocess Before Start Date"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(417, 75)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(120, 23)
+        Me.Button1.TabIndex = 53
+        Me.Button1.Text = "Preview Report"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'FrmMovingAvgCostProces
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(547, 449)
+        Me.ClientSize = New System.Drawing.Size(561, 327)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.LblTypeValid)
-        Me.Name = "FrmSettlementProces"
-        Me.Text = "Settlement Proces"
+        Me.Name = "FrmMovingAvgCostProces"
+        Me.Text = "Process Moving Average"
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.fpDetail, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents LblTypeValid As System.Windows.Forms.Label
@@ -328,7 +321,6 @@ Partial Class FrmSettlementProces
     Friend WithEvents LBLPosted As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmbSecu As System.Windows.Forms.ComboBox
-    Friend WithEvents cmbStatus As System.Windows.Forms.ComboBox
     Friend WithEvents cmbBroker As System.Windows.Forms.ComboBox
     Friend WithEvents cmbFund As System.Windows.Forms.ComboBox
     Friend WithEvents dtpToDate As System.Windows.Forms.DateTimePicker
@@ -336,13 +328,13 @@ Partial Class FrmSettlementProces
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents btnFetch As System.Windows.Forms.Button
     Friend WithEvents btnProcess As System.Windows.Forms.Button
-    Friend WithEvents cmbAllSecu As System.Windows.Forms.CheckBox
     Friend WithEvents cmbAllBrok As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents fpDetail As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

@@ -461,3 +461,9 @@ D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basi
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.frmUsers.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.Grid_Help.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.UILayer.vbproj.GenerateResource.Cache
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmDailyMarkPrice.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmExecConProces.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmMovingAvgCostProces.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmOrderAdjust.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmSettlementProces.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmShareAnnounce.resources
