@@ -347,7 +347,7 @@ Partial Class frmFutureScrip
         Me.txtDescription.MaxLength = 3
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(603, 22)
-        Me.txtDescription.TabIndex = 54
+        Me.txtDescription.TabIndex = 9
         Me.txtDescription.Tag = "Enter Description"
         '
         'txtSymbol
@@ -359,7 +359,7 @@ Partial Class frmFutureScrip
         Me.txtSymbol.MaxLength = 3
         Me.txtSymbol.Name = "txtSymbol"
         Me.txtSymbol.Size = New System.Drawing.Size(214, 22)
-        Me.txtSymbol.TabIndex = 53
+        Me.txtSymbol.TabIndex = 5
         Me.txtSymbol.Tag = "Enter Description"
         '
         'txtName
@@ -371,7 +371,7 @@ Partial Class frmFutureScrip
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(309, 22)
-        Me.txtName.TabIndex = 52
+        Me.txtName.TabIndex = 4
         Me.txtName.Tag = "Enter Description"
         '
         'Label9
@@ -401,7 +401,7 @@ Partial Class frmFutureScrip
         Me.dtpSettDate.Location = New System.Drawing.Point(448, 137)
         Me.dtpSettDate.Name = "dtpSettDate"
         Me.dtpSettDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpSettDate.TabIndex = 31
+        Me.dtpSettDate.TabIndex = 8
         '
         'Label6
         '
@@ -421,7 +421,7 @@ Partial Class frmFutureScrip
         Me.dtpEndDate.Location = New System.Drawing.Point(279, 138)
         Me.dtpEndDate.Name = "dtpEndDate"
         Me.dtpEndDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpEndDate.TabIndex = 29
+        Me.dtpEndDate.TabIndex = 7
         '
         'Label5
         '
@@ -441,7 +441,7 @@ Partial Class frmFutureScrip
         Me.dtpStartDate.Location = New System.Drawing.Point(112, 137)
         Me.dtpStartDate.Name = "dtpStartDate"
         Me.dtpStartDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpStartDate.TabIndex = 27
+        Me.dtpStartDate.TabIndex = 6
         '
         'Label12
         '
@@ -460,7 +460,7 @@ Partial Class frmFutureScrip
         Me.cmbPeriod.Location = New System.Drawing.Point(109, 80)
         Me.cmbPeriod.Name = "cmbPeriod"
         Me.cmbPeriod.Size = New System.Drawing.Size(145, 24)
-        Me.cmbPeriod.TabIndex = 21
+        Me.cmbPeriod.TabIndex = 3
         '
         'cmbYear
         '
@@ -468,15 +468,15 @@ Partial Class frmFutureScrip
         Me.cmbYear.Location = New System.Drawing.Point(109, 52)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(145, 24)
-        Me.cmbYear.TabIndex = 20
+        Me.cmbYear.TabIndex = 2
         '
         'cmbShare
         '
         Me.cmbShare.FormattingEnabled = True
         Me.cmbShare.Location = New System.Drawing.Point(109, 24)
         Me.cmbShare.Name = "cmbShare"
-        Me.cmbShare.Size = New System.Drawing.Size(209, 24)
-        Me.cmbShare.TabIndex = 19
+        Me.cmbShare.Size = New System.Drawing.Size(145, 24)
+        Me.cmbShare.TabIndex = 1
         '
         'Label3
         '

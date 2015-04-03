@@ -134,7 +134,7 @@ Partial Class frmGroupOfcompany
         Me.txtMnemonic.MaxLength = 3
         Me.txtMnemonic.Name = "txtMnemonic"
         Me.txtMnemonic.Size = New System.Drawing.Size(309, 22)
-        Me.txtMnemonic.TabIndex = 53
+        Me.txtMnemonic.TabIndex = 2
         Me.txtMnemonic.Tag = "Enter Description"
         '
         'txtName
@@ -146,7 +146,7 @@ Partial Class frmGroupOfcompany
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(501, 22)
-        Me.txtName.TabIndex = 52
+        Me.txtName.TabIndex = 1
         Me.txtName.Tag = "Enter Description"
         '
         'Label2

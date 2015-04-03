@@ -378,86 +378,86 @@ Partial Class frmBroker
         '
         'txtMnemo
         '
-        Me.txtMnemo.Location = New System.Drawing.Point(512, 30)
+        Me.txtMnemo.Location = New System.Drawing.Point(513, 30)
         Me.txtMnemo.Name = "txtMnemo"
         Me.txtMnemo.Size = New System.Drawing.Size(181, 22)
-        Me.txtMnemo.TabIndex = 54
+        Me.txtMnemo.TabIndex = 2
         '
         'txtBrokerCode
         '
         Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
         Me.txtBrokerCode.Name = "txtBrokerCode"
         Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
-        Me.txtBrokerCode.TabIndex = 53
+        Me.txtBrokerCode.TabIndex = 1
         '
         'txtDescription
         '
         Me.txtDescription.Location = New System.Drawing.Point(123, 221)
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(570, 22)
-        Me.txtDescription.TabIndex = 52
+        Me.txtDescription.TabIndex = 9
         '
         'txtNCSS
         '
-        Me.txtNCSS.Location = New System.Drawing.Point(567, 190)
+        Me.txtNCSS.Location = New System.Drawing.Point(513, 190)
         Me.txtNCSS.Name = "txtNCSS"
-        Me.txtNCSS.Size = New System.Drawing.Size(126, 22)
-        Me.txtNCSS.TabIndex = 51
+        Me.txtNCSS.Size = New System.Drawing.Size(180, 22)
+        Me.txtNCSS.TabIndex = 12
         '
         'txtFax
         '
-        Me.txtFax.Location = New System.Drawing.Point(512, 141)
+        Me.txtFax.Location = New System.Drawing.Point(513, 141)
         Me.txtFax.Name = "txtFax"
         Me.txtFax.Size = New System.Drawing.Size(181, 22)
-        Me.txtFax.TabIndex = 50
+        Me.txtFax.TabIndex = 11
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(512, 113)
+        Me.txtEmail.Location = New System.Drawing.Point(513, 113)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(181, 22)
-        Me.txtEmail.TabIndex = 49
+        Me.txtEmail.TabIndex = 10
         '
         'txtIAS
         '
         Me.txtIAS.Location = New System.Drawing.Point(123, 166)
         Me.txtIAS.Name = "txtIAS"
         Me.txtIAS.Size = New System.Drawing.Size(95, 22)
-        Me.txtIAS.TabIndex = 48
+        Me.txtIAS.TabIndex = 7
         '
         'txtCFS
         '
         Me.txtCFS.Location = New System.Drawing.Point(123, 138)
         Me.txtCFS.Name = "txtCFS"
         Me.txtCFS.Size = New System.Drawing.Size(95, 22)
-        Me.txtCFS.TabIndex = 47
+        Me.txtCFS.TabIndex = 6
         '
         'txtPhone
         '
         Me.txtPhone.Location = New System.Drawing.Point(123, 110)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(95, 22)
-        Me.txtPhone.TabIndex = 46
+        Me.txtPhone.TabIndex = 5
         '
         'txtAdress
         '
         Me.txtAdress.Location = New System.Drawing.Point(123, 84)
         Me.txtAdress.Name = "txtAdress"
         Me.txtAdress.Size = New System.Drawing.Size(570, 22)
-        Me.txtAdress.TabIndex = 45
+        Me.txtAdress.TabIndex = 4
         '
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(123, 59)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(570, 22)
-        Me.txtName.TabIndex = 44
+        Me.txtName.TabIndex = 3
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(24, 136)
+        Me.Label16.Location = New System.Drawing.Point(19, 136)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(93, 13)
         Me.Label16.TabIndex = 43
@@ -467,7 +467,7 @@ Partial Class frmBroker
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(441, 195)
+        Me.Label11.Location = New System.Drawing.Point(387, 195)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(120, 13)
         Me.Label11.TabIndex = 39
@@ -517,7 +517,7 @@ Partial Class frmBroker
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(27, 158)
+        Me.Label9.Location = New System.Drawing.Point(17, 158)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(95, 26)
         Me.Label9.TabIndex = 34
@@ -528,7 +528,7 @@ Partial Class frmBroker
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(74, 86)
+        Me.Label30.Location = New System.Drawing.Point(67, 86)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(45, 13)
         Me.Label30.TabIndex = 30
@@ -538,7 +538,7 @@ Partial Class frmBroker
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(446, 115)
+        Me.Label10.Location = New System.Drawing.Point(470, 115)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(37, 13)
         Me.Label10.TabIndex = 29
@@ -550,13 +550,13 @@ Partial Class frmBroker
         Me.cmbDefine.Location = New System.Drawing.Point(123, 191)
         Me.cmbDefine.Name = "cmbDefine"
         Me.cmbDefine.Size = New System.Drawing.Size(95, 24)
-        Me.cmbDefine.TabIndex = 28
+        Me.cmbDefine.TabIndex = 8
         '
         'Label19
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(449, 150)
+        Me.Label19.Location = New System.Drawing.Point(480, 150)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(27, 13)
         Me.Label19.TabIndex = 26
@@ -567,7 +567,7 @@ Partial Class frmBroker
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(44, 196)
+        Me.Label12.Location = New System.Drawing.Point(39, 196)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(73, 13)
         Me.Label12.TabIndex = 24
@@ -578,7 +578,7 @@ Partial Class frmBroker
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(80, 63)
+        Me.Label26.Location = New System.Drawing.Point(73, 63)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(39, 13)
         Me.Label26.TabIndex = 21
@@ -598,7 +598,7 @@ Partial Class frmBroker
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(62, 116)
+        Me.Label3.Location = New System.Drawing.Point(57, 116)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 15
@@ -608,7 +608,7 @@ Partial Class frmBroker
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(46, 225)
+        Me.Label5.Location = New System.Drawing.Point(41, 225)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 9
@@ -619,7 +619,7 @@ Partial Class frmBroker
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(441, 35)
+        Me.Label4.Location = New System.Drawing.Point(443, 35)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 13)
         Me.Label4.TabIndex = 7
@@ -641,7 +641,7 @@ Partial Class frmBroker
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(39, 35)
+        Me.Label1.Location = New System.Drawing.Point(32, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0

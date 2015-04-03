@@ -327,25 +327,25 @@ Partial Class frmCalendar
         '
         'txtDescription
         '
-        Me.txtDescription.Location = New System.Drawing.Point(232, 94)
+        Me.txtDescription.Location = New System.Drawing.Point(234, 94)
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(399, 22)
-        Me.txtDescription.TabIndex = 38
+        Me.txtDescription.TabIndex = 3
         '
         'cmbYear2
         '
         Me.cmbYear2.FormattingEnabled = True
-        Me.cmbYear2.Location = New System.Drawing.Point(329, 62)
+        Me.cmbYear2.Location = New System.Drawing.Point(331, 62)
         Me.cmbYear2.Name = "cmbYear2"
         Me.cmbYear2.Size = New System.Drawing.Size(89, 24)
-        Me.cmbYear2.TabIndex = 37
+        Me.cmbYear2.TabIndex = 2
         '
         'txtsysCode
         '
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(232, 36)
+        Me.txtsysCode.Location = New System.Drawing.Point(234, 36)
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(140, 22)
         Me.txtsysCode.TabIndex = 36
@@ -364,10 +364,10 @@ Partial Class frmCalendar
         'cmbYear1
         '
         Me.cmbYear1.FormattingEnabled = True
-        Me.cmbYear1.Location = New System.Drawing.Point(232, 64)
+        Me.cmbYear1.Location = New System.Drawing.Point(234, 64)
         Me.cmbYear1.Name = "cmbYear1"
         Me.cmbYear1.Size = New System.Drawing.Size(89, 24)
-        Me.cmbYear1.TabIndex = 20
+        Me.cmbYear1.TabIndex = 1
         '
         'Label2
         '
@@ -420,17 +420,17 @@ Partial Class frmCalendar
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(232, 68)
+        Me.txtName.Location = New System.Drawing.Point(234, 68)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(399, 22)
-        Me.txtName.TabIndex = 41
+        Me.txtName.TabIndex = 4
         '
         'txtsysCodePproperty
         '
         Me.txtsysCodePproperty.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCodePproperty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCodePproperty.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCodePproperty.Location = New System.Drawing.Point(232, 39)
+        Me.txtsysCodePproperty.Location = New System.Drawing.Point(234, 39)
         Me.txtsysCodePproperty.Name = "txtsysCodePproperty"
         Me.txtsysCodePproperty.Size = New System.Drawing.Size(140, 22)
         Me.txtsysCodePproperty.TabIndex = 40
@@ -450,10 +450,10 @@ Partial Class frmCalendar
         '
         Me.enDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.enDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.enDate.Location = New System.Drawing.Point(232, 128)
+        Me.enDate.Location = New System.Drawing.Point(234, 128)
         Me.enDate.Name = "enDate"
         Me.enDate.Size = New System.Drawing.Size(95, 22)
-        Me.enDate.TabIndex = 29
+        Me.enDate.TabIndex = 6
         '
         'Label17
         '
@@ -470,10 +470,10 @@ Partial Class frmCalendar
         '
         Me.stDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.stDate.Location = New System.Drawing.Point(232, 98)
+        Me.stDate.Location = New System.Drawing.Point(234, 98)
         Me.stDate.Name = "stDate"
         Me.stDate.Size = New System.Drawing.Size(95, 22)
-        Me.stDate.TabIndex = 27
+        Me.stDate.TabIndex = 5
         '
         'Label18
         '

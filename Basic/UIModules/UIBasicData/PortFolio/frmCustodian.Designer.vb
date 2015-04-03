@@ -321,14 +321,14 @@ Partial Class frmCustodian
         Me.txtAddress.Location = New System.Drawing.Point(187, 74)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(326, 22)
-        Me.txtAddress.TabIndex = 19
+        Me.txtAddress.TabIndex = 2
         '
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(187, 45)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(326, 22)
-        Me.txtName.TabIndex = 18
+        Me.txtName.TabIndex = 1
         '
         'txtDescrip
         '
@@ -336,7 +336,7 @@ Partial Class frmCustodian
         Me.txtDescrip.Multiline = True
         Me.txtDescrip.Name = "txtDescrip"
         Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
-        Me.txtDescrip.TabIndex = 17
+        Me.txtDescrip.TabIndex = 3
         '
         'Label3
         '

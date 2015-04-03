@@ -128,14 +128,14 @@ Partial Class FrmRating
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.txtDesc.Size = New System.Drawing.Size(347, 65)
-        Me.txtDesc.TabIndex = 49
+        Me.txtDesc.TabIndex = 2
         '
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(122, 59)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(347, 22)
-        Me.txtName.TabIndex = 48
+        Me.txtName.TabIndex = 1
         '
         'Label9
         '

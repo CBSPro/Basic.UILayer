@@ -317,7 +317,7 @@ Partial Class frmFundWiseControl
         Me.txtDescription.MaxLength = 3
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(309, 22)
-        Me.txtDescription.TabIndex = 52
+        Me.txtDescription.TabIndex = 1
         Me.txtDescription.Tag = "Enter Description"
         '
         'Label30

@@ -371,7 +371,7 @@ Partial Class frmScrip
         Me.txtSecurityCode.MaxLength = 3
         Me.txtSecurityCode.Name = "txtSecurityCode"
         Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtSecurityCode.TabIndex = 59
+        Me.txtSecurityCode.TabIndex = 10
         Me.txtSecurityCode.Tag = "Enter Description"
         '
         'txtCompCode
@@ -383,7 +383,7 @@ Partial Class frmScrip
         Me.txtCompCode.MaxLength = 3
         Me.txtCompCode.Name = "txtCompCode"
         Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtCompCode.TabIndex = 58
+        Me.txtCompCode.TabIndex = 9
         Me.txtCompCode.Tag = "Enter Description"
         '
         'txtAuthorizeCapital
@@ -395,7 +395,7 @@ Partial Class frmScrip
         Me.txtAuthorizeCapital.MaxLength = 3
         Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
         Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtAuthorizeCapital.TabIndex = 57
+        Me.txtAuthorizeCapital.TabIndex = 7
         Me.txtAuthorizeCapital.Tag = "Enter Description"
         '
         'txtPaidUpCapital
@@ -407,7 +407,7 @@ Partial Class frmScrip
         Me.txtPaidUpCapital.MaxLength = 3
         Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
         Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtPaidUpCapital.TabIndex = 56
+        Me.txtPaidUpCapital.TabIndex = 6
         Me.txtPaidUpCapital.Tag = "Enter Description"
         '
         'txtFaceValue
@@ -419,7 +419,7 @@ Partial Class frmScrip
         Me.txtFaceValue.MaxLength = 3
         Me.txtFaceValue.Name = "txtFaceValue"
         Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
-        Me.txtFaceValue.TabIndex = 55
+        Me.txtFaceValue.TabIndex = 5
         Me.txtFaceValue.Tag = "Enter Description"
         '
         'txtDescription
@@ -431,7 +431,7 @@ Partial Class frmScrip
         Me.txtDescription.MaxLength = 3
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(538, 22)
-        Me.txtDescription.TabIndex = 54
+        Me.txtDescription.TabIndex = 12
         Me.txtDescription.Tag = "Enter Description"
         '
         'txtName
@@ -443,7 +443,7 @@ Partial Class frmScrip
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(309, 22)
-        Me.txtName.TabIndex = 53
+        Me.txtName.TabIndex = 3
         Me.txtName.Tag = "Enter Description"
         '
         'txtSymbol
@@ -455,7 +455,7 @@ Partial Class frmScrip
         Me.txtSymbol.MaxLength = 3
         Me.txtSymbol.Name = "txtSymbol"
         Me.txtSymbol.Size = New System.Drawing.Size(309, 22)
-        Me.txtSymbol.TabIndex = 52
+        Me.txtSymbol.TabIndex = 2
         Me.txtSymbol.Tag = "Enter Description"
         '
         'chkDelisted
@@ -464,7 +464,7 @@ Partial Class frmScrip
         Me.chkDelisted.Location = New System.Drawing.Point(527, 335)
         Me.chkDelisted.Name = "chkDelisted"
         Me.chkDelisted.Size = New System.Drawing.Size(85, 20)
-        Me.chkDelisted.TabIndex = 41
+        Me.chkDelisted.TabIndex = 18
         Me.chkDelisted.Text = "Delisted"
         Me.chkDelisted.UseVisualStyleBackColor = True
         '
@@ -474,7 +474,7 @@ Partial Class frmScrip
         Me.chkTransactionReport.Location = New System.Drawing.Point(527, 287)
         Me.chkTransactionReport.Name = "chkTransactionReport"
         Me.chkTransactionReport.Size = New System.Drawing.Size(181, 20)
-        Me.chkTransactionReport.TabIndex = 40
+        Me.chkTransactionReport.TabIndex = 17
         Me.chkTransactionReport.Text = "Transaction Reporting"
         Me.chkTransactionReport.UseVisualStyleBackColor = True
         '
@@ -484,7 +484,7 @@ Partial Class frmScrip
         Me.chkListedinstock.Location = New System.Drawing.Point(527, 256)
         Me.chkListedinstock.Name = "chkListedinstock"
         Me.chkListedinstock.Size = New System.Drawing.Size(197, 20)
-        Me.chkListedinstock.TabIndex = 39
+        Me.chkListedinstock.TabIndex = 16
         Me.chkListedinstock.Text = "Listed in stock exchange"
         Me.chkListedinstock.UseVisualStyleBackColor = True
         '
@@ -494,7 +494,7 @@ Partial Class frmScrip
         Me.chkFutureTrade.Location = New System.Drawing.Point(527, 224)
         Me.chkFutureTrade.Name = "chkFutureTrade"
         Me.chkFutureTrade.Size = New System.Drawing.Size(116, 20)
-        Me.chkFutureTrade.TabIndex = 38
+        Me.chkFutureTrade.TabIndex = 15
         Me.chkFutureTrade.Text = "Future Trade"
         Me.chkFutureTrade.UseVisualStyleBackColor = True
         '
@@ -504,7 +504,7 @@ Partial Class frmScrip
         Me.chkCDCelig.Location = New System.Drawing.Point(527, 193)
         Me.chkCDCelig.Name = "chkCDCelig"
         Me.chkCDCelig.Size = New System.Drawing.Size(115, 20)
-        Me.chkCDCelig.TabIndex = 37
+        Me.chkCDCelig.TabIndex = 14
         Me.chkCDCelig.Text = "CDC Eligible"
         Me.chkCDCelig.UseVisualStyleBackColor = True
         '
@@ -514,7 +514,7 @@ Partial Class frmScrip
         Me.chkGrpOfcomp.Location = New System.Drawing.Point(527, 161)
         Me.chkGrpOfcomp.Name = "chkGrpOfcomp"
         Me.chkGrpOfcomp.Size = New System.Drawing.Size(155, 20)
-        Me.chkGrpOfcomp.TabIndex = 36
+        Me.chkGrpOfcomp.TabIndex = 13
         Me.chkGrpOfcomp.Text = "Group of Company"
         Me.chkGrpOfcomp.UseVisualStyleBackColor = True
         '
@@ -605,7 +605,7 @@ Partial Class frmScrip
         Me.dtpDelistedDate.Location = New System.Drawing.Point(152, 340)
         Me.dtpDelistedDate.Name = "dtpDelistedDate"
         Me.dtpDelistedDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpDelistedDate.TabIndex = 26
+        Me.dtpDelistedDate.TabIndex = 11
         '
         'cmbGroupofCompany
         '
@@ -613,7 +613,7 @@ Partial Class frmScrip
         Me.cmbGroupofCompany.Location = New System.Drawing.Point(152, 252)
         Me.cmbGroupofCompany.Name = "cmbGroupofCompany"
         Me.cmbGroupofCompany.Size = New System.Drawing.Size(230, 24)
-        Me.cmbGroupofCompany.TabIndex = 23
+        Me.cmbGroupofCompany.TabIndex = 8
         '
         'CmbSector
         '
@@ -621,7 +621,7 @@ Partial Class frmScrip
         Me.CmbSector.Location = New System.Drawing.Point(152, 128)
         Me.CmbSector.Name = "CmbSector"
         Me.CmbSector.Size = New System.Drawing.Size(230, 24)
-        Me.CmbSector.TabIndex = 20
+        Me.CmbSector.TabIndex = 4
         '
         'cmbSystemCode
         '
@@ -629,7 +629,7 @@ Partial Class frmScrip
         Me.cmbSystemCode.Location = New System.Drawing.Point(152, 39)
         Me.cmbSystemCode.Name = "cmbSystemCode"
         Me.cmbSystemCode.Size = New System.Drawing.Size(213, 24)
-        Me.cmbSystemCode.TabIndex = 19
+        Me.cmbSystemCode.TabIndex = 1
         '
         'Label3
         '

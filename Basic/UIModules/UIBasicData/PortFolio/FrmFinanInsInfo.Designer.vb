@@ -362,7 +362,7 @@ Partial Class FrmFinanInsInfo
         'rbSGL
         '
         Me.rbSGL.AutoSize = True
-        Me.rbSGL.Location = New System.Drawing.Point(200, 142)
+        Me.rbSGL.Location = New System.Drawing.Point(202, 145)
         Me.rbSGL.Name = "rbSGL"
         Me.rbSGL.Size = New System.Drawing.Size(134, 20)
         Me.rbSGL.TabIndex = 51
@@ -373,10 +373,10 @@ Partial Class FrmFinanInsInfo
         'rbBank
         '
         Me.rbBank.AutoSize = True
-        Me.rbBank.Location = New System.Drawing.Point(126, 144)
+        Me.rbBank.Location = New System.Drawing.Point(126, 145)
         Me.rbBank.Name = "rbBank"
         Me.rbBank.Size = New System.Drawing.Size(61, 20)
-        Me.rbBank.TabIndex = 50
+        Me.rbBank.TabIndex = 5
         Me.rbBank.TabStop = True
         Me.rbBank.Text = "Bank"
         Me.rbBank.UseVisualStyleBackColor = True
@@ -386,21 +386,21 @@ Partial Class FrmFinanInsInfo
         Me.txtDesc.Location = New System.Drawing.Point(122, 201)
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(570, 22)
-        Me.txtDesc.TabIndex = 49
+        Me.txtDesc.TabIndex = 7
         '
         'txtBankAc
         '
         Me.txtBankAc.Location = New System.Drawing.Point(122, 170)
         Me.txtBankAc.Name = "txtBankAc"
         Me.txtBankAc.Size = New System.Drawing.Size(570, 22)
-        Me.txtBankAc.TabIndex = 48
+        Me.txtBankAc.TabIndex = 6
         '
         'txtrate
         '
         Me.txtrate.Location = New System.Drawing.Point(122, 117)
         Me.txtrate.Name = "txtrate"
         Me.txtrate.Size = New System.Drawing.Size(146, 22)
-        Me.txtrate.TabIndex = 47
+        Me.txtrate.TabIndex = 4
         '
         'cmbComp
         '
@@ -408,7 +408,7 @@ Partial Class FrmFinanInsInfo
         Me.cmbComp.Location = New System.Drawing.Point(340, 84)
         Me.cmbComp.Name = "cmbComp"
         Me.cmbComp.Size = New System.Drawing.Size(146, 24)
-        Me.cmbComp.TabIndex = 46
+        Me.cmbComp.TabIndex = 3
         '
         'cmbInstituteType
         '
@@ -416,20 +416,20 @@ Partial Class FrmFinanInsInfo
         Me.cmbInstituteType.Location = New System.Drawing.Point(122, 86)
         Me.cmbInstituteType.Name = "cmbInstituteType"
         Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
-        Me.cmbInstituteType.TabIndex = 45
+        Me.cmbInstituteType.TabIndex = 2
         '
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(122, 56)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(570, 22)
-        Me.txtName.TabIndex = 44
+        Me.txtName.TabIndex = 1
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(37, 151)
+        Me.Label16.Location = New System.Drawing.Point(37, 152)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(80, 13)
         Me.Label16.TabIndex = 43
@@ -599,14 +599,14 @@ Partial Class FrmFinanInsInfo
         Me.txtBic.Location = New System.Drawing.Point(310, 179)
         Me.txtBic.Name = "txtBic"
         Me.txtBic.Size = New System.Drawing.Size(108, 20)
-        Me.txtBic.TabIndex = 64
+        Me.txtBic.TabIndex = 17
         '
         'txtIpsAccNo
         '
         Me.txtIpsAccNo.Location = New System.Drawing.Point(122, 179)
         Me.txtIpsAccNo.Name = "txtIpsAccNo"
         Me.txtIpsAccNo.Size = New System.Drawing.Size(108, 20)
-        Me.txtIpsAccNo.TabIndex = 63
+        Me.txtIpsAccNo.TabIndex = 16
         '
         'Label15
         '
@@ -624,14 +624,14 @@ Partial Class FrmFinanInsInfo
         Me.txtDesc2.Location = New System.Drawing.Point(121, 154)
         Me.txtDesc2.Name = "txtDesc2"
         Me.txtDesc2.Size = New System.Drawing.Size(570, 20)
-        Me.txtDesc2.TabIndex = 53
+        Me.txtDesc2.TabIndex = 15
         '
         'txtFax
         '
         Me.txtFax.Location = New System.Drawing.Point(546, 123)
         Me.txtFax.Name = "txtFax"
         Me.txtFax.Size = New System.Drawing.Size(149, 20)
-        Me.txtFax.TabIndex = 61
+        Me.txtFax.TabIndex = 14
         '
         'Label14
         '
@@ -649,14 +649,14 @@ Partial Class FrmFinanInsInfo
         Me.txtEmail.Location = New System.Drawing.Point(310, 128)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(108, 20)
-        Me.txtEmail.TabIndex = 60
+        Me.txtEmail.TabIndex = 13
         '
         'txtPH
         '
         Me.txtPH.Location = New System.Drawing.Point(122, 123)
         Me.txtPH.Name = "txtPH"
         Me.txtPH.Size = New System.Drawing.Size(108, 20)
-        Me.txtPH.TabIndex = 59
+        Me.txtPH.TabIndex = 12
         '
         'Label13
         '
@@ -690,10 +690,10 @@ Partial Class FrmFinanInsInfo
         '
         'txtBankAccNo
         '
-        Me.txtBankAccNo.Location = New System.Drawing.Point(546, 87)
+        Me.txtBankAccNo.Location = New System.Drawing.Point(539, 87)
         Me.txtBankAccNo.Name = "txtBankAccNo"
         Me.txtBankAccNo.Size = New System.Drawing.Size(150, 20)
-        Me.txtBankAccNo.TabIndex = 55
+        Me.txtBankAccNo.TabIndex = 11
         '
         'Label8
         '
@@ -720,14 +720,14 @@ Partial Class FrmFinanInsInfo
         Me.txtContPer.Location = New System.Drawing.Point(121, 87)
         Me.txtContPer.Name = "txtContPer"
         Me.txtContPer.Size = New System.Drawing.Size(311, 20)
-        Me.txtContPer.TabIndex = 52
+        Me.txtContPer.TabIndex = 10
         '
         'txtBranchName
         '
         Me.txtBranchName.Location = New System.Drawing.Point(299, 22)
         Me.txtBranchName.Name = "txtBranchName"
         Me.txtBranchName.Size = New System.Drawing.Size(396, 20)
-        Me.txtBranchName.TabIndex = 50
+        Me.txtBranchName.TabIndex = 8
         '
         'Label6
         '
@@ -744,7 +744,7 @@ Partial Class FrmFinanInsInfo
         Me.txtAddr.Location = New System.Drawing.Point(121, 54)
         Me.txtAddr.Name = "txtAddr"
         Me.txtAddr.Size = New System.Drawing.Size(570, 20)
-        Me.txtAddr.TabIndex = 48
+        Me.txtAddr.TabIndex = 9
         '
         'Label2
         '
