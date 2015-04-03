@@ -162,7 +162,10 @@ Public Class FrmSetUpCertif
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
-
+    Private Sub btnPost_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPost.Click
+        Call SetButtonPrinciple()
+        Call SetButton()
+    End Sub
 
     Private Sub frmScrip_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mSetUpCertif = False
