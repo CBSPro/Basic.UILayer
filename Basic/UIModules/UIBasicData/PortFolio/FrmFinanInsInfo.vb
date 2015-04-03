@@ -273,4 +273,10 @@ Public Class FrmFinanInsInfo
         btnPost.Enabled = mPost
     End Sub
 
+
+
+
+    Private Sub FrmFinanInsInfo_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mFinanInsInfo = False
+    End Sub
 End Class

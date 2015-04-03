@@ -48,6 +48,8 @@ Public Class frmScrip
 
     End Sub
 
+   
+
 
     Private Sub frmScrip_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -263,4 +265,12 @@ Public Class frmScrip
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+
+
+    Private Sub frmScrip_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mScrip = False
+    End Sub
+
+
 End Class

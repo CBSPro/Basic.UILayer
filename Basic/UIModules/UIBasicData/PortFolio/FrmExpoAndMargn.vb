@@ -179,4 +179,9 @@ Public Class FrmExpoAndMargn
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+    Private Sub FrmExpoAndMargn_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mExpoandMargin = False
+
+    End Sub
 End Class

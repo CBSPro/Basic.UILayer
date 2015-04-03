@@ -36,6 +36,8 @@ Public Class frmGroupOfcompany
 
     End Sub
 
+   
+
 
     Private Sub frmGroupOfcompany_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -155,4 +157,9 @@ Public Class frmGroupOfcompany
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+    Private Sub frmGroupOfcompany_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mGroupofCompany = False
+    End Sub
+
 End Class

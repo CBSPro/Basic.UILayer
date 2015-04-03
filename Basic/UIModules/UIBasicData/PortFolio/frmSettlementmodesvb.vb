@@ -146,4 +146,9 @@ Public Class frmSettlementmodesvb
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+
+    Private Sub frmScrip_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mSettlementModes = False
+    End Sub
 End Class

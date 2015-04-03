@@ -10,9 +10,6 @@ Imports Basic.DAL.Utils
 Public Class frmBroker
 
 
-
-
-
     Sub SetEntryMode()
         btnAdd.Enabled = Flag
         btnEdit.Enabled = Flag
@@ -246,5 +243,9 @@ Public Class frmBroker
         btnPost.Enabled = mPost
     End Sub
 
+
+    Private Sub frmBroker_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mBroker = False
+    End Sub
 
 End Class

@@ -330,4 +330,10 @@ Public Class frmFund
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+
+
+    Private Sub frmFund_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mFund = False
+    End Sub
 End Class

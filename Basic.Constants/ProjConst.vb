@@ -266,6 +266,39 @@ Public Class ProjConst
     Public Shared rowNum As Integer
 
 
+    '///// Portfolio General FormClosing event Variable
+
+    Public Shared mBroker As Boolean
+    Public Shared mCalender As Boolean
+    Public Shared mCreditRateComp As Boolean
+    Public Shared mCustodian As Boolean
+    Public Shared mExpoandMargin As Boolean
+    Public Shared mFinanInfo As Boolean
+    Public Shared mFinanInsInfo As Boolean
+    Public Shared mFund As Boolean
+    Public Shared mFundWiseControl As Boolean
+    Public Shared mFutureScrip As Boolean
+    Public Shared mGroupofCompany As Boolean
+    Public Shared mRating As Boolean
+    Public Shared mScrip As Boolean
+    Public Shared mScripMarket As Boolean
+    Public Shared mSector As Boolean
+    Public Shared mSettlementModes As Boolean
+    Public Shared mSetUpCertif As Boolean
+    Public Shared mStockMarket As Boolean
+    Public Shared mTaxParam As Boolean
+    Public Shared mTrustee As Boolean
+
+
+
+
+
+
+
+
+
+
+
 
 
 

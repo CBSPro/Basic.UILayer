@@ -36,6 +36,8 @@ Public Class frmFutureScrip
 
     End Sub
 
+    
+
 
     Private Sub frmFutureScrip_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -192,4 +194,10 @@ Public Class frmFutureScrip
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+
+    Private Sub frmFutureScrip_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mFutureScrip = False
+    End Sub
+
 End Class

@@ -57,6 +57,8 @@ Public Class frmCalendar
         End If
     End Sub
 
+    
+
     Private Sub frmCalendar_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
     End Sub
@@ -150,5 +152,10 @@ Public Class frmCalendar
         btnDelete.Enabled = mDelete
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
+    End Sub
+
+
+    Private Sub frmCalendar_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mCalender = False
     End Sub
 End Class

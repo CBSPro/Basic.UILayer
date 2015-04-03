@@ -8,10 +8,6 @@ Imports Basic.DAL.Utils
 Public Class FrmCreditRateComp
 
 
-
-
-
-
     Sub SetEntryMode()
         btnAdd.Enabled = Flag
         btnEdit.Enabled = Flag
@@ -162,5 +158,9 @@ Public Class FrmCreditRateComp
         btnDelete.Enabled = mDelete
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
+    End Sub
+
+    Private Sub FrmCreditRateComp_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mCreditRateComp = False
     End Sub
 End Class

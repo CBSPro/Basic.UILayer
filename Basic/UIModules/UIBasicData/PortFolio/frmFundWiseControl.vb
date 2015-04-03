@@ -40,6 +40,8 @@ Public Class frmFundWiseControl
 
     End Sub
 
+    
+
 
     Private Sub frmFundWiseControl_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -154,4 +156,12 @@ Public Class frmFundWiseControl
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+
+    Private Sub frmFundWiseControl_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+        Constants.ProjConst.mFundWiseControl = False
+    End Sub
+
+
 End Class

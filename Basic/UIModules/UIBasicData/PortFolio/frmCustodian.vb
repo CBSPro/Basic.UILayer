@@ -158,4 +158,8 @@ Public Class frmCustodian
         btnPrint.Enabled = mPrint
         btnPost.Enabled = mPost
     End Sub
+
+    Private Sub frmCustodian_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mCustodian = False
+    End Sub
 End Class
