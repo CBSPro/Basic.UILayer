@@ -61,6 +61,9 @@ Partial Class FrmTaxParm
         Me.txtTaxPercent = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnFetch = New System.Windows.Forms.Button()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -425,7 +428,7 @@ Partial Class FrmTaxParm
         Me.GroupBox1.Controls.Add(Me.btnFetch)
         Me.GroupBox1.Location = New System.Drawing.Point(355, 261)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(722, 340)
+        Me.GroupBox1.Size = New System.Drawing.Size(722, 317)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         '
@@ -435,7 +438,7 @@ Partial Class FrmTaxParm
         Me.fpTaxParm.Location = New System.Drawing.Point(16, 73)
         Me.fpTaxParm.Name = "fpTaxParm"
         Me.fpTaxParm.OcxState = CType(resources.GetObject("fpTaxParm.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpTaxParm.Size = New System.Drawing.Size(700, 261)
+        Me.fpTaxParm.Size = New System.Drawing.Size(700, 228)
         Me.fpTaxParm.TabIndex = 60
         '
         'txtTaxAmnt
@@ -481,11 +484,41 @@ Partial Class FrmTaxParm
         Me.btnFetch.Text = "Fetch"
         Me.btnFetch.UseVisualStyleBackColor = True
         '
+        'lblBy
+        '
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(908, 584)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(170, 23)
+        Me.lblBy.TabIndex = 47
+        '
+        'lblToolTip
+        '
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(531, 584)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
+        Me.lblToolTip.TabIndex = 46
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(355, 585)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 45
+        '
         'FrmTaxParm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1080, 603)
+        Me.ClientSize = New System.Drawing.Size(1080, 616)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
@@ -543,4 +576,7 @@ Partial Class FrmTaxParm
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtTaxAmnt As System.Windows.Forms.TextBox
     Friend WithEvents fpTaxParm As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
 End Class
