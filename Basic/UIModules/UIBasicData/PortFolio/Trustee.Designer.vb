@@ -28,15 +28,15 @@ Partial Class Trustee
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtaccount = New System.Windows.Forms.TextBox()
+        Me.txtfax = New System.Windows.Forms.TextBox()
+        Me.txtcontact = New System.Windows.Forms.TextBox()
+        Me.txtPostcode = New System.Windows.Forms.TextBox()
+        Me.txtPh = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtBranch = New System.Windows.Forms.TextBox()
+        Me.txtBank = New System.Windows.Forms.TextBox()
+        Me.txtTitle = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -123,15 +123,15 @@ Partial Class Trustee
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox9)
-        Me.GpData.Controls.Add(Me.TextBox8)
-        Me.GpData.Controls.Add(Me.TextBox7)
-        Me.GpData.Controls.Add(Me.TextBox6)
-        Me.GpData.Controls.Add(Me.TextBox5)
-        Me.GpData.Controls.Add(Me.TextBox4)
-        Me.GpData.Controls.Add(Me.TextBox3)
-        Me.GpData.Controls.Add(Me.TextBox2)
-        Me.GpData.Controls.Add(Me.TextBox1)
+        Me.GpData.Controls.Add(Me.txtaccount)
+        Me.GpData.Controls.Add(Me.txtfax)
+        Me.GpData.Controls.Add(Me.txtcontact)
+        Me.GpData.Controls.Add(Me.txtPostcode)
+        Me.GpData.Controls.Add(Me.txtPh)
+        Me.GpData.Controls.Add(Me.txtAddress)
+        Me.GpData.Controls.Add(Me.txtBranch)
+        Me.GpData.Controls.Add(Me.txtBank)
+        Me.GpData.Controls.Add(Me.txtTitle)
         Me.GpData.Controls.Add(Me.CheckBox1)
         Me.GpData.Controls.Add(Me.Label8)
         Me.GpData.Controls.Add(Me.Label7)
@@ -151,113 +151,113 @@ Partial Class Trustee
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
         '
-        'TextBox9
+        'txtaccount
         '
-        Me.TextBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(520, 242)
-        Me.TextBox9.MaxLength = 3
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox9.TabIndex = 46
-        Me.TextBox9.Tag = "Enter Description"
+        Me.txtaccount.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtaccount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtaccount.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtaccount.Location = New System.Drawing.Point(520, 242)
+        Me.txtaccount.MaxLength = 3
+        Me.txtaccount.Name = "txtaccount"
+        Me.txtaccount.Size = New System.Drawing.Size(129, 22)
+        Me.txtaccount.TabIndex = 9
+        Me.txtaccount.Tag = "Enter Description"
         '
-        'TextBox8
+        'txtfax
         '
-        Me.TextBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(520, 183)
-        Me.TextBox8.MaxLength = 3
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox8.TabIndex = 45
-        Me.TextBox8.Tag = "Enter Description"
+        Me.txtfax.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtfax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtfax.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtfax.Location = New System.Drawing.Point(520, 183)
+        Me.txtfax.MaxLength = 3
+        Me.txtfax.Name = "txtfax"
+        Me.txtfax.Size = New System.Drawing.Size(129, 22)
+        Me.txtfax.TabIndex = 8
+        Me.txtfax.Tag = "Enter Description"
         '
-        'TextBox7
+        'txtcontact
         '
-        Me.TextBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(106, 242)
-        Me.TextBox7.MaxLength = 3
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox7.TabIndex = 44
-        Me.TextBox7.Tag = "Enter Description"
+        Me.txtcontact.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtcontact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtcontact.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcontact.Location = New System.Drawing.Point(106, 242)
+        Me.txtcontact.MaxLength = 3
+        Me.txtcontact.Name = "txtcontact"
+        Me.txtcontact.Size = New System.Drawing.Size(129, 22)
+        Me.txtcontact.TabIndex = 7
+        Me.txtcontact.Tag = "Enter Description"
         '
-        'TextBox6
+        'txtPostcode
         '
-        Me.TextBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(106, 212)
-        Me.TextBox6.MaxLength = 3
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox6.TabIndex = 43
-        Me.TextBox6.Tag = "Enter Description"
+        Me.txtPostcode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPostcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPostcode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPostcode.Location = New System.Drawing.Point(106, 212)
+        Me.txtPostcode.MaxLength = 3
+        Me.txtPostcode.Name = "txtPostcode"
+        Me.txtPostcode.Size = New System.Drawing.Size(129, 22)
+        Me.txtPostcode.TabIndex = 6
+        Me.txtPostcode.Tag = "Enter Description"
         '
-        'TextBox5
+        'txtPh
         '
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(106, 183)
-        Me.TextBox5.MaxLength = 3
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox5.TabIndex = 42
-        Me.TextBox5.Tag = "Enter Description"
+        Me.txtPh.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPh.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPh.Location = New System.Drawing.Point(106, 183)
+        Me.txtPh.MaxLength = 3
+        Me.txtPh.Name = "txtPh"
+        Me.txtPh.Size = New System.Drawing.Size(129, 22)
+        Me.txtPh.TabIndex = 5
+        Me.txtPh.Tag = "Enter Description"
         '
-        'TextBox4
+        'txtAddress
         '
-        Me.TextBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(106, 154)
-        Me.TextBox4.MaxLength = 3
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(543, 22)
-        Me.TextBox4.TabIndex = 41
-        Me.TextBox4.Tag = "Enter Description"
+        Me.txtAddress.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(106, 154)
+        Me.txtAddress.MaxLength = 3
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(543, 22)
+        Me.txtAddress.TabIndex = 4
+        Me.txtAddress.Tag = "Enter Description"
         '
-        'TextBox3
+        'txtBranch
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(418, 126)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(231, 22)
-        Me.TextBox3.TabIndex = 40
-        Me.TextBox3.Tag = "Enter Description"
+        Me.txtBranch.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtBranch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBranch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBranch.Location = New System.Drawing.Point(418, 126)
+        Me.txtBranch.MaxLength = 3
+        Me.txtBranch.Name = "txtBranch"
+        Me.txtBranch.Size = New System.Drawing.Size(231, 22)
+        Me.txtBranch.TabIndex = 3
+        Me.txtBranch.Tag = "Enter Description"
         '
-        'TextBox2
+        'txtBank
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(106, 126)
-        Me.TextBox2.MaxLength = 3
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(253, 22)
-        Me.TextBox2.TabIndex = 39
-        Me.TextBox2.Tag = "Enter Description"
+        Me.txtBank.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtBank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBank.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBank.Location = New System.Drawing.Point(106, 126)
+        Me.txtBank.MaxLength = 3
+        Me.txtBank.Name = "txtBank"
+        Me.txtBank.Size = New System.Drawing.Size(253, 22)
+        Me.txtBank.TabIndex = 2
+        Me.txtBank.Tag = "Enter Description"
         '
-        'TextBox1
+        'txtTitle
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(106, 98)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(543, 22)
-        Me.TextBox1.TabIndex = 38
-        Me.TextBox1.Tag = "Enter Description"
+        Me.txtTitle.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTitle.Location = New System.Drawing.Point(106, 98)
+        Me.txtTitle.MaxLength = 3
+        Me.txtTitle.Name = "txtTitle"
+        Me.txtTitle.Size = New System.Drawing.Size(543, 22)
+        Me.txtTitle.TabIndex = 1
+        Me.txtTitle.Tag = "Enter Description"
         '
         'CheckBox1
         '
@@ -660,15 +660,15 @@ Partial Class Trustee
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtBank As System.Windows.Forms.TextBox
+    Friend WithEvents txtTitle As System.Windows.Forms.TextBox
+    Friend WithEvents txtaccount As System.Windows.Forms.TextBox
+    Friend WithEvents txtfax As System.Windows.Forms.TextBox
+    Friend WithEvents txtcontact As System.Windows.Forms.TextBox
+    Friend WithEvents txtPostcode As System.Windows.Forms.TextBox
+    Friend WithEvents txtPh As System.Windows.Forms.TextBox
+    Friend WithEvents txtAddress As System.Windows.Forms.TextBox
+    Friend WithEvents txtBranch As System.Windows.Forms.TextBox
     Friend WithEvents lblBy As System.Windows.Forms.Label
     Friend WithEvents lblToolTip As System.Windows.Forms.Label
     Friend WithEvents lblCompany As System.Windows.Forms.Label

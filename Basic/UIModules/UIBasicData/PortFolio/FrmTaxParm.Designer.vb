@@ -333,7 +333,7 @@ Partial Class FrmTaxParm
         Me.cmbTaxType.Location = New System.Drawing.Point(122, 95)
         Me.cmbTaxType.Name = "cmbTaxType"
         Me.cmbTaxType.Size = New System.Drawing.Size(110, 24)
-        Me.cmbTaxType.TabIndex = 55
+        Me.cmbTaxType.TabIndex = 4
         '
         'Label2
         '
@@ -351,7 +351,7 @@ Partial Class FrmTaxParm
         Me.cmbFund.Location = New System.Drawing.Point(330, 33)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(140, 24)
-        Me.cmbFund.TabIndex = 53
+        Me.cmbFund.TabIndex = 2
         '
         'dptConfigDate
         '
@@ -360,7 +360,7 @@ Partial Class FrmTaxParm
         Me.dptConfigDate.Location = New System.Drawing.Point(122, 35)
         Me.dptConfigDate.Name = "dptConfigDate"
         Me.dptConfigDate.Size = New System.Drawing.Size(110, 22)
-        Me.dptConfigDate.TabIndex = 52
+        Me.dptConfigDate.TabIndex = 1
         '
         'cmbOrdMod
         '
@@ -368,7 +368,7 @@ Partial Class FrmTaxParm
         Me.cmbOrdMod.Location = New System.Drawing.Point(330, 89)
         Me.cmbOrdMod.Name = "cmbOrdMod"
         Me.cmbOrdMod.Size = New System.Drawing.Size(140, 24)
-        Me.cmbOrdMod.TabIndex = 46
+        Me.cmbOrdMod.TabIndex = 5
         '
         'cmbSecuType
         '
@@ -376,7 +376,7 @@ Partial Class FrmTaxParm
         Me.cmbSecuType.Location = New System.Drawing.Point(122, 65)
         Me.cmbSecuType.Name = "cmbSecuType"
         Me.cmbSecuType.Size = New System.Drawing.Size(110, 24)
-        Me.cmbSecuType.TabIndex = 45
+        Me.cmbSecuType.TabIndex = 3
         '
         'Label30
         '
@@ -446,7 +446,7 @@ Partial Class FrmTaxParm
         Me.txtTaxAmnt.Location = New System.Drawing.Point(330, 40)
         Me.txtTaxAmnt.Name = "txtTaxAmnt"
         Me.txtTaxAmnt.Size = New System.Drawing.Size(100, 20)
-        Me.txtTaxAmnt.TabIndex = 59
+        Me.txtTaxAmnt.TabIndex = 8
         '
         'Label4
         '
@@ -463,7 +463,7 @@ Partial Class FrmTaxParm
         Me.txtTaxPercent.Location = New System.Drawing.Point(122, 36)
         Me.txtTaxPercent.Name = "txtTaxPercent"
         Me.txtTaxPercent.Size = New System.Drawing.Size(100, 20)
-        Me.txtTaxPercent.TabIndex = 57
+        Me.txtTaxPercent.TabIndex = 7
         '
         'Label3
         '
@@ -480,7 +480,7 @@ Partial Class FrmTaxParm
         Me.btnFetch.Location = New System.Drawing.Point(36, 10)
         Me.btnFetch.Name = "btnFetch"
         Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 0
+        Me.btnFetch.TabIndex = 6
         Me.btnFetch.Text = "Fetch"
         Me.btnFetch.UseVisualStyleBackColor = True
         '

@@ -160,7 +160,7 @@ Partial Class FrmSetUpCertif
         Me.cmbInstuType.Location = New System.Drawing.Point(122, 59)
         Me.cmbInstuType.Name = "cmbInstuType"
         Me.cmbInstuType.Size = New System.Drawing.Size(146, 24)
-        Me.cmbInstuType.TabIndex = 58
+        Me.cmbInstuType.TabIndex = 1
         '
         'Label2
         '
@@ -178,7 +178,7 @@ Partial Class FrmSetUpCertif
         Me.cmbBranch.Location = New System.Drawing.Point(122, 148)
         Me.cmbBranch.Name = "cmbBranch"
         Me.cmbBranch.Size = New System.Drawing.Size(146, 24)
-        Me.cmbBranch.TabIndex = 53
+        Me.cmbBranch.TabIndex = 4
         '
         'cmbInstitute
         '
@@ -186,7 +186,7 @@ Partial Class FrmSetUpCertif
         Me.cmbInstitute.Location = New System.Drawing.Point(122, 116)
         Me.cmbInstitute.Name = "cmbInstitute"
         Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
-        Me.cmbInstitute.TabIndex = 46
+        Me.cmbInstitute.TabIndex = 3
         '
         'cmbInstituteType
         '
@@ -194,7 +194,7 @@ Partial Class FrmSetUpCertif
         Me.cmbInstituteType.Location = New System.Drawing.Point(122, 86)
         Me.cmbInstituteType.Name = "cmbInstituteType"
         Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
-        Me.cmbInstituteType.TabIndex = 45
+        Me.cmbInstituteType.TabIndex = 2
         '
         'Label10
         '
@@ -255,7 +255,7 @@ Partial Class FrmSetUpCertif
         Me.dtpIssue.Location = New System.Drawing.Point(122, 85)
         Me.dtpIssue.Name = "dtpIssue"
         Me.dtpIssue.Size = New System.Drawing.Size(146, 20)
-        Me.dtpIssue.TabIndex = 57
+        Me.dtpIssue.TabIndex = 7
         Me.dtpIssue.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
         'Label4
@@ -273,7 +273,7 @@ Partial Class FrmSetUpCertif
         Me.txtCertificateNo.Location = New System.Drawing.Point(122, 28)
         Me.txtCertificateNo.Name = "txtCertificateNo"
         Me.txtCertificateNo.Size = New System.Drawing.Size(146, 20)
-        Me.txtCertificateNo.TabIndex = 48
+        Me.txtCertificateNo.TabIndex = 5
         '
         'Label9
         '
@@ -333,7 +333,7 @@ Partial Class FrmSetUpCertif
         Me.dtpMaturityDate.Location = New System.Drawing.Point(122, 138)
         Me.dtpMaturityDate.Name = "dtpMaturityDate"
         Me.dtpMaturityDate.Size = New System.Drawing.Size(146, 20)
-        Me.dtpMaturityDate.TabIndex = 61
+        Me.dtpMaturityDate.TabIndex = 9
         Me.dtpMaturityDate.Value = New Date(2015, 3, 30, 15, 11, 43, 0)
         '
         'Label6
@@ -351,14 +351,14 @@ Partial Class FrmSetUpCertif
         Me.txtNoOfDays.Location = New System.Drawing.Point(122, 112)
         Me.txtNoOfDays.Name = "txtNoOfDays"
         Me.txtNoOfDays.Size = New System.Drawing.Size(146, 20)
-        Me.txtNoOfDays.TabIndex = 59
+        Me.txtNoOfDays.TabIndex = 8
         '
         'txtAmnt
         '
         Me.txtAmnt.Location = New System.Drawing.Point(122, 54)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(146, 20)
-        Me.txtAmnt.TabIndex = 58
+        Me.txtAmnt.TabIndex = 6
         '
         'GpBtns
         '

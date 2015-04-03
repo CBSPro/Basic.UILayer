@@ -28,8 +28,8 @@ Partial Class frmSettlementmodesvb
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtDays = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -110,8 +110,8 @@ Partial Class frmSettlementmodesvb
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox1)
-        Me.GpData.Controls.Add(Me.TextBox3)
+        Me.GpData.Controls.Add(Me.txtDays)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.ListBox1)
         Me.GpData.Controls.Add(Me.Label2)
@@ -125,29 +125,29 @@ Partial Class frmSettlementmodesvb
         Me.GpData.TabIndex = 41
         Me.GpData.TabStop = False
         '
-        'TextBox1
+        'txtDays
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(215, 111)
-        Me.TextBox1.MaxLength = 3
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(98, 22)
-        Me.TextBox1.TabIndex = 53
-        Me.TextBox1.Tag = "Enter Description"
+        Me.txtDays.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDays.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDays.Location = New System.Drawing.Point(215, 111)
+        Me.txtDays.MaxLength = 3
+        Me.txtDays.Name = "txtDays"
+        Me.txtDays.Size = New System.Drawing.Size(98, 22)
+        Me.txtDays.TabIndex = 2
+        Me.txtDays.Tag = "Enter Description"
         '
-        'TextBox3
+        'txtName
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(215, 84)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(215, 84)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.TabIndex = 1
+        Me.txtName.Tag = "Enter Description"
         '
         'Label4
         '
@@ -166,7 +166,7 @@ Partial Class frmSettlementmodesvb
         Me.ListBox1.Location = New System.Drawing.Point(215, 138)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(364, 84)
-        Me.ListBox1.TabIndex = 38
+        Me.ListBox1.TabIndex = 3
         '
         'Label2
         '
@@ -476,8 +476,8 @@ Partial Class frmSettlementmodesvb
     Friend WithEvents btnView As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDays As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents lblBy As System.Windows.Forms.Label
     Friend WithEvents lblToolTip As System.Windows.Forms.Label
     Friend WithEvents lblCompany As System.Windows.Forms.Label

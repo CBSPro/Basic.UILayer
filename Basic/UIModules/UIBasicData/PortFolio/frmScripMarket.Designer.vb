@@ -31,7 +31,7 @@ Partial Class frmScripMarket
         Me.dtpStartDate = New System.Windows.Forms.DateTimePicker()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbIndex = New System.Windows.Forms.ComboBox()
         Me.GpBtns = New System.Windows.Forms.GroupBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnBottom = New System.Windows.Forms.Button()
@@ -111,7 +111,7 @@ Partial Class frmScripMarket
         Me.GpData.Controls.Add(Me.dtpStartDate)
         Me.GpData.Controls.Add(Me.Label30)
         Me.GpData.Controls.Add(Me.Label25)
-        Me.GpData.Controls.Add(Me.ComboBox2)
+        Me.GpData.Controls.Add(Me.cmbIndex)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(358, 123)
         Me.GpData.Name = "GpData"
@@ -126,7 +126,7 @@ Partial Class frmScripMarket
         Me.dtpStartDate.Location = New System.Drawing.Point(165, 55)
         Me.dtpStartDate.Name = "dtpStartDate"
         Me.dtpStartDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpStartDate.TabIndex = 31
+        Me.dtpStartDate.TabIndex = 2
         '
         'Label30
         '
@@ -148,13 +148,13 @@ Partial Class frmScripMarket
         Me.Label25.TabIndex = 20
         Me.Label25.Text = "Index"
         '
-        'ComboBox2
+        'cmbIndex
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(165, 25)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(230, 24)
-        Me.ComboBox2.TabIndex = 18
+        Me.cmbIndex.FormattingEnabled = True
+        Me.cmbIndex.Location = New System.Drawing.Point(165, 25)
+        Me.cmbIndex.Name = "cmbIndex"
+        Me.cmbIndex.Size = New System.Drawing.Size(230, 24)
+        Me.cmbIndex.TabIndex = 1
         '
         'GpBtns
         '
@@ -413,7 +413,7 @@ Partial Class frmScripMarket
     Friend WithEvents GpData As System.Windows.Forms.GroupBox
     Friend WithEvents Label30 As System.Windows.Forms.Label
     Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbIndex As System.Windows.Forms.ComboBox
     Friend WithEvents GpBtns As System.Windows.Forms.GroupBox
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnBottom As System.Windows.Forms.Button

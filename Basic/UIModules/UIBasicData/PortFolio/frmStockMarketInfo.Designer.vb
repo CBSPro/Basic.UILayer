@@ -28,11 +28,11 @@ Partial Class frmScripIndexSetup
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtMarketType = New System.Windows.Forms.ComboBox()
         Me.txtsysCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -110,11 +110,11 @@ Partial Class frmScripIndexSetup
         '
         'GpData
         '
-        Me.GpData.Controls.Add(Me.TextBox3)
+        Me.GpData.Controls.Add(Me.txtName)
         Me.GpData.Controls.Add(Me.Label4)
         Me.GpData.Controls.Add(Me.ListBox1)
         Me.GpData.Controls.Add(Me.Label2)
-        Me.GpData.Controls.Add(Me.ComboBox1)
+        Me.GpData.Controls.Add(Me.txtMarketType)
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Controls.Add(Me.Label3)
@@ -125,17 +125,17 @@ Partial Class frmScripIndexSetup
         Me.GpData.TabIndex = 40
         Me.GpData.TabStop = False
         '
-        'TextBox3
+        'txtName
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(215, 56)
-        Me.TextBox3.MaxLength = 3
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(309, 22)
-        Me.TextBox3.TabIndex = 52
-        Me.TextBox3.Tag = "Enter Description"
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(215, 56)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.TabIndex = 1
+        Me.txtName.Tag = "Enter Description"
         '
         'Label4
         '
@@ -154,7 +154,7 @@ Partial Class frmScripIndexSetup
         Me.ListBox1.Location = New System.Drawing.Point(215, 120)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(364, 84)
-        Me.ListBox1.TabIndex = 38
+        Me.ListBox1.TabIndex = 3
         '
         'Label2
         '
@@ -166,13 +166,13 @@ Partial Class frmScripIndexSetup
         Me.Label2.TabIndex = 37
         Me.Label2.Text = "Market Type"
         '
-        'ComboBox1
+        'txtMarketType
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(216, 81)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(213, 24)
-        Me.ComboBox1.TabIndex = 36
+        Me.txtMarketType.FormattingEnabled = True
+        Me.txtMarketType.Location = New System.Drawing.Point(216, 81)
+        Me.txtMarketType.Name = "txtMarketType"
+        Me.txtMarketType.Size = New System.Drawing.Size(213, 24)
+        Me.txtMarketType.TabIndex = 2
         '
         'txtsysCode
         '
@@ -468,12 +468,12 @@ Partial Class frmScripIndexSetup
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtMarketType As System.Windows.Forms.ComboBox
     Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents lblBy As System.Windows.Forms.Label
     Friend WithEvents lblToolTip As System.Windows.Forms.Label
     Friend WithEvents lblCompany As System.Windows.Forms.Label
