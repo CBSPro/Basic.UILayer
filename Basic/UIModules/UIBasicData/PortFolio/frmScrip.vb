@@ -35,14 +35,13 @@ Public Class frmScrip
         txtAuthorizeCapital.Text = ""
         txtCompCode.Text = ""
         txtDescription.Text = ""
-        txtDescription.Text = ""
         txtFaceValue.Text = ""
         txtName.Text = ""
         txtPaidUpCapital.Text = ""
         txtSearch.Text = ""
         txtSecurityCode.Text = ""
         txtSymbol.Text = ""
-        txtsysCode.Text = ""
+
 
 
 
@@ -91,25 +90,25 @@ Public Class frmScrip
         End If
     End Sub
 
-    Private Sub cmbGroupofCompany_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbGroupofCompany.KeyDown
+    Private Sub cmbGroupofCompany_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbGroupofcompany.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub CmbSector_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CmbSector.KeyDown
+    Private Sub CmbSector_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbSector.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cmbSystemCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbSystemCode.KeyDown
+    Private Sub cmbSystemCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbSysCode.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub dtpDelistedDate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dtpDelistedDate.KeyDown
+    Private Sub dtpDelistedDate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles DateTimePicker1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -169,7 +168,7 @@ Public Class frmScrip
         End If
     End Sub
 
-    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown
+    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles TextBox9.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -275,5 +274,8 @@ Public Class frmScrip
         Constants.ProjConst.mScrip = False
     End Sub
 
-
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 End Class

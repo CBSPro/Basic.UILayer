@@ -145,7 +145,7 @@ Partial Class FrmExpoAndMargn
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(355, 121)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(722, 331)
+        Me.GpData.Size = New System.Drawing.Size(722, 420)
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
@@ -153,7 +153,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.dtpValid.CustomFormat = "dd/MM/yyyy"
         Me.dtpValid.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpValid.Location = New System.Drawing.Point(122, 211)
+        Me.dtpValid.Location = New System.Drawing.Point(223, 217)
         Me.dtpValid.Name = "dtpValid"
         Me.dtpValid.Size = New System.Drawing.Size(146, 22)
         Me.dtpValid.TabIndex = 6
@@ -163,7 +163,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(37, 219)
+        Me.Label4.Location = New System.Drawing.Point(139, 220)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 13)
         Me.Label4.TabIndex = 56
@@ -173,7 +173,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(63, 189)
+        Me.Label2.Location = New System.Drawing.Point(165, 189)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 55
@@ -182,23 +182,23 @@ Partial Class FrmExpoAndMargn
         'cmbInstitute
         '
         Me.cmbInstitute.FormattingEnabled = True
-        Me.cmbInstitute.Location = New System.Drawing.Point(122, 178)
+        Me.cmbInstitute.Location = New System.Drawing.Point(223, 185)
         Me.cmbInstitute.Name = "cmbInstitute"
-        Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstitute.Size = New System.Drawing.Size(320, 24)
         Me.cmbInstitute.TabIndex = 5
         '
         'cmbInstituteType
         '
         Me.cmbInstituteType.FormattingEnabled = True
-        Me.cmbInstituteType.Location = New System.Drawing.Point(122, 148)
+        Me.cmbInstituteType.Location = New System.Drawing.Point(223, 153)
         Me.cmbInstituteType.Name = "cmbInstituteType"
-        Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
+        Me.cmbInstituteType.Size = New System.Drawing.Size(320, 24)
         Me.cmbInstituteType.TabIndex = 4
         '
         'rbMargin
         '
         Me.rbMargin.AutoSize = True
-        Me.rbMargin.Location = New System.Drawing.Point(448, 61)
+        Me.rbMargin.Location = New System.Drawing.Point(549, 61)
         Me.rbMargin.Name = "rbMargin"
         Me.rbMargin.Size = New System.Drawing.Size(73, 20)
         Me.rbMargin.TabIndex = 52
@@ -209,7 +209,7 @@ Partial Class FrmExpoAndMargn
         'rbBorrow
         '
         Me.rbBorrow.AutoSize = True
-        Me.rbBorrow.Location = New System.Drawing.Point(278, 61)
+        Me.rbBorrow.Location = New System.Drawing.Point(379, 61)
         Me.rbBorrow.Name = "rbBorrow"
         Me.rbBorrow.Size = New System.Drawing.Size(164, 20)
         Me.rbBorrow.TabIndex = 51
@@ -220,7 +220,7 @@ Partial Class FrmExpoAndMargn
         'rbLending
         '
         Me.rbLending.AutoSize = True
-        Me.rbLending.Location = New System.Drawing.Point(122, 61)
+        Me.rbLending.Location = New System.Drawing.Point(223, 61)
         Me.rbLending.Name = "rbLending"
         Me.rbLending.Size = New System.Drawing.Size(150, 20)
         Me.rbLending.TabIndex = 1
@@ -230,16 +230,18 @@ Partial Class FrmExpoAndMargn
         '
         'txtDesc
         '
-        Me.txtDesc.Location = New System.Drawing.Point(122, 283)
+        Me.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDesc.Location = New System.Drawing.Point(223, 277)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtDesc.Size = New System.Drawing.Size(146, 42)
+        Me.txtDesc.Size = New System.Drawing.Size(338, 42)
         Me.txtDesc.TabIndex = 8
         '
         'txtAmnt
         '
-        Me.txtAmnt.Location = New System.Drawing.Point(122, 252)
+        Me.txtAmnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAmnt.Location = New System.Drawing.Point(223, 247)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(146, 22)
         Me.txtAmnt.TabIndex = 7
@@ -247,24 +249,24 @@ Partial Class FrmExpoAndMargn
         'cmbFund
         '
         Me.cmbFund.FormattingEnabled = True
-        Me.cmbFund.Location = New System.Drawing.Point(122, 116)
+        Me.cmbFund.Location = New System.Drawing.Point(223, 121)
         Me.cmbFund.Name = "cmbFund"
-        Me.cmbFund.Size = New System.Drawing.Size(146, 24)
+        Me.cmbFund.Size = New System.Drawing.Size(320, 24)
         Me.cmbFund.TabIndex = 3
         '
         'cmbMode
         '
         Me.cmbMode.FormattingEnabled = True
-        Me.cmbMode.Location = New System.Drawing.Point(122, 86)
+        Me.cmbMode.Location = New System.Drawing.Point(223, 89)
         Me.cmbMode.Name = "cmbMode"
-        Me.cmbMode.Size = New System.Drawing.Size(146, 24)
+        Me.cmbMode.Size = New System.Drawing.Size(320, 24)
         Me.cmbMode.TabIndex = 2
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(38, 261)
+        Me.Label9.Location = New System.Drawing.Point(140, 251)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(78, 13)
         Me.Label9.TabIndex = 34
@@ -275,7 +277,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(78, 97)
+        Me.Label30.Location = New System.Drawing.Point(180, 93)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(38, 13)
         Me.Label30.TabIndex = 30
@@ -285,7 +287,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(81, 127)
+        Me.Label10.Location = New System.Drawing.Point(183, 125)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(35, 13)
         Me.Label10.TabIndex = 29
@@ -295,7 +297,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(42, 65)
+        Me.Label26.Location = New System.Drawing.Point(143, 65)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(75, 13)
         Me.Label26.TabIndex = 21
@@ -305,7 +307,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(31, 159)
+        Me.Label3.Location = New System.Drawing.Point(133, 158)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 13)
         Me.Label3.TabIndex = 15
@@ -315,7 +317,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(45, 288)
+        Me.Label5.Location = New System.Drawing.Point(147, 282)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 9
@@ -327,7 +329,7 @@ Partial Class FrmExpoAndMargn
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(122, 31)
+        Me.txtsysCode.Location = New System.Drawing.Point(223, 31)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -338,7 +340,7 @@ Partial Class FrmExpoAndMargn
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 35)
+        Me.Label1.Location = New System.Drawing.Point(134, 34)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 0

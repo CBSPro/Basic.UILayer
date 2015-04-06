@@ -152,6 +152,10 @@ Public Class frmScripIndexSetup
     Private Sub frmScrip_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mStockMarket = False
     End Sub
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 
 
 End Class

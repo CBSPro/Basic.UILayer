@@ -11,7 +11,6 @@ Public Class frmFundWiseControl
 
 
 
-
     Sub SetEntryMode()
         btnAdd.Enabled = Flag
         btnEdit.Enabled = Flag
@@ -30,18 +29,12 @@ Public Class frmFundWiseControl
         btnExit.Enabled = Flag
     End Sub
 
-
     Sub ClearAll()
 
         txtDescription.Text = ""
         txtSearch.Text = ""
 
-
-
     End Sub
-
-    
-
 
     Private Sub frmFundWiseControl_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -164,6 +157,9 @@ Public Class frmFundWiseControl
     Private Sub frmFundWiseControl_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mFundWiseControl = False
     End Sub
-
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 
 End Class

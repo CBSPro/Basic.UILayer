@@ -370,21 +370,24 @@ Partial Class frmBroker
         Me.GpData.Controls.Add(Me.txtsysCode)
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GpData.Location = New System.Drawing.Point(358, 118)
+        Me.GpData.Location = New System.Drawing.Point(363, 118)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(722, 251)
+        Me.GpData.Size = New System.Drawing.Size(714, 251)
         Me.GpData.TabIndex = 39
         Me.GpData.TabStop = False
         '
         'txtMnemo
         '
+        Me.txtMnemo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMnemo.Location = New System.Drawing.Point(513, 30)
         Me.txtMnemo.Name = "txtMnemo"
-        Me.txtMnemo.Size = New System.Drawing.Size(181, 22)
+        Me.txtMnemo.Size = New System.Drawing.Size(178, 22)
         Me.txtMnemo.TabIndex = 2
         '
         'txtBrokerCode
         '
+        Me.txtBrokerCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtBrokerCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
         Me.txtBrokerCode.Name = "txtBrokerCode"
         Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
@@ -392,63 +395,72 @@ Partial Class frmBroker
         '
         'txtDescription
         '
-        Me.txtDescription.Location = New System.Drawing.Point(123, 221)
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescription.Location = New System.Drawing.Point(121, 215)
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(570, 22)
         Me.txtDescription.TabIndex = 9
         '
         'txtNCSS
         '
-        Me.txtNCSS.Location = New System.Drawing.Point(513, 190)
+        Me.txtNCSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtNCSS.Location = New System.Drawing.Point(513, 183)
         Me.txtNCSS.Name = "txtNCSS"
-        Me.txtNCSS.Size = New System.Drawing.Size(180, 22)
+        Me.txtNCSS.Size = New System.Drawing.Size(178, 22)
         Me.txtNCSS.TabIndex = 12
         '
         'txtFax
         '
-        Me.txtFax.Location = New System.Drawing.Point(513, 141)
+        Me.txtFax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFax.Location = New System.Drawing.Point(513, 148)
         Me.txtFax.Name = "txtFax"
-        Me.txtFax.Size = New System.Drawing.Size(181, 22)
+        Me.txtFax.Size = New System.Drawing.Size(178, 22)
         Me.txtFax.TabIndex = 11
         '
         'txtEmail
         '
+        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmail.Location = New System.Drawing.Point(513, 113)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(181, 22)
+        Me.txtEmail.Size = New System.Drawing.Size(178, 22)
         Me.txtEmail.TabIndex = 10
         '
         'txtIAS
         '
-        Me.txtIAS.Location = New System.Drawing.Point(123, 166)
+        Me.txtIAS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtIAS.Location = New System.Drawing.Point(121, 161)
         Me.txtIAS.Name = "txtIAS"
         Me.txtIAS.Size = New System.Drawing.Size(95, 22)
         Me.txtIAS.TabIndex = 7
         '
         'txtCFS
         '
-        Me.txtCFS.Location = New System.Drawing.Point(123, 138)
+        Me.txtCFS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCFS.Location = New System.Drawing.Point(121, 135)
         Me.txtCFS.Name = "txtCFS"
         Me.txtCFS.Size = New System.Drawing.Size(95, 22)
         Me.txtCFS.TabIndex = 6
         '
         'txtPhone
         '
-        Me.txtPhone.Location = New System.Drawing.Point(123, 110)
+        Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPhone.Location = New System.Drawing.Point(121, 109)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(95, 22)
         Me.txtPhone.TabIndex = 5
         '
         'txtAdress
         '
-        Me.txtAdress.Location = New System.Drawing.Point(123, 84)
+        Me.txtAdress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAdress.Location = New System.Drawing.Point(121, 83)
         Me.txtAdress.Name = "txtAdress"
         Me.txtAdress.Size = New System.Drawing.Size(570, 22)
         Me.txtAdress.TabIndex = 4
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(123, 59)
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Location = New System.Drawing.Point(121, 57)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(570, 22)
         Me.txtName.TabIndex = 3
@@ -457,7 +469,7 @@ Partial Class frmBroker
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(19, 136)
+        Me.Label16.Location = New System.Drawing.Point(24, 143)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(93, 13)
         Me.Label16.TabIndex = 43
@@ -467,7 +479,7 @@ Partial Class frmBroker
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(387, 195)
+        Me.Label11.Location = New System.Drawing.Point(389, 188)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(120, 13)
         Me.Label11.TabIndex = 39
@@ -476,7 +488,7 @@ Partial Class frmBroker
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(264, 196)
+        Me.CheckBox4.Location = New System.Drawing.Point(241, 193)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(121, 20)
         Me.CheckBox4.TabIndex = 38
@@ -486,7 +498,7 @@ Partial Class frmBroker
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(264, 162)
+        Me.CheckBox3.Location = New System.Drawing.Point(241, 166)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(125, 20)
         Me.CheckBox3.TabIndex = 37
@@ -496,7 +508,7 @@ Partial Class frmBroker
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(264, 137)
+        Me.CheckBox2.Location = New System.Drawing.Point(241, 139)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(70, 20)
         Me.CheckBox2.TabIndex = 36
@@ -506,7 +518,7 @@ Partial Class frmBroker
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(264, 112)
+        Me.CheckBox1.Location = New System.Drawing.Point(241, 112)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(131, 20)
         Me.CheckBox1.TabIndex = 35
@@ -517,18 +529,18 @@ Partial Class frmBroker
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(17, 158)
+        Me.Label9.Location = New System.Drawing.Point(11, 170)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(95, 26)
+        Me.Label9.Size = New System.Drawing.Size(106, 13)
         Me.Label9.TabIndex = 34
-        Me.Label9.Text = "I.A.S Account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                  No"
+        Me.Label9.Text = "I.A.S Account No"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label30
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(67, 86)
+        Me.Label30.Location = New System.Drawing.Point(72, 89)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(45, 13)
         Me.Label30.TabIndex = 30
@@ -538,7 +550,7 @@ Partial Class frmBroker
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(470, 115)
+        Me.Label10.Location = New System.Drawing.Point(472, 119)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(37, 13)
         Me.Label10.TabIndex = 29
@@ -547,7 +559,7 @@ Partial Class frmBroker
         'cmbDefine
         '
         Me.cmbDefine.FormattingEnabled = True
-        Me.cmbDefine.Location = New System.Drawing.Point(123, 191)
+        Me.cmbDefine.Location = New System.Drawing.Point(121, 187)
         Me.cmbDefine.Name = "cmbDefine"
         Me.cmbDefine.Size = New System.Drawing.Size(95, 24)
         Me.cmbDefine.TabIndex = 8
@@ -556,7 +568,7 @@ Partial Class frmBroker
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(480, 150)
+        Me.Label19.Location = New System.Drawing.Point(482, 153)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(27, 13)
         Me.Label19.TabIndex = 26
@@ -567,7 +579,7 @@ Partial Class frmBroker
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(39, 196)
+        Me.Label12.Location = New System.Drawing.Point(44, 197)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(73, 13)
         Me.Label12.TabIndex = 24
@@ -578,7 +590,7 @@ Partial Class frmBroker
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(73, 63)
+        Me.Label26.Location = New System.Drawing.Point(78, 62)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(39, 13)
         Me.Label26.TabIndex = 21
@@ -598,7 +610,7 @@ Partial Class frmBroker
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(57, 116)
+        Me.Label3.Location = New System.Drawing.Point(62, 116)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 15
@@ -608,7 +620,7 @@ Partial Class frmBroker
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(41, 225)
+        Me.Label5.Location = New System.Drawing.Point(46, 224)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 9
@@ -630,7 +642,7 @@ Partial Class frmBroker
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(123, 31)
+        Me.txtsysCode.Location = New System.Drawing.Point(121, 31)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -641,7 +653,7 @@ Partial Class frmBroker
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 35)
+        Me.Label1.Location = New System.Drawing.Point(37, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0

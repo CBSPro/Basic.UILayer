@@ -166,4 +166,8 @@ Public Class FrmCreditRateComp
     Private Sub FrmCreditRateComp_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mCreditRateComp = False
     End Sub
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 End Class

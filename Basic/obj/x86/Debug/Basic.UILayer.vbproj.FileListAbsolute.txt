@@ -467,3 +467,9 @@ E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmMovingAvgCostProces.reso
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmOrderAdjust.resources
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmSettlementProces.resources
 E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.FrmShareAnnounce.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmDailyMarkPrice.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmExecConProces.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmMovingAvgCostProces.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmOrderAdjust.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmSettlementProces.resources
+D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmShareAnnounce.resources

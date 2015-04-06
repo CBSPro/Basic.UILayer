@@ -120,7 +120,7 @@ Public Class frmFund
         End If
     End Sub
 
-    Private Sub dtGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dtGL.KeyDown
+    Private Sub dtGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dtGL.KeyDown, DateTimePicker1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -174,7 +174,7 @@ Public Class frmFund
         End If
     End Sub
 
-    Private Sub txtdesciptionGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtdesciptionGL.KeyDown
+    Private Sub txtdesciptionGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtdesciptionGL.KeyDown, TextBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -186,7 +186,7 @@ Public Class frmFund
         End If
     End Sub
 
-    Private Sub txtMnemoGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtMnemoGL.KeyDown
+    Private Sub txtMnemoGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtMnemoGL.KeyDown, TextBox2.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -204,7 +204,7 @@ Public Class frmFund
         End If
     End Sub
 
-    Private Sub txtNameGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtNameGL.KeyDown
+    Private Sub txtNameGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtNameGL.KeyDown, TextBox3.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -234,7 +234,7 @@ Public Class frmFund
         End If
     End Sub
 
-    Private Sub txtsysCodeGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCodeGL.KeyDown
+    Private Sub txtsysCodeGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCodeGL.KeyDown, TextBox4.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -338,5 +338,10 @@ Public Class frmFund
 
     Private Sub frmFund_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mFund = False
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
     End Sub
 End Class

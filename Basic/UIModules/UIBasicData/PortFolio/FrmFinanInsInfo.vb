@@ -41,7 +41,7 @@ Public Class FrmFinanInsInfo
     End Sub
 
 
-    Private Sub txtDesc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc.KeyDown
+    Private Sub txtDesc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc.KeyDown, TextBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -49,115 +49,115 @@ Public Class FrmFinanInsInfo
 
 
 
-    Private Sub CBCounter_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBCounter.KeyDown
+    Private Sub CBCounter_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBCounter.KeyDown, CheckBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cbDepositry_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cbDepositry.KeyDown
+    Private Sub cbDepositry_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cbDepositry.KeyDown, CheckBox3.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub CBSettlement_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBSettlement.KeyDown
+    Private Sub CBSettlement_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBSettlement.KeyDown, CheckBox2.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cmbComp_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbComp.KeyDown
+    Private Sub cmbComp_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbComp.KeyDown, ComboBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cmbInstituteType_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbInstituteType.KeyDown
+    Private Sub cmbInstituteType_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbInstituteType.KeyDown, ComboBox2.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub rbBank_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbBank.KeyDown
+    Private Sub rbBank_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbBank.KeyDown, RadioButton2.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub rbSGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbSGL.KeyDown
+    Private Sub rbSGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbSGL.KeyDown, RadioButton1.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtAddr_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtAddr.KeyDown
+    Private Sub txtAddr_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtAddr.KeyDown, TextBox15.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBankAc_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBankAc.KeyDown
+    Private Sub txtBankAc_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBankAc.KeyDown, TextBox2.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBic_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBic.KeyDown
+    Private Sub txtBic_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBic.KeyDown, TextBox6.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBranchName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBranchName.KeyDown
+    Private Sub txtBranchName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBranchName.KeyDown, TextBox14.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtContPer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtContPer.KeyDown
+    Private Sub txtContPer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtContPer.KeyDown, TextBox13.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtDesc2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown
+    Private Sub txtDesc2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown, TextBox8.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtEmail_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown
+    Private Sub txtEmail_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown, TextBox10.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtFax_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown
+    Private Sub txtFax_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown, TextBox9.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtIpsAccNo_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtIpsAccNo.KeyDown
+    Private Sub txtIpsAccNo_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtIpsAccNo.KeyDown, TextBox7.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtName.KeyDown
+    Private Sub txtName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtName.KeyDown, TextBox4.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtPH_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtPH.KeyDown
+    Private Sub txtPH_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtPH.KeyDown, TextBox11.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtrate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtrate.KeyDown
+    Private Sub txtrate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtrate.KeyDown, TextBox3.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -169,13 +169,13 @@ Public Class FrmFinanInsInfo
         End If
     End Sub
 
-    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown
+    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown, TextBox5.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtSysCode2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSysCode2.KeyDown
+    Private Sub txtSysCode2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSysCode2.KeyDown, TextBox16.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -281,5 +281,10 @@ Public Class FrmFinanInsInfo
 
     Private Sub FrmFinanInsInfo_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mFinanInsInfo = False
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
     End Sub
 End Class

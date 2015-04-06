@@ -130,7 +130,7 @@ Partial Class frmSettlementmodesvb
         Me.txtDays.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDays.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDays.Location = New System.Drawing.Point(215, 111)
+        Me.txtDays.Location = New System.Drawing.Point(203, 111)
         Me.txtDays.MaxLength = 3
         Me.txtDays.Name = "txtDays"
         Me.txtDays.Size = New System.Drawing.Size(98, 22)
@@ -142,10 +142,10 @@ Partial Class frmSettlementmodesvb
         Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(215, 84)
+        Me.txtName.Location = New System.Drawing.Point(203, 84)
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.Size = New System.Drawing.Size(364, 22)
         Me.txtName.TabIndex = 1
         Me.txtName.Tag = "Enter Description"
         '
@@ -153,7 +153,7 @@ Partial Class frmSettlementmodesvb
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(126, 148)
+        Me.Label4.Location = New System.Drawing.Point(126, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 13)
         Me.Label4.TabIndex = 39
@@ -163,7 +163,7 @@ Partial Class frmSettlementmodesvb
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(215, 138)
+        Me.ListBox1.Location = New System.Drawing.Point(203, 138)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(364, 84)
         Me.ListBox1.TabIndex = 3
@@ -172,7 +172,7 @@ Partial Class frmSettlementmodesvb
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(162, 114)
+        Me.Label2.Location = New System.Drawing.Point(162, 118)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 37
@@ -183,7 +183,7 @@ Partial Class frmSettlementmodesvb
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(215, 56)
+        Me.txtsysCode.Location = New System.Drawing.Point(203, 56)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -204,7 +204,7 @@ Partial Class frmSettlementmodesvb
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(158, 86)
+        Me.Label3.Location = New System.Drawing.Point(158, 89)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 33

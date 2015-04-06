@@ -313,7 +313,7 @@ Partial Class frmFundWiseControl
         Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDescription.Location = New System.Drawing.Point(165, 61)
+        Me.txtDescription.Location = New System.Drawing.Point(164, 59)
         Me.txtDescription.MaxLength = 3
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(309, 22)
@@ -324,7 +324,7 @@ Partial Class frmFundWiseControl
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(89, 61)
+        Me.Label30.Location = New System.Drawing.Point(91, 61)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(71, 13)
         Me.Label30.TabIndex = 30
@@ -343,7 +343,7 @@ Partial Class frmFundWiseControl
         'chkCompany
         '
         Me.chkCompany.FormattingEnabled = True
-        Me.chkCompany.Location = New System.Drawing.Point(165, 31)
+        Me.chkCompany.Location = New System.Drawing.Point(164, 31)
         Me.chkCompany.Name = "chkCompany"
         Me.chkCompany.Size = New System.Drawing.Size(230, 24)
         Me.chkCompany.TabIndex = 18

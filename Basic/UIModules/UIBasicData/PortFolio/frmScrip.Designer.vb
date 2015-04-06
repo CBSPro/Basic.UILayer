@@ -43,7 +43,10 @@ Partial Class frmScrip
         Me.btnView = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtSecurityCode = New System.Windows.Forms.TextBox()
         Me.txtCompCode = New System.Windows.Forms.TextBox()
         Me.txtAuthorizeCapital = New System.Windows.Forms.TextBox()
@@ -58,31 +61,28 @@ Partial Class frmScrip
         Me.chkFutureTrade = New System.Windows.Forms.CheckBox()
         Me.chkCDCelig = New System.Windows.Forms.CheckBox()
         Me.chkGrpOfcomp = New System.Windows.Forms.CheckBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.dtpDelistedDate = New System.Windows.Forms.DateTimePicker()
-        Me.cmbGroupofCompany = New System.Windows.Forms.ComboBox()
-        Me.CmbSector = New System.Windows.Forms.ComboBox()
-        Me.cmbSystemCode = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.LBLPosted = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtsysCode = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblBy = New System.Windows.Forms.Label()
-        Me.lblToolTip = New System.Windows.Forms.Label()
-        Me.lblCompany = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.cmbGroupofcompany = New System.Windows.Forms.ComboBox()
+        Me.cmbSector = New System.Windows.Forms.ComboBox()
+        Me.cmbSysCode = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
-        Me.GpData.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -321,379 +321,6 @@ Partial Class frmScrip
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'GpData
-        '
-        Me.GpData.Controls.Add(Me.txtSecurityCode)
-        Me.GpData.Controls.Add(Me.txtCompCode)
-        Me.GpData.Controls.Add(Me.txtAuthorizeCapital)
-        Me.GpData.Controls.Add(Me.txtPaidUpCapital)
-        Me.GpData.Controls.Add(Me.txtFaceValue)
-        Me.GpData.Controls.Add(Me.txtDescription)
-        Me.GpData.Controls.Add(Me.txtName)
-        Me.GpData.Controls.Add(Me.txtSymbol)
-        Me.GpData.Controls.Add(Me.chkDelisted)
-        Me.GpData.Controls.Add(Me.chkTransactionReport)
-        Me.GpData.Controls.Add(Me.chkListedinstock)
-        Me.GpData.Controls.Add(Me.chkFutureTrade)
-        Me.GpData.Controls.Add(Me.chkCDCelig)
-        Me.GpData.Controls.Add(Me.chkGrpOfcomp)
-        Me.GpData.Controls.Add(Me.Label18)
-        Me.GpData.Controls.Add(Me.Label17)
-        Me.GpData.Controls.Add(Me.Label16)
-        Me.GpData.Controls.Add(Me.Label15)
-        Me.GpData.Controls.Add(Me.Label14)
-        Me.GpData.Controls.Add(Me.Label13)
-        Me.GpData.Controls.Add(Me.Label12)
-        Me.GpData.Controls.Add(Me.Label11)
-        Me.GpData.Controls.Add(Me.dtpDelistedDate)
-        Me.GpData.Controls.Add(Me.cmbGroupofCompany)
-        Me.GpData.Controls.Add(Me.CmbSector)
-        Me.GpData.Controls.Add(Me.cmbSystemCode)
-        Me.GpData.Controls.Add(Me.Label3)
-        Me.GpData.Controls.Add(Me.Label2)
-        Me.GpData.Controls.Add(Me.LBLPosted)
-        Me.GpData.Controls.Add(Me.Label4)
-        Me.GpData.Controls.Add(Me.txtsysCode)
-        Me.GpData.Controls.Add(Me.Label1)
-        Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GpData.Location = New System.Drawing.Point(359, 118)
-        Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(722, 445)
-        Me.GpData.TabIndex = 38
-        Me.GpData.TabStop = False
-        '
-        'txtSecurityCode
-        '
-        Me.txtSecurityCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSecurityCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSecurityCode.Location = New System.Drawing.Point(152, 309)
-        Me.txtSecurityCode.MaxLength = 3
-        Me.txtSecurityCode.Name = "txtSecurityCode"
-        Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtSecurityCode.TabIndex = 10
-        Me.txtSecurityCode.Tag = "Enter Description"
-        '
-        'txtCompCode
-        '
-        Me.txtCompCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtCompCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCompCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCompCode.Location = New System.Drawing.Point(152, 282)
-        Me.txtCompCode.MaxLength = 3
-        Me.txtCompCode.Name = "txtCompCode"
-        Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
-        Me.txtCompCode.TabIndex = 9
-        Me.txtCompCode.Tag = "Enter Description"
-        '
-        'txtAuthorizeCapital
-        '
-        Me.txtAuthorizeCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtAuthorizeCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtAuthorizeCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAuthorizeCapital.Location = New System.Drawing.Point(152, 226)
-        Me.txtAuthorizeCapital.MaxLength = 3
-        Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
-        Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtAuthorizeCapital.TabIndex = 7
-        Me.txtAuthorizeCapital.Tag = "Enter Description"
-        '
-        'txtPaidUpCapital
-        '
-        Me.txtPaidUpCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtPaidUpCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPaidUpCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPaidUpCapital.Location = New System.Drawing.Point(152, 190)
-        Me.txtPaidUpCapital.MaxLength = 3
-        Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
-        Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
-        Me.txtPaidUpCapital.TabIndex = 6
-        Me.txtPaidUpCapital.Tag = "Enter Description"
-        '
-        'txtFaceValue
-        '
-        Me.txtFaceValue.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtFaceValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtFaceValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFaceValue.Location = New System.Drawing.Point(152, 158)
-        Me.txtFaceValue.MaxLength = 3
-        Me.txtFaceValue.Name = "txtFaceValue"
-        Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
-        Me.txtFaceValue.TabIndex = 5
-        Me.txtFaceValue.Tag = "Enter Description"
-        '
-        'txtDescription
-        '
-        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDescription.Location = New System.Drawing.Point(152, 368)
-        Me.txtDescription.MaxLength = 3
-        Me.txtDescription.Name = "txtDescription"
-        Me.txtDescription.Size = New System.Drawing.Size(538, 22)
-        Me.txtDescription.TabIndex = 12
-        Me.txtDescription.Tag = "Enter Description"
-        '
-        'txtName
-        '
-        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(152, 102)
-        Me.txtName.MaxLength = 3
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(309, 22)
-        Me.txtName.TabIndex = 3
-        Me.txtName.Tag = "Enter Description"
-        '
-        'txtSymbol
-        '
-        Me.txtSymbol.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtSymbol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSymbol.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSymbol.Location = New System.Drawing.Point(152, 72)
-        Me.txtSymbol.MaxLength = 3
-        Me.txtSymbol.Name = "txtSymbol"
-        Me.txtSymbol.Size = New System.Drawing.Size(309, 22)
-        Me.txtSymbol.TabIndex = 2
-        Me.txtSymbol.Tag = "Enter Description"
-        '
-        'chkDelisted
-        '
-        Me.chkDelisted.AutoSize = True
-        Me.chkDelisted.Location = New System.Drawing.Point(527, 335)
-        Me.chkDelisted.Name = "chkDelisted"
-        Me.chkDelisted.Size = New System.Drawing.Size(85, 20)
-        Me.chkDelisted.TabIndex = 18
-        Me.chkDelisted.Text = "Delisted"
-        Me.chkDelisted.UseVisualStyleBackColor = True
-        '
-        'chkTransactionReport
-        '
-        Me.chkTransactionReport.AutoSize = True
-        Me.chkTransactionReport.Location = New System.Drawing.Point(527, 287)
-        Me.chkTransactionReport.Name = "chkTransactionReport"
-        Me.chkTransactionReport.Size = New System.Drawing.Size(181, 20)
-        Me.chkTransactionReport.TabIndex = 17
-        Me.chkTransactionReport.Text = "Transaction Reporting"
-        Me.chkTransactionReport.UseVisualStyleBackColor = True
-        '
-        'chkListedinstock
-        '
-        Me.chkListedinstock.AutoSize = True
-        Me.chkListedinstock.Location = New System.Drawing.Point(527, 256)
-        Me.chkListedinstock.Name = "chkListedinstock"
-        Me.chkListedinstock.Size = New System.Drawing.Size(197, 20)
-        Me.chkListedinstock.TabIndex = 16
-        Me.chkListedinstock.Text = "Listed in stock exchange"
-        Me.chkListedinstock.UseVisualStyleBackColor = True
-        '
-        'chkFutureTrade
-        '
-        Me.chkFutureTrade.AutoSize = True
-        Me.chkFutureTrade.Location = New System.Drawing.Point(527, 224)
-        Me.chkFutureTrade.Name = "chkFutureTrade"
-        Me.chkFutureTrade.Size = New System.Drawing.Size(116, 20)
-        Me.chkFutureTrade.TabIndex = 15
-        Me.chkFutureTrade.Text = "Future Trade"
-        Me.chkFutureTrade.UseVisualStyleBackColor = True
-        '
-        'chkCDCelig
-        '
-        Me.chkCDCelig.AutoSize = True
-        Me.chkCDCelig.Location = New System.Drawing.Point(527, 193)
-        Me.chkCDCelig.Name = "chkCDCelig"
-        Me.chkCDCelig.Size = New System.Drawing.Size(115, 20)
-        Me.chkCDCelig.TabIndex = 14
-        Me.chkCDCelig.Text = "CDC Eligible"
-        Me.chkCDCelig.UseVisualStyleBackColor = True
-        '
-        'chkGrpOfcomp
-        '
-        Me.chkGrpOfcomp.AutoSize = True
-        Me.chkGrpOfcomp.Location = New System.Drawing.Point(527, 161)
-        Me.chkGrpOfcomp.Name = "chkGrpOfcomp"
-        Me.chkGrpOfcomp.Size = New System.Drawing.Size(155, 20)
-        Me.chkGrpOfcomp.TabIndex = 13
-        Me.chkGrpOfcomp.Text = "Group of Company"
-        Me.chkGrpOfcomp.UseVisualStyleBackColor = True
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(75, 372)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(71, 13)
-        Me.Label18.TabIndex = 35
-        Me.Label18.Text = "Description"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(62, 344)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(84, 13)
-        Me.Label17.TabIndex = 34
-        Me.Label17.Text = "Delisted Date"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(60, 318)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(86, 13)
-        Me.Label16.TabIndex = 33
-        Me.Label16.Text = "Security Code"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(55, 289)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(91, 13)
-        Me.Label15.TabIndex = 32
-        Me.Label15.Text = "Comapny Code"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(35, 257)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(111, 13)
-        Me.Label14.TabIndex = 31
-        Me.Label14.Text = "Group of Company"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(75, 161)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(71, 13)
-        Me.Label13.TabIndex = 30
-        Me.Label13.Text = "Face Value"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(51, 194)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(95, 13)
-        Me.Label12.TabIndex = 29
-        Me.Label12.Text = "Paid Up Capital"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(36, 226)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(110, 13)
-        Me.Label11.TabIndex = 28
-        Me.Label11.Text = "Authorized Capital"
-        '
-        'dtpDelistedDate
-        '
-        Me.dtpDelistedDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpDelistedDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDelistedDate.Location = New System.Drawing.Point(152, 340)
-        Me.dtpDelistedDate.Name = "dtpDelistedDate"
-        Me.dtpDelistedDate.Size = New System.Drawing.Size(95, 22)
-        Me.dtpDelistedDate.TabIndex = 11
-        '
-        'cmbGroupofCompany
-        '
-        Me.cmbGroupofCompany.FormattingEnabled = True
-        Me.cmbGroupofCompany.Location = New System.Drawing.Point(152, 252)
-        Me.cmbGroupofCompany.Name = "cmbGroupofCompany"
-        Me.cmbGroupofCompany.Size = New System.Drawing.Size(230, 24)
-        Me.cmbGroupofCompany.TabIndex = 8
-        '
-        'CmbSector
-        '
-        Me.CmbSector.FormattingEnabled = True
-        Me.CmbSector.Location = New System.Drawing.Point(152, 128)
-        Me.CmbSector.Name = "CmbSector"
-        Me.CmbSector.Size = New System.Drawing.Size(230, 24)
-        Me.CmbSector.TabIndex = 4
-        '
-        'cmbSystemCode
-        '
-        Me.cmbSystemCode.FormattingEnabled = True
-        Me.cmbSystemCode.Location = New System.Drawing.Point(152, 39)
-        Me.cmbSystemCode.Name = "cmbSystemCode"
-        Me.cmbSystemCode.Size = New System.Drawing.Size(213, 24)
-        Me.cmbSystemCode.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(102, 133)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 13)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Sector"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(99, 71)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Symbol"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'LBLPosted
-        '
-        Me.LBLPosted.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLPosted.ForeColor = System.Drawing.Color.Red
-        Me.LBLPosted.Location = New System.Drawing.Point(575, 39)
-        Me.LBLPosted.Name = "LBLPosted"
-        Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
-        Me.LBLPosted.TabIndex = 13
-        Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(107, 102)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Name"
-        '
-        'txtsysCode
-        '
-        Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(152, 39)
-        Me.txtsysCode.MaxLength = 3
-        Me.txtsysCode.Name = "txtsysCode"
-        Me.txtsysCode.Size = New System.Drawing.Size(80, 22)
-        Me.txtsysCode.TabIndex = 0
-        Me.txtsysCode.Tag = "Enter Description"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(66, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "System Code"
-        '
         'lblBy
         '
         Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -721,6 +348,379 @@ Partial Class frmScrip
         Me.lblCompany.Size = New System.Drawing.Size(170, 23)
         Me.lblCompany.TabIndex = 60
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtSecurityCode)
+        Me.GroupBox1.Controls.Add(Me.txtCompCode)
+        Me.GroupBox1.Controls.Add(Me.txtAuthorizeCapital)
+        Me.GroupBox1.Controls.Add(Me.txtPaidUpCapital)
+        Me.GroupBox1.Controls.Add(Me.txtFaceValue)
+        Me.GroupBox1.Controls.Add(Me.txtDescription)
+        Me.GroupBox1.Controls.Add(Me.txtName)
+        Me.GroupBox1.Controls.Add(Me.txtSymbol)
+        Me.GroupBox1.Controls.Add(Me.chkDelisted)
+        Me.GroupBox1.Controls.Add(Me.chkTransactionReport)
+        Me.GroupBox1.Controls.Add(Me.chkListedinstock)
+        Me.GroupBox1.Controls.Add(Me.chkFutureTrade)
+        Me.GroupBox1.Controls.Add(Me.chkCDCelig)
+        Me.GroupBox1.Controls.Add(Me.chkGrpOfcomp)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label19)
+        Me.GroupBox1.Controls.Add(Me.Label20)
+        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.cmbGroupofcompany)
+        Me.GroupBox1.Controls.Add(Me.cmbSector)
+        Me.GroupBox1.Controls.Add(Me.cmbSysCode)
+        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.Label22)
+        Me.GroupBox1.Controls.Add(Me.Label23)
+        Me.GroupBox1.Controls.Add(Me.Label24)
+        Me.GroupBox1.Controls.Add(Me.TextBox9)
+        Me.GroupBox1.Controls.Add(Me.Label25)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(361, 118)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(722, 420)
+        Me.GroupBox1.TabIndex = 38
+        Me.GroupBox1.TabStop = False
+        '
+        'txtSecurityCode
+        '
+        Me.txtSecurityCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSecurityCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSecurityCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSecurityCode.Location = New System.Drawing.Point(152, 306)
+        Me.txtSecurityCode.MaxLength = 3
+        Me.txtSecurityCode.Name = "txtSecurityCode"
+        Me.txtSecurityCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtSecurityCode.TabIndex = 10
+        Me.txtSecurityCode.Tag = "Enter Description"
+        '
+        'txtCompCode
+        '
+        Me.txtCompCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtCompCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCompCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCompCode.Location = New System.Drawing.Point(152, 277)
+        Me.txtCompCode.MaxLength = 3
+        Me.txtCompCode.Name = "txtCompCode"
+        Me.txtCompCode.Size = New System.Drawing.Size(95, 22)
+        Me.txtCompCode.TabIndex = 9
+        Me.txtCompCode.Tag = "Enter Description"
+        '
+        'txtAuthorizeCapital
+        '
+        Me.txtAuthorizeCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtAuthorizeCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAuthorizeCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAuthorizeCapital.Location = New System.Drawing.Point(152, 217)
+        Me.txtAuthorizeCapital.MaxLength = 3
+        Me.txtAuthorizeCapital.Name = "txtAuthorizeCapital"
+        Me.txtAuthorizeCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtAuthorizeCapital.TabIndex = 7
+        Me.txtAuthorizeCapital.Tag = "Enter Description"
+        '
+        'txtPaidUpCapital
+        '
+        Me.txtPaidUpCapital.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPaidUpCapital.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPaidUpCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPaidUpCapital.Location = New System.Drawing.Point(152, 188)
+        Me.txtPaidUpCapital.MaxLength = 3
+        Me.txtPaidUpCapital.Name = "txtPaidUpCapital"
+        Me.txtPaidUpCapital.Size = New System.Drawing.Size(95, 22)
+        Me.txtPaidUpCapital.TabIndex = 6
+        Me.txtPaidUpCapital.Tag = "Enter Description"
+        '
+        'txtFaceValue
+        '
+        Me.txtFaceValue.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtFaceValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFaceValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFaceValue.Location = New System.Drawing.Point(152, 159)
+        Me.txtFaceValue.MaxLength = 3
+        Me.txtFaceValue.Name = "txtFaceValue"
+        Me.txtFaceValue.Size = New System.Drawing.Size(95, 22)
+        Me.txtFaceValue.TabIndex = 5
+        Me.txtFaceValue.Tag = "Enter Description"
+        '
+        'txtDescription
+        '
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(152, 364)
+        Me.txtDescription.MaxLength = 3
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(538, 22)
+        Me.txtDescription.TabIndex = 12
+        Me.txtDescription.Tag = "Enter Description"
+        '
+        'txtName
+        '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(152, 99)
+        Me.txtName.MaxLength = 3
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.TabIndex = 3
+        Me.txtName.Tag = "Enter Description"
+        '
+        'txtSymbol
+        '
+        Me.txtSymbol.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSymbol.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSymbol.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSymbol.Location = New System.Drawing.Point(152, 70)
+        Me.txtSymbol.MaxLength = 3
+        Me.txtSymbol.Name = "txtSymbol"
+        Me.txtSymbol.Size = New System.Drawing.Size(309, 22)
+        Me.txtSymbol.TabIndex = 2
+        Me.txtSymbol.Tag = "Enter Description"
+        '
+        'chkDelisted
+        '
+        Me.chkDelisted.AutoSize = True
+        Me.chkDelisted.Location = New System.Drawing.Point(470, 331)
+        Me.chkDelisted.Name = "chkDelisted"
+        Me.chkDelisted.Size = New System.Drawing.Size(85, 20)
+        Me.chkDelisted.TabIndex = 18
+        Me.chkDelisted.Text = "Delisted"
+        Me.chkDelisted.UseVisualStyleBackColor = True
+        '
+        'chkTransactionReport
+        '
+        Me.chkTransactionReport.AutoSize = True
+        Me.chkTransactionReport.Location = New System.Drawing.Point(470, 297)
+        Me.chkTransactionReport.Name = "chkTransactionReport"
+        Me.chkTransactionReport.Size = New System.Drawing.Size(181, 20)
+        Me.chkTransactionReport.TabIndex = 17
+        Me.chkTransactionReport.Text = "Transaction Reporting"
+        Me.chkTransactionReport.UseVisualStyleBackColor = True
+        '
+        'chkListedinstock
+        '
+        Me.chkListedinstock.AutoSize = True
+        Me.chkListedinstock.Location = New System.Drawing.Point(470, 263)
+        Me.chkListedinstock.Name = "chkListedinstock"
+        Me.chkListedinstock.Size = New System.Drawing.Size(197, 20)
+        Me.chkListedinstock.TabIndex = 16
+        Me.chkListedinstock.Text = "Listed in stock exchange"
+        Me.chkListedinstock.UseVisualStyleBackColor = True
+        '
+        'chkFutureTrade
+        '
+        Me.chkFutureTrade.AutoSize = True
+        Me.chkFutureTrade.Location = New System.Drawing.Point(470, 229)
+        Me.chkFutureTrade.Name = "chkFutureTrade"
+        Me.chkFutureTrade.Size = New System.Drawing.Size(116, 20)
+        Me.chkFutureTrade.TabIndex = 15
+        Me.chkFutureTrade.Text = "Future Trade"
+        Me.chkFutureTrade.UseVisualStyleBackColor = True
+        '
+        'chkCDCelig
+        '
+        Me.chkCDCelig.AutoSize = True
+        Me.chkCDCelig.Location = New System.Drawing.Point(470, 195)
+        Me.chkCDCelig.Name = "chkCDCelig"
+        Me.chkCDCelig.Size = New System.Drawing.Size(115, 20)
+        Me.chkCDCelig.TabIndex = 14
+        Me.chkCDCelig.Text = "CDC Eligible"
+        Me.chkCDCelig.UseVisualStyleBackColor = True
+        '
+        'chkGrpOfcomp
+        '
+        Me.chkGrpOfcomp.AutoSize = True
+        Me.chkGrpOfcomp.Location = New System.Drawing.Point(470, 161)
+        Me.chkGrpOfcomp.Name = "chkGrpOfcomp"
+        Me.chkGrpOfcomp.Size = New System.Drawing.Size(155, 20)
+        Me.chkGrpOfcomp.TabIndex = 13
+        Me.chkGrpOfcomp.Text = "Group of Company"
+        Me.chkGrpOfcomp.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(77, 368)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(71, 13)
+        Me.Label5.TabIndex = 35
+        Me.Label5.Text = "Description"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(64, 339)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(84, 13)
+        Me.Label6.TabIndex = 34
+        Me.Label6.Text = "Delisted Date"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(62, 310)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(86, 13)
+        Me.Label7.TabIndex = 33
+        Me.Label7.Text = "Security Code"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(57, 281)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(91, 13)
+        Me.Label8.TabIndex = 32
+        Me.Label8.Text = "Comapny Code"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(37, 252)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(111, 13)
+        Me.Label9.TabIndex = 31
+        Me.Label9.Text = "Group of Company"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(77, 165)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(71, 13)
+        Me.Label10.TabIndex = 30
+        Me.Label10.Text = "Face Value"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(53, 194)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(95, 13)
+        Me.Label19.TabIndex = 29
+        Me.Label19.Text = "Paid Up Capital"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(38, 223)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(110, 13)
+        Me.Label20.TabIndex = 28
+        Me.Label20.Text = "Authorized Capital"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(152, 335)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(95, 22)
+        Me.DateTimePicker1.TabIndex = 11
+        '
+        'cmbGroupofcompany
+        '
+        Me.cmbGroupofcompany.FormattingEnabled = True
+        Me.cmbGroupofcompany.Location = New System.Drawing.Point(152, 246)
+        Me.cmbGroupofcompany.Name = "cmbGroupofcompany"
+        Me.cmbGroupofcompany.Size = New System.Drawing.Size(230, 24)
+        Me.cmbGroupofcompany.TabIndex = 8
+        '
+        'cmbSector
+        '
+        Me.cmbSector.FormattingEnabled = True
+        Me.cmbSector.Location = New System.Drawing.Point(152, 128)
+        Me.cmbSector.Name = "cmbSector"
+        Me.cmbSector.Size = New System.Drawing.Size(230, 24)
+        Me.cmbSector.TabIndex = 4
+        '
+        'cmbSysCode
+        '
+        Me.cmbSysCode.FormattingEnabled = True
+        Me.cmbSysCode.Location = New System.Drawing.Point(152, 39)
+        Me.cmbSysCode.Name = "cmbSysCode"
+        Me.cmbSysCode.Size = New System.Drawing.Size(213, 24)
+        Me.cmbSysCode.TabIndex = 1
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(104, 133)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(44, 13)
+        Me.Label21.TabIndex = 15
+        Me.Label21.Text = "Sector"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(101, 74)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(47, 13)
+        Me.Label22.TabIndex = 14
+        Me.Label22.Text = "Symbol"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label23
+        '
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.Red
+        Me.Label23.Location = New System.Drawing.Point(575, 39)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(137, 42)
+        Me.Label23.TabIndex = 13
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(109, 103)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(39, 13)
+        Me.Label24.TabIndex = 7
+        Me.Label24.Text = "Name"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox9.Location = New System.Drawing.Point(152, 39)
+        Me.TextBox9.MaxLength = 3
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(80, 22)
+        Me.TextBox9.TabIndex = 0
+        Me.TextBox9.Tag = "Enter Description"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(68, 44)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(80, 13)
+        Me.Label25.TabIndex = 0
+        Me.Label25.Text = "System Code"
+        '
         'frmScrip
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -728,7 +728,7 @@ Partial Class frmScrip
         Me.ClientSize = New System.Drawing.Size(1097, 606)
         Me.Controls.Add(Me.lblBy)
         Me.Controls.Add(Me.lblToolTip)
-        Me.Controls.Add(Me.GpData)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
@@ -739,8 +739,8 @@ Partial Class frmScrip
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GpBtns.ResumeLayout(False)
-        Me.GpData.ResumeLayout(False)
-        Me.GpData.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -764,40 +764,40 @@ Partial Class frmScrip
     Friend WithEvents btnView As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents GpData As System.Windows.Forms.GroupBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents LBLPosted As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txtsysCode As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents cmbGroupofCompany As System.Windows.Forms.ComboBox
-    Friend WithEvents CmbSector As System.Windows.Forms.ComboBox
-    Friend WithEvents cmbSystemCode As System.Windows.Forms.ComboBox
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents dtpDelistedDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents txtSecurityCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtCompCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtAuthorizeCapital As System.Windows.Forms.TextBox
+    Friend WithEvents txtPaidUpCapital As System.Windows.Forms.TextBox
+    Friend WithEvents txtFaceValue As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtSymbol As System.Windows.Forms.TextBox
     Friend WithEvents chkDelisted As System.Windows.Forms.CheckBox
     Friend WithEvents chkTransactionReport As System.Windows.Forms.CheckBox
     Friend WithEvents chkListedinstock As System.Windows.Forms.CheckBox
     Friend WithEvents chkFutureTrade As System.Windows.Forms.CheckBox
     Friend WithEvents chkCDCelig As System.Windows.Forms.CheckBox
     Friend WithEvents chkGrpOfcomp As System.Windows.Forms.CheckBox
-    Friend WithEvents txtDescription As System.Windows.Forms.TextBox
-    Friend WithEvents txtName As System.Windows.Forms.TextBox
-    Friend WithEvents txtSymbol As System.Windows.Forms.TextBox
-    Friend WithEvents txtSecurityCode As System.Windows.Forms.TextBox
-    Friend WithEvents txtCompCode As System.Windows.Forms.TextBox
-    Friend WithEvents txtAuthorizeCapital As System.Windows.Forms.TextBox
-    Friend WithEvents txtPaidUpCapital As System.Windows.Forms.TextBox
-    Friend WithEvents txtFaceValue As System.Windows.Forms.TextBox
-    Friend WithEvents lblBy As System.Windows.Forms.Label
-    Friend WithEvents lblToolTip As System.Windows.Forms.Label
-    Friend WithEvents lblCompany As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cmbGroupofcompany As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSector As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbSysCode As System.Windows.Forms.ComboBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
 End Class

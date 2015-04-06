@@ -117,31 +117,33 @@ Partial Class FrmRating
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(355, 110)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(722, 179)
+        Me.GpData.Size = New System.Drawing.Size(722, 434)
         Me.GpData.TabIndex = 43
         Me.GpData.TabStop = False
         '
         'txtDesc
         '
-        Me.txtDesc.Location = New System.Drawing.Point(122, 91)
+        Me.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDesc.Location = New System.Drawing.Point(211, 148)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtDesc.Size = New System.Drawing.Size(347, 65)
+        Me.txtDesc.Size = New System.Drawing.Size(369, 65)
         Me.txtDesc.TabIndex = 2
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(122, 59)
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Location = New System.Drawing.Point(211, 118)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(347, 22)
+        Me.txtName.Size = New System.Drawing.Size(369, 22)
         Me.txtName.TabIndex = 1
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(78, 68)
+        Me.Label9.Location = New System.Drawing.Point(167, 122)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(39, 13)
         Me.Label9.TabIndex = 34
@@ -152,7 +154,7 @@ Partial Class FrmRating
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(46, 96)
+        Me.Label5.Location = New System.Drawing.Point(135, 152)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 9
@@ -164,7 +166,7 @@ Partial Class FrmRating
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(122, 31)
+        Me.txtsysCode.Location = New System.Drawing.Point(211, 88)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -175,7 +177,7 @@ Partial Class FrmRating
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 35)
+        Me.Label1.Location = New System.Drawing.Point(122, 92)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 0

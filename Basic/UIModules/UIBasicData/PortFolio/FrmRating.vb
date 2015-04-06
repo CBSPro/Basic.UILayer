@@ -169,4 +169,8 @@ Public Class FrmRating
         Constants.ProjConst.mRating = False
     End Sub
 
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 End Class

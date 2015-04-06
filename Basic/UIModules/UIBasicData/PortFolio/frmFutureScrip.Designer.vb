@@ -367,10 +367,10 @@ Partial Class frmFutureScrip
         Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(109, 109)
+        Me.txtName.Location = New System.Drawing.Point(109, 111)
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(309, 22)
+        Me.txtName.Size = New System.Drawing.Size(335, 22)
         Me.txtName.TabIndex = 4
         Me.txtName.Tag = "Enter Description"
         '
@@ -378,7 +378,7 @@ Partial Class frmFutureScrip
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(445, 113)
+        Me.Label9.Location = New System.Drawing.Point(446, 114)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(47, 13)
         Me.Label9.TabIndex = 34
@@ -388,7 +388,7 @@ Partial Class frmFutureScrip
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(36, 169)
+        Me.Label7.Location = New System.Drawing.Point(32, 169)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(71, 13)
         Me.Label7.TabIndex = 32
@@ -398,7 +398,7 @@ Partial Class frmFutureScrip
         '
         Me.dtpSettDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpSettDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpSettDate.Location = New System.Drawing.Point(448, 137)
+        Me.dtpSettDate.Location = New System.Drawing.Point(448, 138)
         Me.dtpSettDate.Name = "dtpSettDate"
         Me.dtpSettDate.Size = New System.Drawing.Size(95, 22)
         Me.dtpSettDate.TabIndex = 8
@@ -407,7 +407,7 @@ Partial Class frmFutureScrip
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(380, 142)
+        Me.Label6.Location = New System.Drawing.Point(379, 142)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(65, 13)
         Me.Label6.TabIndex = 30
@@ -418,7 +418,7 @@ Partial Class frmFutureScrip
         '
         Me.dtpEndDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpEndDate.Location = New System.Drawing.Point(279, 138)
+        Me.dtpEndDate.Location = New System.Drawing.Point(276, 138)
         Me.dtpEndDate.Name = "dtpEndDate"
         Me.dtpEndDate.Size = New System.Drawing.Size(95, 22)
         Me.dtpEndDate.TabIndex = 7
@@ -427,7 +427,7 @@ Partial Class frmFutureScrip
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(213, 142)
+        Me.Label5.Location = New System.Drawing.Point(212, 143)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 13)
         Me.Label5.TabIndex = 28
@@ -438,7 +438,7 @@ Partial Class frmFutureScrip
         '
         Me.dtpStartDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpStartDate.Location = New System.Drawing.Point(112, 137)
+        Me.dtpStartDate.Location = New System.Drawing.Point(109, 138)
         Me.dtpStartDate.Name = "dtpStartDate"
         Me.dtpStartDate.Size = New System.Drawing.Size(95, 22)
         Me.dtpStartDate.TabIndex = 6
@@ -447,7 +447,7 @@ Partial Class frmFutureScrip
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(42, 140)
+        Me.Label12.Location = New System.Drawing.Point(38, 141)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(65, 13)
         Me.Label12.TabIndex = 26
@@ -457,7 +457,7 @@ Partial Class frmFutureScrip
         'cmbPeriod
         '
         Me.cmbPeriod.FormattingEnabled = True
-        Me.cmbPeriod.Location = New System.Drawing.Point(109, 80)
+        Me.cmbPeriod.Location = New System.Drawing.Point(109, 82)
         Me.cmbPeriod.Name = "cmbPeriod"
         Me.cmbPeriod.Size = New System.Drawing.Size(145, 24)
         Me.cmbPeriod.TabIndex = 3
@@ -465,7 +465,7 @@ Partial Class frmFutureScrip
         'cmbYear
         '
         Me.cmbYear.FormattingEnabled = True
-        Me.cmbYear.Location = New System.Drawing.Point(109, 52)
+        Me.cmbYear.Location = New System.Drawing.Point(109, 53)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(145, 24)
         Me.cmbYear.TabIndex = 2
@@ -482,7 +482,7 @@ Partial Class frmFutureScrip
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(68, 113)
+        Me.Label3.Location = New System.Drawing.Point(64, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 15
@@ -492,7 +492,7 @@ Partial Class frmFutureScrip
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(74, 58)
+        Me.Label2.Location = New System.Drawing.Point(70, 57)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(33, 13)
         Me.Label2.TabIndex = 14
@@ -513,7 +513,7 @@ Partial Class frmFutureScrip
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(64, 85)
+        Me.Label4.Location = New System.Drawing.Point(60, 85)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 7
@@ -523,7 +523,7 @@ Partial Class frmFutureScrip
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(67, 29)
+        Me.Label1.Location = New System.Drawing.Point(63, 29)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 0

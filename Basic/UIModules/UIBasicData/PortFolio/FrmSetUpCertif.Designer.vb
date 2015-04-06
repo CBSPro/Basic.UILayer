@@ -146,7 +146,7 @@ Partial Class FrmSetUpCertif
         'cbIssuCertific
         '
         Me.cbIssuCertific.AutoSize = True
-        Me.cbIssuCertific.Location = New System.Drawing.Point(36, 178)
+        Me.cbIssuCertific.Location = New System.Drawing.Point(131, 178)
         Me.cbIssuCertific.Name = "cbIssuCertific"
         Me.cbIssuCertific.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cbIssuCertific.Size = New System.Drawing.Size(163, 20)
@@ -157,7 +157,7 @@ Partial Class FrmSetUpCertif
         'cmbInstuType
         '
         Me.cmbInstuType.FormattingEnabled = True
-        Me.cmbInstuType.Location = New System.Drawing.Point(122, 59)
+        Me.cmbInstuType.Location = New System.Drawing.Point(217, 59)
         Me.cmbInstuType.Name = "cmbInstuType"
         Me.cmbInstuType.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstuType.TabIndex = 1
@@ -166,7 +166,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(64, 127)
+        Me.Label2.Location = New System.Drawing.Point(159, 127)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 55
@@ -175,7 +175,7 @@ Partial Class FrmSetUpCertif
         'cmbBranch
         '
         Me.cmbBranch.FormattingEnabled = True
-        Me.cmbBranch.Location = New System.Drawing.Point(122, 148)
+        Me.cmbBranch.Location = New System.Drawing.Point(217, 148)
         Me.cmbBranch.Name = "cmbBranch"
         Me.cmbBranch.Size = New System.Drawing.Size(146, 24)
         Me.cmbBranch.TabIndex = 4
@@ -183,7 +183,7 @@ Partial Class FrmSetUpCertif
         'cmbInstitute
         '
         Me.cmbInstitute.FormattingEnabled = True
-        Me.cmbInstitute.Location = New System.Drawing.Point(122, 116)
+        Me.cmbInstitute.Location = New System.Drawing.Point(217, 116)
         Me.cmbInstitute.Name = "cmbInstitute"
         Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstitute.TabIndex = 3
@@ -191,7 +191,7 @@ Partial Class FrmSetUpCertif
         'cmbInstituteType
         '
         Me.cmbInstituteType.FormattingEnabled = True
-        Me.cmbInstituteType.Location = New System.Drawing.Point(122, 86)
+        Me.cmbInstituteType.Location = New System.Drawing.Point(217, 86)
         Me.cmbInstituteType.Name = "cmbInstituteType"
         Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstituteType.TabIndex = 2
@@ -200,7 +200,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(34, 153)
+        Me.Label10.Location = New System.Drawing.Point(129, 153)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(83, 13)
         Me.Label10.TabIndex = 29
@@ -210,7 +210,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(19, 67)
+        Me.Label26.Location = New System.Drawing.Point(114, 67)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(98, 13)
         Me.Label26.TabIndex = 21
@@ -220,7 +220,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(22, 97)
+        Me.Label3.Location = New System.Drawing.Point(117, 97)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 13)
         Me.Label3.TabIndex = 15
@@ -231,7 +231,7 @@ Partial Class FrmSetUpCertif
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(122, 31)
+        Me.txtsysCode.Location = New System.Drawing.Point(217, 31)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -242,7 +242,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 35)
+        Me.Label1.Location = New System.Drawing.Point(128, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 0

@@ -44,6 +44,7 @@ Partial Class frmSector
         Me.GVHelp = New System.Windows.Forms.DataGridView()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.txtPurpose = New System.Windows.Forms.TextBox()
         Me.txtIndex = New System.Windows.Forms.TextBox()
         Me.txtNemonic = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -58,7 +59,6 @@ Partial Class frmSector
         Me.lblBy = New System.Windows.Forms.Label()
         Me.lblToolTip = New System.Windows.Forms.Label()
         Me.lblCompany = New System.Windows.Forms.Label()
-        Me.txtPurpose = New System.Windows.Forms.TextBox()
         Me.GpBtns.SuspendLayout()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -322,12 +322,24 @@ Partial Class frmSector
         Me.GpData.TabIndex = 36
         Me.GpData.TabStop = False
         '
+        'txtPurpose
+        '
+        Me.txtPurpose.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPurpose.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPurpose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPurpose.Location = New System.Drawing.Point(188, 121)
+        Me.txtPurpose.MaxLength = 3
+        Me.txtPurpose.Name = "txtPurpose"
+        Me.txtPurpose.Size = New System.Drawing.Size(309, 22)
+        Me.txtPurpose.TabIndex = 4
+        Me.txtPurpose.Tag = "Enter Description"
+        '
         'txtIndex
         '
         Me.txtIndex.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtIndex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtIndex.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIndex.Location = New System.Drawing.Point(188, 97)
+        Me.txtIndex.Location = New System.Drawing.Point(188, 95)
         Me.txtIndex.MaxLength = 3
         Me.txtIndex.Name = "txtIndex"
         Me.txtIndex.Size = New System.Drawing.Size(309, 22)
@@ -339,7 +351,7 @@ Partial Class frmSector
         Me.txtNemonic.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtNemonic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtNemonic.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNemonic.Location = New System.Drawing.Point(187, 70)
+        Me.txtNemonic.Location = New System.Drawing.Point(188, 69)
         Me.txtNemonic.MaxLength = 3
         Me.txtNemonic.Name = "txtNemonic"
         Me.txtNemonic.Size = New System.Drawing.Size(309, 22)
@@ -351,7 +363,7 @@ Partial Class frmSector
         Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(188, 44)
+        Me.txtName.Location = New System.Drawing.Point(188, 43)
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(309, 22)
@@ -362,7 +374,7 @@ Partial Class frmSector
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(121, 101)
+        Me.Label3.Location = New System.Drawing.Point(124, 99)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(58, 13)
         Me.Label3.TabIndex = 15
@@ -372,7 +384,7 @@ Partial Class frmSector
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(140, 48)
+        Me.Label2.Location = New System.Drawing.Point(143, 47)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 14
@@ -393,7 +405,7 @@ Partial Class frmSector
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(127, 127)
+        Me.Label5.Location = New System.Drawing.Point(129, 125)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 13)
         Me.Label5.TabIndex = 9
@@ -404,7 +416,7 @@ Partial Class frmSector
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(115, 74)
+        Me.Label4.Location = New System.Drawing.Point(118, 73)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 13)
         Me.Label4.TabIndex = 7
@@ -415,7 +427,7 @@ Partial Class frmSector
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(187, 17)
+        Me.txtsysCode.Location = New System.Drawing.Point(188, 17)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -426,7 +438,7 @@ Partial Class frmSector
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(99, 21)
+        Me.Label1.Location = New System.Drawing.Point(102, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
@@ -467,18 +479,6 @@ Partial Class frmSector
         Me.lblCompany.Name = "lblCompany"
         Me.lblCompany.Size = New System.Drawing.Size(170, 23)
         Me.lblCompany.TabIndex = 44
-        '
-        'txtPurpose
-        '
-        Me.txtPurpose.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtPurpose.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPurpose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPurpose.Location = New System.Drawing.Point(188, 123)
-        Me.txtPurpose.MaxLength = 3
-        Me.txtPurpose.Name = "txtPurpose"
-        Me.txtPurpose.Size = New System.Drawing.Size(309, 22)
-        Me.txtPurpose.TabIndex = 4
-        Me.txtPurpose.Tag = "Enter Description"
         '
         'frmSector
         '

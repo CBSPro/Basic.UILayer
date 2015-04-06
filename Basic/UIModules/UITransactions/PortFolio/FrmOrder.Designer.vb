@@ -93,6 +93,9 @@ Partial Class FrmOrder
         Me.txtUserDef = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -854,11 +857,41 @@ Partial Class FrmOrder
         Me.Label8.Text = "User Def. No"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'lblBy
+        '
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(848, 674)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(170, 23)
+        Me.lblBy.TabIndex = 46
+        '
+        'lblToolTip
+        '
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(471, 674)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
+        Me.lblToolTip.TabIndex = 45
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(295, 675)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 44
+        '
         'FrmOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1025, 706)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
@@ -949,4 +982,7 @@ Partial Class FrmOrder
     Friend WithEvents cmbCountParty As System.Windows.Forms.ComboBox
     Friend WithEvents cmbClrType As System.Windows.Forms.ComboBox
     Friend WithEvents cmbValidity As System.Windows.Forms.ComboBox
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
 End Class

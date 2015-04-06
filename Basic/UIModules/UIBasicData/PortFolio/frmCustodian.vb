@@ -165,4 +165,14 @@ Public Class frmCustodian
     Private Sub frmCustodian_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         Constants.ProjConst.mCustodian = False
     End Sub
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
+
+    Private Sub txtDescrip_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtDescrip.TextChanged
+
+    End Sub
+
+   
 End Class

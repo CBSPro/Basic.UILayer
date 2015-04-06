@@ -130,7 +130,7 @@ Partial Class frmGroupOfcompany
         Me.txtMnemonic.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtMnemonic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMnemonic.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMnemonic.Location = New System.Drawing.Point(187, 70)
+        Me.txtMnemonic.Location = New System.Drawing.Point(187, 69)
         Me.txtMnemonic.MaxLength = 3
         Me.txtMnemonic.Name = "txtMnemonic"
         Me.txtMnemonic.Size = New System.Drawing.Size(309, 22)
@@ -142,7 +142,7 @@ Partial Class frmGroupOfcompany
         Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(187, 44)
+        Me.txtName.Location = New System.Drawing.Point(187, 43)
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(501, 22)
@@ -153,7 +153,7 @@ Partial Class frmGroupOfcompany
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(146, 48)
+        Me.Label2.Location = New System.Drawing.Point(143, 47)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 14
@@ -174,7 +174,7 @@ Partial Class frmGroupOfcompany
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(121, 74)
+        Me.Label4.Location = New System.Drawing.Point(118, 73)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 13)
         Me.Label4.TabIndex = 7
@@ -196,7 +196,7 @@ Partial Class frmGroupOfcompany
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(105, 21)
+        Me.Label1.Location = New System.Drawing.Point(102, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0

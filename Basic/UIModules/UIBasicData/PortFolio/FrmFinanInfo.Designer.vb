@@ -79,7 +79,7 @@ Partial Class FrmFinanInfo
         Me.Search.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Search.Location = New System.Drawing.Point(9, 57)
         Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(341, 546)
+        Me.Search.Size = New System.Drawing.Size(341, 499)
         Me.Search.TabIndex = 36
         Me.Search.TabStop = False
         Me.Search.Text = "Search"
@@ -95,7 +95,7 @@ Partial Class FrmFinanInfo
         Me.GVHelp.Name = "GVHelp"
         Me.GVHelp.ReadOnly = True
         Me.GVHelp.RowHeadersWidth = 20
-        Me.GVHelp.Size = New System.Drawing.Size(328, 491)
+        Me.GVHelp.Size = New System.Drawing.Size(328, 443)
         Me.GVHelp.StandardTab = True
         Me.GVHelp.TabIndex = 43
         '
@@ -308,20 +308,22 @@ Partial Class FrmFinanInfo
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(532, 182)
+        Me.GpData.Size = New System.Drawing.Size(708, 393)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(187, 45)
+        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtName.Location = New System.Drawing.Point(225, 110)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(326, 22)
         Me.txtName.TabIndex = 1
         '
         'txtDescrip
         '
-        Me.txtDescrip.Location = New System.Drawing.Point(187, 75)
+        Me.txtDescrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtDescrip.Location = New System.Drawing.Point(225, 139)
         Me.txtDescrip.Multiline = True
         Me.txtDescrip.Name = "txtDescrip"
         Me.txtDescrip.Size = New System.Drawing.Size(326, 73)
@@ -331,7 +333,7 @@ Partial Class FrmFinanInfo
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 80)
+        Me.Label3.Location = New System.Drawing.Point(149, 143)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 15
@@ -341,7 +343,7 @@ Partial Class FrmFinanInfo
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(140, 48)
+        Me.Label2.Location = New System.Drawing.Point(181, 114)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 14
@@ -352,7 +354,7 @@ Partial Class FrmFinanInfo
         '
         Me.LBLPosted.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPosted.ForeColor = System.Drawing.Color.Red
-        Me.LBLPosted.Location = New System.Drawing.Point(575, 18)
+        Me.LBLPosted.Location = New System.Drawing.Point(558, 18)
         Me.LBLPosted.Name = "LBLPosted"
         Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
         Me.LBLPosted.TabIndex = 13
@@ -363,7 +365,7 @@ Partial Class FrmFinanInfo
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(187, 17)
+        Me.txtsysCode.Location = New System.Drawing.Point(225, 81)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -374,7 +376,7 @@ Partial Class FrmFinanInfo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(99, 21)
+        Me.Label1.Location = New System.Drawing.Point(140, 85)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0
