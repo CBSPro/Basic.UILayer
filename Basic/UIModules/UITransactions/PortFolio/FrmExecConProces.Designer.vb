@@ -24,7 +24,11 @@ Partial Class FrmExecConProces
     Private Sub InitializeComponent()
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.cmbAllBrok = New System.Windows.Forms.CheckBox()
+        Me.cmbAllSecu = New System.Windows.Forms.CheckBox()
+        Me.btnProcess = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFetch = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtpFromDate = New System.Windows.Forms.DateTimePicker()
@@ -38,10 +42,6 @@ Partial Class FrmExecConProces
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnFetch = New System.Windows.Forms.Button()
-        Me.btnProcess = New System.Windows.Forms.Button()
-        Me.cmbAllSecu = New System.Windows.Forms.CheckBox()
-        Me.cmbAllBrok = New System.Windows.Forms.CheckBox()
         Me.GpData.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -80,6 +80,35 @@ Partial Class FrmExecConProces
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
+        'cmbAllBrok
+        '
+        Me.cmbAllBrok.AutoSize = True
+        Me.cmbAllBrok.Location = New System.Drawing.Point(107, 79)
+        Me.cmbAllBrok.Name = "cmbAllBrok"
+        Me.cmbAllBrok.Size = New System.Drawing.Size(45, 20)
+        Me.cmbAllBrok.TabIndex = 54
+        Me.cmbAllBrok.Text = "All"
+        Me.cmbAllBrok.UseVisualStyleBackColor = True
+        '
+        'cmbAllSecu
+        '
+        Me.cmbAllSecu.AutoSize = True
+        Me.cmbAllSecu.Location = New System.Drawing.Point(107, 17)
+        Me.cmbAllSecu.Name = "cmbAllSecu"
+        Me.cmbAllSecu.Size = New System.Drawing.Size(45, 20)
+        Me.cmbAllSecu.TabIndex = 53
+        Me.cmbAllSecu.Text = "All"
+        Me.cmbAllSecu.UseVisualStyleBackColor = True
+        '
+        'btnProcess
+        '
+        Me.btnProcess.Location = New System.Drawing.Point(406, 153)
+        Me.btnProcess.Name = "btnProcess"
+        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
+        Me.btnProcess.TabIndex = 8
+        Me.btnProcess.Text = "Process"
+        Me.btnProcess.UseVisualStyleBackColor = True
+        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.btnFetch)
@@ -93,6 +122,15 @@ Partial Class FrmExecConProces
         Me.GroupBox1.TabIndex = 50
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Date"
+        '
+        'btnFetch
+        '
+        Me.btnFetch.Location = New System.Drawing.Point(125, 100)
+        Me.btnFetch.Name = "btnFetch"
+        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
+        Me.btnFetch.TabIndex = 7
+        Me.btnFetch.Text = "Fetch"
+        Me.btnFetch.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -123,7 +161,7 @@ Partial Class FrmExecConProces
         Me.dtpFromDate.Location = New System.Drawing.Point(80, 20)
         Me.dtpFromDate.Name = "dtpFromDate"
         Me.dtpFromDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpFromDate.TabIndex = 48
+        Me.dtpFromDate.TabIndex = 5
         '
         'dtpToDate
         '
@@ -132,7 +170,7 @@ Partial Class FrmExecConProces
         Me.dtpToDate.Location = New System.Drawing.Point(80, 60)
         Me.dtpToDate.Name = "dtpToDate"
         Me.dtpToDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpToDate.TabIndex = 49
+        Me.dtpToDate.TabIndex = 6
         '
         'cmbStatus
         '
@@ -140,7 +178,7 @@ Partial Class FrmExecConProces
         Me.cmbStatus.Location = New System.Drawing.Point(158, 101)
         Me.cmbStatus.Name = "cmbStatus"
         Me.cmbStatus.Size = New System.Drawing.Size(160, 24)
-        Me.cmbStatus.TabIndex = 46
+        Me.cmbStatus.TabIndex = 4
         '
         'cmbBroker
         '
@@ -148,7 +186,7 @@ Partial Class FrmExecConProces
         Me.cmbBroker.Location = New System.Drawing.Point(158, 75)
         Me.cmbBroker.Name = "cmbBroker"
         Me.cmbBroker.Size = New System.Drawing.Size(160, 24)
-        Me.cmbBroker.TabIndex = 45
+        Me.cmbBroker.TabIndex = 3
         '
         'cmbFund
         '
@@ -156,7 +194,7 @@ Partial Class FrmExecConProces
         Me.cmbFund.Location = New System.Drawing.Point(158, 45)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(160, 24)
-        Me.cmbFund.TabIndex = 44
+        Me.cmbFund.TabIndex = 2
         '
         'cmbSecu
         '
@@ -164,7 +202,7 @@ Partial Class FrmExecConProces
         Me.cmbSecu.Location = New System.Drawing.Point(158, 13)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(160, 24)
-        Me.cmbSecu.TabIndex = 43
+        Me.cmbSecu.TabIndex = 1
         '
         'Label4
         '
@@ -216,44 +254,6 @@ Partial Class FrmExecConProces
         Me.Label1.Size = New System.Drawing.Size(85, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Security Type"
-        '
-        'btnFetch
-        '
-        Me.btnFetch.Location = New System.Drawing.Point(125, 100)
-        Me.btnFetch.Name = "btnFetch"
-        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 51
-        Me.btnFetch.Text = "Fetch"
-        Me.btnFetch.UseVisualStyleBackColor = True
-        '
-        'btnProcess
-        '
-        Me.btnProcess.Location = New System.Drawing.Point(406, 153)
-        Me.btnProcess.Name = "btnProcess"
-        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
-        Me.btnProcess.TabIndex = 52
-        Me.btnProcess.Text = "Process"
-        Me.btnProcess.UseVisualStyleBackColor = True
-        '
-        'cmbAllSecu
-        '
-        Me.cmbAllSecu.AutoSize = True
-        Me.cmbAllSecu.Location = New System.Drawing.Point(107, 17)
-        Me.cmbAllSecu.Name = "cmbAllSecu"
-        Me.cmbAllSecu.Size = New System.Drawing.Size(45, 20)
-        Me.cmbAllSecu.TabIndex = 53
-        Me.cmbAllSecu.Text = "All"
-        Me.cmbAllSecu.UseVisualStyleBackColor = True
-        '
-        'cmbAllBrok
-        '
-        Me.cmbAllBrok.AutoSize = True
-        Me.cmbAllBrok.Location = New System.Drawing.Point(107, 79)
-        Me.cmbAllBrok.Name = "cmbAllBrok"
-        Me.cmbAllBrok.Size = New System.Drawing.Size(45, 20)
-        Me.cmbAllBrok.TabIndex = 54
-        Me.cmbAllBrok.Text = "All"
-        Me.cmbAllBrok.UseVisualStyleBackColor = True
         '
         'FrmExecConProces
         '

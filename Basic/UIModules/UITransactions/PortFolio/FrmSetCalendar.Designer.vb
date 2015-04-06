@@ -44,23 +44,23 @@ Partial Class FrmSetCalendar
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.btnFetch = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtDesc = New System.Windows.Forms.TextBox()
+        Me.cmbStokMark = New System.Windows.Forms.ComboBox()
+        Me.cmbPeriod = New System.Windows.Forms.ComboBox()
+        Me.cmbYear = New System.Windows.Forms.ComboBox()
+        Me.cmbSetMode = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cmbSetMode = New System.Windows.Forms.ComboBox()
-        Me.cmbYear = New System.Windows.Forms.ComboBox()
-        Me.cmbPeriod = New System.Windows.Forms.ComboBox()
-        Me.cmbStokMark = New System.Windows.Forms.ComboBox()
-        Me.txtDesc = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.dtpTrade = New System.Windows.Forms.DateTimePicker()
-        Me.dtpSettlement = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btnFetch = New System.Windows.Forms.Button()
+        Me.dtpSettlement = New System.Windows.Forms.DateTimePicker()
+        Me.dtpTrade = New System.Windows.Forms.DateTimePicker()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -325,6 +325,76 @@ Partial Class FrmSetCalendar
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
+        'btnFetch
+        '
+        Me.btnFetch.Location = New System.Drawing.Point(320, 105)
+        Me.btnFetch.Name = "btnFetch"
+        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
+        Me.btnFetch.TabIndex = 5
+        Me.btnFetch.Text = "Fetch"
+        Me.btnFetch.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(92, 116)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "Stock Market"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(132, 86)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(43, 13)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "Period"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'txtDesc
+        '
+        Me.txtDesc.Location = New System.Drawing.Point(187, 138)
+        Me.txtDesc.Name = "txtDesc"
+        Me.txtDesc.Size = New System.Drawing.Size(250, 22)
+        Me.txtDesc.TabIndex = 6
+        '
+        'cmbStokMark
+        '
+        Me.cmbStokMark.FormattingEnabled = True
+        Me.cmbStokMark.Location = New System.Drawing.Point(187, 105)
+        Me.cmbStokMark.Name = "cmbStokMark"
+        Me.cmbStokMark.Size = New System.Drawing.Size(121, 24)
+        Me.cmbStokMark.TabIndex = 4
+        '
+        'cmbPeriod
+        '
+        Me.cmbPeriod.FormattingEnabled = True
+        Me.cmbPeriod.Location = New System.Drawing.Point(187, 75)
+        Me.cmbPeriod.Name = "cmbPeriod"
+        Me.cmbPeriod.Size = New System.Drawing.Size(121, 24)
+        Me.cmbPeriod.TabIndex = 3
+        '
+        'cmbYear
+        '
+        Me.cmbYear.FormattingEnabled = True
+        Me.cmbYear.Location = New System.Drawing.Point(187, 45)
+        Me.cmbYear.Name = "cmbYear"
+        Me.cmbYear.Size = New System.Drawing.Size(121, 24)
+        Me.cmbYear.TabIndex = 2
+        '
+        'cmbSetMode
+        '
+        Me.cmbSetMode.FormattingEnabled = True
+        Me.cmbSetMode.Location = New System.Drawing.Point(187, 15)
+        Me.cmbSetMode.Name = "cmbSetMode"
+        Me.cmbSetMode.Size = New System.Drawing.Size(121, 24)
+        Me.cmbSetMode.TabIndex = 1
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -366,67 +436,6 @@ Partial Class FrmSetCalendar
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Settlement Mode"
         '
-        'cmbSetMode
-        '
-        Me.cmbSetMode.FormattingEnabled = True
-        Me.cmbSetMode.Location = New System.Drawing.Point(187, 15)
-        Me.cmbSetMode.Name = "cmbSetMode"
-        Me.cmbSetMode.Size = New System.Drawing.Size(121, 24)
-        Me.cmbSetMode.TabIndex = 19
-        '
-        'cmbYear
-        '
-        Me.cmbYear.FormattingEnabled = True
-        Me.cmbYear.Location = New System.Drawing.Point(187, 45)
-        Me.cmbYear.Name = "cmbYear"
-        Me.cmbYear.Size = New System.Drawing.Size(121, 24)
-        Me.cmbYear.TabIndex = 20
-        '
-        'cmbPeriod
-        '
-        Me.cmbPeriod.FormattingEnabled = True
-        Me.cmbPeriod.Location = New System.Drawing.Point(187, 75)
-        Me.cmbPeriod.Name = "cmbPeriod"
-        Me.cmbPeriod.Size = New System.Drawing.Size(121, 24)
-        Me.cmbPeriod.TabIndex = 21
-        '
-        'cmbStokMark
-        '
-        Me.cmbStokMark.FormattingEnabled = True
-        Me.cmbStokMark.Location = New System.Drawing.Point(187, 105)
-        Me.cmbStokMark.Name = "cmbStokMark"
-        Me.cmbStokMark.Size = New System.Drawing.Size(121, 24)
-        Me.cmbStokMark.TabIndex = 22
-        '
-        'txtDesc
-        '
-        Me.txtDesc.Location = New System.Drawing.Point(187, 138)
-        Me.txtDesc.Name = "txtDesc"
-        Me.txtDesc.Size = New System.Drawing.Size(250, 22)
-        Me.txtDesc.TabIndex = 23
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(132, 86)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 13)
-        Me.Label4.TabIndex = 24
-        Me.Label4.Text = "Period"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(92, 116)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(83, 13)
-        Me.Label5.TabIndex = 25
-        Me.Label5.Text = "Stock Market"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -439,37 +448,6 @@ Partial Class FrmSetCalendar
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(110, 25)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(71, 13)
-        Me.Label6.TabIndex = 25
-        Me.Label6.Text = "Trade Date"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'dtpTrade
-        '
-        Me.dtpTrade.CustomFormat = "dd/MM/yyyy"
-        Me.dtpTrade.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTrade.Location = New System.Drawing.Point(212, 19)
-        Me.dtpTrade.Name = "dtpTrade"
-        Me.dtpTrade.Size = New System.Drawing.Size(96, 20)
-        Me.dtpTrade.TabIndex = 26
-        Me.dtpTrade.Value = New Date(2015, 3, 31, 12, 52, 8, 0)
-        '
-        'dtpSettlement
-        '
-        Me.dtpSettlement.CustomFormat = "dd/MM/yyyy"
-        Me.dtpSettlement.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpSettlement.Location = New System.Drawing.Point(430, 19)
-        Me.dtpSettlement.Name = "dtpSettlement"
-        Me.dtpSettlement.Size = New System.Drawing.Size(96, 20)
-        Me.dtpSettlement.TabIndex = 27
-        Me.dtpSettlement.Value = New Date(2015, 3, 31, 12, 52, 8, 0)
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -481,14 +459,36 @@ Partial Class FrmSetCalendar
         Me.Label7.Text = "Settlement Date"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'btnFetch
+        'dtpSettlement
         '
-        Me.btnFetch.Location = New System.Drawing.Point(320, 105)
-        Me.btnFetch.Name = "btnFetch"
-        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 26
-        Me.btnFetch.Text = "Fetch"
-        Me.btnFetch.UseVisualStyleBackColor = True
+        Me.dtpSettlement.CustomFormat = "dd/MM/yyyy"
+        Me.dtpSettlement.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpSettlement.Location = New System.Drawing.Point(430, 19)
+        Me.dtpSettlement.Name = "dtpSettlement"
+        Me.dtpSettlement.Size = New System.Drawing.Size(96, 20)
+        Me.dtpSettlement.TabIndex = 8
+        Me.dtpSettlement.Value = New Date(2015, 3, 31, 12, 52, 8, 0)
+        '
+        'dtpTrade
+        '
+        Me.dtpTrade.CustomFormat = "dd/MM/yyyy"
+        Me.dtpTrade.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpTrade.Location = New System.Drawing.Point(212, 19)
+        Me.dtpTrade.Name = "dtpTrade"
+        Me.dtpTrade.Size = New System.Drawing.Size(96, 20)
+        Me.dtpTrade.TabIndex = 7
+        Me.dtpTrade.Value = New Date(2015, 3, 31, 12, 52, 8, 0)
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(110, 25)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(71, 13)
+        Me.Label6.TabIndex = 25
+        Me.Label6.Text = "Trade Date"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'FrmSetCalendar
         '

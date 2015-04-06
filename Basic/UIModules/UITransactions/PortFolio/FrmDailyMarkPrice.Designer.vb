@@ -44,6 +44,7 @@ Partial Class FrmDailyMarkPrice
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.fpPrice = New AxFPSpreadADO.AxfpSpread()
         Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.CmbStokMar = New System.Windows.Forms.ComboBox()
         Me.cmbSecu = New System.Windows.Forms.ComboBox()
@@ -53,7 +54,6 @@ Partial Class FrmDailyMarkPrice
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.fpPrice = New AxFPSpreadADO.AxfpSpread()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -316,6 +316,15 @@ Partial Class FrmDailyMarkPrice
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
+        'fpPrice
+        '
+        Me.fpPrice.DataSource = Nothing
+        Me.fpPrice.Location = New System.Drawing.Point(16, 124)
+        Me.fpPrice.Name = "fpPrice"
+        Me.fpPrice.OcxState = CType(resources.GetObject("fpPrice.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.fpPrice.Size = New System.Drawing.Size(696, 246)
+        Me.fpPrice.TabIndex = 46
+        '
         'dtpDate
         '
         Me.dtpDate.CustomFormat = "dd/MM/yyyy"
@@ -323,7 +332,7 @@ Partial Class FrmDailyMarkPrice
         Me.dtpDate.Location = New System.Drawing.Point(151, 71)
         Me.dtpDate.Name = "dtpDate"
         Me.dtpDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpDate.TabIndex = 45
+        Me.dtpDate.TabIndex = 3
         '
         'CmbStokMar
         '
@@ -331,7 +340,7 @@ Partial Class FrmDailyMarkPrice
         Me.CmbStokMar.Location = New System.Drawing.Point(150, 45)
         Me.CmbStokMar.Name = "CmbStokMar"
         Me.CmbStokMar.Size = New System.Drawing.Size(121, 24)
-        Me.CmbStokMar.TabIndex = 44
+        Me.CmbStokMar.TabIndex = 2
         '
         'cmbSecu
         '
@@ -339,14 +348,14 @@ Partial Class FrmDailyMarkPrice
         Me.cmbSecu.Location = New System.Drawing.Point(150, 18)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(121, 24)
-        Me.cmbSecu.TabIndex = 43
+        Me.cmbSecu.TabIndex = 1
         '
         'btnTransfer
         '
         Me.btnTransfer.Location = New System.Drawing.Point(569, 95)
         Me.btnTransfer.Name = "btnTransfer"
         Me.btnTransfer.Size = New System.Drawing.Size(75, 23)
-        Me.btnTransfer.TabIndex = 20
+        Me.btnTransfer.TabIndex = 5
         Me.btnTransfer.Text = "Transfer"
         Me.btnTransfer.UseVisualStyleBackColor = True
         '
@@ -355,7 +364,7 @@ Partial Class FrmDailyMarkPrice
         Me.btnFetch.Location = New System.Drawing.Point(277, 16)
         Me.btnFetch.Name = "btnFetch"
         Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 19
+        Me.btnFetch.TabIndex = 4
         Me.btnFetch.Text = "Fatech"
         Me.btnFetch.UseVisualStyleBackColor = True
         '
@@ -399,15 +408,6 @@ Partial Class FrmDailyMarkPrice
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Security"
-        '
-        'fpPrice
-        '
-        Me.fpPrice.DataSource = Nothing
-        Me.fpPrice.Location = New System.Drawing.Point(16, 124)
-        Me.fpPrice.Name = "fpPrice"
-        Me.fpPrice.OcxState = CType(resources.GetObject("fpPrice.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpPrice.Size = New System.Drawing.Size(696, 246)
-        Me.fpPrice.TabIndex = 46
         '
         'FrmDailyMarkPrice
         '

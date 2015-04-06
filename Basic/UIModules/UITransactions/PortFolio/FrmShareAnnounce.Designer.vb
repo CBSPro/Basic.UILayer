@@ -44,59 +44,59 @@ Partial Class FrmShareAnnounce
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
-        Me.txtAnnounceDate = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.LBLPosted = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.CmbShare = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.dtpAGMDate = New System.Windows.Forms.DateTimePicker()
-        Me.txtGroup = New System.Windows.Forms.TextBox()
-        Me.txtSec = New System.Windows.Forms.TextBox()
-        Me.txtQuotRef = New System.Windows.Forms.TextBox()
-        Me.dtpRSBCloseDate = New System.Windows.Forms.DateTimePicker()
-        Me.dtpRSRDate = New System.Windows.Forms.DateTimePicker()
-        Me.txtRightShare = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.cmbNature = New System.Windows.Forms.ComboBox()
-        Me.cmbDivYearEnd1 = New System.Windows.Forms.ComboBox()
-        Me.cmbDivYearEnd2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.txtFaceValPrice = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.txtPriceAmnt = New System.Windows.Forms.TextBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.txtRate = New System.Windows.Forms.TextBox()
         Me.cmbBonYearEnd2 = New System.Windows.Forms.ComboBox()
         Me.cmbBonYearEnd1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.cmbBonusNature = New System.Windows.Forms.ComboBox()
         Me.dtpBonBokkCloDate = New System.Windows.Forms.DateTimePicker()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.rbAmnt = New System.Windows.Forms.RadioButton()
+        Me.txtPriceAmnt = New System.Windows.Forms.TextBox()
+        Me.rbPriceFaceVal = New System.Windows.Forms.RadioButton()
+        Me.txtFaceValPrice = New System.Windows.Forms.TextBox()
+        Me.txtQuotRef = New System.Windows.Forms.TextBox()
+        Me.txtSec = New System.Windows.Forms.TextBox()
+        Me.txtGroup = New System.Windows.Forms.TextBox()
+        Me.dtpAGMDate = New System.Windows.Forms.DateTimePicker()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtDivRate = New System.Windows.Forms.TextBox()
+        Me.cmbDivYearEnd2 = New System.Windows.Forms.ComboBox()
+        Me.cmbDivYearEnd1 = New System.Windows.Forms.ComboBox()
+        Me.cmbNature = New System.Windows.Forms.ComboBox()
+        Me.dtpDivBookClos = New System.Windows.Forms.DateTimePicker()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtRightShare = New System.Windows.Forms.TextBox()
+        Me.dtpRSRDate = New System.Windows.Forms.DateTimePicker()
+        Me.dtpRSBCloseDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.CmbShare = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtAnnounceDate = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LBLPosted = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
         Me.GpData.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblTypeValid
@@ -361,352 +361,12 @@ Partial Class FrmShareAnnounce
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
-        'txtAnnounceDate
-        '
-        Me.txtAnnounceDate.Location = New System.Drawing.Point(187, 45)
-        Me.txtAnnounceDate.Name = "txtAnnounceDate"
-        Me.txtAnnounceDate.Size = New System.Drawing.Size(120, 22)
-        Me.txtAnnounceDate.TabIndex = 18
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 77)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
-        Me.Label3.TabIndex = 15
-        Me.Label3.Text = "A.G.M Date"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(59, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 13)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "Announcement Date"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'LBLPosted
-        '
-        Me.LBLPosted.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLPosted.ForeColor = System.Drawing.Color.Red
-        Me.LBLPosted.Location = New System.Drawing.Point(575, 18)
-        Me.LBLPosted.Name = "LBLPosted"
-        Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
-        Me.LBLPosted.TabIndex = 13
-        Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(141, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Share"
-        '
-        'CmbShare
-        '
-        Me.CmbShare.FormattingEnabled = True
-        Me.CmbShare.Location = New System.Drawing.Point(187, 13)
-        Me.CmbShare.Name = "CmbShare"
-        Me.CmbShare.Size = New System.Drawing.Size(121, 24)
-        Me.CmbShare.TabIndex = 43
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(396, 26)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 13)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "Group"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(393, 54)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 13)
-        Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Sector"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(347, 80)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 13)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Quotation Ref."
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.txtRightShare)
-        Me.GroupBox1.Controls.Add(Me.dtpRSRDate)
-        Me.GroupBox1.Controls.Add(Me.dtpRSBCloseDate)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 116)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(341, 110)
-        Me.GroupBox1.TabIndex = 44
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Right Shares"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(62, 27)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(113, 13)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Book Closure Date"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(62, 58)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(113, 13)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "Renunciation Date"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(92, 80)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 13)
-        Me.Label9.TabIndex = 17
-        Me.Label9.Text = "Right Share%"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.cmbDivYearEnd2)
-        Me.GroupBox2.Controls.Add(Me.cmbDivYearEnd1)
-        Me.GroupBox2.Controls.Add(Me.cmbNature)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
-        Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 232)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(341, 166)
-        Me.GroupBox2.TabIndex = 45
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Dividends"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(132, 92)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(43, 13)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "Rate%"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(93, 59)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(82, 13)
-        Me.Label11.TabIndex = 16
-        Me.Label11.Text = "Book Closure"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(130, 28)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(45, 13)
-        Me.Label12.TabIndex = 15
-        Me.Label12.Text = "Nature"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(99, 115)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(76, 13)
-        Me.Label13.TabIndex = 18
-        Me.Label13.Text = "Year Ending"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'dtpAGMDate
-        '
-        Me.dtpAGMDate.CustomFormat = "dd/MM/yyyy"
-        Me.dtpAGMDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpAGMDate.Location = New System.Drawing.Point(187, 73)
-        Me.dtpAGMDate.Name = "dtpAGMDate"
-        Me.dtpAGMDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpAGMDate.TabIndex = 46
-        '
-        'txtGroup
-        '
-        Me.txtGroup.Location = New System.Drawing.Point(445, 21)
-        Me.txtGroup.Name = "txtGroup"
-        Me.txtGroup.Size = New System.Drawing.Size(252, 22)
-        Me.txtGroup.TabIndex = 47
-        '
-        'txtSec
-        '
-        Me.txtSec.Location = New System.Drawing.Point(445, 44)
-        Me.txtSec.Name = "txtSec"
-        Me.txtSec.Size = New System.Drawing.Size(252, 22)
-        Me.txtSec.TabIndex = 48
-        '
-        'txtQuotRef
-        '
-        Me.txtQuotRef.Location = New System.Drawing.Point(445, 71)
-        Me.txtQuotRef.Name = "txtQuotRef"
-        Me.txtQuotRef.Size = New System.Drawing.Size(252, 22)
-        Me.txtQuotRef.TabIndex = 49
-        '
-        'dtpRSBCloseDate
-        '
-        Me.dtpRSBCloseDate.CustomFormat = "dd/MM/yyyy"
-        Me.dtpRSBCloseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpRSBCloseDate.Location = New System.Drawing.Point(181, 20)
-        Me.dtpRSBCloseDate.Name = "dtpRSBCloseDate"
-        Me.dtpRSBCloseDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpRSBCloseDate.TabIndex = 47
-        '
-        'dtpRSRDate
-        '
-        Me.dtpRSRDate.CustomFormat = "dd/MM/yyyy"
-        Me.dtpRSRDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpRSRDate.Location = New System.Drawing.Point(182, 48)
-        Me.dtpRSRDate.Name = "dtpRSRDate"
-        Me.dtpRSRDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpRSRDate.TabIndex = 48
-        '
-        'txtRightShare
-        '
-        Me.txtRightShare.Location = New System.Drawing.Point(182, 75)
-        Me.txtRightShare.Name = "txtRightShare"
-        Me.txtRightShare.Size = New System.Drawing.Size(120, 22)
-        Me.txtRightShare.TabIndex = 50
-        '
-        'DateTimePicker3
-        '
-        Me.DateTimePicker3.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(181, 59)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(120, 22)
-        Me.DateTimePicker3.TabIndex = 51
-        '
-        'cmbNature
-        '
-        Me.cmbNature.FormattingEnabled = True
-        Me.cmbNature.Location = New System.Drawing.Point(180, 23)
-        Me.cmbNature.Name = "cmbNature"
-        Me.cmbNature.Size = New System.Drawing.Size(121, 24)
-        Me.cmbNature.TabIndex = 52
-        '
-        'cmbDivYearEnd1
-        '
-        Me.cmbDivYearEnd1.FormattingEnabled = True
-        Me.cmbDivYearEnd1.Location = New System.Drawing.Point(181, 110)
-        Me.cmbDivYearEnd1.Name = "cmbDivYearEnd1"
-        Me.cmbDivYearEnd1.Size = New System.Drawing.Size(121, 24)
-        Me.cmbDivYearEnd1.TabIndex = 53
-        '
-        'cmbDivYearEnd2
-        '
-        Me.cmbDivYearEnd2.FormattingEnabled = True
-        Me.cmbDivYearEnd2.Location = New System.Drawing.Point(182, 140)
-        Me.cmbDivYearEnd2.Name = "cmbDivYearEnd2"
-        Me.cmbDivYearEnd2.Size = New System.Drawing.Size(121, 24)
-        Me.cmbDivYearEnd2.TabIndex = 54
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(181, 87)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(120, 22)
-        Me.TextBox5.TabIndex = 55
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.RadioButton2)
-        Me.GroupBox3.Controls.Add(Me.txtPriceAmnt)
-        Me.GroupBox3.Controls.Add(Me.RadioButton1)
-        Me.GroupBox3.Controls.Add(Me.txtFaceValPrice)
-        Me.GroupBox3.Location = New System.Drawing.Point(359, 116)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(416, 110)
-        Me.GroupBox3.TabIndex = 51
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Subscription Price"
-        '
-        'txtFaceValPrice
-        '
-        Me.txtFaceValPrice.Location = New System.Drawing.Point(277, 18)
-        Me.txtFaceValPrice.Name = "txtFaceValPrice"
-        Me.txtFaceValPrice.Size = New System.Drawing.Size(120, 22)
-        Me.txtFaceValPrice.TabIndex = 50
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(13, 22)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(262, 20)
-        Me.RadioButton1.TabIndex = 51
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Price in Percent of Face Value (%)"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'txtPriceAmnt
-        '
-        Me.txtPriceAmnt.Location = New System.Drawing.Point(277, 46)
-        Me.txtPriceAmnt.Name = "txtPriceAmnt"
-        Me.txtPriceAmnt.Size = New System.Drawing.Size(120, 22)
-        Me.txtPriceAmnt.TabIndex = 52
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(22, 46)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(170, 20)
-        Me.RadioButton2.TabIndex = 53
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Price in Amount (Rs.)"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.txtRate)
         Me.GroupBox4.Controls.Add(Me.cmbBonYearEnd2)
         Me.GroupBox4.Controls.Add(Me.cmbBonYearEnd1)
-        Me.GroupBox4.Controls.Add(Me.ComboBox7)
+        Me.GroupBox4.Controls.Add(Me.cmbBonusNature)
         Me.GroupBox4.Controls.Add(Me.dtpBonBokkCloDate)
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.Label15)
@@ -724,7 +384,7 @@ Partial Class FrmShareAnnounce
         Me.txtRate.Location = New System.Drawing.Point(181, 87)
         Me.txtRate.Name = "txtRate"
         Me.txtRate.Size = New System.Drawing.Size(120, 22)
-        Me.txtRate.TabIndex = 55
+        Me.txtRate.TabIndex = 21
         '
         'cmbBonYearEnd2
         '
@@ -732,7 +392,7 @@ Partial Class FrmShareAnnounce
         Me.cmbBonYearEnd2.Location = New System.Drawing.Point(182, 140)
         Me.cmbBonYearEnd2.Name = "cmbBonYearEnd2"
         Me.cmbBonYearEnd2.Size = New System.Drawing.Size(121, 24)
-        Me.cmbBonYearEnd2.TabIndex = 54
+        Me.cmbBonYearEnd2.TabIndex = 23
         '
         'cmbBonYearEnd1
         '
@@ -740,15 +400,15 @@ Partial Class FrmShareAnnounce
         Me.cmbBonYearEnd1.Location = New System.Drawing.Point(181, 110)
         Me.cmbBonYearEnd1.Name = "cmbBonYearEnd1"
         Me.cmbBonYearEnd1.Size = New System.Drawing.Size(121, 24)
-        Me.cmbBonYearEnd1.TabIndex = 53
+        Me.cmbBonYearEnd1.TabIndex = 22
         '
-        'ComboBox7
+        'cmbBonusNature
         '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(180, 23)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(121, 24)
-        Me.ComboBox7.TabIndex = 52
+        Me.cmbBonusNature.FormattingEnabled = True
+        Me.cmbBonusNature.Location = New System.Drawing.Point(180, 23)
+        Me.cmbBonusNature.Name = "cmbBonusNature"
+        Me.cmbBonusNature.Size = New System.Drawing.Size(121, 24)
+        Me.cmbBonusNature.TabIndex = 19
         '
         'dtpBonBokkCloDate
         '
@@ -757,7 +417,7 @@ Partial Class FrmShareAnnounce
         Me.dtpBonBokkCloDate.Location = New System.Drawing.Point(181, 59)
         Me.dtpBonBokkCloDate.Name = "dtpBonBokkCloDate"
         Me.dtpBonBokkCloDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpBonBokkCloDate.TabIndex = 51
+        Me.dtpBonBokkCloDate.TabIndex = 20
         '
         'Label14
         '
@@ -803,6 +463,346 @@ Partial Class FrmShareAnnounce
         Me.Label17.Text = "Nature"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.rbAmnt)
+        Me.GroupBox3.Controls.Add(Me.txtPriceAmnt)
+        Me.GroupBox3.Controls.Add(Me.rbPriceFaceVal)
+        Me.GroupBox3.Controls.Add(Me.txtFaceValPrice)
+        Me.GroupBox3.Location = New System.Drawing.Point(359, 116)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(416, 110)
+        Me.GroupBox3.TabIndex = 51
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Subscription Price"
+        '
+        'rbAmnt
+        '
+        Me.rbAmnt.AutoSize = True
+        Me.rbAmnt.Location = New System.Drawing.Point(22, 46)
+        Me.rbAmnt.Name = "rbAmnt"
+        Me.rbAmnt.Size = New System.Drawing.Size(170, 20)
+        Me.rbAmnt.TabIndex = 11
+        Me.rbAmnt.TabStop = True
+        Me.rbAmnt.Text = "Price in Amount (Rs.)"
+        Me.rbAmnt.UseVisualStyleBackColor = True
+        '
+        'txtPriceAmnt
+        '
+        Me.txtPriceAmnt.Location = New System.Drawing.Point(277, 46)
+        Me.txtPriceAmnt.Name = "txtPriceAmnt"
+        Me.txtPriceAmnt.Size = New System.Drawing.Size(120, 22)
+        Me.txtPriceAmnt.TabIndex = 13
+        '
+        'rbPriceFaceVal
+        '
+        Me.rbPriceFaceVal.AutoSize = True
+        Me.rbPriceFaceVal.Location = New System.Drawing.Point(13, 22)
+        Me.rbPriceFaceVal.Name = "rbPriceFaceVal"
+        Me.rbPriceFaceVal.Size = New System.Drawing.Size(262, 20)
+        Me.rbPriceFaceVal.TabIndex = 10
+        Me.rbPriceFaceVal.TabStop = True
+        Me.rbPriceFaceVal.Text = "Price in Percent of Face Value (%)"
+        Me.rbPriceFaceVal.UseVisualStyleBackColor = True
+        '
+        'txtFaceValPrice
+        '
+        Me.txtFaceValPrice.Location = New System.Drawing.Point(277, 18)
+        Me.txtFaceValPrice.Name = "txtFaceValPrice"
+        Me.txtFaceValPrice.Size = New System.Drawing.Size(120, 22)
+        Me.txtFaceValPrice.TabIndex = 12
+        '
+        'txtQuotRef
+        '
+        Me.txtQuotRef.Location = New System.Drawing.Point(445, 71)
+        Me.txtQuotRef.Name = "txtQuotRef"
+        Me.txtQuotRef.Size = New System.Drawing.Size(252, 22)
+        Me.txtQuotRef.TabIndex = 6
+        '
+        'txtSec
+        '
+        Me.txtSec.Location = New System.Drawing.Point(445, 44)
+        Me.txtSec.Name = "txtSec"
+        Me.txtSec.Size = New System.Drawing.Size(252, 22)
+        Me.txtSec.TabIndex = 4
+        '
+        'txtGroup
+        '
+        Me.txtGroup.Location = New System.Drawing.Point(445, 21)
+        Me.txtGroup.Name = "txtGroup"
+        Me.txtGroup.Size = New System.Drawing.Size(252, 22)
+        Me.txtGroup.TabIndex = 2
+        '
+        'dtpAGMDate
+        '
+        Me.dtpAGMDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpAGMDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpAGMDate.Location = New System.Drawing.Point(187, 73)
+        Me.dtpAGMDate.Name = "dtpAGMDate"
+        Me.dtpAGMDate.Size = New System.Drawing.Size(120, 22)
+        Me.dtpAGMDate.TabIndex = 5
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.txtDivRate)
+        Me.GroupBox2.Controls.Add(Me.cmbDivYearEnd2)
+        Me.GroupBox2.Controls.Add(Me.cmbDivYearEnd1)
+        Me.GroupBox2.Controls.Add(Me.cmbNature)
+        Me.GroupBox2.Controls.Add(Me.dtpDivBookClos)
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Location = New System.Drawing.Point(6, 232)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(341, 166)
+        Me.GroupBox2.TabIndex = 45
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Dividends"
+        '
+        'txtDivRate
+        '
+        Me.txtDivRate.Location = New System.Drawing.Point(181, 87)
+        Me.txtDivRate.Name = "txtDivRate"
+        Me.txtDivRate.Size = New System.Drawing.Size(120, 22)
+        Me.txtDivRate.TabIndex = 16
+        '
+        'cmbDivYearEnd2
+        '
+        Me.cmbDivYearEnd2.FormattingEnabled = True
+        Me.cmbDivYearEnd2.Location = New System.Drawing.Point(182, 140)
+        Me.cmbDivYearEnd2.Name = "cmbDivYearEnd2"
+        Me.cmbDivYearEnd2.Size = New System.Drawing.Size(121, 24)
+        Me.cmbDivYearEnd2.TabIndex = 18
+        '
+        'cmbDivYearEnd1
+        '
+        Me.cmbDivYearEnd1.FormattingEnabled = True
+        Me.cmbDivYearEnd1.Location = New System.Drawing.Point(181, 110)
+        Me.cmbDivYearEnd1.Name = "cmbDivYearEnd1"
+        Me.cmbDivYearEnd1.Size = New System.Drawing.Size(121, 24)
+        Me.cmbDivYearEnd1.TabIndex = 17
+        '
+        'cmbNature
+        '
+        Me.cmbNature.FormattingEnabled = True
+        Me.cmbNature.Location = New System.Drawing.Point(180, 23)
+        Me.cmbNature.Name = "cmbNature"
+        Me.cmbNature.Size = New System.Drawing.Size(121, 24)
+        Me.cmbNature.TabIndex = 14
+        '
+        'dtpDivBookClos
+        '
+        Me.dtpDivBookClos.CustomFormat = "dd/MM/yyyy"
+        Me.dtpDivBookClos.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpDivBookClos.Location = New System.Drawing.Point(181, 59)
+        Me.dtpDivBookClos.Name = "dtpDivBookClos"
+        Me.dtpDivBookClos.Size = New System.Drawing.Size(120, 22)
+        Me.dtpDivBookClos.TabIndex = 15
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(99, 115)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(76, 13)
+        Me.Label13.TabIndex = 18
+        Me.Label13.Text = "Year Ending"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(132, 92)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(43, 13)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Rate%"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(93, 59)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(82, 13)
+        Me.Label11.TabIndex = 16
+        Me.Label11.Text = "Book Closure"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(130, 28)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(45, 13)
+        Me.Label12.TabIndex = 15
+        Me.Label12.Text = "Nature"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtRightShare)
+        Me.GroupBox1.Controls.Add(Me.dtpRSRDate)
+        Me.GroupBox1.Controls.Add(Me.dtpRSBCloseDate)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 116)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(341, 110)
+        Me.GroupBox1.TabIndex = 44
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Right Shares"
+        '
+        'txtRightShare
+        '
+        Me.txtRightShare.Location = New System.Drawing.Point(182, 75)
+        Me.txtRightShare.Name = "txtRightShare"
+        Me.txtRightShare.Size = New System.Drawing.Size(120, 22)
+        Me.txtRightShare.TabIndex = 9
+        '
+        'dtpRSRDate
+        '
+        Me.dtpRSRDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpRSRDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpRSRDate.Location = New System.Drawing.Point(182, 48)
+        Me.dtpRSRDate.Name = "dtpRSRDate"
+        Me.dtpRSRDate.Size = New System.Drawing.Size(120, 22)
+        Me.dtpRSRDate.TabIndex = 8
+        '
+        'dtpRSBCloseDate
+        '
+        Me.dtpRSBCloseDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpRSBCloseDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpRSBCloseDate.Location = New System.Drawing.Point(181, 20)
+        Me.dtpRSBCloseDate.Name = "dtpRSBCloseDate"
+        Me.dtpRSBCloseDate.Size = New System.Drawing.Size(120, 22)
+        Me.dtpRSBCloseDate.TabIndex = 7
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(92, 80)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(83, 13)
+        Me.Label9.TabIndex = 17
+        Me.Label9.Text = "Right Share%"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(62, 58)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(113, 13)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "Renunciation Date"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(62, 27)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 13)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "Book Closure Date"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'CmbShare
+        '
+        Me.CmbShare.FormattingEnabled = True
+        Me.CmbShare.Location = New System.Drawing.Point(187, 13)
+        Me.CmbShare.Name = "CmbShare"
+        Me.CmbShare.Size = New System.Drawing.Size(121, 24)
+        Me.CmbShare.TabIndex = 1
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(347, 80)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(90, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Quotation Ref."
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(393, 54)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(44, 13)
+        Me.Label5.TabIndex = 20
+        Me.Label5.Text = "Sector"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(396, 26)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 13)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Group"
+        '
+        'txtAnnounceDate
+        '
+        Me.txtAnnounceDate.Location = New System.Drawing.Point(187, 45)
+        Me.txtAnnounceDate.Name = "txtAnnounceDate"
+        Me.txtAnnounceDate.Size = New System.Drawing.Size(120, 22)
+        Me.txtAnnounceDate.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(108, 77)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "A.G.M Date"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(59, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(122, 13)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Announcement Date"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'LBLPosted
+        '
+        Me.LBLPosted.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLPosted.ForeColor = System.Drawing.Color.Red
+        Me.LBLPosted.Location = New System.Drawing.Point(575, 18)
+        Me.LBLPosted.Name = "LBLPosted"
+        Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
+        Me.LBLPosted.TabIndex = 13
+        Me.LBLPosted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(141, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(40, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Share"
+        '
         'FrmShareAnnounce
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -820,14 +820,14 @@ Partial Class FrmShareAnnounce
         Me.GpBtns.ResumeLayout(False)
         Me.GpData.ResumeLayout(False)
         Me.GpData.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -877,21 +877,21 @@ Partial Class FrmShareAnnounce
     Friend WithEvents dtpRSRDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpRSBCloseDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents txtRightShare As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker3 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpDivBookClos As System.Windows.Forms.DateTimePicker
     Friend WithEvents cmbNature As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDivRate As System.Windows.Forms.TextBox
     Friend WithEvents cmbDivYearEnd2 As System.Windows.Forms.ComboBox
     Friend WithEvents cmbDivYearEnd1 As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents txtFaceValPrice As System.Windows.Forms.TextBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbPriceFaceVal As System.Windows.Forms.RadioButton
     Friend WithEvents txtPriceAmnt As System.Windows.Forms.TextBox
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbAmnt As System.Windows.Forms.RadioButton
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents txtRate As System.Windows.Forms.TextBox
     Friend WithEvents cmbBonYearEnd2 As System.Windows.Forms.ComboBox
     Friend WithEvents cmbBonYearEnd1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbBonusNature As System.Windows.Forms.ComboBox
     Friend WithEvents dtpBonBokkCloDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label

@@ -82,6 +82,24 @@ Partial Class FrmOrderExec
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.cmbCustodian = New System.Windows.Forms.ComboBox()
+        Me.cmbTrustee = New System.Windows.Forms.ComboBox()
+        Me.txtWHT = New System.Windows.Forms.TextBox()
+        Me.CmbCParty = New System.Windows.Forms.ComboBox()
+        Me.txtContact = New System.Windows.Forms.TextBox()
+        Me.txtDeal = New System.Windows.Forms.TextBox()
+        Me.txtIAS = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnReverse = New System.Windows.Forms.Button()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
@@ -116,24 +134,6 @@ Partial Class FrmOrderExec
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.btnReverse = New System.Windows.Forms.Button()
-        Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtIAS = New System.Windows.Forms.TextBox()
-        Me.txtDeal = New System.Windows.Forms.TextBox()
-        Me.txtContact = New System.Windows.Forms.TextBox()
-        Me.CmbCParty = New System.Windows.Forms.ComboBox()
-        Me.txtWHT = New System.Windows.Forms.TextBox()
-        Me.cmbTrustee = New System.Windows.Forms.ComboBox()
-        Me.cmbCustodian = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -429,119 +429,119 @@ Partial Class FrmOrderExec
         Me.txtFaceVal.Location = New System.Drawing.Point(315, 131)
         Me.txtFaceVal.Name = "txtFaceVal"
         Me.txtFaceVal.Size = New System.Drawing.Size(119, 22)
-        Me.txtFaceVal.TabIndex = 70
+        Me.txtFaceVal.TabIndex = 11
         '
         'txtQty
         '
         Me.txtQty.Location = New System.Drawing.Point(315, 105)
         Me.txtQty.Name = "txtQty"
         Me.txtQty.Size = New System.Drawing.Size(119, 22)
-        Me.txtQty.TabIndex = 69
+        Me.txtQty.TabIndex = 10
         '
         'txtFund
         '
         Me.txtFund.Location = New System.Drawing.Point(315, 74)
         Me.txtFund.Name = "txtFund"
         Me.txtFund.Size = New System.Drawing.Size(119, 22)
-        Me.txtFund.TabIndex = 68
+        Me.txtFund.TabIndex = 9
         '
         'txtGOComp
         '
         Me.txtGOComp.Location = New System.Drawing.Point(315, 157)
         Me.txtGOComp.Name = "txtGOComp"
         Me.txtGOComp.Size = New System.Drawing.Size(119, 22)
-        Me.txtGOComp.TabIndex = 67
+        Me.txtGOComp.TabIndex = 12
         '
         'txtSubType
         '
         Me.txtSubType.Location = New System.Drawing.Point(558, 157)
         Me.txtSubType.Name = "txtSubType"
         Me.txtSubType.Size = New System.Drawing.Size(119, 22)
-        Me.txtSubType.TabIndex = 66
+        Me.txtSubType.TabIndex = 18
         '
         'txtCLr
         '
         Me.txtCLr.Location = New System.Drawing.Point(558, 131)
         Me.txtCLr.Name = "txtCLr"
         Me.txtCLr.Size = New System.Drawing.Size(119, 22)
-        Me.txtCLr.TabIndex = 65
+        Me.txtCLr.TabIndex = 17
         '
         'txtRenn
         '
         Me.txtRenn.Location = New System.Drawing.Point(558, 105)
         Me.txtRenn.Name = "txtRenn"
         Me.txtRenn.Size = New System.Drawing.Size(119, 22)
-        Me.txtRenn.TabIndex = 64
+        Me.txtRenn.TabIndex = 16
         '
         'txtBookClos
         '
         Me.txtBookClos.Location = New System.Drawing.Point(558, 74)
         Me.txtBookClos.Name = "txtBookClos"
         Me.txtBookClos.Size = New System.Drawing.Size(119, 22)
-        Me.txtBookClos.TabIndex = 63
+        Me.txtBookClos.TabIndex = 15
         '
         'txtAnnDate
         '
         Me.txtAnnDate.Location = New System.Drawing.Point(558, 46)
         Me.txtAnnDate.Name = "txtAnnDate"
         Me.txtAnnDate.Size = New System.Drawing.Size(119, 22)
-        Me.txtAnnDate.TabIndex = 62
+        Me.txtAnnDate.TabIndex = 14
         '
         'txtBroker
         '
         Me.txtBroker.Location = New System.Drawing.Point(558, 17)
         Me.txtBroker.Name = "txtBroker"
         Me.txtBroker.Size = New System.Drawing.Size(119, 22)
-        Me.txtBroker.TabIndex = 61
+        Me.txtBroker.TabIndex = 13
         '
         'txtOrderDate
         '
         Me.txtOrderDate.Location = New System.Drawing.Point(315, 46)
         Me.txtOrderDate.Name = "txtOrderDate"
         Me.txtOrderDate.Size = New System.Drawing.Size(119, 22)
-        Me.txtOrderDate.TabIndex = 60
+        Me.txtOrderDate.TabIndex = 8
         '
         'txtSector
         '
         Me.txtSector.Location = New System.Drawing.Point(64, 157)
         Me.txtSector.Name = "txtSector"
         Me.txtSector.Size = New System.Drawing.Size(119, 22)
-        Me.txtSector.TabIndex = 59
+        Me.txtSector.TabIndex = 6
         '
         'txtName
         '
         Me.txtName.Location = New System.Drawing.Point(64, 131)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(119, 22)
-        Me.txtName.TabIndex = 58
+        Me.txtName.TabIndex = 5
         '
         'txtAmnt
         '
         Me.txtAmnt.Location = New System.Drawing.Point(64, 105)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(119, 22)
-        Me.txtAmnt.TabIndex = 57
+        Me.txtAmnt.TabIndex = 4
         '
         'txtPrice
         '
         Me.txtPrice.Location = New System.Drawing.Point(64, 74)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(119, 22)
-        Me.txtPrice.TabIndex = 56
+        Me.txtPrice.TabIndex = 3
         '
         'txtSecurity
         '
         Me.txtSecurity.Location = New System.Drawing.Point(64, 17)
         Me.txtSecurity.Name = "txtSecurity"
         Me.txtSecurity.Size = New System.Drawing.Size(119, 22)
-        Me.txtSecurity.TabIndex = 55
+        Me.txtSecurity.TabIndex = 1
         '
         'txtRefNo
         '
         Me.txtRefNo.Location = New System.Drawing.Point(64, 46)
         Me.txtRefNo.Name = "txtRefNo"
         Me.txtRefNo.Size = New System.Drawing.Size(119, 22)
-        Me.txtRefNo.TabIndex = 54
+        Me.txtRefNo.TabIndex = 2
         '
         'Label18
         '
@@ -698,7 +698,7 @@ Partial Class FrmOrderExec
         Me.txtTradeType.Location = New System.Drawing.Point(315, 17)
         Me.txtTradeType.Name = "txtTradeType"
         Me.txtTradeType.Size = New System.Drawing.Size(119, 22)
-        Me.txtTradeType.TabIndex = 18
+        Me.txtTradeType.TabIndex = 7
         '
         'Label3
         '
@@ -800,13 +800,177 @@ Partial Class FrmOrderExec
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Detail"
         '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker2.Location = New System.Drawing.Point(391, 139)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(119, 22)
+        Me.DateTimePicker2.TabIndex = 31
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(394, 111)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(119, 22)
+        Me.DateTimePicker1.TabIndex = 30
+        '
+        'cmbCustodian
+        '
+        Me.cmbCustodian.FormattingEnabled = True
+        Me.cmbCustodian.Location = New System.Drawing.Point(389, 164)
+        Me.cmbCustodian.Name = "cmbCustodian"
+        Me.cmbCustodian.Size = New System.Drawing.Size(121, 24)
+        Me.cmbCustodian.TabIndex = 32
+        '
+        'cmbTrustee
+        '
+        Me.cmbTrustee.FormattingEnabled = True
+        Me.cmbTrustee.Location = New System.Drawing.Point(391, 194)
+        Me.cmbTrustee.Name = "cmbTrustee"
+        Me.cmbTrustee.Size = New System.Drawing.Size(121, 24)
+        Me.cmbTrustee.TabIndex = 33
+        '
+        'txtWHT
+        '
+        Me.txtWHT.Location = New System.Drawing.Point(394, 226)
+        Me.txtWHT.Name = "txtWHT"
+        Me.txtWHT.Size = New System.Drawing.Size(119, 22)
+        Me.txtWHT.TabIndex = 34
+        '
+        'CmbCParty
+        '
+        Me.CmbCParty.FormattingEnabled = True
+        Me.CmbCParty.Location = New System.Drawing.Point(391, 76)
+        Me.CmbCParty.Name = "CmbCParty"
+        Me.CmbCParty.Size = New System.Drawing.Size(121, 24)
+        Me.CmbCParty.TabIndex = 29
+        '
+        'txtContact
+        '
+        Me.txtContact.Location = New System.Drawing.Point(119, 252)
+        Me.txtContact.Name = "txtContact"
+        Me.txtContact.Size = New System.Drawing.Size(119, 22)
+        Me.txtContact.TabIndex = 28
+        '
+        'txtDeal
+        '
+        Me.txtDeal.Location = New System.Drawing.Point(119, 217)
+        Me.txtDeal.Name = "txtDeal"
+        Me.txtDeal.Size = New System.Drawing.Size(119, 22)
+        Me.txtDeal.TabIndex = 27
+        '
+        'txtIAS
+        '
+        Me.txtIAS.Location = New System.Drawing.Point(119, 190)
+        Me.txtIAS.Name = "txtIAS"
+        Me.txtIAS.Size = New System.Drawing.Size(119, 22)
+        Me.txtIAS.TabIndex = 26
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.RadioButton4)
+        Me.GroupBox2.Controls.Add(Me.RadioButton6)
+        Me.GroupBox2.Controls.Add(Me.RadioButton5)
+        Me.GroupBox2.Location = New System.Drawing.Point(275, 16)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(263, 48)
+        Me.GroupBox2.TabIndex = 84
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Brokerage Rate"
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(10, 17)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(89, 20)
+        Me.RadioButton4.TabIndex = 81
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "Standard"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(180, 17)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(79, 20)
+        Me.RadioButton6.TabIndex = 83
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "Special"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(100, 17)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(77, 20)
+        Me.RadioButton5.TabIndex = 82
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "Agreed"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'btnCalculate
+        '
+        Me.btnCalculate.Location = New System.Drawing.Point(672, 286)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(85, 23)
+        Me.btnCalculate.TabIndex = 44
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
+        'btnReverse
+        '
+        Me.btnReverse.Location = New System.Drawing.Point(519, 286)
+        Me.btnReverse.Name = "btnReverse"
+        Me.btnReverse.Size = New System.Drawing.Size(136, 23)
+        Me.btnReverse.TabIndex = 43
+        Me.btnReverse.Text = "Reverse Process"
+        Me.btnReverse.UseVisualStyleBackColor = True
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(343, 296)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(31, 13)
+        Me.Label41.TabIndex = 78
+        Me.Label41.Text = "CVT"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(276, 264)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(112, 13)
+        Me.Label40.TabIndex = 77
+        Me.Label40.Text = "BK. Other Charges"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(310, 222)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(73, 13)
+        Me.Label39.TabIndex = 76
+        Me.Label39.Text = "WHT Trade"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.Location = New System.Drawing.Point(165, 159)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(85, 20)
-        Me.RadioButton3.TabIndex = 75
+        Me.RadioButton3.TabIndex = 25
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "Physical"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -817,7 +981,7 @@ Partial Class FrmOrderExec
         Me.RadioButton2.Location = New System.Drawing.Point(111, 159)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(55, 20)
-        Me.RadioButton2.TabIndex = 74
+        Me.RadioButton2.TabIndex = 24
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "SGL"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -828,7 +992,7 @@ Partial Class FrmOrderExec
         Me.RadioButton1.Location = New System.Drawing.Point(10, 157)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(95, 20)
-        Me.RadioButton1.TabIndex = 73
+        Me.RadioButton1.TabIndex = 23
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Electronic"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -858,84 +1022,84 @@ Partial Class FrmOrderExec
         Me.txtCVT.Location = New System.Drawing.Point(394, 291)
         Me.txtCVT.Name = "txtCVT"
         Me.txtCVT.Size = New System.Drawing.Size(119, 22)
-        Me.txtCVT.TabIndex = 70
+        Me.txtCVT.TabIndex = 36
         '
         'txtBKOCharg
         '
         Me.txtBKOCharg.Location = New System.Drawing.Point(394, 259)
         Me.txtBKOCharg.Name = "txtBKOCharg"
         Me.txtBKOCharg.Size = New System.Drawing.Size(119, 22)
-        Me.txtBKOCharg.TabIndex = 67
+        Me.txtBKOCharg.TabIndex = 35
         '
         'txtNetAmnt
         '
         Me.txtNetAmnt.Location = New System.Drawing.Point(671, 210)
         Me.txtNetAmnt.Name = "txtNetAmnt"
         Me.txtNetAmnt.Size = New System.Drawing.Size(119, 22)
-        Me.txtNetAmnt.TabIndex = 66
+        Me.txtNetAmnt.TabIndex = 42
         '
         'txtCDC
         '
         Me.txtCDC.Location = New System.Drawing.Point(671, 184)
         Me.txtCDC.Name = "txtCDC"
         Me.txtCDC.Size = New System.Drawing.Size(119, 22)
-        Me.txtCDC.TabIndex = 65
+        Me.txtCDC.TabIndex = 41
         '
         'txtSST
         '
         Me.txtSST.Location = New System.Drawing.Point(671, 158)
         Me.txtSST.Name = "txtSST"
         Me.txtSST.Size = New System.Drawing.Size(119, 22)
-        Me.txtSST.TabIndex = 64
+        Me.txtSST.TabIndex = 40
         '
         'txtWHTax
         '
         Me.txtWHTax.Location = New System.Drawing.Point(671, 127)
         Me.txtWHTax.Name = "txtWHTax"
         Me.txtWHTax.Size = New System.Drawing.Size(119, 22)
-        Me.txtWHTax.TabIndex = 63
+        Me.txtWHTax.TabIndex = 39
         '
         'txtBrokComm
         '
         Me.txtBrokComm.Location = New System.Drawing.Point(671, 99)
         Me.txtBrokComm.Name = "txtBrokComm"
         Me.txtBrokComm.Size = New System.Drawing.Size(119, 22)
-        Me.txtBrokComm.TabIndex = 62
+        Me.txtBrokComm.TabIndex = 38
         '
         'txtPAmnt
         '
         Me.txtPAmnt.Location = New System.Drawing.Point(671, 70)
         Me.txtPAmnt.Name = "txtPAmnt"
         Me.txtPAmnt.Size = New System.Drawing.Size(119, 22)
-        Me.txtPAmnt.TabIndex = 61
+        Me.txtPAmnt.TabIndex = 37
         '
         'txtQty2
         '
         Me.txtQty2.Location = New System.Drawing.Point(119, 102)
         Me.txtQty2.Name = "txtQty2"
         Me.txtQty2.Size = New System.Drawing.Size(119, 22)
-        Me.txtQty2.TabIndex = 57
+        Me.txtQty2.TabIndex = 22
         '
         'txtAmt2
         '
         Me.txtAmt2.Location = New System.Drawing.Point(119, 75)
         Me.txtAmt2.Name = "txtAmt2"
         Me.txtAmt2.Size = New System.Drawing.Size(119, 22)
-        Me.txtAmt2.TabIndex = 56
+        Me.txtAmt2.TabIndex = 21
         '
         'txtSettle
         '
         Me.txtSettle.Location = New System.Drawing.Point(119, 18)
         Me.txtSettle.Name = "txtSettle"
         Me.txtSettle.Size = New System.Drawing.Size(119, 22)
-        Me.txtSettle.TabIndex = 55
+        Me.txtSettle.TabIndex = 19
         '
         'txtUPrice
         '
         Me.txtUPrice.Location = New System.Drawing.Point(119, 46)
         Me.txtUPrice.Name = "txtUPrice"
         Me.txtUPrice.Size = New System.Drawing.Size(119, 22)
-        Me.txtUPrice.TabIndex = 54
+        Me.txtUPrice.TabIndex = 20
         '
         'Label19
         '
@@ -1107,170 +1271,6 @@ Partial Class FrmOrderExec
         Me.Label36.Size = New System.Drawing.Size(67, 13)
         Me.Label36.TabIndex = 0
         Me.Label36.Text = "Settlement"
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(310, 222)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(73, 13)
-        Me.Label39.TabIndex = 76
-        Me.Label39.Text = "WHT Trade"
-        Me.Label39.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(276, 264)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(112, 13)
-        Me.Label40.TabIndex = 77
-        Me.Label40.Text = "BK. Other Charges"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(343, 296)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(31, 13)
-        Me.Label41.TabIndex = 78
-        Me.Label41.Text = "CVT"
-        '
-        'btnReverse
-        '
-        Me.btnReverse.Location = New System.Drawing.Point(519, 286)
-        Me.btnReverse.Name = "btnReverse"
-        Me.btnReverse.Size = New System.Drawing.Size(136, 23)
-        Me.btnReverse.TabIndex = 79
-        Me.btnReverse.Text = "Reverse Process"
-        Me.btnReverse.UseVisualStyleBackColor = True
-        '
-        'btnCalculate
-        '
-        Me.btnCalculate.Location = New System.Drawing.Point(672, 286)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(85, 23)
-        Me.btnCalculate.TabIndex = 80
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(10, 17)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(89, 20)
-        Me.RadioButton4.TabIndex = 81
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Standard"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(100, 17)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(77, 20)
-        Me.RadioButton5.TabIndex = 82
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Agreed"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(180, 17)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(79, 20)
-        Me.RadioButton6.TabIndex = 83
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Special"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.RadioButton4)
-        Me.GroupBox2.Controls.Add(Me.RadioButton6)
-        Me.GroupBox2.Controls.Add(Me.RadioButton5)
-        Me.GroupBox2.Location = New System.Drawing.Point(275, 16)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(263, 48)
-        Me.GroupBox2.TabIndex = 84
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Brokerage Rate"
-        '
-        'txtIAS
-        '
-        Me.txtIAS.Location = New System.Drawing.Point(119, 190)
-        Me.txtIAS.Name = "txtIAS"
-        Me.txtIAS.Size = New System.Drawing.Size(119, 22)
-        Me.txtIAS.TabIndex = 85
-        '
-        'txtDeal
-        '
-        Me.txtDeal.Location = New System.Drawing.Point(119, 217)
-        Me.txtDeal.Name = "txtDeal"
-        Me.txtDeal.Size = New System.Drawing.Size(119, 22)
-        Me.txtDeal.TabIndex = 86
-        '
-        'txtContact
-        '
-        Me.txtContact.Location = New System.Drawing.Point(119, 252)
-        Me.txtContact.Name = "txtContact"
-        Me.txtContact.Size = New System.Drawing.Size(119, 22)
-        Me.txtContact.TabIndex = 87
-        '
-        'CmbCParty
-        '
-        Me.CmbCParty.FormattingEnabled = True
-        Me.CmbCParty.Location = New System.Drawing.Point(391, 76)
-        Me.CmbCParty.Name = "CmbCParty"
-        Me.CmbCParty.Size = New System.Drawing.Size(121, 24)
-        Me.CmbCParty.TabIndex = 88
-        '
-        'txtWHT
-        '
-        Me.txtWHT.Location = New System.Drawing.Point(394, 226)
-        Me.txtWHT.Name = "txtWHT"
-        Me.txtWHT.Size = New System.Drawing.Size(119, 22)
-        Me.txtWHT.TabIndex = 89
-        '
-        'cmbTrustee
-        '
-        Me.cmbTrustee.FormattingEnabled = True
-        Me.cmbTrustee.Location = New System.Drawing.Point(391, 194)
-        Me.cmbTrustee.Name = "cmbTrustee"
-        Me.cmbTrustee.Size = New System.Drawing.Size(121, 24)
-        Me.cmbTrustee.TabIndex = 90
-        '
-        'cmbCustodian
-        '
-        Me.cmbCustodian.FormattingEnabled = True
-        Me.cmbCustodian.Location = New System.Drawing.Point(389, 164)
-        Me.cmbCustodian.Name = "cmbCustodian"
-        Me.cmbCustodian.Size = New System.Drawing.Size(121, 24)
-        Me.cmbCustodian.TabIndex = 91
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(394, 111)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(119, 22)
-        Me.DateTimePicker1.TabIndex = 92
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(391, 139)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(119, 22)
-        Me.DateTimePicker2.TabIndex = 93
         '
         'FrmOrderExec
         '

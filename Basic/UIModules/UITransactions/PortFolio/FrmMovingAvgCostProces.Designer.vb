@@ -25,7 +25,6 @@ Partial Class FrmMovingAvgCostProces
         Me.LblTypeValid = New System.Windows.Forms.Label()
         Me.GpData = New System.Windows.Forms.GroupBox()
         Me.cmbAllBrok = New System.Windows.Forms.CheckBox()
-        Me.btnProcess = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -33,6 +32,7 @@ Partial Class FrmMovingAvgCostProces
         Me.Label5 = New System.Windows.Forms.Label()
         Me.dtpFromDate = New System.Windows.Forms.DateTimePicker()
         Me.dtpToDate = New System.Windows.Forms.DateTimePicker()
+        Me.btnProcess = New System.Windows.Forms.Button()
         Me.cmbBroker = New System.Windows.Forms.ComboBox()
         Me.cmbFund = New System.Windows.Forms.ComboBox()
         Me.cmbSecu = New System.Windows.Forms.ComboBox()
@@ -41,10 +41,10 @@ Partial Class FrmMovingAvgCostProces
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GpData.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -91,15 +91,6 @@ Partial Class FrmMovingAvgCostProces
         Me.cmbAllBrok.Text = "All"
         Me.cmbAllBrok.UseVisualStyleBackColor = True
         '
-        'btnProcess
-        '
-        Me.btnProcess.Location = New System.Drawing.Point(158, 110)
-        Me.btnProcess.Name = "btnProcess"
-        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
-        Me.btnProcess.TabIndex = 52
-        Me.btnProcess.Text = "Process"
-        Me.btnProcess.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -133,7 +124,7 @@ Partial Class FrmMovingAvgCostProces
         Me.DateTimePicker1.Location = New System.Drawing.Point(82, 90)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(120, 22)
-        Me.DateTimePicker1.TabIndex = 52
+        Me.DateTimePicker1.TabIndex = 6
         '
         'Label6
         '
@@ -164,7 +155,7 @@ Partial Class FrmMovingAvgCostProces
         Me.dtpFromDate.Location = New System.Drawing.Point(80, 20)
         Me.dtpFromDate.Name = "dtpFromDate"
         Me.dtpFromDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpFromDate.TabIndex = 48
+        Me.dtpFromDate.TabIndex = 4
         '
         'dtpToDate
         '
@@ -173,7 +164,16 @@ Partial Class FrmMovingAvgCostProces
         Me.dtpToDate.Location = New System.Drawing.Point(80, 60)
         Me.dtpToDate.Name = "dtpToDate"
         Me.dtpToDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpToDate.TabIndex = 49
+        Me.dtpToDate.TabIndex = 5
+        '
+        'btnProcess
+        '
+        Me.btnProcess.Location = New System.Drawing.Point(158, 110)
+        Me.btnProcess.Name = "btnProcess"
+        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
+        Me.btnProcess.TabIndex = 7
+        Me.btnProcess.Text = "Process"
+        Me.btnProcess.UseVisualStyleBackColor = True
         '
         'cmbBroker
         '
@@ -181,7 +181,7 @@ Partial Class FrmMovingAvgCostProces
         Me.cmbBroker.Location = New System.Drawing.Point(118, 75)
         Me.cmbBroker.Name = "cmbBroker"
         Me.cmbBroker.Size = New System.Drawing.Size(160, 24)
-        Me.cmbBroker.TabIndex = 45
+        Me.cmbBroker.TabIndex = 3
         '
         'cmbFund
         '
@@ -189,7 +189,7 @@ Partial Class FrmMovingAvgCostProces
         Me.cmbFund.Location = New System.Drawing.Point(118, 45)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(160, 24)
-        Me.cmbFund.TabIndex = 44
+        Me.cmbFund.TabIndex = 2
         '
         'cmbSecu
         '
@@ -197,7 +197,7 @@ Partial Class FrmMovingAvgCostProces
         Me.cmbSecu.Location = New System.Drawing.Point(118, 13)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(160, 24)
-        Me.cmbSecu.TabIndex = 43
+        Me.cmbSecu.TabIndex = 1
         '
         'Label3
         '
@@ -253,27 +253,14 @@ Partial Class FrmMovingAvgCostProces
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Report Options"
         '
-        'RadioButton1
+        'Button1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(10, 20)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(224, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "UnApproved Between Start and End Date"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(10, 43)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(262, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Vouchers Geenrated Between Start and End Date"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.Button1.Location = New System.Drawing.Point(417, 75)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(120, 23)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Preview Report"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
@@ -281,19 +268,32 @@ Partial Class FrmMovingAvgCostProces
         Me.RadioButton3.Location = New System.Drawing.Point(10, 66)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(161, 17)
-        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.TabIndex = 10
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "Unprocess Before Start Date"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
-        'Button1
+        'RadioButton2
         '
-        Me.Button1.Location = New System.Drawing.Point(417, 75)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 23)
-        Me.Button1.TabIndex = 53
-        Me.Button1.Text = "Preview Report"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(10, 43)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(262, 17)
+        Me.RadioButton2.TabIndex = 9
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Vouchers Geenrated Between Start and End Date"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(10, 20)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(224, 17)
+        Me.RadioButton1.TabIndex = 8
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "UnApproved Between Start and End Date"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'FrmMovingAvgCostProces
         '

@@ -27,7 +27,6 @@ Partial Class FrmSettlementProces
         Me.GpData = New System.Windows.Forms.GroupBox()
         Me.cmbAllBrok = New System.Windows.Forms.CheckBox()
         Me.cmbAllSecu = New System.Windows.Forms.CheckBox()
-        Me.btnProcess = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.btnFetch = New System.Windows.Forms.Button()
@@ -43,8 +42,9 @@ Partial Class FrmSettlementProces
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnProcess = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpProcesDate = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.fpDetail = New AxFPSpreadADO.AxfpSpread()
         Me.GpData.SuspendLayout()
@@ -105,15 +105,6 @@ Partial Class FrmSettlementProces
         Me.cmbAllSecu.Text = "All"
         Me.cmbAllSecu.UseVisualStyleBackColor = True
         '
-        'btnProcess
-        '
-        Me.btnProcess.Location = New System.Drawing.Point(397, 172)
-        Me.btnProcess.Name = "btnProcess"
-        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
-        Me.btnProcess.TabIndex = 52
-        Me.btnProcess.Text = "Process"
-        Me.btnProcess.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
@@ -144,7 +135,7 @@ Partial Class FrmSettlementProces
         Me.btnFetch.Location = New System.Drawing.Point(125, 100)
         Me.btnFetch.Name = "btnFetch"
         Me.btnFetch.Size = New System.Drawing.Size(75, 23)
-        Me.btnFetch.TabIndex = 51
+        Me.btnFetch.TabIndex = 8
         Me.btnFetch.Text = "Fetch"
         Me.btnFetch.UseVisualStyleBackColor = True
         '
@@ -177,7 +168,7 @@ Partial Class FrmSettlementProces
         Me.dtpFromDate.Location = New System.Drawing.Point(80, 41)
         Me.dtpFromDate.Name = "dtpFromDate"
         Me.dtpFromDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpFromDate.TabIndex = 48
+        Me.dtpFromDate.TabIndex = 6
         '
         'dtpToDate
         '
@@ -186,7 +177,7 @@ Partial Class FrmSettlementProces
         Me.dtpToDate.Location = New System.Drawing.Point(80, 68)
         Me.dtpToDate.Name = "dtpToDate"
         Me.dtpToDate.Size = New System.Drawing.Size(120, 22)
-        Me.dtpToDate.TabIndex = 49
+        Me.dtpToDate.TabIndex = 7
         '
         'cmbStatus
         '
@@ -194,7 +185,7 @@ Partial Class FrmSettlementProces
         Me.cmbStatus.Location = New System.Drawing.Point(158, 101)
         Me.cmbStatus.Name = "cmbStatus"
         Me.cmbStatus.Size = New System.Drawing.Size(160, 24)
-        Me.cmbStatus.TabIndex = 46
+        Me.cmbStatus.TabIndex = 5
         '
         'cmbBroker
         '
@@ -202,7 +193,7 @@ Partial Class FrmSettlementProces
         Me.cmbBroker.Location = New System.Drawing.Point(158, 75)
         Me.cmbBroker.Name = "cmbBroker"
         Me.cmbBroker.Size = New System.Drawing.Size(160, 24)
-        Me.cmbBroker.TabIndex = 45
+        Me.cmbBroker.TabIndex = 4
         '
         'cmbFund
         '
@@ -210,7 +201,7 @@ Partial Class FrmSettlementProces
         Me.cmbFund.Location = New System.Drawing.Point(158, 45)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(160, 24)
-        Me.cmbFund.TabIndex = 44
+        Me.cmbFund.TabIndex = 3
         '
         'cmbSecu
         '
@@ -218,7 +209,7 @@ Partial Class FrmSettlementProces
         Me.cmbSecu.Location = New System.Drawing.Point(158, 13)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(160, 24)
-        Me.cmbSecu.TabIndex = 43
+        Me.cmbSecu.TabIndex = 2
         '
         'Label3
         '
@@ -261,6 +252,15 @@ Partial Class FrmSettlementProces
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Security Type"
         '
+        'btnProcess
+        '
+        Me.btnProcess.Location = New System.Drawing.Point(397, 172)
+        Me.btnProcess.Name = "btnProcess"
+        Me.btnProcess.Size = New System.Drawing.Size(120, 23)
+        Me.btnProcess.TabIndex = 9
+        Me.btnProcess.Text = "Process"
+        Me.btnProcess.UseVisualStyleBackColor = True
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -271,14 +271,14 @@ Partial Class FrmSettlementProces
         Me.Label4.TabIndex = 43
         Me.Label4.Text = "Process Date"
         '
-        'DateTimePicker1
+        'dtpProcesDate
         '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(167, 58)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(160, 20)
-        Me.DateTimePicker1.TabIndex = 49
+        Me.dtpProcesDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpProcesDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpProcesDate.Location = New System.Drawing.Point(167, 58)
+        Me.dtpProcesDate.Name = "dtpProcesDate"
+        Me.dtpProcesDate.Size = New System.Drawing.Size(160, 20)
+        Me.dtpProcesDate.TabIndex = 1
         '
         'GroupBox2
         '
@@ -305,7 +305,7 @@ Partial Class FrmSettlementProces
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(547, 449)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.dtpProcesDate)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.LblTypeValid)
@@ -342,7 +342,7 @@ Partial Class FrmSettlementProces
     Friend WithEvents cmbAllBrok As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents dtpProcesDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents fpDetail As AxFPSpreadADO.AxfpSpread
 End Class

@@ -369,7 +369,7 @@ Partial Class FrmOrder
         Me.btnCancelOrder.Location = New System.Drawing.Point(306, 131)
         Me.btnCancelOrder.Name = "btnCancelOrder"
         Me.btnCancelOrder.Size = New System.Drawing.Size(112, 23)
-        Me.btnCancelOrder.TabIndex = 51
+        Me.btnCancelOrder.TabIndex = 9
         Me.btnCancelOrder.Text = "Cancel Order"
         Me.btnCancelOrder.UseVisualStyleBackColor = True
         '
@@ -378,7 +378,7 @@ Partial Class FrmOrder
         Me.btnExpos.Location = New System.Drawing.Point(225, 131)
         Me.btnExpos.Name = "btnExpos"
         Me.btnExpos.Size = New System.Drawing.Size(75, 23)
-        Me.btnExpos.TabIndex = 50
+        Me.btnExpos.TabIndex = 8
         Me.btnExpos.Text = "Exposure"
         Me.btnExpos.UseVisualStyleBackColor = True
         '
@@ -387,14 +387,14 @@ Partial Class FrmOrder
         Me.txtSec.Location = New System.Drawing.Point(411, 44)
         Me.txtSec.Name = "txtSec"
         Me.txtSec.Size = New System.Drawing.Size(121, 22)
-        Me.txtSec.TabIndex = 49
+        Me.txtSec.TabIndex = 7
         '
         'txtGOC
         '
         Me.txtGOC.Location = New System.Drawing.Point(411, 17)
         Me.txtGOC.Name = "txtGOC"
         Me.txtGOC.Size = New System.Drawing.Size(121, 22)
-        Me.txtGOC.TabIndex = 48
+        Me.txtGOC.TabIndex = 6
         '
         'Label7
         '
@@ -423,7 +423,7 @@ Partial Class FrmOrder
         Me.txtFaceVal.Location = New System.Drawing.Point(84, 131)
         Me.txtFaceVal.Name = "txtFaceVal"
         Me.txtFaceVal.Size = New System.Drawing.Size(121, 22)
-        Me.txtFaceVal.TabIndex = 45
+        Me.txtFaceVal.TabIndex = 5
         '
         'cmbSymbol
         '
@@ -431,7 +431,7 @@ Partial Class FrmOrder
         Me.cmbSymbol.Location = New System.Drawing.Point(84, 73)
         Me.cmbSymbol.Name = "cmbSymbol"
         Me.cmbSymbol.Size = New System.Drawing.Size(121, 24)
-        Me.cmbSymbol.TabIndex = 44
+        Me.cmbSymbol.TabIndex = 3
         '
         'cmbSecu
         '
@@ -439,7 +439,7 @@ Partial Class FrmOrder
         Me.cmbSecu.Location = New System.Drawing.Point(84, 44)
         Me.cmbSecu.Name = "cmbSecu"
         Me.cmbSecu.Size = New System.Drawing.Size(121, 24)
-        Me.cmbSecu.TabIndex = 43
+        Me.cmbSecu.TabIndex = 2
         '
         'Label5
         '
@@ -468,7 +468,7 @@ Partial Class FrmOrder
         Me.txtName.Location = New System.Drawing.Point(84, 104)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(121, 22)
-        Me.txtName.TabIndex = 18
+        Me.txtName.TabIndex = 4
         '
         'Label3
         '
@@ -510,7 +510,7 @@ Partial Class FrmOrder
         Me.txtRefNo.MaxLength = 3
         Me.txtRefNo.Name = "txtRefNo"
         Me.txtRefNo.Size = New System.Drawing.Size(121, 22)
-        Me.txtRefNo.TabIndex = 0
+        Me.txtRefNo.TabIndex = 1
         Me.txtRefNo.Tag = "Enter Description"
         '
         'Label1
@@ -577,7 +577,7 @@ Partial Class FrmOrder
         Me.dtpValidDate.Location = New System.Drawing.Point(504, 96)
         Me.dtpValidDate.Name = "dtpValidDate"
         Me.dtpValidDate.Size = New System.Drawing.Size(120, 20)
-        Me.dtpValidDate.TabIndex = 44
+        Me.dtpValidDate.TabIndex = 22
         '
         'cmbCountParty
         '
@@ -585,7 +585,7 @@ Partial Class FrmOrder
         Me.cmbCountParty.Location = New System.Drawing.Point(505, 153)
         Me.cmbCountParty.Name = "cmbCountParty"
         Me.cmbCountParty.Size = New System.Drawing.Size(121, 21)
-        Me.cmbCountParty.TabIndex = 43
+        Me.cmbCountParty.TabIndex = 24
         '
         'cmbClrType
         '
@@ -593,7 +593,7 @@ Partial Class FrmOrder
         Me.cmbClrType.Location = New System.Drawing.Point(504, 122)
         Me.cmbClrType.Name = "cmbClrType"
         Me.cmbClrType.Size = New System.Drawing.Size(121, 21)
-        Me.cmbClrType.TabIndex = 42
+        Me.cmbClrType.TabIndex = 23
         '
         'cmbValidity
         '
@@ -601,7 +601,7 @@ Partial Class FrmOrder
         Me.cmbValidity.Location = New System.Drawing.Point(504, 72)
         Me.cmbValidity.Name = "cmbValidity"
         Me.cmbValidity.Size = New System.Drawing.Size(121, 21)
-        Me.cmbValidity.TabIndex = 41
+        Me.cmbValidity.TabIndex = 21
         '
         'cmbSetlMode
         '
@@ -609,7 +609,7 @@ Partial Class FrmOrder
         Me.cmbSetlMode.Location = New System.Drawing.Point(504, 45)
         Me.cmbSetlMode.Name = "cmbSetlMode"
         Me.cmbSetlMode.Size = New System.Drawing.Size(121, 21)
-        Me.cmbSetlMode.TabIndex = 40
+        Me.cmbSetlMode.TabIndex = 20
         '
         'dtpOrderDate
         '
@@ -618,7 +618,7 @@ Partial Class FrmOrder
         Me.dtpOrderDate.Location = New System.Drawing.Point(505, 16)
         Me.dtpOrderDate.Name = "dtpOrderDate"
         Me.dtpOrderDate.Size = New System.Drawing.Size(120, 20)
-        Me.dtpOrderDate.TabIndex = 39
+        Me.dtpOrderDate.TabIndex = 19
         '
         'ComboBox6
         '
@@ -626,7 +626,7 @@ Partial Class FrmOrder
         Me.ComboBox6.Location = New System.Drawing.Point(277, 16)
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox6.TabIndex = 38
+        Me.ComboBox6.TabIndex = 18
         '
         'cmbSubType
         '
@@ -634,7 +634,7 @@ Partial Class FrmOrder
         Me.cmbSubType.Location = New System.Drawing.Point(98, 153)
         Me.cmbSubType.Name = "cmbSubType"
         Me.cmbSubType.Size = New System.Drawing.Size(121, 21)
-        Me.cmbSubType.TabIndex = 37
+        Me.cmbSubType.TabIndex = 17
         '
         'cmbFund
         '
@@ -642,7 +642,7 @@ Partial Class FrmOrder
         Me.cmbFund.Location = New System.Drawing.Point(98, 122)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(121, 21)
-        Me.cmbFund.TabIndex = 36
+        Me.cmbFund.TabIndex = 16
         '
         'cmbTrade
         '
@@ -650,28 +650,28 @@ Partial Class FrmOrder
         Me.cmbTrade.Location = New System.Drawing.Point(98, 96)
         Me.cmbTrade.Name = "cmbTrade"
         Me.cmbTrade.Size = New System.Drawing.Size(121, 21)
-        Me.cmbTrade.TabIndex = 35
+        Me.cmbTrade.TabIndex = 15
         '
         'txtQty
         '
         Me.txtQty.Location = New System.Drawing.Point(98, 72)
         Me.txtQty.Name = "txtQty"
         Me.txtQty.Size = New System.Drawing.Size(121, 20)
-        Me.txtQty.TabIndex = 34
+        Me.txtQty.TabIndex = 14
         '
         'txtAmnt
         '
         Me.txtAmnt.Location = New System.Drawing.Point(98, 45)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(121, 20)
-        Me.txtAmnt.TabIndex = 33
+        Me.txtAmnt.TabIndex = 13
         '
         'txtPrice
         '
         Me.txtPrice.Location = New System.Drawing.Point(98, 16)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(121, 20)
-        Me.txtPrice.TabIndex = 25
+        Me.txtPrice.TabIndex = 12
         '
         'Label22
         '
@@ -823,14 +823,14 @@ Partial Class FrmOrder
         Me.txtRem.Name = "txtRem"
         Me.txtRem.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.txtRem.Size = New System.Drawing.Size(334, 59)
-        Me.txtRem.TabIndex = 23
+        Me.txtRem.TabIndex = 11
         '
         'txtUserDef
         '
         Me.txtUserDef.Location = New System.Drawing.Point(84, 13)
         Me.txtUserDef.Name = "txtUserDef"
         Me.txtUserDef.Size = New System.Drawing.Size(121, 20)
-        Me.txtUserDef.TabIndex = 22
+        Me.txtUserDef.TabIndex = 10
         '
         'Label9
         '

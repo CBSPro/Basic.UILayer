@@ -44,6 +44,9 @@ Partial Class FrmOrderAdjust
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.DtpDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtFaceval = New System.Windows.Forms.TextBox()
+        Me.txtRefNo = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -60,16 +63,13 @@ Partial Class FrmOrderAdjust
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtRefNo = New System.Windows.Forms.TextBox()
-        Me.txtFaceval = New System.Windows.Forms.TextBox()
-        Me.DtpDate = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtQty = New System.Windows.Forms.TextBox()
-        Me.txtAmnt = New System.Windows.Forms.TextBox()
         Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.txtAmnt = New System.Windows.Forms.TextBox()
+        Me.txtQty = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -341,6 +341,29 @@ Partial Class FrmOrderAdjust
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
+        'DtpDate
+        '
+        Me.DtpDate.CustomFormat = "dd/MM/yyyy"
+        Me.DtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DtpDate.Location = New System.Drawing.Point(507, 20)
+        Me.DtpDate.Name = "DtpDate"
+        Me.DtpDate.Size = New System.Drawing.Size(109, 22)
+        Me.DtpDate.TabIndex = 6
+        '
+        'txtFaceval
+        '
+        Me.txtFaceval.Location = New System.Drawing.Point(507, 107)
+        Me.txtFaceval.Name = "txtFaceval"
+        Me.txtFaceval.Size = New System.Drawing.Size(109, 22)
+        Me.txtFaceval.TabIndex = 8
+        '
+        'txtRefNo
+        '
+        Me.txtRefNo.Location = New System.Drawing.Point(507, 135)
+        Me.txtRefNo.Name = "txtRefNo"
+        Me.txtRefNo.Size = New System.Drawing.Size(109, 22)
+        Me.txtRefNo.TabIndex = 9
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -377,7 +400,7 @@ Partial Class FrmOrderAdjust
         Me.CmbName.Location = New System.Drawing.Point(180, 140)
         Me.CmbName.Name = "CmbName"
         Me.CmbName.Size = New System.Drawing.Size(121, 24)
-        Me.CmbName.TabIndex = 47
+        Me.CmbName.TabIndex = 5
         '
         'CmbSubType
         '
@@ -385,7 +408,7 @@ Partial Class FrmOrderAdjust
         Me.CmbSubType.Location = New System.Drawing.Point(180, 110)
         Me.CmbSubType.Name = "CmbSubType"
         Me.CmbSubType.Size = New System.Drawing.Size(121, 24)
-        Me.CmbSubType.TabIndex = 46
+        Me.CmbSubType.TabIndex = 4
         '
         'CmbTradeType
         '
@@ -393,7 +416,7 @@ Partial Class FrmOrderAdjust
         Me.CmbTradeType.Location = New System.Drawing.Point(180, 78)
         Me.CmbTradeType.Name = "CmbTradeType"
         Me.CmbTradeType.Size = New System.Drawing.Size(121, 24)
-        Me.CmbTradeType.TabIndex = 45
+        Me.CmbTradeType.TabIndex = 3
         '
         'CmbFund
         '
@@ -401,7 +424,7 @@ Partial Class FrmOrderAdjust
         Me.CmbFund.Location = New System.Drawing.Point(180, 48)
         Me.CmbFund.Name = "CmbFund"
         Me.CmbFund.Size = New System.Drawing.Size(121, 24)
-        Me.CmbFund.TabIndex = 44
+        Me.CmbFund.TabIndex = 2
         '
         'CmbSecu
         '
@@ -409,7 +432,7 @@ Partial Class FrmOrderAdjust
         Me.CmbSecu.Location = New System.Drawing.Point(180, 18)
         Me.CmbSecu.Name = "CmbSecu"
         Me.CmbSecu.Size = New System.Drawing.Size(121, 24)
-        Me.CmbSecu.TabIndex = 43
+        Me.CmbSecu.TabIndex = 1
         '
         'Label6
         '
@@ -446,7 +469,7 @@ Partial Class FrmOrderAdjust
         Me.txtSector.Location = New System.Drawing.Point(507, 76)
         Me.txtSector.Name = "txtSector"
         Me.txtSector.Size = New System.Drawing.Size(109, 22)
-        Me.txtSector.TabIndex = 18
+        Me.txtSector.TabIndex = 7
         '
         'Label3
         '
@@ -489,29 +512,6 @@ Partial Class FrmOrderAdjust
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Security"
         '
-        'txtRefNo
-        '
-        Me.txtRefNo.Location = New System.Drawing.Point(507, 135)
-        Me.txtRefNo.Name = "txtRefNo"
-        Me.txtRefNo.Size = New System.Drawing.Size(109, 22)
-        Me.txtRefNo.TabIndex = 51
-        '
-        'txtFaceval
-        '
-        Me.txtFaceval.Location = New System.Drawing.Point(507, 107)
-        Me.txtFaceval.Name = "txtFaceval"
-        Me.txtFaceval.Size = New System.Drawing.Size(109, 22)
-        Me.txtFaceval.TabIndex = 52
-        '
-        'DtpDate
-        '
-        Me.DtpDate.CustomFormat = "dd/MM/yyyy"
-        Me.DtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DtpDate.Location = New System.Drawing.Point(507, 20)
-        Me.DtpDate.Name = "DtpDate"
-        Me.DtpDate.Size = New System.Drawing.Size(109, 22)
-        Me.DtpDate.TabIndex = 53
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtPrice)
@@ -526,25 +526,26 @@ Partial Class FrmOrderAdjust
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
-        'Label10
+        'txtPrice
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(120, 31)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(36, 13)
-        Me.Label10.TabIndex = 49
-        Me.Label10.Text = "Price"
+        Me.txtPrice.Location = New System.Drawing.Point(180, 28)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(121, 20)
+        Me.txtPrice.TabIndex = 10
         '
-        'Label11
+        'txtAmnt
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(107, 58)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 13)
-        Me.Label11.TabIndex = 50
-        Me.Label11.Text = "Amount"
+        Me.txtAmnt.Location = New System.Drawing.Point(180, 51)
+        Me.txtAmnt.Name = "txtAmnt"
+        Me.txtAmnt.Size = New System.Drawing.Size(121, 20)
+        Me.txtAmnt.TabIndex = 11
+        '
+        'txtQty
+        '
+        Me.txtQty.Location = New System.Drawing.Point(180, 76)
+        Me.txtQty.Name = "txtQty"
+        Me.txtQty.Size = New System.Drawing.Size(121, 20)
+        Me.txtQty.TabIndex = 12
         '
         'Label12
         '
@@ -556,26 +557,25 @@ Partial Class FrmOrderAdjust
         Me.Label12.TabIndex = 51
         Me.Label12.Text = "Quantity"
         '
-        'txtQty
+        'Label11
         '
-        Me.txtQty.Location = New System.Drawing.Point(180, 76)
-        Me.txtQty.Name = "txtQty"
-        Me.txtQty.Size = New System.Drawing.Size(121, 20)
-        Me.txtQty.TabIndex = 52
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(107, 58)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(49, 13)
+        Me.Label11.TabIndex = 50
+        Me.Label11.Text = "Amount"
         '
-        'txtAmnt
+        'Label10
         '
-        Me.txtAmnt.Location = New System.Drawing.Point(180, 51)
-        Me.txtAmnt.Name = "txtAmnt"
-        Me.txtAmnt.Size = New System.Drawing.Size(121, 20)
-        Me.txtAmnt.TabIndex = 53
-        '
-        'txtPrice
-        '
-        Me.txtPrice.Location = New System.Drawing.Point(180, 28)
-        Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(121, 20)
-        Me.txtPrice.TabIndex = 54
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(120, 31)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(36, 13)
+        Me.Label10.TabIndex = 49
+        Me.Label10.Text = "Price"
         '
         'FrmOrderAdjust
         '
