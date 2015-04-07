@@ -318,6 +318,7 @@ Partial Class frmCustodian
         '
         'txtAddress
         '
+        Me.txtAddress.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAddress.Location = New System.Drawing.Point(187, 121)
         Me.txtAddress.Name = "txtAddress"
@@ -326,6 +327,7 @@ Partial Class frmCustodian
         '
         'txtName
         '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Location = New System.Drawing.Point(187, 92)
         Me.txtName.Name = "txtName"
@@ -334,6 +336,7 @@ Partial Class frmCustodian
         '
         'txtDescrip
         '
+        Me.txtDescrip.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDescrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDescrip.Location = New System.Drawing.Point(187, 150)
         Me.txtDescrip.Multiline = True

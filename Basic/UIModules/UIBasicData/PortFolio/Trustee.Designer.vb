@@ -263,7 +263,7 @@ Partial Class Trustee
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.CheckBox1.Location = New System.Drawing.Point(465, 214)
+        Me.CheckBox1.Location = New System.Drawing.Point(465, 217)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(70, 20)
         Me.CheckBox1.TabIndex = 37
@@ -274,7 +274,7 @@ Partial Class Trustee
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(46, 248)
+        Me.Label8.Location = New System.Drawing.Point(48, 247)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(55, 13)
         Me.Label8.TabIndex = 33
@@ -285,7 +285,7 @@ Partial Class Trustee
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(26, 216)
+        Me.Label7.Location = New System.Drawing.Point(28, 218)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(75, 13)
         Me.Label7.TabIndex = 32
@@ -296,7 +296,7 @@ Partial Class Trustee
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(65, 129)
+        Me.Label30.Location = New System.Drawing.Point(67, 131)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(36, 13)
         Me.Label30.TabIndex = 30
@@ -317,7 +317,7 @@ Partial Class Trustee
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(69, 101)
+        Me.Label26.Location = New System.Drawing.Point(71, 102)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(32, 13)
         Me.Label26.TabIndex = 21
@@ -348,7 +348,7 @@ Partial Class Trustee
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(58, 189)
+        Me.Label3.Location = New System.Drawing.Point(60, 189)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(43, 13)
         Me.Label3.TabIndex = 15
@@ -359,7 +359,7 @@ Partial Class Trustee
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(49, 161)
+        Me.Label5.Location = New System.Drawing.Point(51, 160)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 9
@@ -382,7 +382,7 @@ Partial Class Trustee
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(21, 73)
+        Me.Label1.Location = New System.Drawing.Point(23, 73)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 0

@@ -95,7 +95,7 @@ Partial Class FrmSetUpCertif
         Me.Search.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Search.Location = New System.Drawing.Point(8, 54)
         Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(341, 546)
+        Me.Search.Size = New System.Drawing.Size(341, 517)
         Me.Search.TabIndex = 38
         Me.Search.TabStop = False
         Me.Search.Text = "Search"
@@ -111,7 +111,7 @@ Partial Class FrmSetUpCertif
         Me.GVHelp.Name = "GVHelp"
         Me.GVHelp.ReadOnly = True
         Me.GVHelp.RowHeadersWidth = 20
-        Me.GVHelp.Size = New System.Drawing.Size(328, 491)
+        Me.GVHelp.Size = New System.Drawing.Size(328, 461)
         Me.GVHelp.StandardTab = True
         Me.GVHelp.TabIndex = 43
         '
@@ -146,7 +146,7 @@ Partial Class FrmSetUpCertif
         'cbIssuCertific
         '
         Me.cbIssuCertific.AutoSize = True
-        Me.cbIssuCertific.Location = New System.Drawing.Point(131, 178)
+        Me.cbIssuCertific.Location = New System.Drawing.Point(111, 172)
         Me.cbIssuCertific.Name = "cbIssuCertific"
         Me.cbIssuCertific.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cbIssuCertific.Size = New System.Drawing.Size(163, 20)
@@ -157,7 +157,7 @@ Partial Class FrmSetUpCertif
         'cmbInstuType
         '
         Me.cmbInstuType.FormattingEnabled = True
-        Me.cmbInstuType.Location = New System.Drawing.Point(217, 59)
+        Me.cmbInstuType.Location = New System.Drawing.Point(279, 55)
         Me.cmbInstuType.Name = "cmbInstuType"
         Me.cmbInstuType.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstuType.TabIndex = 1
@@ -166,7 +166,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(159, 127)
+        Me.Label2.Location = New System.Drawing.Point(221, 116)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 55
@@ -175,7 +175,7 @@ Partial Class FrmSetUpCertif
         'cmbBranch
         '
         Me.cmbBranch.FormattingEnabled = True
-        Me.cmbBranch.Location = New System.Drawing.Point(217, 148)
+        Me.cmbBranch.Location = New System.Drawing.Point(279, 142)
         Me.cmbBranch.Name = "cmbBranch"
         Me.cmbBranch.Size = New System.Drawing.Size(146, 24)
         Me.cmbBranch.TabIndex = 4
@@ -183,7 +183,7 @@ Partial Class FrmSetUpCertif
         'cmbInstitute
         '
         Me.cmbInstitute.FormattingEnabled = True
-        Me.cmbInstitute.Location = New System.Drawing.Point(217, 116)
+        Me.cmbInstitute.Location = New System.Drawing.Point(279, 113)
         Me.cmbInstitute.Name = "cmbInstitute"
         Me.cmbInstitute.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstitute.TabIndex = 3
@@ -191,7 +191,7 @@ Partial Class FrmSetUpCertif
         'cmbInstituteType
         '
         Me.cmbInstituteType.FormattingEnabled = True
-        Me.cmbInstituteType.Location = New System.Drawing.Point(217, 86)
+        Me.cmbInstituteType.Location = New System.Drawing.Point(279, 84)
         Me.cmbInstituteType.Name = "cmbInstituteType"
         Me.cmbInstituteType.Size = New System.Drawing.Size(146, 24)
         Me.cmbInstituteType.TabIndex = 2
@@ -200,7 +200,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(129, 153)
+        Me.Label10.Location = New System.Drawing.Point(191, 144)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(83, 13)
         Me.Label10.TabIndex = 29
@@ -210,7 +210,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(114, 67)
+        Me.Label26.Location = New System.Drawing.Point(176, 60)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(98, 13)
         Me.Label26.TabIndex = 21
@@ -220,7 +220,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(117, 97)
+        Me.Label3.Location = New System.Drawing.Point(179, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 13)
         Me.Label3.TabIndex = 15
@@ -231,7 +231,7 @@ Partial Class FrmSetUpCertif
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(217, 31)
+        Me.txtsysCode.Location = New System.Drawing.Point(279, 28)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -242,7 +242,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(128, 35)
+        Me.Label1.Location = New System.Drawing.Point(190, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 0
@@ -252,7 +252,7 @@ Partial Class FrmSetUpCertif
         '
         Me.dtpIssue.CustomFormat = "dd/MM/yyyy"
         Me.dtpIssue.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpIssue.Location = New System.Drawing.Point(122, 85)
+        Me.dtpIssue.Location = New System.Drawing.Point(279, 81)
         Me.dtpIssue.Name = "dtpIssue"
         Me.dtpIssue.Size = New System.Drawing.Size(146, 20)
         Me.dtpIssue.TabIndex = 7
@@ -262,7 +262,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(45, 91)
+        Me.Label4.Location = New System.Drawing.Point(206, 86)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(68, 13)
         Me.Label4.TabIndex = 56
@@ -270,7 +270,7 @@ Partial Class FrmSetUpCertif
         '
         'txtCertificateNo
         '
-        Me.txtCertificateNo.Location = New System.Drawing.Point(122, 28)
+        Me.txtCertificateNo.Location = New System.Drawing.Point(279, 27)
         Me.txtCertificateNo.Name = "txtCertificateNo"
         Me.txtCertificateNo.Size = New System.Drawing.Size(146, 20)
         Me.txtCertificateNo.TabIndex = 5
@@ -279,7 +279,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(64, 61)
+        Me.Label9.Location = New System.Drawing.Point(225, 58)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(49, 13)
         Me.Label9.TabIndex = 34
@@ -290,7 +290,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(32, 31)
+        Me.Label30.Location = New System.Drawing.Point(189, 30)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(85, 13)
         Me.Label30.TabIndex = 30
@@ -300,7 +300,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(37, 115)
+        Me.Label5.Location = New System.Drawing.Point(198, 114)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(76, 13)
         Me.Label5.TabIndex = 9
@@ -319,9 +319,10 @@ Partial Class FrmSetUpCertif
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.txtCertificateNo)
         Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(355, 320)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(722, 176)
+        Me.GroupBox1.Size = New System.Drawing.Size(722, 210)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Certificate Details"
@@ -330,7 +331,7 @@ Partial Class FrmSetUpCertif
         '
         Me.dtpMaturityDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpMaturityDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpMaturityDate.Location = New System.Drawing.Point(122, 138)
+        Me.dtpMaturityDate.Location = New System.Drawing.Point(279, 135)
         Me.dtpMaturityDate.Name = "dtpMaturityDate"
         Me.dtpMaturityDate.Size = New System.Drawing.Size(146, 20)
         Me.dtpMaturityDate.TabIndex = 9
@@ -340,7 +341,7 @@ Partial Class FrmSetUpCertif
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 145)
+        Me.Label6.Location = New System.Drawing.Point(191, 142)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(83, 13)
         Me.Label6.TabIndex = 60
@@ -348,14 +349,14 @@ Partial Class FrmSetUpCertif
         '
         'txtNoOfDays
         '
-        Me.txtNoOfDays.Location = New System.Drawing.Point(122, 112)
+        Me.txtNoOfDays.Location = New System.Drawing.Point(279, 108)
         Me.txtNoOfDays.Name = "txtNoOfDays"
         Me.txtNoOfDays.Size = New System.Drawing.Size(146, 20)
         Me.txtNoOfDays.TabIndex = 8
         '
         'txtAmnt
         '
-        Me.txtAmnt.Location = New System.Drawing.Point(122, 54)
+        Me.txtAmnt.Location = New System.Drawing.Point(279, 54)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(146, 20)
         Me.txtAmnt.TabIndex = 6
@@ -553,7 +554,7 @@ Partial Class FrmSetUpCertif
         '
         Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBy.Location = New System.Drawing.Point(904, 575)
+        Me.lblBy.Location = New System.Drawing.Point(904, 536)
         Me.lblBy.Name = "lblBy"
         Me.lblBy.Size = New System.Drawing.Size(170, 23)
         Me.lblBy.TabIndex = 48
@@ -562,7 +563,7 @@ Partial Class FrmSetUpCertif
         '
         Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblToolTip.Location = New System.Drawing.Point(527, 575)
+        Me.lblToolTip.Location = New System.Drawing.Point(527, 536)
         Me.lblToolTip.Name = "lblToolTip"
         Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
         Me.lblToolTip.TabIndex = 47
@@ -571,7 +572,7 @@ Partial Class FrmSetUpCertif
         '
         Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCompany.Location = New System.Drawing.Point(351, 576)
+        Me.lblCompany.Location = New System.Drawing.Point(351, 537)
         Me.lblCompany.Name = "lblCompany"
         Me.lblCompany.Size = New System.Drawing.Size(170, 23)
         Me.lblCompany.TabIndex = 46
@@ -580,7 +581,7 @@ Partial Class FrmSetUpCertif
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1083, 607)
+        Me.ClientSize = New System.Drawing.Size(1083, 585)
         Me.Controls.Add(Me.lblBy)
         Me.Controls.Add(Me.lblToolTip)
         Me.Controls.Add(Me.lblCompany)

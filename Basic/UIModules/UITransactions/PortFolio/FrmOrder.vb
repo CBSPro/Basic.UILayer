@@ -274,4 +274,8 @@ Public Class FrmOrder
         lblToolTip.Text = "Close Form"
         Me.Close()
     End Sub
+
+    Private Sub GpData_Enter(sender As System.Object, e As System.EventArgs) Handles GpData.Enter
+
+    End Sub
 End Class

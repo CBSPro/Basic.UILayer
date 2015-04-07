@@ -902,6 +902,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Location = New System.Drawing.Point(181, 199)
         Me.TextBox1.Name = "TextBox1"
@@ -910,6 +911,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Location = New System.Drawing.Point(181, 171)
         Me.TextBox2.Name = "TextBox2"
@@ -918,6 +920,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox3
         '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox3.Location = New System.Drawing.Point(181, 117)
         Me.TextBox3.Name = "TextBox3"
@@ -926,6 +929,7 @@ Partial Class FrmFinanInsInfo
         '
         'ComboBox1
         '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(399, 84)
         Me.ComboBox1.Name = "ComboBox1"
@@ -934,6 +938,7 @@ Partial Class FrmFinanInsInfo
         '
         'ComboBox2
         '
+        Me.ComboBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(181, 87)
         Me.ComboBox2.Name = "ComboBox2"
@@ -942,6 +947,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox4.Location = New System.Drawing.Point(181, 59)
         Me.TextBox4.Name = "TextBox4"
@@ -1110,6 +1116,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox6
         '
+        Me.TextBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox6.Location = New System.Drawing.Point(358, 179)
         Me.TextBox6.Name = "TextBox6"
@@ -1118,6 +1125,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox7
         '
+        Me.TextBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox7.Location = New System.Drawing.Point(181, 177)
         Me.TextBox7.Name = "TextBox7"
@@ -1137,6 +1145,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox8
         '
+        Me.TextBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox8.Location = New System.Drawing.Point(181, 147)
         Me.TextBox8.Name = "TextBox8"
@@ -1145,6 +1154,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox9
         '
+        Me.TextBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox9.Location = New System.Drawing.Point(614, 118)
         Me.TextBox9.Name = "TextBox9"
@@ -1164,6 +1174,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox10
         '
+        Me.TextBox10.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox10.Location = New System.Drawing.Point(334, 116)
         Me.TextBox10.Name = "TextBox10"
@@ -1172,6 +1183,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox11
         '
+        Me.TextBox11.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox11.Location = New System.Drawing.Point(181, 117)
         Me.TextBox11.Name = "TextBox11"
@@ -1220,6 +1232,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox12
         '
+        Me.TextBox12.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox12.Location = New System.Drawing.Point(614, 87)
         Me.TextBox12.Name = "TextBox12"
@@ -1248,6 +1261,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox13
         '
+        Me.TextBox13.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox13.Location = New System.Drawing.Point(181, 87)
         Me.TextBox13.Name = "TextBox13"
@@ -1256,6 +1270,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox14
         '
+        Me.TextBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox14.Location = New System.Drawing.Point(349, 26)
         Me.TextBox14.Name = "TextBox14"
@@ -1274,6 +1289,7 @@ Partial Class FrmFinanInsInfo
         '
         'TextBox15
         '
+        Me.TextBox15.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox15.Location = New System.Drawing.Point(181, 57)
         Me.TextBox15.Name = "TextBox15"

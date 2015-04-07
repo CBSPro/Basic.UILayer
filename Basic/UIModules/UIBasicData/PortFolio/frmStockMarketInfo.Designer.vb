@@ -80,7 +80,7 @@ Partial Class frmScripIndexSetup
         Me.Search.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Search.Location = New System.Drawing.Point(8, 55)
         Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(341, 546)
+        Me.Search.Size = New System.Drawing.Size(341, 523)
         Me.Search.TabIndex = 37
         Me.Search.TabStop = False
         Me.Search.Text = "Search"
@@ -96,7 +96,7 @@ Partial Class frmScripIndexSetup
         Me.GVHelp.Name = "GVHelp"
         Me.GVHelp.ReadOnly = True
         Me.GVHelp.RowHeadersWidth = 20
-        Me.GVHelp.Size = New System.Drawing.Size(328, 491)
+        Me.GVHelp.Size = New System.Drawing.Size(328, 463)
         Me.GVHelp.StandardTab = True
         Me.GVHelp.TabIndex = 43
         '
@@ -119,9 +119,9 @@ Partial Class frmScripIndexSetup
         Me.GpData.Controls.Add(Me.Label1)
         Me.GpData.Controls.Add(Me.Label3)
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GpData.Location = New System.Drawing.Point(358, 123)
+        Me.GpData.Location = New System.Drawing.Point(358, 121)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(712, 249)
+        Me.GpData.Size = New System.Drawing.Size(727, 318)
         Me.GpData.TabIndex = 40
         Me.GpData.TabStop = False
         '
@@ -130,7 +130,7 @@ Partial Class frmScripIndexSetup
         Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(215, 56)
+        Me.txtName.Location = New System.Drawing.Point(215, 102)
         Me.txtName.MaxLength = 3
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(309, 22)
@@ -141,7 +141,7 @@ Partial Class frmScripIndexSetup
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(126, 120)
+        Me.Label4.Location = New System.Drawing.Point(139, 163)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 13)
         Me.Label4.TabIndex = 39
@@ -151,7 +151,7 @@ Partial Class frmScripIndexSetup
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(215, 120)
+        Me.ListBox1.Location = New System.Drawing.Point(215, 164)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(364, 84)
         Me.ListBox1.TabIndex = 3
@@ -160,7 +160,7 @@ Partial Class frmScripIndexSetup
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(132, 86)
+        Me.Label2.Location = New System.Drawing.Point(132, 134)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 13)
         Me.Label2.TabIndex = 37
@@ -169,7 +169,7 @@ Partial Class frmScripIndexSetup
         'txtMarketType
         '
         Me.txtMarketType.FormattingEnabled = True
-        Me.txtMarketType.Location = New System.Drawing.Point(216, 81)
+        Me.txtMarketType.Location = New System.Drawing.Point(215, 132)
         Me.txtMarketType.Name = "txtMarketType"
         Me.txtMarketType.Size = New System.Drawing.Size(213, 24)
         Me.txtMarketType.TabIndex = 2
@@ -179,7 +179,7 @@ Partial Class frmScripIndexSetup
         Me.txtsysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtsysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtsysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsysCode.Location = New System.Drawing.Point(215, 28)
+        Me.txtsysCode.Location = New System.Drawing.Point(215, 72)
         Me.txtsysCode.MaxLength = 3
         Me.txtsysCode.Name = "txtsysCode"
         Me.txtsysCode.Size = New System.Drawing.Size(46, 22)
@@ -190,7 +190,7 @@ Partial Class frmScripIndexSetup
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(126, 32)
+        Me.Label1.Location = New System.Drawing.Point(126, 76)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(84, 13)
         Me.Label1.TabIndex = 35
@@ -200,7 +200,7 @@ Partial Class frmScripIndexSetup
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(171, 58)
+        Me.Label3.Location = New System.Drawing.Point(171, 105)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 33
@@ -225,7 +225,7 @@ Partial Class frmScripIndexSetup
         Me.GpBtns.Controls.Add(Me.btnAdd)
         Me.GpBtns.Location = New System.Drawing.Point(355, 55)
         Me.GpBtns.Name = "GpBtns"
-        Me.GpBtns.Size = New System.Drawing.Size(722, 58)
+        Me.GpBtns.Size = New System.Drawing.Size(730, 58)
         Me.GpBtns.TabIndex = 41
         Me.GpBtns.TabStop = False
         '
@@ -399,7 +399,7 @@ Partial Class frmScripIndexSetup
         '
         Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBy.Location = New System.Drawing.Point(909, 568)
+        Me.lblBy.Location = New System.Drawing.Point(911, 549)
         Me.lblBy.Name = "lblBy"
         Me.lblBy.Size = New System.Drawing.Size(170, 23)
         Me.lblBy.TabIndex = 46
@@ -408,7 +408,7 @@ Partial Class frmScripIndexSetup
         '
         Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblToolTip.Location = New System.Drawing.Point(532, 568)
+        Me.lblToolTip.Location = New System.Drawing.Point(534, 549)
         Me.lblToolTip.Name = "lblToolTip"
         Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
         Me.lblToolTip.TabIndex = 45
@@ -417,7 +417,7 @@ Partial Class frmScripIndexSetup
         '
         Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCompany.Location = New System.Drawing.Point(356, 569)
+        Me.lblCompany.Location = New System.Drawing.Point(359, 549)
         Me.lblCompany.Name = "lblCompany"
         Me.lblCompany.Size = New System.Drawing.Size(170, 23)
         Me.lblCompany.TabIndex = 44
@@ -426,7 +426,7 @@ Partial Class frmScripIndexSetup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1097, 609)
+        Me.ClientSize = New System.Drawing.Size(1097, 583)
         Me.Controls.Add(Me.lblBy)
         Me.Controls.Add(Me.lblToolTip)
         Me.Controls.Add(Me.lblCompany)

@@ -334,6 +334,7 @@ Partial Class FrmCreditRateComp
         '
         'cmbRating
         '
+        Me.cmbRating.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbRating.FormattingEnabled = True
         Me.cmbRating.Location = New System.Drawing.Point(187, 73)
         Me.cmbRating.Name = "cmbRating"
@@ -353,6 +354,7 @@ Partial Class FrmCreditRateComp
         '
         'txtName
         '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Location = New System.Drawing.Point(187, 45)
         Me.txtName.Name = "txtName"
@@ -361,6 +363,7 @@ Partial Class FrmCreditRateComp
         '
         'txtDescrip
         '
+        Me.txtDescrip.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDescrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDescrip.Location = New System.Drawing.Point(187, 103)
         Me.txtDescrip.Name = "txtDescrip"
@@ -464,6 +467,7 @@ Partial Class FrmCreditRateComp
         '
         'cmbRating2
         '
+        Me.cmbRating2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbRating2.FormattingEnabled = True
         Me.cmbRating2.Location = New System.Drawing.Point(405, 97)
         Me.cmbRating2.Name = "cmbRating2"
@@ -483,6 +487,7 @@ Partial Class FrmCreditRateComp
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(405, 17)
@@ -492,6 +497,7 @@ Partial Class FrmCreditRateComp
         '
         'cmbRatingType
         '
+        Me.cmbRatingType.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbRatingType.FormattingEnabled = True
         Me.cmbRatingType.Location = New System.Drawing.Point(187, 102)
         Me.cmbRatingType.Name = "cmbRatingType"
@@ -500,6 +506,7 @@ Partial Class FrmCreditRateComp
         '
         'cmbEntType
         '
+        Me.cmbEntType.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbEntType.FormattingEnabled = True
         Me.cmbEntType.Location = New System.Drawing.Point(187, 44)
         Me.cmbEntType.Name = "cmbEntType"
@@ -508,6 +515,7 @@ Partial Class FrmCreditRateComp
         '
         'cmbEntity
         '
+        Me.cmbEntity.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbEntity.FormattingEnabled = True
         Me.cmbEntity.Location = New System.Drawing.Point(187, 73)
         Me.cmbEntity.Name = "cmbEntity"

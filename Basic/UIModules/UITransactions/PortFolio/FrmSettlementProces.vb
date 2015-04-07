@@ -53,11 +53,11 @@ Public Class FrmSettlementProces
         End If
     End Sub
 
-    Private Sub DateTimePicker1_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles DateTimePicker1.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
+    'Private Sub DateTimePicker1_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles DateTimePicker1.KeyDown
+    '    If e.KeyCode = Keys.Enter Then
+    '        SendKeys.Send("{Tab}")
+    '    End If
+    'End Sub
 
     Private Sub dtpFromDate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles dtpFromDate.KeyDown
         If e.KeyCode = Keys.Enter Then

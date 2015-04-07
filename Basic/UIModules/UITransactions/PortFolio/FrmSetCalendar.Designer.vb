@@ -61,6 +61,9 @@ Partial Class FrmSetCalendar
         Me.dtpSettlement = New System.Windows.Forms.DateTimePicker()
         Me.dtpTrade = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -73,9 +76,9 @@ Partial Class FrmSetCalendar
         Me.LblTypeValid.BackColor = System.Drawing.Color.PowderBlue
         Me.LblTypeValid.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTypeValid.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.LblTypeValid.Location = New System.Drawing.Point(2, 2)
+        Me.LblTypeValid.Location = New System.Drawing.Point(1, 0)
         Me.LblTypeValid.Name = "LblTypeValid"
-        Me.LblTypeValid.Size = New System.Drawing.Size(1076, 52)
+        Me.LblTypeValid.Size = New System.Drawing.Size(1084, 52)
         Me.LblTypeValid.TabIndex = 34
         Me.LblTypeValid.Text = "Settlement Calendar Information"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -321,13 +324,13 @@ Partial Class FrmSetCalendar
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(532, 169)
+        Me.GpData.Size = New System.Drawing.Size(708, 219)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
         'btnFetch
         '
-        Me.btnFetch.Location = New System.Drawing.Point(320, 105)
+        Me.btnFetch.Location = New System.Drawing.Point(411, 137)
         Me.btnFetch.Name = "btnFetch"
         Me.btnFetch.Size = New System.Drawing.Size(75, 23)
         Me.btnFetch.TabIndex = 5
@@ -338,7 +341,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(92, 116)
+        Me.Label5.Location = New System.Drawing.Point(190, 138)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(83, 13)
         Me.Label5.TabIndex = 25
@@ -349,7 +352,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(132, 86)
+        Me.Label4.Location = New System.Drawing.Point(230, 109)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 24
@@ -358,39 +361,44 @@ Partial Class FrmSetCalendar
         '
         'txtDesc
         '
-        Me.txtDesc.Location = New System.Drawing.Point(187, 138)
+        Me.txtDesc.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtDesc.Location = New System.Drawing.Point(278, 164)
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(250, 22)
         Me.txtDesc.TabIndex = 6
         '
         'cmbStokMark
         '
+        Me.cmbStokMark.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbStokMark.FormattingEnabled = True
-        Me.cmbStokMark.Location = New System.Drawing.Point(187, 105)
+        Me.cmbStokMark.Location = New System.Drawing.Point(278, 134)
         Me.cmbStokMark.Name = "cmbStokMark"
         Me.cmbStokMark.Size = New System.Drawing.Size(121, 24)
         Me.cmbStokMark.TabIndex = 4
         '
         'cmbPeriod
         '
+        Me.cmbPeriod.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbPeriod.FormattingEnabled = True
-        Me.cmbPeriod.Location = New System.Drawing.Point(187, 75)
+        Me.cmbPeriod.Location = New System.Drawing.Point(278, 105)
         Me.cmbPeriod.Name = "cmbPeriod"
         Me.cmbPeriod.Size = New System.Drawing.Size(121, 24)
         Me.cmbPeriod.TabIndex = 3
         '
         'cmbYear
         '
+        Me.cmbYear.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbYear.FormattingEnabled = True
-        Me.cmbYear.Location = New System.Drawing.Point(187, 45)
+        Me.cmbYear.Location = New System.Drawing.Point(278, 76)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(121, 24)
         Me.cmbYear.TabIndex = 2
         '
         'cmbSetMode
         '
+        Me.cmbSetMode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbSetMode.FormattingEnabled = True
-        Me.cmbSetMode.Location = New System.Drawing.Point(187, 15)
+        Me.cmbSetMode.Location = New System.Drawing.Point(278, 47)
         Me.cmbSetMode.Name = "cmbSetMode"
         Me.cmbSetMode.Size = New System.Drawing.Size(121, 24)
         Me.cmbSetMode.TabIndex = 1
@@ -399,7 +407,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 138)
+        Me.Label3.Location = New System.Drawing.Point(202, 167)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 15
@@ -409,7 +417,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(146, 56)
+        Me.Label2.Location = New System.Drawing.Point(240, 80)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(33, 13)
         Me.Label2.TabIndex = 14
@@ -420,7 +428,7 @@ Partial Class FrmSetCalendar
         '
         Me.LBLPosted.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLPosted.ForeColor = System.Drawing.Color.Red
-        Me.LBLPosted.Location = New System.Drawing.Point(575, 18)
+        Me.LBLPosted.Location = New System.Drawing.Point(575, 50)
         Me.LBLPosted.Name = "LBLPosted"
         Me.LBLPosted.Size = New System.Drawing.Size(137, 42)
         Me.LBLPosted.TabIndex = 13
@@ -430,7 +438,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(77, 21)
+        Me.Label1.Location = New System.Drawing.Point(171, 51)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 13)
         Me.Label1.TabIndex = 0
@@ -442,9 +450,9 @@ Partial Class FrmSetCalendar
         Me.GroupBox1.Controls.Add(Me.dtpSettlement)
         Me.GroupBox1.Controls.Add(Me.dtpTrade)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Location = New System.Drawing.Point(359, 299)
+        Me.GroupBox1.Location = New System.Drawing.Point(359, 348)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(532, 56)
+        Me.GroupBox1.Size = New System.Drawing.Size(708, 56)
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
@@ -452,7 +460,7 @@ Partial Class FrmSetCalendar
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(331, 25)
+        Me.Label7.Location = New System.Drawing.Point(346, 25)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(98, 13)
         Me.Label7.TabIndex = 28
@@ -461,9 +469,10 @@ Partial Class FrmSetCalendar
         '
         'dtpSettlement
         '
+        Me.dtpSettlement.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpSettlement.CustomFormat = "dd/MM/yyyy"
         Me.dtpSettlement.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpSettlement.Location = New System.Drawing.Point(430, 19)
+        Me.dtpSettlement.Location = New System.Drawing.Point(450, 21)
         Me.dtpSettlement.Name = "dtpSettlement"
         Me.dtpSettlement.Size = New System.Drawing.Size(96, 20)
         Me.dtpSettlement.TabIndex = 8
@@ -471,9 +480,10 @@ Partial Class FrmSetCalendar
         '
         'dtpTrade
         '
+        Me.dtpTrade.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpTrade.CustomFormat = "dd/MM/yyyy"
         Me.dtpTrade.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTrade.Location = New System.Drawing.Point(212, 19)
+        Me.dtpTrade.Location = New System.Drawing.Point(232, 21)
         Me.dtpTrade.Name = "dtpTrade"
         Me.dtpTrade.Size = New System.Drawing.Size(96, 20)
         Me.dtpTrade.TabIndex = 7
@@ -483,18 +493,48 @@ Partial Class FrmSetCalendar
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(110, 25)
+        Me.Label6.Location = New System.Drawing.Point(155, 25)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 13)
         Me.Label6.TabIndex = 25
         Me.Label6.Text = "Trade Date"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'lblBy
+        '
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(902, 573)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(170, 23)
+        Me.lblBy.TabIndex = 49
+        '
+        'lblToolTip
+        '
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(525, 573)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
+        Me.lblToolTip.TabIndex = 48
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(349, 573)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 47
+        '
         'FrmSetCalendar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1079, 562)
+        Me.ClientSize = New System.Drawing.Size(1081, 611)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
@@ -551,4 +591,7 @@ Partial Class FrmSetCalendar
     Friend WithEvents dtpTrade As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents btnFetch As System.Windows.Forms.Button
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
 End Class

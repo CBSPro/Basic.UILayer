@@ -54,6 +54,9 @@ Partial Class FrmDailyMarkPrice
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LBLPosted = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -322,11 +325,12 @@ Partial Class FrmDailyMarkPrice
         Me.fpPrice.Location = New System.Drawing.Point(16, 124)
         Me.fpPrice.Name = "fpPrice"
         Me.fpPrice.OcxState = CType(resources.GetObject("fpPrice.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.fpPrice.Size = New System.Drawing.Size(696, 246)
+        Me.fpPrice.Size = New System.Drawing.Size(706, 246)
         Me.fpPrice.TabIndex = 46
         '
         'dtpDate
         '
+        Me.dtpDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpDate.Location = New System.Drawing.Point(151, 71)
@@ -336,6 +340,7 @@ Partial Class FrmDailyMarkPrice
         '
         'CmbStokMar
         '
+        Me.CmbStokMar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbStokMar.FormattingEnabled = True
         Me.CmbStokMar.Location = New System.Drawing.Point(150, 45)
         Me.CmbStokMar.Name = "CmbStokMar"
@@ -344,6 +349,7 @@ Partial Class FrmDailyMarkPrice
         '
         'cmbSecu
         '
+        Me.cmbSecu.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbSecu.FormattingEnabled = True
         Me.cmbSecu.Location = New System.Drawing.Point(150, 18)
         Me.cmbSecu.Name = "cmbSecu"
@@ -409,11 +415,41 @@ Partial Class FrmDailyMarkPrice
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Security"
         '
+        'lblBy
+        '
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(923, 530)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(149, 23)
+        Me.lblBy.TabIndex = 45
+        '
+        'lblToolTip
+        '
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(536, 530)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(381, 23)
+        Me.lblToolTip.TabIndex = 44
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(360, 530)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 43
+        '
         'FrmDailyMarkPrice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1079, 562)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.Search)
@@ -461,4 +497,7 @@ Partial Class FrmDailyMarkPrice
     Friend WithEvents CmbStokMar As System.Windows.Forms.ComboBox
     Friend WithEvents dtpDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents fpPrice As AxFPSpreadADO.AxfpSpread
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
 End Class

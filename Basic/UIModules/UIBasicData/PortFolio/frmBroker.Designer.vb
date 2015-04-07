@@ -378,6 +378,7 @@ Partial Class frmBroker
         '
         'txtMnemo
         '
+        Me.txtMnemo.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtMnemo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMnemo.Location = New System.Drawing.Point(513, 30)
         Me.txtMnemo.Name = "txtMnemo"
@@ -395,6 +396,7 @@ Partial Class frmBroker
         '
         'txtDescription
         '
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDescription.Location = New System.Drawing.Point(121, 215)
         Me.txtDescription.Name = "txtDescription"
@@ -403,6 +405,7 @@ Partial Class frmBroker
         '
         'txtNCSS
         '
+        Me.txtNCSS.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtNCSS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtNCSS.Location = New System.Drawing.Point(513, 183)
         Me.txtNCSS.Name = "txtNCSS"
@@ -411,6 +414,7 @@ Partial Class frmBroker
         '
         'txtFax
         '
+        Me.txtFax.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtFax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFax.Location = New System.Drawing.Point(513, 148)
         Me.txtFax.Name = "txtFax"
@@ -419,6 +423,7 @@ Partial Class frmBroker
         '
         'txtEmail
         '
+        Me.txtEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmail.Location = New System.Drawing.Point(513, 113)
         Me.txtEmail.Name = "txtEmail"
@@ -427,6 +432,7 @@ Partial Class frmBroker
         '
         'txtIAS
         '
+        Me.txtIAS.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtIAS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtIAS.Location = New System.Drawing.Point(121, 161)
         Me.txtIAS.Name = "txtIAS"
@@ -435,6 +441,7 @@ Partial Class frmBroker
         '
         'txtCFS
         '
+        Me.txtCFS.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtCFS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCFS.Location = New System.Drawing.Point(121, 135)
         Me.txtCFS.Name = "txtCFS"
@@ -443,6 +450,7 @@ Partial Class frmBroker
         '
         'txtPhone
         '
+        Me.txtPhone.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPhone.Location = New System.Drawing.Point(121, 109)
         Me.txtPhone.Name = "txtPhone"
@@ -451,6 +459,7 @@ Partial Class frmBroker
         '
         'txtAdress
         '
+        Me.txtAdress.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtAdress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAdress.Location = New System.Drawing.Point(121, 83)
         Me.txtAdress.Name = "txtAdress"
@@ -459,6 +468,7 @@ Partial Class frmBroker
         '
         'txtName
         '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Location = New System.Drawing.Point(121, 57)
         Me.txtName.Name = "txtName"
@@ -558,6 +568,7 @@ Partial Class frmBroker
         '
         'cmbDefine
         '
+        Me.cmbDefine.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbDefine.FormattingEnabled = True
         Me.cmbDefine.Location = New System.Drawing.Point(121, 187)
         Me.cmbDefine.Name = "cmbDefine"

@@ -339,7 +339,7 @@ Partial Class FrmTaxParm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 106)
+        Me.Label2.Location = New System.Drawing.Point(58, 106)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(60, 13)
         Me.Label2.TabIndex = 54
@@ -348,7 +348,7 @@ Partial Class FrmTaxParm
         'cmbFund
         '
         Me.cmbFund.FormattingEnabled = True
-        Me.cmbFund.Location = New System.Drawing.Point(330, 33)
+        Me.cmbFund.Location = New System.Drawing.Point(329, 32)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(140, 24)
         Me.cmbFund.TabIndex = 2
@@ -365,7 +365,7 @@ Partial Class FrmTaxParm
         'cmbOrdMod
         '
         Me.cmbOrdMod.FormattingEnabled = True
-        Me.cmbOrdMod.Location = New System.Drawing.Point(330, 89)
+        Me.cmbOrdMod.Location = New System.Drawing.Point(330, 95)
         Me.cmbOrdMod.Name = "cmbOrdMod"
         Me.cmbOrdMod.Size = New System.Drawing.Size(140, 24)
         Me.cmbOrdMod.TabIndex = 5
@@ -373,7 +373,7 @@ Partial Class FrmTaxParm
         'cmbSecuType
         '
         Me.cmbSecuType.FormattingEnabled = True
-        Me.cmbSecuType.Location = New System.Drawing.Point(122, 65)
+        Me.cmbSecuType.Location = New System.Drawing.Point(122, 64)
         Me.cmbSecuType.Name = "cmbSecuType"
         Me.cmbSecuType.Size = New System.Drawing.Size(110, 24)
         Me.cmbSecuType.TabIndex = 3
@@ -382,7 +382,7 @@ Partial Class FrmTaxParm
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(26, 70)
+        Me.Label30.Location = New System.Drawing.Point(33, 72)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(85, 13)
         Me.Label30.TabIndex = 30
@@ -392,7 +392,7 @@ Partial Class FrmTaxParm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(244, 100)
+        Me.Label10.Location = New System.Drawing.Point(254, 100)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(73, 13)
         Me.Label10.TabIndex = 29
@@ -402,7 +402,7 @@ Partial Class FrmTaxParm
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(278, 38)
+        Me.Label26.Location = New System.Drawing.Point(289, 37)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(35, 13)
         Me.Label26.TabIndex = 21
@@ -412,7 +412,7 @@ Partial Class FrmTaxParm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 38)
+        Me.Label1.Location = New System.Drawing.Point(40, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 0

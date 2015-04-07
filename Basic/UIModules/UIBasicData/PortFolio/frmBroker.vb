@@ -49,108 +49,89 @@ Public Class frmBroker
 
     End Sub
 
-
-
-
     Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
-        'AddMode = True
-        'EditMode = False
-        'Flag = False
+        AddMode = True
+        EditMode = False
+        Flag = False
         'mskCode.Enabled = True
-        'Call SetEntryMode()
-        'btnSave.Enabled = True
-        'btnCancel.Enabled = True
-        'EmptyControls(Me)
-        'Call ClearAll()
+        Call SetEntryMode()
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+        EmptyControls(Me)
+        Call ClearAll()
         'GpStatus.Enabled = True
         'GpACDef.Enabled = True
-        'lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
-        'lblToolTip.Text = "Add New Record"
-        'lblBy.Text = "Recorded By : " & SysUserID
+        lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
+        lblToolTip.Text = "Add New Record"
+        lblBy.Text = "Recorded By : " & SysUserID
         'mskCode.SelectionStart = 0
         'mskCode.Focus()
     End Sub
 
+    Private Sub btnEdit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+        lblToolTip.Text = "Edit Current Record"
+        EditMode = True
+        AddMode = False
+        Flag = False
+        'mskCode.Enabled = True
+        Call SetEntryMode()
+        'GpStatus.Enabled = True
+        'GpACDef.Enabled = True
+        'mskCode.Enabled = False
+        'txtDesc1.Focus()
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+    End Sub
+    Private Sub btnCancel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        'dtAccount = objAccount.LoadAllCodes()
+        'rowNum = dtAccount.Rows.Count - 1
+        AddMode = False
+        EditMode = False
+        'mskCode.Enabled = False
+        lblToolTip.Text = "Cancel Last Action"
+        Opt = MsgBox("Do you wish to Abort ?", MsgBoxStyle.YesNo)
+        If Opt = MsgBoxResult.No Then
+            'mskCode.Focus()
+            Exit Sub
+        End If
+        'Call LoadValue()
+        Flag = True
+        Call SetEntryMode()
+        'GpACDef.Enabled = False
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        'GpStatus.Enabled = False
+        'rowNum = dtAccount.Rows.Count - 1
+        'Call MenuGridLoad(mMenuStr)
+        'rowNum = dtAccount.Rows.Count - 1
+        Call SetButtonPrinciple()
+        Call SetButtonPrinciple()
+        Call SetButton()
+        AddMode = False
+        EditMode = False
+    End Sub
+    Private Sub btnRefresh_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
+        'dtAccount = objAccount.LoadAllCodes()
+        'Call MenuGridLoad(mMenuStr)
+        'rowNum = dtAccount.Rows.Count - 1
+        'Call LoadValue()
+        lblToolTip.Text = "Refresh Records"
+    End Sub
 
-    Private Sub txtAdress_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtAdress.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
+    Private Sub btnPrint_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnPrint.Click
+        Dim frmList As New frmRPT_List
+        If rowNum > 0 Then
+            lblToolTip.Text = "Print Record(s)"
+            'pPara = 2
+            pPara = 28
+            Call SetButtonPrinciple()
+            Call SetButton()
+            'frmList.ShowDialog()
         End If
     End Sub
 
-
-    Private Sub txtBrokerCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBrokerCode.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtCFS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtCFS.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtDescription_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtDescription.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtEmail_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtFax_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtIAS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtIAS.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtMnemo_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtMnemo.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtName.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtNCSS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtNCSS.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtPhone_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtPhone.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtSearch_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSearch.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
-    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            SendKeys.Send("{Tab}")
-        End If
-    End Sub
-
+  
 
     Private Sub btnTop_Click(sender As Object, e As System.EventArgs) Handles btnTop.Click
         If rowNum > 0 Then
@@ -256,5 +237,83 @@ Public Class frmBroker
         Me.Close()
     End Sub
 
-    
+    Private Sub txtAdress_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtAdress.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+
+    Private Sub txtBrokerCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBrokerCode.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtCFS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtCFS.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtDescription_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtDescription.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtEmail_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtFax_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtIAS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtIAS.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtMnemo_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtMnemo.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtName.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtNCSS_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtNCSS.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtPhone_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtPhone.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtSearch_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSearch.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
+    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            SendKeys.Send("{Tab}")
+        End If
+    End Sub
+
 End Class

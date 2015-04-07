@@ -327,6 +327,7 @@ Partial Class frmCalendar
         '
         'txtDescription
         '
+        Me.txtDescription.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDescription.Location = New System.Drawing.Point(234, 94)
         Me.txtDescription.Name = "txtDescription"
@@ -335,6 +336,7 @@ Partial Class frmCalendar
         '
         'cmbYear2
         '
+        Me.cmbYear2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbYear2.FormattingEnabled = True
         Me.cmbYear2.Location = New System.Drawing.Point(329, 64)
         Me.cmbYear2.Name = "cmbYear2"
@@ -364,6 +366,7 @@ Partial Class frmCalendar
         '
         'cmbYear1
         '
+        Me.cmbYear1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbYear1.FormattingEnabled = True
         Me.cmbYear1.Location = New System.Drawing.Point(234, 64)
         Me.cmbYear1.Name = "cmbYear1"
@@ -421,6 +424,7 @@ Partial Class frmCalendar
         '
         'txtName
         '
+        Me.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Location = New System.Drawing.Point(234, 68)
         Me.txtName.Name = "txtName"
@@ -450,6 +454,7 @@ Partial Class frmCalendar
         '
         'enDate
         '
+        Me.enDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.enDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.enDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.enDate.Location = New System.Drawing.Point(234, 126)
@@ -470,6 +475,7 @@ Partial Class frmCalendar
         '
         'stDate
         '
+        Me.stDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.stDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.stDate.Location = New System.Drawing.Point(234, 97)

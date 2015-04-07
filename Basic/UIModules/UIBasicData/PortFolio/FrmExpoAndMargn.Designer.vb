@@ -151,6 +151,7 @@ Partial Class FrmExpoAndMargn
         '
         'dtpValid
         '
+        Me.dtpValid.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpValid.CustomFormat = "dd/MM/yyyy"
         Me.dtpValid.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpValid.Location = New System.Drawing.Point(223, 217)
@@ -181,6 +182,7 @@ Partial Class FrmExpoAndMargn
         '
         'cmbInstitute
         '
+        Me.cmbInstitute.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbInstitute.FormattingEnabled = True
         Me.cmbInstitute.Location = New System.Drawing.Point(223, 185)
         Me.cmbInstitute.Name = "cmbInstitute"
@@ -189,6 +191,7 @@ Partial Class FrmExpoAndMargn
         '
         'cmbInstituteType
         '
+        Me.cmbInstituteType.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbInstituteType.FormattingEnabled = True
         Me.cmbInstituteType.Location = New System.Drawing.Point(223, 153)
         Me.cmbInstituteType.Name = "cmbInstituteType"
@@ -230,6 +233,7 @@ Partial Class FrmExpoAndMargn
         '
         'txtDesc
         '
+        Me.txtDesc.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDesc.Location = New System.Drawing.Point(223, 277)
         Me.txtDesc.Multiline = True
@@ -240,6 +244,7 @@ Partial Class FrmExpoAndMargn
         '
         'txtAmnt
         '
+        Me.txtAmnt.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.txtAmnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAmnt.Location = New System.Drawing.Point(223, 247)
         Me.txtAmnt.Name = "txtAmnt"
@@ -248,6 +253,7 @@ Partial Class FrmExpoAndMargn
         '
         'cmbFund
         '
+        Me.cmbFund.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbFund.FormattingEnabled = True
         Me.cmbFund.Location = New System.Drawing.Point(223, 121)
         Me.cmbFund.Name = "cmbFund"
@@ -256,6 +262,7 @@ Partial Class FrmExpoAndMargn
         '
         'cmbMode
         '
+        Me.cmbMode.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbMode.FormattingEnabled = True
         Me.cmbMode.Location = New System.Drawing.Point(223, 89)
         Me.cmbMode.Name = "cmbMode"

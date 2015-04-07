@@ -70,6 +70,9 @@ Partial Class FrmOrderAdjust
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -82,9 +85,9 @@ Partial Class FrmOrderAdjust
         Me.LblTypeValid.BackColor = System.Drawing.Color.PowderBlue
         Me.LblTypeValid.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTypeValid.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.LblTypeValid.Location = New System.Drawing.Point(2, 2)
+        Me.LblTypeValid.Location = New System.Drawing.Point(2, 0)
         Me.LblTypeValid.Name = "LblTypeValid"
-        Me.LblTypeValid.Size = New System.Drawing.Size(1076, 52)
+        Me.LblTypeValid.Size = New System.Drawing.Size(1085, 52)
         Me.LblTypeValid.TabIndex = 34
         Me.LblTypeValid.Text = "Adjustment Document"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -96,7 +99,7 @@ Partial Class FrmOrderAdjust
         Me.Search.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Search.Location = New System.Drawing.Point(9, 57)
         Me.Search.Name = "Search"
-        Me.Search.Size = New System.Drawing.Size(341, 546)
+        Me.Search.Size = New System.Drawing.Size(341, 490)
         Me.Search.TabIndex = 36
         Me.Search.TabStop = False
         Me.Search.Text = "Search"
@@ -112,7 +115,7 @@ Partial Class FrmOrderAdjust
         Me.GVHelp.Name = "GVHelp"
         Me.GVHelp.ReadOnly = True
         Me.GVHelp.RowHeadersWidth = 20
-        Me.GVHelp.Size = New System.Drawing.Size(328, 491)
+        Me.GVHelp.Size = New System.Drawing.Size(328, 431)
         Me.GVHelp.StandardTab = True
         Me.GVHelp.TabIndex = 43
         '
@@ -337,38 +340,43 @@ Partial Class FrmOrderAdjust
         Me.GpData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GpData.Location = New System.Drawing.Point(359, 123)
         Me.GpData.Name = "GpData"
-        Me.GpData.Size = New System.Drawing.Size(671, 182)
+        Me.GpData.Size = New System.Drawing.Size(719, 182)
         Me.GpData.TabIndex = 42
         Me.GpData.TabStop = False
         '
         'DtpDate
         '
+        Me.DtpDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.DtpDate.CustomFormat = "dd/MM/yyyy"
         Me.DtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DtpDate.Location = New System.Drawing.Point(507, 20)
+        Me.DtpDate.Location = New System.Drawing.Point(405, 20)
         Me.DtpDate.Name = "DtpDate"
-        Me.DtpDate.Size = New System.Drawing.Size(109, 22)
+        Me.DtpDate.Size = New System.Drawing.Size(117, 22)
         Me.DtpDate.TabIndex = 6
         '
         'txtFaceval
         '
-        Me.txtFaceval.Location = New System.Drawing.Point(507, 107)
+        Me.txtFaceval.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtFaceval.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtFaceval.Location = New System.Drawing.Point(405, 96)
         Me.txtFaceval.Name = "txtFaceval"
-        Me.txtFaceval.Size = New System.Drawing.Size(109, 22)
+        Me.txtFaceval.Size = New System.Drawing.Size(117, 22)
         Me.txtFaceval.TabIndex = 8
         '
         'txtRefNo
         '
-        Me.txtRefNo.Location = New System.Drawing.Point(507, 135)
+        Me.txtRefNo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtRefNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtRefNo.Location = New System.Drawing.Point(405, 134)
         Me.txtRefNo.Name = "txtRefNo"
-        Me.txtRefNo.Size = New System.Drawing.Size(109, 22)
+        Me.txtRefNo.Size = New System.Drawing.Size(117, 22)
         Me.txtRefNo.TabIndex = 9
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(414, 112)
+        Me.Label9.Location = New System.Drawing.Point(329, 100)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(71, 13)
         Me.Label9.TabIndex = 50
@@ -378,7 +386,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(402, 144)
+        Me.Label8.Location = New System.Drawing.Point(317, 138)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(83, 13)
         Me.Label8.TabIndex = 49
@@ -388,7 +396,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(441, 85)
+        Me.Label7.Location = New System.Drawing.Point(356, 62)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 13)
         Me.Label7.TabIndex = 48
@@ -396,40 +404,45 @@ Partial Class FrmOrderAdjust
         '
         'CmbName
         '
+        Me.CmbName.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbName.FormattingEnabled = True
-        Me.CmbName.Location = New System.Drawing.Point(180, 140)
+        Me.CmbName.Location = New System.Drawing.Point(141, 140)
         Me.CmbName.Name = "CmbName"
         Me.CmbName.Size = New System.Drawing.Size(121, 24)
         Me.CmbName.TabIndex = 5
         '
         'CmbSubType
         '
+        Me.CmbSubType.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbSubType.FormattingEnabled = True
-        Me.CmbSubType.Location = New System.Drawing.Point(180, 110)
+        Me.CmbSubType.Location = New System.Drawing.Point(141, 110)
         Me.CmbSubType.Name = "CmbSubType"
         Me.CmbSubType.Size = New System.Drawing.Size(121, 24)
         Me.CmbSubType.TabIndex = 4
         '
         'CmbTradeType
         '
+        Me.CmbTradeType.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbTradeType.FormattingEnabled = True
-        Me.CmbTradeType.Location = New System.Drawing.Point(180, 78)
+        Me.CmbTradeType.Location = New System.Drawing.Point(141, 80)
         Me.CmbTradeType.Name = "CmbTradeType"
         Me.CmbTradeType.Size = New System.Drawing.Size(121, 24)
         Me.CmbTradeType.TabIndex = 3
         '
         'CmbFund
         '
+        Me.CmbFund.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbFund.FormattingEnabled = True
-        Me.CmbFund.Location = New System.Drawing.Point(180, 48)
+        Me.CmbFund.Location = New System.Drawing.Point(141, 50)
         Me.CmbFund.Name = "CmbFund"
         Me.CmbFund.Size = New System.Drawing.Size(121, 24)
         Me.CmbFund.TabIndex = 2
         '
         'CmbSecu
         '
+        Me.CmbSecu.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CmbSecu.FormattingEnabled = True
-        Me.CmbSecu.Location = New System.Drawing.Point(180, 18)
+        Me.CmbSecu.Location = New System.Drawing.Point(141, 20)
         Me.CmbSecu.Name = "CmbSecu"
         Me.CmbSecu.Size = New System.Drawing.Size(121, 24)
         Me.CmbSecu.TabIndex = 1
@@ -438,7 +451,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(451, 29)
+        Me.Label6.Location = New System.Drawing.Point(366, 24)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(34, 13)
         Me.Label6.TabIndex = 21
@@ -448,7 +461,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(117, 145)
+        Me.Label5.Location = New System.Drawing.Point(92, 141)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 20
@@ -458,7 +471,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(95, 121)
+        Me.Label4.Location = New System.Drawing.Point(70, 112)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 13)
         Me.Label4.TabIndex = 19
@@ -466,16 +479,18 @@ Partial Class FrmOrderAdjust
         '
         'txtSector
         '
-        Me.txtSector.Location = New System.Drawing.Point(507, 76)
+        Me.txtSector.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSector.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSector.Location = New System.Drawing.Point(405, 58)
         Me.txtSector.Name = "txtSector"
-        Me.txtSector.Size = New System.Drawing.Size(109, 22)
+        Me.txtSector.Size = New System.Drawing.Size(117, 22)
         Me.txtSector.TabIndex = 7
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(84, 89)
+        Me.Label3.Location = New System.Drawing.Point(59, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 13)
         Me.Label3.TabIndex = 15
@@ -485,7 +500,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(121, 56)
+        Me.Label2.Location = New System.Drawing.Point(96, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 14
@@ -506,7 +521,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(103, 29)
+        Me.Label1.Location = New System.Drawing.Point(78, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 0
@@ -522,27 +537,33 @@ Partial Class FrmOrderAdjust
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Location = New System.Drawing.Point(359, 311)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(671, 123)
+        Me.GroupBox1.Size = New System.Drawing.Size(671, 171)
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
         'txtPrice
         '
-        Me.txtPrice.Location = New System.Drawing.Point(180, 28)
+        Me.txtPrice.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPrice.Location = New System.Drawing.Point(141, 28)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(121, 20)
         Me.txtPrice.TabIndex = 10
         '
         'txtAmnt
         '
-        Me.txtAmnt.Location = New System.Drawing.Point(180, 51)
+        Me.txtAmnt.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtAmnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAmnt.Location = New System.Drawing.Point(141, 61)
         Me.txtAmnt.Name = "txtAmnt"
         Me.txtAmnt.Size = New System.Drawing.Size(121, 20)
         Me.txtAmnt.TabIndex = 11
         '
         'txtQty
         '
-        Me.txtQty.Location = New System.Drawing.Point(180, 76)
+        Me.txtQty.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtQty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtQty.Location = New System.Drawing.Point(141, 91)
         Me.txtQty.Name = "txtQty"
         Me.txtQty.Size = New System.Drawing.Size(121, 20)
         Me.txtQty.TabIndex = 12
@@ -551,7 +572,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(102, 79)
+        Me.Label12.Location = New System.Drawing.Point(77, 96)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(54, 13)
         Me.Label12.TabIndex = 51
@@ -561,7 +582,7 @@ Partial Class FrmOrderAdjust
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(107, 58)
+        Me.Label11.Location = New System.Drawing.Point(82, 66)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 13)
         Me.Label11.TabIndex = 50
@@ -571,17 +592,47 @@ Partial Class FrmOrderAdjust
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(120, 31)
+        Me.Label10.Location = New System.Drawing.Point(95, 31)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(36, 13)
         Me.Label10.TabIndex = 49
         Me.Label10.Text = "Price"
         '
+        'lblBy
+        '
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(907, 519)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(170, 23)
+        Me.lblBy.TabIndex = 49
+        '
+        'lblToolTip
+        '
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(530, 519)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
+        Me.lblToolTip.TabIndex = 48
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(354, 520)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 47
+        '
         'FrmOrderAdjust
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1079, 562)
+        Me.ClientSize = New System.Drawing.Size(1084, 552)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GpData)
         Me.Controls.Add(Me.GpBtns)
@@ -647,4 +698,7 @@ Partial Class FrmOrderAdjust
     Friend WithEvents txtPrice As System.Windows.Forms.TextBox
     Friend WithEvents txtAmnt As System.Windows.Forms.TextBox
     Friend WithEvents txtQty As System.Windows.Forms.TextBox
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
 End Class

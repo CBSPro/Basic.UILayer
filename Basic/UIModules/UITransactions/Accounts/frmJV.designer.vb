@@ -20,48 +20,48 @@ Partial Class frmJV
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmJV))
-        Me.GpData = New System.Windows.Forms.GroupBox
-        Me.LBLPosted = New System.Windows.Forms.Label
-        Me.lblBrName = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.lblVNo = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.dtpVDate = New System.Windows.Forms.DateTimePicker
-        Me.txtPurpose = New System.Windows.Forms.TextBox
-        Me.txtBrCode = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.lblBy = New System.Windows.Forms.Label
-        Me.lblToolTip = New System.Windows.Forms.Label
-        Me.lblCompany = New System.Windows.Forms.Label
-        Me.vspGrid = New AxFPSpreadADO.AxfpSpread
-        Me.GpBtns = New System.Windows.Forms.GroupBox
-        Me.btnExit = New System.Windows.Forms.Button
-        Me.btnBottom = New System.Windows.Forms.Button
-        Me.btnNext = New System.Windows.Forms.Button
-        Me.btnPrevious = New System.Windows.Forms.Button
-        Me.btnTop = New System.Windows.Forms.Button
-        Me.btnRefresh = New System.Windows.Forms.Button
-        Me.btnFind = New System.Windows.Forms.Button
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.btnSave = New System.Windows.Forms.Button
-        Me.btnPrint = New System.Windows.Forms.Button
-        Me.btnPost = New System.Windows.Forms.Button
-        Me.btnDelete = New System.Windows.Forms.Button
-        Me.btnView = New System.Windows.Forms.Button
-        Me.btnEdit = New System.Windows.Forms.Button
-        Me.btnAdd = New System.Windows.Forms.Button
-        Me.LBLTotDr = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.btnCode = New System.Windows.Forms.Button
-        Me.LBLBalance = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.LBLTotCr = New System.Windows.Forms.Label
-        Me.LblTypeValid = New System.Windows.Forms.Label
-        Me.Search = New System.Windows.Forms.GroupBox
-        Me.GVHelp = New System.Windows.Forms.DataGridView
-        Me.txtSearch = New System.Windows.Forms.TextBox
+        Me.GpData = New System.Windows.Forms.GroupBox()
+        Me.LBLPosted = New System.Windows.Forms.Label()
+        Me.lblBrName = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblVNo = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.dtpVDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtPurpose = New System.Windows.Forms.TextBox()
+        Me.txtBrCode = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
+        Me.vspGrid = New AxFPSpreadADO.AxfpSpread()
+        Me.GpBtns = New System.Windows.Forms.GroupBox()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnBottom = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.btnPrevious = New System.Windows.Forms.Button()
+        Me.btnTop = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnFind = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnPost = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnView = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.LBLTotDr = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnCode = New System.Windows.Forms.Button()
+        Me.LBLBalance = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LBLTotCr = New System.Windows.Forms.Label()
+        Me.LblTypeValid = New System.Windows.Forms.Label()
+        Me.Search = New System.Windows.Forms.GroupBox()
+        Me.GVHelp = New System.Windows.Forms.DataGridView()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpData.SuspendLayout()
         CType(Me.vspGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -143,6 +143,7 @@ Partial Class frmJV
         '
         'dtpVDate
         '
+        Me.dtpVDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpVDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpVDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpVDate.Location = New System.Drawing.Point(187, 41)
@@ -493,7 +494,7 @@ Partial Class frmJV
         'LblTypeValid
         '
         Me.LblTypeValid.BackColor = System.Drawing.Color.PowderBlue
-        Me.LblTypeValid.Font = New System.Drawing.Font("Nina", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTypeValid.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTypeValid.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.LblTypeValid.Location = New System.Drawing.Point(-2, -5)
         Me.LblTypeValid.Name = "LblTypeValid"

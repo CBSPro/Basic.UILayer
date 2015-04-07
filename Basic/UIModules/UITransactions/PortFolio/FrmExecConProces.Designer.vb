@@ -118,16 +118,16 @@ Partial Class FrmExecConProces
         Me.GroupBox1.Controls.Add(Me.dtpToDate)
         Me.GroupBox1.Location = New System.Drawing.Point(326, 13)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 123)
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 125)
         Me.GroupBox1.TabIndex = 50
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Date"
         '
         'btnFetch
         '
-        Me.btnFetch.Location = New System.Drawing.Point(125, 100)
+        Me.btnFetch.Location = New System.Drawing.Point(101, 93)
         Me.btnFetch.Name = "btnFetch"
-        Me.btnFetch.Size = New System.Drawing.Size(75, 23)
+        Me.btnFetch.Size = New System.Drawing.Size(90, 23)
         Me.btnFetch.TabIndex = 7
         Me.btnFetch.Text = "Fetch"
         Me.btnFetch.UseVisualStyleBackColor = True
@@ -136,7 +136,7 @@ Partial Class FrmExecConProces
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(17, 64)
+        Me.Label6.Location = New System.Drawing.Point(47, 55)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(22, 13)
         Me.Label6.TabIndex = 51
@@ -147,7 +147,7 @@ Partial Class FrmExecConProces
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(5, 27)
+        Me.Label5.Location = New System.Drawing.Point(35, 24)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(34, 13)
         Me.Label5.TabIndex = 50
@@ -156,48 +156,54 @@ Partial Class FrmExecConProces
         '
         'dtpFromDate
         '
+        Me.dtpFromDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpFromDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFromDate.Location = New System.Drawing.Point(80, 20)
+        Me.dtpFromDate.Location = New System.Drawing.Point(74, 20)
         Me.dtpFromDate.Name = "dtpFromDate"
         Me.dtpFromDate.Size = New System.Drawing.Size(120, 22)
         Me.dtpFromDate.TabIndex = 5
         '
         'dtpToDate
         '
+        Me.dtpToDate.CalendarMonthBackground = System.Drawing.SystemColors.ButtonHighlight
         Me.dtpToDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpToDate.Location = New System.Drawing.Point(80, 60)
+        Me.dtpToDate.Location = New System.Drawing.Point(74, 51)
         Me.dtpToDate.Name = "dtpToDate"
         Me.dtpToDate.Size = New System.Drawing.Size(120, 22)
         Me.dtpToDate.TabIndex = 6
         '
         'cmbStatus
         '
+        Me.cmbStatus.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbStatus.FormattingEnabled = True
-        Me.cmbStatus.Location = New System.Drawing.Point(158, 101)
+        Me.cmbStatus.Location = New System.Drawing.Point(158, 100)
         Me.cmbStatus.Name = "cmbStatus"
         Me.cmbStatus.Size = New System.Drawing.Size(160, 24)
         Me.cmbStatus.TabIndex = 4
         '
         'cmbBroker
         '
+        Me.cmbBroker.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbBroker.FormattingEnabled = True
-        Me.cmbBroker.Location = New System.Drawing.Point(158, 75)
+        Me.cmbBroker.Location = New System.Drawing.Point(158, 71)
         Me.cmbBroker.Name = "cmbBroker"
         Me.cmbBroker.Size = New System.Drawing.Size(160, 24)
         Me.cmbBroker.TabIndex = 3
         '
         'cmbFund
         '
+        Me.cmbFund.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbFund.FormattingEnabled = True
-        Me.cmbFund.Location = New System.Drawing.Point(158, 45)
+        Me.cmbFund.Location = New System.Drawing.Point(158, 42)
         Me.cmbFund.Name = "cmbFund"
         Me.cmbFund.Size = New System.Drawing.Size(160, 24)
         Me.cmbFund.TabIndex = 2
         '
         'cmbSecu
         '
+        Me.cmbSecu.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.cmbSecu.FormattingEnabled = True
         Me.cmbSecu.Location = New System.Drawing.Point(158, 13)
         Me.cmbSecu.Name = "cmbSecu"
@@ -208,7 +214,7 @@ Partial Class FrmExecConProces
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(48, 106)
+        Me.Label4.Location = New System.Drawing.Point(52, 105)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 19
@@ -218,7 +224,7 @@ Partial Class FrmExecConProces
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(47, 77)
+        Me.Label3.Location = New System.Drawing.Point(51, 76)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 15
@@ -228,7 +234,7 @@ Partial Class FrmExecConProces
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(56, 45)
+        Me.Label2.Location = New System.Drawing.Point(60, 47)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 14
@@ -249,7 +255,7 @@ Partial Class FrmExecConProces
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 18)
+        Me.Label1.Location = New System.Drawing.Point(10, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 13)
         Me.Label1.TabIndex = 0
