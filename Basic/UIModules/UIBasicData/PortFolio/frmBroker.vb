@@ -67,7 +67,30 @@ Public Class frmBroker
         'mskCode.SelectionStart = 0
         'mskCode.Focus()
     End Sub
-
+    Private Sub btnDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        lblToolTip.Text = "Delete Current Record"
+        Opt = MsgBox("Are You Sure To Delete Current Record", MsgBoxStyle.YesNo)
+        'If Opt = MsgBoxResult.Yes Then
+        '    objAccount.Code = aCode2Str(mskCode.Text)
+        '    objAccount.DelCode()
+        '    Call ClearAll()
+        '    If rowNum > 0 Then
+        '        rowNum = rowNum - 1
+        '        Call LoadValue()
+        '    Else
+        '        MsgBox("No Record Found", MsgBoxStyle.Information)
+        '    End If
+        'End If
+        'dtAccount = objAccount.LoadAllCodes()
+        'rowNum = dtAccount.Rows.Count - 1
+        'Call LoadValue()
+        ''rowNum = dtAccount.Rows.Count - 1
+        'Call MenuGridLoad(mMenuStr)
+        'rowNum = dtAccount.Rows.Count - 1
+        Call SetButtonPrinciple()
+        Call SetButtonPrinciple()
+        Call SetButton()
+    End Sub
     Private Sub btnEdit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnEdit.Click
         lblToolTip.Text = "Edit Current Record"
         EditMode = True
@@ -130,8 +153,6 @@ Public Class frmBroker
             'frmList.ShowDialog()
         End If
     End Sub
-
-  
 
     Private Sub btnTop_Click(sender As Object, e As System.EventArgs) Handles btnTop.Click
         If rowNum > 0 Then

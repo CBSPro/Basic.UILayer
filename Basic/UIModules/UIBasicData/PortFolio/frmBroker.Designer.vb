@@ -391,7 +391,7 @@ Partial Class frmBroker
         Me.txtBrokerCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtBrokerCode.Location = New System.Drawing.Point(258, 31)
         Me.txtBrokerCode.Name = "txtBrokerCode"
-        Me.txtBrokerCode.Size = New System.Drawing.Size(177, 22)
+        Me.txtBrokerCode.Size = New System.Drawing.Size(58, 22)
         Me.txtBrokerCode.TabIndex = 1
         '
         'txtDescription

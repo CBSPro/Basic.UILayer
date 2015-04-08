@@ -840,7 +840,7 @@ Partial Class FrmShareAnnounce
         '
         Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBy.Location = New System.Drawing.Point(934, 536)
+        Me.lblBy.Location = New System.Drawing.Point(934, 581)
         Me.lblBy.Name = "lblBy"
         Me.lblBy.Size = New System.Drawing.Size(200, 23)
         Me.lblBy.TabIndex = 49
@@ -849,7 +849,7 @@ Partial Class FrmShareAnnounce
         '
         Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblToolTip.Location = New System.Drawing.Point(565, 536)
+        Me.lblToolTip.Location = New System.Drawing.Point(565, 581)
         Me.lblToolTip.Name = "lblToolTip"
         Me.lblToolTip.Size = New System.Drawing.Size(364, 23)
         Me.lblToolTip.TabIndex = 48
@@ -858,7 +858,7 @@ Partial Class FrmShareAnnounce
         '
         Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCompany.Location = New System.Drawing.Point(381, 536)
+        Me.lblCompany.Location = New System.Drawing.Point(381, 581)
         Me.lblCompany.Name = "lblCompany"
         Me.lblCompany.Size = New System.Drawing.Size(178, 23)
         Me.lblCompany.TabIndex = 47

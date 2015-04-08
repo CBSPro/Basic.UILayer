@@ -5,8 +5,6 @@ Imports Basic.DAL
 Imports Basic.Reports
 Imports Basic.DAL.Utils
 
-
-
 Public Class frmAccounts
     Inherits System.Windows.Forms.Form
 
