@@ -1368,4 +1368,151 @@ errH:
         End If
         Call onMenuSecurity()
     End Sub
+
+    Private Sub ScripMarketSetupToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ScripMarketSetupToolStripMenuItem.Click
+
+        Dim ScripMarket As New frmScripMarket
+        ScripMarket.MdiParent = Me
+        If Constants.ProjConst.mScripMarket = False Then
+            ScripMarket.Show()
+            ScripMarket.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mScripMarket = True
+        Else
+            ScripMarket.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+
+    End Sub
+
+    Private Sub BrokerToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BrokerToolStripMenuItem.Click
+        Dim Broker As New frmBroker
+        Broker.MdiParent = Me
+        If Constants.ProjConst.mBroker = False Then
+            Broker.Show()
+            Broker.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mBroker = True
+        Else
+            Broker.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub CalenderToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CalenderToolStripMenuItem.Click
+        Dim Calender As New frmCalendar
+        Calender.MdiParent = Me
+        If Constants.ProjConst.mCalender = False Then
+            Calender.Show()
+            Calender.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mCalender = True
+        Else
+            Calender.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    
+    Private Sub SettlementModeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SettlementModeToolStripMenuItem.Click
+        Dim SettlementMode As New frmSettlementmodesvb
+        SettlementMode.MdiParent = Me
+        If Constants.ProjConst.mSettlementModes = False Then
+            SettlementMode.Show()
+            SettlementMode.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mSettlementModes = True
+        Else
+            SettlementMode.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub CustodianToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CustodianToolStripMenuItem.Click
+        Dim Custodian As New frmCustodian
+        Custodian.MdiParent = Me
+        If Constants.ProjConst.mCustodian = False Then
+            Custodian.Show()
+            Custodian.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mSettlementModes = True
+        Else
+            Custodian.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub TrusteeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TrusteeToolStripMenuItem.Click
+        Dim Trustee As New Trustee
+        Trustee.MdiParent = Me
+        If Constants.ProjConst.mTrustee = False Then
+            Trustee.Show()
+            Trustee.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mTrustee = True
+        Else
+            Trustee.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub TaxParameterToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TaxParameterToolStripMenuItem.Click
+        Dim TaxParam As New FrmTaxParm
+        TaxParam.MdiParent = Me
+        If Constants.ProjConst.mTaxParam = False Then
+            TaxParam.Show()
+            TaxParam.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mTaxParam = True
+        Else
+            TaxParam.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub ExposureMarginToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ExposureMarginToolStripMenuItem.Click
+        Dim ExposureMargin As New FrmExpoAndMargn
+        ExposureMargin.MdiParent = Me
+        If Constants.ProjConst.mExpoandMargin = False Then
+            ExposureMargin.Show()
+            ExposureMargin.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mExpoandMargin = True
+        Else
+            ExposureMargin.WindowState = FormWindowState.Normal
+
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub CertificateInformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CertificateInformationToolStripMenuItem.Click
+        Dim Certificate As New FrmSetUpCertif
+        Certificate.MdiParent = Me
+        If Constants.ProjConst.mSetUpCertif = False Then
+            Certificate.Show()
+            Certificate.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mSetUpCertif = True
+        Else
+            Certificate.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub RatingInformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles RatingInformationToolStripMenuItem.Click
+        Dim RatingInfo As New FrmRating
+        RatingInfo.MdiParent = Me
+        If Constants.ProjConst.mRating = False Then
+            RatingInfo.Show()
+            RatingInfo.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mRating = True
+        Else
+            RatingInfo.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub CreditRatingCompanyToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CreditRatingCompanyToolStripMenuItem.Click
+        Dim CreditRatingCompany As New FrmCreditRateComp
+        CreditRatingCompany.MdiParent = Me
+        If Constants.ProjConst.mCreditRateComp = False Then
+            CreditRatingCompany.Show()
+            CreditRatingCompany.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mCreditRateComp = True
+        Else
+            CreditRatingCompany.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
 End Class

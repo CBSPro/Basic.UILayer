@@ -591,6 +591,7 @@ Partial Class FrmSetUpCertif
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmSetUpCertif"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Setup Certificate Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

@@ -412,6 +412,7 @@ Partial Class FrmRating
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmRating"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Rating Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

@@ -447,6 +447,7 @@ Partial Class frmCustodian
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmCustodian"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Custodian Information"
         Me.GpBtns.ResumeLayout(False)
         Me.Search.ResumeLayout(False)

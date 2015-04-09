@@ -617,6 +617,7 @@ Partial Class Trustee
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "Trustee"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Trustee"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

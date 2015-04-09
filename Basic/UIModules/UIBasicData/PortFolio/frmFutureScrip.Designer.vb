@@ -579,6 +579,7 @@ Partial Class frmFutureScrip
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmFutureScrip"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Future Scrip"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

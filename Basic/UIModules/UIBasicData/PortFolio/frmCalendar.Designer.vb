@@ -545,6 +545,7 @@ Partial Class frmCalendar
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmCalendar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calendar"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

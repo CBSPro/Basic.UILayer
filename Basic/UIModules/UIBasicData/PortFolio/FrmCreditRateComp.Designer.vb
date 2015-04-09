@@ -617,6 +617,7 @@ Partial Class FrmCreditRateComp
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmCreditRateComp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Credit Rating Company Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

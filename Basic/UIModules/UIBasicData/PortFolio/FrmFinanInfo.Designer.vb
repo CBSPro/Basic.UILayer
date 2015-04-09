@@ -424,6 +424,7 @@ Partial Class FrmFinanInfo
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmFinanInfo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmFinanInfo"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

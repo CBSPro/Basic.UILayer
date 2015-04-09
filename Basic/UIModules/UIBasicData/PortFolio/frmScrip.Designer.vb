@@ -734,6 +734,7 @@ Partial Class frmScrip
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmScrip"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Scrip"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

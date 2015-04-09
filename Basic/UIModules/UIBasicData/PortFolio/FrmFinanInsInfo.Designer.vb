@@ -1344,6 +1344,7 @@ Partial Class FrmFinanInsInfo
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmFinanInsInfo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Financial Institution Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

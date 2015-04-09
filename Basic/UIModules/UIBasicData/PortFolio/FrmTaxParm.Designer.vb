@@ -525,6 +525,7 @@ Partial Class FrmTaxParm
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "FrmTaxParm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tax Parmameters"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

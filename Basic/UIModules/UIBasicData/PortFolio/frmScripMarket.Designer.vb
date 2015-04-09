@@ -395,6 +395,7 @@ Partial Class frmScripMarket
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmScripMarket"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Scrip Market Setup"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

@@ -1221,6 +1221,7 @@ Partial Class frmFund
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmFund"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fund Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

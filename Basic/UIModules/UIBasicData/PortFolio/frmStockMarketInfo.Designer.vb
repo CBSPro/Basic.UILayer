@@ -435,6 +435,7 @@ Partial Class frmScripIndexSetup
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmScripIndexSetup"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Stock Market Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

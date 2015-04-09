@@ -439,6 +439,7 @@ Partial Class frmSettlementmodesvb
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmSettlementmodesvb"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Settlement Mode Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

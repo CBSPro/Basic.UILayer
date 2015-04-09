@@ -441,6 +441,7 @@ Partial Class frmGroupOfcompany
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmGroupOfcompany"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Group Of companies Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

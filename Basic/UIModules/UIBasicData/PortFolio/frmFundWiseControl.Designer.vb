@@ -398,6 +398,7 @@ Partial Class frmFundWiseControl
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmFundWiseControl"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fund Wise Control"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

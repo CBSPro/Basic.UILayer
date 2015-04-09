@@ -825,6 +825,7 @@ Partial Class frmBroker
         Me.Controls.Add(Me.Search)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmBroker"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Broker Information"
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()

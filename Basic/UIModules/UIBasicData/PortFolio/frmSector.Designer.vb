@@ -494,6 +494,7 @@ Partial Class frmSector
         Me.Controls.Add(Me.GpBtns)
         Me.Controls.Add(Me.LblTypeValid)
         Me.Name = "frmSector"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sector Information"
         Me.GpBtns.ResumeLayout(False)
         Me.Search.ResumeLayout(False)
