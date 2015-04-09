@@ -277,6 +277,7 @@ Public Class ProjConst
     Public Shared mFinanInsInfo As Boolean
     Public Shared mFund As Boolean
     Public Shared mFundWiseControl As Boolean
+    Public Shared mScripIndexsetup As Boolean
     Public Shared mFutureScrip As Boolean
     Public Shared mGroupofCompany As Boolean
     Public Shared mRating As Boolean

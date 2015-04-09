@@ -88,6 +88,28 @@ Partial Class frmMdi
         Me.ExportDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ImportDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PortfolioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FinancialTypeInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FinancialInstitutionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FundToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SectorInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupOfCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScripToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FutureScripToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FundWiseControlToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScripIndexSetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScripMarketSetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BrokerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalenderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StockMarketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettlementModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CustodianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TrusteeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TaxParameterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExposureMarginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CertificateInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RatingInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreditRatingCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -208,7 +230,7 @@ Partial Class frmMdi
         '
         'mnuBasicData
         '
-        Me.mnuBasicData.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccountsToolStripMenuItem1, Me.ToolStripMenuItem65})
+        Me.mnuBasicData.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccountsToolStripMenuItem1, Me.ToolStripMenuItem65, Me.PortfolioToolStripMenuItem})
         Me.mnuBasicData.Name = "mnuBasicData"
         Me.mnuBasicData.Size = New System.Drawing.Size(73, 20)
         Me.mnuBasicData.Text = "&Basic Data"
@@ -494,6 +516,139 @@ Partial Class frmMdi
         Me.ImportDataToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.ImportDataToolStripMenuItem.Text = "Import Data"
         '
+        'PortfolioToolStripMenuItem
+        '
+        Me.PortfolioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FinancialTypeInformationToolStripMenuItem, Me.FinancialInstitutionToolStripMenuItem, Me.FundToolStripMenuItem, Me.SectorInformationToolStripMenuItem, Me.GroupOfCompanyToolStripMenuItem, Me.ScripToolStripMenuItem, Me.FutureScripToolStripMenuItem, Me.FundWiseControlToolStripMenuItem, Me.ScripIndexSetupToolStripMenuItem, Me.ScripMarketSetupToolStripMenuItem, Me.BrokerToolStripMenuItem, Me.CalenderToolStripMenuItem, Me.StockMarketToolStripMenuItem, Me.SettlementModeToolStripMenuItem, Me.CustodianToolStripMenuItem, Me.TrusteeToolStripMenuItem, Me.TaxParameterToolStripMenuItem, Me.ExposureMarginToolStripMenuItem, Me.CertificateInformationToolStripMenuItem, Me.RatingInformationToolStripMenuItem, Me.CreditRatingCompanyToolStripMenuItem})
+        Me.PortfolioToolStripMenuItem.Name = "PortfolioToolStripMenuItem"
+        Me.PortfolioToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.PortfolioToolStripMenuItem.Text = "Portfolio Basic Data"
+        '
+        'FinancialTypeInformationToolStripMenuItem
+        '
+        Me.FinancialTypeInformationToolStripMenuItem.Name = "FinancialTypeInformationToolStripMenuItem"
+        Me.FinancialTypeInformationToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.FinancialTypeInformationToolStripMenuItem.Text = "Financial Type Information"
+        '
+        'FinancialInstitutionToolStripMenuItem
+        '
+        Me.FinancialInstitutionToolStripMenuItem.Name = "FinancialInstitutionToolStripMenuItem"
+        Me.FinancialInstitutionToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.FinancialInstitutionToolStripMenuItem.Text = "Financial Institution"
+        '
+        'FundToolStripMenuItem
+        '
+        Me.FundToolStripMenuItem.Name = "FundToolStripMenuItem"
+        Me.FundToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.FundToolStripMenuItem.Text = "Fund"
+        '
+        'SectorInformationToolStripMenuItem
+        '
+        Me.SectorInformationToolStripMenuItem.Name = "SectorInformationToolStripMenuItem"
+        Me.SectorInformationToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.SectorInformationToolStripMenuItem.Text = "Sector Information"
+        '
+        'GroupOfCompanyToolStripMenuItem
+        '
+        Me.GroupOfCompanyToolStripMenuItem.Name = "GroupOfCompanyToolStripMenuItem"
+        Me.GroupOfCompanyToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.GroupOfCompanyToolStripMenuItem.Text = "Group of Company"
+        '
+        'ScripToolStripMenuItem
+        '
+        Me.ScripToolStripMenuItem.Name = "ScripToolStripMenuItem"
+        Me.ScripToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.ScripToolStripMenuItem.Text = "Scrip"
+        '
+        'FutureScripToolStripMenuItem
+        '
+        Me.FutureScripToolStripMenuItem.Name = "FutureScripToolStripMenuItem"
+        Me.FutureScripToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.FutureScripToolStripMenuItem.Text = "Future Scrip"
+        '
+        'FundWiseControlToolStripMenuItem
+        '
+        Me.FundWiseControlToolStripMenuItem.Name = "FundWiseControlToolStripMenuItem"
+        Me.FundWiseControlToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.FundWiseControlToolStripMenuItem.Text = "Fund Wise Control"
+        '
+        'ScripIndexSetupToolStripMenuItem
+        '
+        Me.ScripIndexSetupToolStripMenuItem.Name = "ScripIndexSetupToolStripMenuItem"
+        Me.ScripIndexSetupToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.ScripIndexSetupToolStripMenuItem.Text = "Scrip Index Setup"
+        '
+        'ScripMarketSetupToolStripMenuItem
+        '
+        Me.ScripMarketSetupToolStripMenuItem.Name = "ScripMarketSetupToolStripMenuItem"
+        Me.ScripMarketSetupToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.ScripMarketSetupToolStripMenuItem.Text = "Scrip Market Setup"
+        '
+        'BrokerToolStripMenuItem
+        '
+        Me.BrokerToolStripMenuItem.Name = "BrokerToolStripMenuItem"
+        Me.BrokerToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.BrokerToolStripMenuItem.Text = "Broker"
+        '
+        'CalenderToolStripMenuItem
+        '
+        Me.CalenderToolStripMenuItem.Name = "CalenderToolStripMenuItem"
+        Me.CalenderToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CalenderToolStripMenuItem.Text = "Calender"
+        '
+        'StockMarketToolStripMenuItem
+        '
+        Me.StockMarketToolStripMenuItem.Name = "StockMarketToolStripMenuItem"
+        Me.StockMarketToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.StockMarketToolStripMenuItem.Text = "Stock Market"
+        '
+        'SettlementModeToolStripMenuItem
+        '
+        Me.SettlementModeToolStripMenuItem.Name = "SettlementModeToolStripMenuItem"
+        Me.SettlementModeToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.SettlementModeToolStripMenuItem.Text = "Settlement Mode"
+        '
+        'CustodianToolStripMenuItem
+        '
+        Me.CustodianToolStripMenuItem.Name = "CustodianToolStripMenuItem"
+        Me.CustodianToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CustodianToolStripMenuItem.Text = "Custodian"
+        '
+        'TrusteeToolStripMenuItem
+        '
+        Me.TrusteeToolStripMenuItem.Name = "TrusteeToolStripMenuItem"
+        Me.TrusteeToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.TrusteeToolStripMenuItem.Text = "Trustee"
+        '
+        'TaxParameterToolStripMenuItem
+        '
+        Me.TaxParameterToolStripMenuItem.Name = "TaxParameterToolStripMenuItem"
+        Me.TaxParameterToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.TaxParameterToolStripMenuItem.Text = "Tax Parameter"
+        '
+        'ExposureMarginToolStripMenuItem
+        '
+        Me.ExposureMarginToolStripMenuItem.Name = "ExposureMarginToolStripMenuItem"
+        Me.ExposureMarginToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.ExposureMarginToolStripMenuItem.Text = "Exposure & Margin"
+        '
+        'CertificateInformationToolStripMenuItem
+        '
+        Me.CertificateInformationToolStripMenuItem.Name = "CertificateInformationToolStripMenuItem"
+        Me.CertificateInformationToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CertificateInformationToolStripMenuItem.Text = "Certificate Information"
+        '
+        'RatingInformationToolStripMenuItem
+        '
+        Me.RatingInformationToolStripMenuItem.Name = "RatingInformationToolStripMenuItem"
+        Me.RatingInformationToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.RatingInformationToolStripMenuItem.Text = "Rating Information"
+        '
+        'CreditRatingCompanyToolStripMenuItem
+        '
+        Me.CreditRatingCompanyToolStripMenuItem.Name = "CreditRatingCompanyToolStripMenuItem"
+        Me.CreditRatingCompanyToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CreditRatingCompanyToolStripMenuItem.Text = "Credit Rating Company "
+        '
         'frmMdi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -583,4 +738,26 @@ Partial Class frmMdi
     Friend WithEvents ToolStripMenuItem70 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripMenuItem71 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripMenuItem65 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents PortfolioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FinancialTypeInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FinancialInstitutionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FundToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SectorInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GroupOfCompanyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ScripToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FutureScripToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FundWiseControlToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ScripIndexSetupToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ScripMarketSetupToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BrokerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CalenderToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StockMarketToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SettlementModeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CustodianToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TrusteeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TaxParameterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ExposureMarginToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CertificateInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents RatingInformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CreditRatingCompanyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -1246,4 +1246,126 @@ errH:
         End If
         Call onMenuSecurity()
     End Sub
+
+    Private Sub FinancialTypeInformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FinancialTypeInformationToolStripMenuItem.Click
+
+        Dim FinTypeInfo As New FrmFinanInfo
+        FinTypeInfo.MdiParent = Me
+        If Constants.ProjConst.mFinanInfo = False Then
+            FinTypeInfo.Show()
+            FinTypeInfo.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mFinanInfo = True
+        Else
+            FinTypeInfo.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub FinancialInstitutionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FinancialInstitutionToolStripMenuItem.Click
+        Dim FinInstitusion As New FrmFinanInsInfo
+        FinInstitusion.MdiParent = Me
+        If Constants.ProjConst.mFinanInsInfo = False Then
+            FinInstitusion.Show()
+            FinInstitusion.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mFinanInsInfo = True
+        Else
+            FinInstitusion.WindowState = FormWindowState.Normal
+        End If
+
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub FundToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FundToolStripMenuItem.Click
+        Dim Fund As New frmFund
+        Fund.MdiParent = Me
+        If Constants.ProjConst.mFund = False Then
+            Fund.Show()
+            Fund.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mFinanInsInfo = True
+        Else
+            Fund.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub SectorInformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SectorInformationToolStripMenuItem.Click
+        Dim Sector As New frmSector
+        Sector.MdiParent = Me
+        If Constants.ProjConst.mSector = False Then
+            Sector.Show()
+            Sector.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mSector = True
+        Else
+            Sector.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub GroupOfCompanyToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GroupOfCompanyToolStripMenuItem.Click
+        Dim GrpOfCompany As New frmGroupOfcompany
+        GrpOfCompany.MdiParent = Me
+        If Constants.ProjConst.mGroupofCompany = False Then
+            GrpOfCompany.Show()
+            GrpOfCompany.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mGroupofCompany = True
+        Else
+            GrpOfCompany.WindowState = FormWindowState.Normal
+        End If
+
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub ScripToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ScripToolStripMenuItem.Click
+        Dim Scrip As New frmScrip
+        Scrip.MdiParent = Me
+        If Constants.ProjConst.mScrip = False Then
+            Scrip.Show()
+            Scrip.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mScrip = True
+        Else
+            Scrip.WindowState = FormWindowState.Normal
+
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub FutureScripToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FutureScripToolStripMenuItem.Click
+        Dim FutureScrip As New frmFutureScrip
+        FutureScrip.MdiParent = Me
+        If Constants.ProjConst.mFutureScrip = False Then
+            FutureScrip.Show()
+            FutureScrip.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mFutureScrip = True
+        Else
+            FutureScrip.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub FundWiseControlToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FundWiseControlToolStripMenuItem.Click
+        Dim FundWiseControl As New frmFundWiseControl
+        FundWiseControl.MdiParent = Me
+        If Constants.ProjConst.mFundWiseControl = False Then
+            FundWiseControl.Show()
+            FundWiseControl.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mFundWiseControl = True
+        Else
+            FundWiseControl.WindowState = FormWindowState.Normal
+        End If
+        Call onMenuSecurity()
+    End Sub
+
+    Private Sub ScripIndexSetupToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ScripIndexSetupToolStripMenuItem.Click
+        Dim ScripIndexsetup As New frmScripIndexSetup
+        ScripIndexsetup.MdiParent = Me
+        If Constants.ProjConst.mScripIndexsetup = False Then
+            ScripIndexsetup.Show()
+            ScripIndexsetup.WindowState = FormWindowState.Normal
+            Constants.ProjConst.mScripIndexsetup = True
+        Else
+            ScripIndexsetup.WindowState = FormWindowState.Normal
+
+        End If
+        Call onMenuSecurity()
+    End Sub
 End Class
