@@ -81,6 +81,7 @@
     <Compile Include="DALModules\Accounts\cRepDefinition.vb" />
     <Compile Include="DALModules\Accounts\cTrialBal.vb" />
     <Compile Include="DALModules\Accounts\cVoucherDetail.vb" />
+    <Compile Include="DALModules\PortFolio\cBroker.vb" />
     <Compile Include="DALModules\PortFolio\Class1.vb" />
     <Compile Include="DALProjStandard\cChangePassword.vb" />
     <Compile Include="DALProjStandard\cChangeUPassword.vb" />

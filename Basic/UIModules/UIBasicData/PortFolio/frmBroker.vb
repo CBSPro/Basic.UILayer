@@ -49,6 +49,39 @@ Public Class frmBroker
 
     End Sub
 
+    Private Sub frmBroker_Load(sender As Object, e As System.EventArgs) Handles Me.Load
+        Me.WindowState = FormWindowState.Maximized
+        Me.MdiParent = frmMdi
+        'GpACDef.Enabled = False
+        Flag = True
+        'Call SetAccParam()
+        Call SetEntryMode()
+        'GpStatus.Enabled = False
+        'mskCode.Mask = aMaskCode
+        'dtAccount = objAccount.LoadAllCodes()
+        'dtLookup = objAccount.LoadAllCodes()
+        'mMenuStr = "Select ROW_NUMBER()OVER (ORDER BY Code) AS Row,Code,Description,AccType,Status," & _
+        '            "CONVERT(varchar(13),OpenDate,106) As OpenDate from Codes"
+        'Call MenuGridLoad(mMenuStr)
+        'rowNum = dtAccount.Rows.Count - 1
+        'If rowNum >= 0 Then
+        '    Call LoadValue()
+        'End If
+        btnPost.Enabled = False
+        btnView.Enabled = True
+        btnAdd.Enabled = True
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        btnStatus(False)
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        Call SetButton()
+        If mAdd = True Then
+            btnAdd.Enabled = True
+        End If
+    End Sub
+
     Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
         AddMode = True
         EditMode = False
@@ -64,23 +97,23 @@ Public Class frmBroker
         lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
         lblToolTip.Text = "Add New Record"
         lblBy.Text = "Recorded By : " & SysUserID
-        'mskCode.SelectionStart = 0
-        'mskCode.Focus()
+        txtBrokerCode.SelectionStart = 0
+        txtBrokerCode.Focus()
     End Sub
     Private Sub btnDelete_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnDelete.Click
         lblToolTip.Text = "Delete Current Record"
         Opt = MsgBox("Are You Sure To Delete Current Record", MsgBoxStyle.YesNo)
-        'If Opt = MsgBoxResult.Yes Then
-        '    objAccount.Code = aCode2Str(mskCode.Text)
-        '    objAccount.DelCode()
-        '    Call ClearAll()
-        '    If rowNum > 0 Then
-        '        rowNum = rowNum - 1
-        '        Call LoadValue()
-        '    Else
-        '        MsgBox("No Record Found", MsgBoxStyle.Information)
-        '    End If
-        'End If
+        If Opt = MsgBoxResult.Yes Then
+            '    objAccount.Code = aCode2Str(mskCode.Text)
+            '    objAccount.DelCode()
+            '    Call ClearAll()
+            '    If rowNum > 0 Then
+            '        rowNum = rowNum - 1
+            '        Call LoadValue()
+            '    Else
+            '        MsgBox("No Record Found", MsgBoxStyle.Information)
+            '    End If
+        End If
         'dtAccount = objAccount.LoadAllCodes()
         'rowNum = dtAccount.Rows.Count - 1
         'Call LoadValue()
@@ -115,7 +148,7 @@ Public Class frmBroker
         lblToolTip.Text = "Cancel Last Action"
         Opt = MsgBox("Do you wish to Abort ?", MsgBoxStyle.YesNo)
         If Opt = MsgBoxResult.No Then
-            'mskCode.Focus()
+            txtBrokerCode.Focus()
             Exit Sub
         End If
         'Call LoadValue()
@@ -337,4 +370,5 @@ Public Class frmBroker
         End If
     End Sub
 
+    
 End Class

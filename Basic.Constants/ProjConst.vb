@@ -259,7 +259,6 @@ Public Class ProjConst
     Public Shared mPost As Boolean
     Public Shared mPrint As Boolean
 
-
     Public Shared AddMode As Boolean
     Public Shared EditMode As Boolean
     Public Shared Flag As Boolean
