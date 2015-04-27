@@ -1,4 +1,6 @@
-﻿Public Class cCustodian
+﻿Public Class cFinanInfo
+
+
 
 
     Dim objConnection As Object
@@ -6,16 +8,16 @@
     Dim objDatabaseManager As IDatabaseManager
 
 
-    Public CustCode As String
-    Public Description As String
-    Public Name As String
-    Public Address As String
+    Public FinTypeCode As String
+    Public TypeDescription As String
+    Public TypeName As String
+
     Public AddOn As String
     Public AddBy As String
     Public EditOn As String
     Public EditBy As String
 
-    
+
 
 
 
@@ -64,14 +66,14 @@
         objDatabaseManager = cDataBaseManager.GetDatabaseManager()
         objDatabaseManager.SetConnection(objConnection)
 
-        dt = objDatabaseManager.GetDataTable("PortFolio_GetCusto_All", objDBParameters)
+        dt = objDatabaseManager.GetDataTable("PortFolio_GetFinType_All", objDBParameters)
         If dt.Rows.Count <> 0 Then
 
-            CustCode = dt.Rows(0).Item("CustCode")
-            Address = "" & dt.Rows(0).Item("Address")
-            Description = "" & dt.Rows(0).Item("Description")
-            Name = "" & dt.Rows(0).Item("Name")
-           
+            FinTypeCode = dt.Rows(0).Item("FinTypeCode")
+            TypeName = "" & dt.Rows(0).Item("TypeName")
+            TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
+
+
 
 
 
@@ -90,7 +92,7 @@
         objDatabaseManager.SetConnection(objConnection)
 
 
-        dt = objDatabaseManager.GetDataTable("PortFolio_Get_Custo_All", objDBParameters)
+        dt = objDatabaseManager.GetDataTable("PortFolio_GetFinType_All", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
         Return dt
     End Function
@@ -103,15 +105,15 @@
         objDatabaseManager = cDataBaseManager.GetDatabaseManager()
         objDatabaseManager.SetConnection(objConnection)
 
-        objDBParameters.AddParameter("@CustCode", CustCode, "nvarchar")
-        dt = objDatabaseManager.GetDataTable("PortFolio_Custo_Get", objDBParameters)
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
+        dt = objDatabaseManager.GetDataTable("PortFolio_FinType_Get", objDBParameters)
         If dt.Rows.Count <> 0 Then
-            CustCode = dt.Rows(0).Item("CustCode")
-            Address = "" & dt.Rows(0).Item("Address")
+            FinTypeCode = dt.Rows(0).Item("FinTypeCode")
+            TypeName = "" & dt.Rows(0).Item("TypeName")
 
-            Name = "" & dt.Rows(0).Item("Name")
-            Description = "" & dt.Rows(0).Item("Description")
-          
+            TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
+
+
         End If
     End Sub
 
@@ -123,14 +125,14 @@
         objDatabaseManager = cDataBaseManager.GetDatabaseManager()
         objDatabaseManager.SetConnection(objConnection)
 
-        objDBParameters.AddParameter("@CustCode", CustCode, "nvarchar")
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-        objDatabaseManager.ExecuteNonQuery("PortFolio_Custo_Del", objDBParameters)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Del", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
 
     End Sub
 
-    Public Sub SaveCustoCode()
+    Public Sub SaveFinTypeCode()
 
         objConnection = cConnectionManager.GetConnection()
         Dim objDatabaseManager As IDatabaseManager
@@ -139,12 +141,12 @@
         objDatabaseManager.SetConnection(objConnection)
 
 
-        objDBParameters.AddParameter("@CustCode", CustCode, "char")
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-        objDBParameters.AddParameter("@Address", Address, "varchar")
-        objDBParameters.AddParameter("@Name", Name, "nvarchar")
+        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
 
-        objDBParameters.AddParameter("@Description", Description, "nvarchar")
+
         objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
         objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
 
@@ -153,7 +155,7 @@
 
     End Sub
 
-    Public Sub EditCustoCode()
+    Public Sub EditFinTypeCode()
 
         objConnection = cConnectionManager.GetConnection()
         Dim objDatabaseManager As IDatabaseManager
@@ -161,12 +163,14 @@
         objDatabaseManager = cDataBaseManager.GetDatabaseManager()
         objDatabaseManager.SetConnection(objConnection)
 
-        objDBParameters.AddParameter("@CustCode", CustCode, "char")
-        objDBParameters.AddParameter("@Address", Address, "varchar")
 
-        objDBParameters.AddParameter("@Name", Name, "nvarchar")
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-        objDBParameters.AddParameter("@Description", Description, "nvarchar")
+        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+
+
+
         objDBParameters.AddParameter("@EditOn", EditOn, "nvarchar")
         objDBParameters.AddParameter("@EditBy", EditBy, "nvarchar")
 
@@ -177,5 +181,6 @@
 
 
 End Class
+
 
 
