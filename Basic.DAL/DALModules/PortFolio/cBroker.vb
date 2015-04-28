@@ -150,7 +150,7 @@
 
         objDBParameters.AddParameter("@BrokCode", BrokCode, "nvarchar")
 
-        objDatabaseManager.ExecuteNonQuery("GL_Code_Del", objDBParameters)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_Broker_Del", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
 
     End Sub

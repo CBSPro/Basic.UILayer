@@ -9,6 +9,9 @@ Imports Basic.DAL.Utils
 
 Public Class frmBroker
 
+    Dim objBroker As New cBroker
+    Dim dtBroker As New DataTable
+
 
     Sub SetEntryMode()
         btnAdd.Enabled = Flag
@@ -58,15 +61,15 @@ Public Class frmBroker
         Call SetEntryMode()
         'GpStatus.Enabled = False
         'mskCode.Mask = aMaskCode
-        'dtAccount = objAccount.LoadAllCodes()
-        'dtLookup = objAccount.LoadAllCodes()
+        dtBroker = objBroker.LoadAllCodes()
+        'dtLookup = objBroker.LoadAllCodes()
         'mMenuStr = "Select ROW_NUMBER()OVER (ORDER BY Code) AS Row,Code,Description,AccType,Status," & _
         '            "CONVERT(varchar(13),OpenDate,106) As OpenDate from Codes"
         'Call MenuGridLoad(mMenuStr)
-        'rowNum = dtAccount.Rows.Count - 1
-        'If rowNum >= 0 Then
-        '    Call LoadValue()
-        'End If
+        rowNum = dtBroker.Rows.Count - 1
+        If rowNum >= 0 Then
+            ' Call LoadValue()
+        End If
         btnPost.Enabled = False
         btnView.Enabled = True
         btnAdd.Enabled = True
@@ -104,22 +107,22 @@ Public Class frmBroker
         lblToolTip.Text = "Delete Current Record"
         Opt = MsgBox("Are You Sure To Delete Current Record", MsgBoxStyle.YesNo)
         If Opt = MsgBoxResult.Yes Then
-            '    objAccount.Code = aCode2Str(mskCode.Text)
-            '    objAccount.DelCode()
-            '    Call ClearAll()
-            '    If rowNum > 0 Then
-            '        rowNum = rowNum - 1
-            '        Call LoadValue()
-            '    Else
-            '        MsgBox("No Record Found", MsgBoxStyle.Information)
-            '    End If
+            '    objBroker.Code = aCode2Str(mskCode.Text)
+            objBroker.DelCode()
+            Call ClearAll()
+            If rowNum > 0 Then
+                rowNum = rowNum - 1
+                ' Call LoadValue()
+            Else
+                MsgBox("No Record Found", MsgBoxStyle.Information)
+            End If
         End If
-        'dtAccount = objAccount.LoadAllCodes()
-        'rowNum = dtAccount.Rows.Count - 1
+        dtBroker = objBroker.LoadAllCodes()
+        rowNum = dtBroker.Rows.Count - 1
         'Call LoadValue()
-        ''rowNum = dtAccount.Rows.Count - 1
+        ''rowNum = dtBroker.Rows.Count - 1
         'Call MenuGridLoad(mMenuStr)
-        'rowNum = dtAccount.Rows.Count - 1
+        rowNum = dtBroker.Rows.Count - 1
         Call SetButtonPrinciple()
         Call SetButtonPrinciple()
         Call SetButton()
@@ -140,8 +143,8 @@ Public Class frmBroker
         btnCancel.Enabled = True
     End Sub
     Private Sub btnCancel_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnCancel.Click
-        'dtAccount = objAccount.LoadAllCodes()
-        'rowNum = dtAccount.Rows.Count - 1
+        dtBroker = objBroker.LoadAllCodes()
+        rowNum = dtBroker.Rows.Count - 1
         AddMode = False
         EditMode = False
         'mskCode.Enabled = False
@@ -158,9 +161,9 @@ Public Class frmBroker
         btnSave.Enabled = False
         btnCancel.Enabled = False
         'GpStatus.Enabled = False
-        'rowNum = dtAccount.Rows.Count - 1
+        rowNum = dtBroker.Rows.Count - 1
         'Call MenuGridLoad(mMenuStr)
-        'rowNum = dtAccount.Rows.Count - 1
+        rowNum = dtBroker.Rows.Count - 1
         Call SetButtonPrinciple()
         Call SetButtonPrinciple()
         Call SetButton()
@@ -168,9 +171,9 @@ Public Class frmBroker
         EditMode = False
     End Sub
     Private Sub btnRefresh_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
-        'dtAccount = objAccount.LoadAllCodes()
+        dtBroker = objBroker.LoadAllCodes()
         'Call MenuGridLoad(mMenuStr)
-        'rowNum = dtAccount.Rows.Count - 1
+        rowNum = dtBroker.Rows.Count - 1
         'Call LoadValue()
         lblToolTip.Text = "Refresh Records"
     End Sub
@@ -203,7 +206,7 @@ Public Class frmBroker
 
     Private Sub btnBottom_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnBottom.Click
         If rowNum > 0 Then
-            'rowNum = dtAccount.Rows.Count - 1
+            rowNum = dtBroker.Rows.Count - 1
             btnBottom.Enabled = False
             btnNext.Enabled = False
             btnTop.Enabled = True
@@ -233,25 +236,26 @@ Public Class frmBroker
             btnBottom.Enabled = True
         End If
         'LoadValue()
+
         lblToolTip.Text = "Move To Previous Record"
     End Sub
 
     Private Sub btnNext_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnNext.Click
-        ' If rowNum < dtAccount.Rows.Count - 1 Then
-        rowNum = rowNum + 1
-        btnNext.Enabled = True
-        btnBottom.Enabled = True
-        btnPrevious.Enabled = True
-        btnTop.Enabled = True
-        Call SetButtonPrinciple()
-        Call SetButton()
-        ' Else
-        'rowNum = dtAccount.Rows.Count - 1
-        btnNext.Enabled = False
-        btnBottom.Enabled = False
-        btnPrevious.Enabled = True
-        btnTop.Enabled = True
-        ' End If
+        If rowNum < dtBroker.Rows.Count - 1 Then
+            rowNum = rowNum + 1
+            btnNext.Enabled = True
+            btnBottom.Enabled = True
+            btnPrevious.Enabled = True
+            btnTop.Enabled = True
+            Call SetButtonPrinciple()
+            Call SetButton()
+        Else
+            rowNum = dtBroker.Rows.Count - 1
+            btnNext.Enabled = False
+            btnBottom.Enabled = False
+            btnPrevious.Enabled = True
+            btnTop.Enabled = True
+        End If
         'LoadValue()
         lblToolTip.Text = "Move To Next Record"
     End Sub
