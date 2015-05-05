@@ -8,7 +8,6 @@ Imports Basic.DAL.Utils
 Public Class frmGroupOfcompany
 
 
-
     Sub SetEntryMode()
         btnAdd.Enabled = Flag
         btnEdit.Enabled = Flag
