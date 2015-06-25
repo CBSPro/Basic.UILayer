@@ -175,4 +175,60 @@ Public Class FrmFinanInfo
         lblToolTip.Text = "Close Form"
         Me.Close()
     End Sub
+
+    Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
+        AddMode = True
+        EditMode = False
+        Flag = False
+        ' mskCode.Enabled = True
+        Call SetEntryMode()
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+        EmptyControls(Me)
+        Call ClearAll()
+        GpData.Enabled = True
+        ' GpACDef.Enabled = True
+        lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
+        lblToolTip.Text = "Add New Record"
+        lblBy.Text = "Recorded By : " & SysUserID
+       
+    End Sub
+
+    Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+        lblToolTip.Text = "Edit Current Record"
+        EditMode = True
+        AddMode = False
+        Flag = False
+        ' mskCode.Enabled = True
+        Call SetEntryMode()
+        GpData.Enabled = True
+
+        ' mskCode.Enabled = False
+        txtName.Focus()
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+    End Sub
+
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        Opt = MsgBox("Do you wish to Abort ?", MsgBoxStyle.YesNo)
+        If Opt = MsgBoxResult.No Then
+            txtName.Focus()
+            Exit Sub
+
+        Else
+            Call SetEntryMode()
+            Call ClearAll()
+            Call SetEntryMode()
+            GpData.Enabled = False
+            btnSave.Enabled = False
+            btnCancel.Enabled = False
+
+
+            Call SetButtonPrinciple()
+            Call SetButton()
+            AddMode = False
+            EditMode = False
+        End If
+    End Sub
 End Class
