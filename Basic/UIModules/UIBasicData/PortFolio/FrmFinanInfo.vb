@@ -6,11 +6,105 @@ Imports Basic.Reports
 Imports Basic.DAL.Utils
 
 Public Class FrmFinanInfo
+    Dim objFinanInfo As New cFinanInfo
+    Dim dtAccount As New DataTable
 
-    
+    'Dim objProper As New cProper
+
+    Dim mAdd As Boolean
+    Dim mEdit As Boolean
+    Dim mDelete As Boolean
+    Dim mPost As Boolean
+    Dim mPrint As Boolean
+
+    Dim PODS As New DataSet
+    Dim objRow As Data.DataRow
+    Dim ObjFind As Grid_Help
+    Dim tableName As String = "FinType"
+    Dim strFind As String
+    Dim mOpen As String
+    Dim Flag As Boolean
+    Dim mMenuStr As String
+    Dim AddMode As Boolean
+    Dim EditMode As Boolean
+
+    Dim rowNum As Integer
+    Dim dtLookup As DataTable
+    Dim vColumn As Integer
+    Private sqlquery As String
+    Private strPKValue As String
 
     Private Sub FrmFinanInfo_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
+        Me.MdiParent = frmMdi
+        GpData.Enabled = False
+        Flag = True
+        Call SetAccParam()
+        Call SetEntryMode()
 
+
+        dtAccount = objFinanInfo.LoadAllCodes()
+        dtLookup = objFinanInfo.LoadAllCodes()
+        mMenuStr = "Select ROW_NUMBER()OVER (ORDER BY FinTypeCode) AS Row,FinTypeCode,TypeName,TypeDescription" & _
+                    " from FinType"
+        Call MenuGridLoad(mMenuStr)
+        rowNum = dtAccount.Rows.Count - 1
+        If rowNum >= 0 Then
+            Call LoadValue()
+        End If
+        btnPost.Enabled = False
+        btnView.Enabled = True
+        btnAdd.Enabled = True
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        btnStatus(False)
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        Call SetButton()
+        If mAdd = True Then
+            btnAdd.Enabled = True
+        End If
+    End Sub
+    Private Sub MenuGridLoad(ByVal mQuery As String)
+        Dim mcol As Integer
+        Dim mcolName As String
+        Dim header_style As New DataGridViewCellStyle
+
+        Try
+            If mQuery <> "" And mQuery <> Nothing Then
+                dtLookup = Lookup(mQuery).Tables(0)
+                Me.GVHelp.DataSource = dtLookup.DefaultView
+                header_style.BackColor = Color.Yellow
+                GVHelp.Columns(2).HeaderCell.Style = header_style
+                GVHelp.Columns(0).Visible = 0
+                If GVHelp.Columns.Count > 0 Then
+                    For mcol = 1 To GVHelp.Columns.Count - 1
+                        mcolName = GVHelp.Columns(mcol).Name
+                        If GVHelp.Columns(mcol).Name = "TypeDescription" Then
+                            GVHelp.Columns(mcol).Width = 160
+                        ElseIf GVHelp.Columns(mcol).Name <> "TypeName" And GVHelp.Columns(mcol).Name <> "TaxRate" And GVHelp.Columns(mcol).Name <> "Posted" Then
+                            GVHelp.Columns(mcol).Width = 80
+
+                        Else
+                            GVHelp.Columns(mcol).Width = 40
+                        End If
+                    Next
+                End If
+                If GVHelp.Rows.Count > 0 Then
+                    For mRow = 0 To GVHelp.Rows.Count - 1
+                        If mRow Mod 2 = 0 Then
+                            GVHelp.Rows(mRow).DefaultCellStyle.BackColor = Color.White
+                        Else
+                            GVHelp.Rows(mRow).DefaultCellStyle.BackColor = Color.PowderBlue
+                        End If
+                    Next
+                End If
+                GVHelp.Columns(0).Visible = 0
+            End If
+        Catch ex As Exception
+            'MsgBox(ex.Message)
+        End Try
     End Sub
 
 
@@ -77,7 +171,7 @@ Public Class FrmFinanInfo
             btnPrevious.Enabled = False
             btnNext.Enabled = True
             btnBottom.Enabled = True
-            'Call LoadValue()
+            Call LoadValue()
             lblToolTip.Text = "Move To First Record"
             Call SetButtonPrinciple()
             Call SetButton()
@@ -92,7 +186,7 @@ Public Class FrmFinanInfo
             btnNext.Enabled = False
             btnTop.Enabled = True
             btnPrevious.Enabled = True
-            'Call LoadValue()
+            Call LoadValue()
             lblToolTip.Text = "Move To Last Record"
 
             Call SetButtonPrinciple()
@@ -188,6 +282,7 @@ Public Class FrmFinanInfo
         Call ClearAll()
         GpData.Enabled = True
         ' GpACDef.Enabled = True
+        Me.txtsysCode.Text = objFinanInfo.GenFinTypeCode()
         lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
         lblToolTip.Text = "Add New Record"
         lblBy.Text = "Recorded By : " & SysUserID
@@ -230,5 +325,100 @@ Public Class FrmFinanInfo
             AddMode = False
             EditMode = False
         End If
+    End Sub
+
+    Sub LoadValue()
+
+        txtsysCode.Text = dtAccount.Rows(rowNum).Item("FinTypeCode")
+        txtName.Text = dtAccount.Rows(rowNum).Item("TypeName") & "" 'objFinanInfo.Description
+        txtDescrip.Text = dtAccount.Rows(rowNum).Item("TypeDescription") & "" 'objFinanInfo.Desc2
+
+
+        lblCompany.Text = "Recorded On : " & dtAccount.Rows(rowNum).Item("AddOn") & "" 'objFinanInfo.AddOn
+        lblBy.Text = "Recorded By : " & dtAccount.Rows(rowNum).Item("AddBy") & "" 'objFinanInfo.AddBy
+        lblToolTip.Text = "Close Form"
+    End Sub
+    Private Function CheckValidation() As Boolean
+        If txtName.Text = "" Then
+            MsgBox("Please enter Name.", MsgBoxStyle.Information, SysCompany)
+            txtName.Focus()
+            Return False
+        End If
+        Return True
+    End Function
+    Private Sub SetData()
+        objFinanInfo.FinTypeCode = Me.txtsysCode.Text
+        objFinanInfo.TypeDescription = Me.txtDescrip.Text
+        objFinanInfo.TypeName = Me.txtName.Text
+
+
+      
+       
+        objFinanInfo.transfer = "F"
+        If AddMode Then
+            'objFinanInfo.AddOn = GetDate(SySDate, "yyyy-MM-dd")
+            objFinanInfo.AddOn = SySDate
+            objFinanInfo.AddBy = SysUserID
+            'objBranch.AddBy = SysUserID
+        ElseIf EditMode Then
+            'objFinanInfo.EditOn = SySDate
+            objFinanInfo.AddOn = SySDate
+            objFinanInfo.EditBy = SysUserID
+            'objBranch.AddBy = SysUserID
+        End If
+    End Sub
+    Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        lblToolTip.Text = "Save Current Record"
+        If CheckValidation() Then
+            objFinanInfo.getConnection()
+            objFinanInfo.BeginTransaction()
+            SetData()
+            If AddMode Then
+                Try
+                    objFinanInfo.SaveFinTypeCode()
+                    Call btnAdd_Click(Nothing, Nothing)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    objFinanInfo.RollBack()
+                End Try
+            ElseIf EditMode Then
+                Try
+                    objFinanInfo.EditFinTypeCode()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    objFinanInfo.RollBack()
+                End Try
+                Flag = True
+                Call SetEntryMode()
+                GpData.Enabled = False
+
+                btnSave.Enabled = False
+                btnCancel.Enabled = False
+                dtAccount = objFinanInfo.LoadAllCodes()
+                rowNum = dtAccount.Rows.Count - 1
+                Call LoadValue()
+            End If
+            objFinanInfo.CommitTransction()
+        End If
+        Call MenuGridLoad(mMenuStr)
+        rowNum = dtAccount.Rows.Count - 1
+        Call SetButtonPrinciple()
+        Call SetButton()
+    End Sub
+
+    Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        lblToolTip.Text = "Edit Current Record"
+        EditMode = True
+        AddMode = False
+        Flag = False
+        'mskCode.Enabled = True
+        Call SetEntryMode()
+        GpData.Enabled = True
+
+
+        txtName.Focus()
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
     End Sub
 End Class

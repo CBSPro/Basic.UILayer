@@ -7,11 +7,11 @@
     Dim objTransaction As SqlClient.SqlTransaction
     Dim objDatabaseManager As IDatabaseManager
 
-
+    Dim dtLookup As DataTable
     Public FinTypeCode As String
     Public TypeDescription As String
     Public TypeName As String
-
+    Public transfer As String
     Public AddOn As String
     Public AddBy As String
     Public EditOn As String
@@ -117,7 +117,7 @@
         End If
     End Sub
 
-    Public Sub DelCustoCode()
+    Public Sub DelFinTypeCode()
 
         objConnection = cConnectionManager.GetConnection()
         Dim objDatabaseManager As IDatabaseManager
@@ -150,7 +150,7 @@
         objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
         objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
 
-        'objDatabaseManager.ExecuteNonQuery("GL_Code_Save", objDBParameters)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Save", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
 
     End Sub
@@ -174,11 +174,31 @@
         objDBParameters.AddParameter("@EditOn", EditOn, "nvarchar")
         objDBParameters.AddParameter("@EditBy", EditBy, "nvarchar")
 
-        'objDatabaseManager.ExecuteNonQuery("GL_Code_Edit", objDBParameters)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Edit", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
 
     End Sub
+    Public Function GenFinTypeCode() As String
+        Dim dt As New DataTable
 
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+
+        dt = objDatabaseManager.GetDataTable("PortFolio_FinTypeCode_Gen", objDBParameters)
+        If dt.Rows.Count <> 0 Then
+           If Len(Trim(dt.Rows(0).Item(0))) = 1 Then
+                Return "0" & CStr(dt.Rows(0).Item(0))
+         Else
+                Return CStr(dt.Rows(0).Item(0))
+            End If
+            'Else
+            '    Return "0001"
+        End If
+        Return ""
+    End Function
 
 End Class
 
