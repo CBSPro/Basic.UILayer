@@ -133,9 +133,9 @@
         dt = objDatabaseManager.GetDataTable("PortFolio_FinType_Get", objDBParameters)
         If dt.Rows.Count <> 0 Then
             FinTypeCode = dt.Rows(0).Item("FinTypeCode")
-            TypeName = "" & dt.Rows(0).Item("TypeName")
+            'TypeName = "" & dt.Rows(0).Item("TypeName")
 
-            TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
+            'TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
 
 
         End If
@@ -167,11 +167,11 @@
 
         objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
-        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+        'objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        'objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
 
 
-        objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
+        'objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
         objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
 
         objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Save", objDBParameters)
@@ -190,8 +190,8 @@
 
         objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
-        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+        'objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        'objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
 
 
 

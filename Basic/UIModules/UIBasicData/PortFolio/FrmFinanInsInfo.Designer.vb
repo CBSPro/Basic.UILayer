@@ -1140,6 +1140,7 @@ Partial Class FrmFinanInsInfo
         Me.Name = "FrmFinanInsInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Financial Institution Information"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Search.ResumeLayout(False)
         Me.Search.PerformLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()

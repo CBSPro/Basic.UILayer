@@ -57,9 +57,16 @@ Public Class FrmFinanInsInfo
 
 
     Sub ClearAll()
+        txtSysCode.Text = ""
+        txtSysName.Text = ""
+        txtDesc.Text = ""
+        cmbInstType.Text = ""
+        txtrate.Text = ""
+        cmbCom.Text = ""
+
 
         txtAddr.Text = ""
-        txtBankAc.Text = ""
+
         txtBankAccNo.Text = ""
         txtBic.Text = ""
         txtBranchName.Text = ""
@@ -360,11 +367,11 @@ Public Class FrmFinanInsInfo
             If rowNum >= 0 Then
                 Call LoadMaster()
 
-                objFinanInfo. = Trim(txtSysCode.Text)
-                objFinanInfo.Type = mType
-                objFinanInfo.VNo = lblVNo.Text
-                dtDetail = objFinanInfo.LoadAllDetail()
-                Call LoadDetail()
+                objFinanInfo.InstCode = Trim(txtSysCode.Text)
+                'objFinanInfo.FinTypeCode = mType
+
+                ' dtDetail = objFinanInfo.LoadAllDetail()
+                ' Call LoadDetail()
                 btnExit.Focus()
             Else
                 MsgBox("No Record Found", MsgBoxStyle.Information)
@@ -444,4 +451,122 @@ Public Class FrmFinanInsInfo
        
     End Sub
 
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        lblToolTip.Text = "Cancel Last Action"
+        Opt = MsgBox("Do you wish to Abort ?", MsgBoxStyle.YesNo)
+
+        If Opt = MsgBoxResult.No Then
+            txtSysName.Focus()
+            Exit Sub
+        End If
+
+        If AddMode Then
+            'dtMaster = objFinanInfo.LoadMasterVoucher()
+            Call SetEntryMode()
+            btnStatus(False)
+            Call SetFormSecurity(Me)
+            Call SetButtonsSurity(Me)
+            Call SetButtonPrinciple()
+            Call SetButton()
+            rowNum = dtMaster.Rows.Count - 1
+            Call LoadMaster()
+            objFinanInfo.InstCode = Trim(txtSysCode.Text)
+            ' objFinanInfo.Type = mType
+            'objFinanInfo.VNo = lblVNo.Text
+            'dtDetail = objFinanInfo.LoadAllDetail()
+            'Call LoadDetail()
+        Else
+            Flag = True
+            Call SetEntryMode()
+            btnStatus(False)
+            Call SetFormSecurity(Me)
+            Call SetButtonsSurity(Me)
+            Call SetButtonPrinciple()
+            Call SetButton()
+            Call LoadMaster()
+            'dtMasterMenu = objFinanInfo.LoadAllMaster()
+
+            'Call LoadDetail()
+        End If
+
+        GPMain.Enabled = False
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        'EmptyControls(Me)
+        AddMode = False
+        EditMode = False
+    End Sub
+
+    Private Sub FrmFinanInsInfo_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.MdiParent = frmMdi
+        Me.Top = 0
+        Me.Left = 0
+        Me.WindowState = FormWindowState.Maximized
+
+        LblTypeValid.Text = "Financial Institute Information"
+        'mQuery = "select G.Vno,CONVERT(varchar(13),G.Vdate,106) As Date,G.Refremarks,G.Rfcode,C.Description " & _
+        '        "from Glhead G inner join Codes c on G.Rfcode = c.Code"
+        Me.WindowState = FormWindowState.Maximized
+
+        GPMain.Enabled = False
+        GPBRanch.Enabled = False
+        Flag = True
+        Call SetAccParam()
+        Call SetEntryMode()
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        btnEdit.Enabled = False
+        Call ClearAll()
+        btnStatus(False)
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        btnAdd.Enabled = True
+        btnView.Enabled = True
+        btnStatus(False)
+        Call ClearAll()
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        Call SetButton()
+
+    End Sub
+
+    Private Sub GVHelp_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GVHelp.CellClick
+        vColumn = e.ColumnIndex
+    End Sub
+
+    Private Sub GVHelp_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles GVHelp.DoubleClick
+        If AddMode <> True And EditMode <> True Then
+            If GVHelp.RowCount <> 0 Then
+                Me.sqlquery = Me.GVHelp.Item(0, GVHelp.CurrentRow.Index).Value
+                rowNum = sqlquery - 1
+                If rowNum >= 0 Then
+                    Call LoadMaster()
+                    'objFinanInfo.BrCode = Trim(txtBrCode.Text)
+                    'objJV.Type = mType
+                    'objJV.VNo = lblVNo.Text
+                    'dtDetail = objJV.LoadAllDetail()
+                    'Call LoadDetail()
+                End If
+                If rowNum = 0 Then
+                    btnTop.Enabled = False
+                    btnPrevious.Enabled = False
+                    btnNext.Enabled = True
+                    btnBottom.Enabled = True
+                ElseIf rowNum = dtMaster.Rows.Count - 1 Then
+                    btnTop.Enabled = True
+                    btnPrevious.Enabled = True
+                    btnNext.Enabled = False
+                    btnBottom.Enabled = False
+                ElseIf rowNum <> 0 And rowNum < dtMaster.Rows.Count - 1 Then
+                    btnTop.Enabled = True
+                    btnPrevious.Enabled = True
+                    btnNext.Enabled = True
+                    btnBottom.Enabled = True
+                End If
+            End If
+        End If
+
+    End Sub
 End Class
