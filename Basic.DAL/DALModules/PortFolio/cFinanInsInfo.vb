@@ -5,6 +5,7 @@
 
 
     Dim dtLookup As DataTable
+    '==========FINANCIAL INSTITUTE INFORMATION DATA=======================
     Public InstCode As String
     Public InstName As String
     Public FinTypeCode As String
@@ -13,7 +14,7 @@
     Public PrintOp As String
     Public BnkAccNo As String
     Public Descrip As String
-    '===============================
+    '=========BRANCH DATA======================
     Public InsBranCode As String
     Public InsBrName As String
 
@@ -80,147 +81,147 @@
 
 
 
-    'Public Sub LoadFirstRec()
-    '    Dim dt As New DataTable
+    Public Sub LoadFirstRec()
+        Dim dt As New DataTable
 
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
 
-    '    dt = objDatabaseManager.GetDataTable("PortFolio_GetFinType_All", objDBParameters)
-    '    If dt.Rows.Count <> 0 Then
+        dt = objDatabaseManager.GetDataTable("PortFolio_GetFinType_All", objDBParameters)
+        If dt.Rows.Count <> 0 Then
 
-    '        InstCode = dt.Rows(0).Item("FinTypeCode")
-    '        'TypeName = "" & dt.Rows(0).Item("TypeName")
-    '        'TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
-
-
+            InstCode = dt.Rows(0).Item("FinTypeCode")
+            'TypeName = "" & dt.Rows(0).Item("TypeName")
+            'TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
 
 
 
-    '        'AddOn = "" & Format(dt.Rows(0).Item("AddOn"), "dd-MMM-yyyy")
-    '        'AddBy = "" & dt.Rows(0).Item("AddBy")
-    '    End If
-    'End Sub
-
-    'Public Function LoadAllCodes() As DataTable
-    '    Dim dt As New DataTable
-
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
 
 
-    '    dt = objDatabaseManager.GetDataTable("PortFolio_GetFinType_All", objDBParameters)
-    '    cConnectionManager.CloseConnection(objConnection)
-    '    Return dt
-    'End Function
-    'Public Sub LoadCode()
-    '    Dim dt As New DataTable
+            'AddOn = "" & Format(dt.Rows(0).Item("AddOn"), "dd-MMM-yyyy")
+            'AddBy = "" & dt.Rows(0).Item("AddBy")
+        End If
+    End Sub
 
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
+    Public Function LoadAllMaster() As DataTable
+        Dim dt As New DataTable
 
-    '    objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
-    '    dt = objDatabaseManager.GetDataTable("PortFolio_FinType_Get", objDBParameters)
-    '    If dt.Rows.Count <> 0 Then
-    '        FinTypeCode = dt.Rows(0).Item("FinTypeCode")
-    '        TypeName = "" & dt.Rows(0).Item("TypeName")
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+        objDBParameters.AddParameter("@InstCode", InstCode, "char")
 
-    '        TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
+        dt = objDatabaseManager.GetDataTable("PortFolio_GetFinInstType_All", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
+        Return dt
+    End Function
+    Public Sub LoadCode()
+        Dim dt As New DataTable
 
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
 
-    '    End If
-    'End Sub
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
+        dt = objDatabaseManager.GetDataTable("PortFolio_FinType_Get", objDBParameters)
+        If dt.Rows.Count <> 0 Then
+            FinTypeCode = dt.Rows(0).Item("FinTypeCode")
+            TypeName = "" & dt.Rows(0).Item("TypeName")
 
-    'Public Sub DelFinTypeCode()
-
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
-
-    '    objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
-
-    '    objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Del", objDBParameters)
-    '    cConnectionManager.CloseConnection(objConnection)
-
-    'End Sub
-
-    'Public Sub SaveFinTypeCode()
-
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
+            TypeDescription = "" & dt.Rows(0).Item("TypeDescription")
 
 
-    '    objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
+        End If
+    End Sub
 
-    '    objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
-    '    objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+    Public Sub DelFinInstTypeCode()
 
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
 
-    '    objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
-    '    objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
+        objDBParameters.AddParameter("@InstCode", InstCode, "char")
 
-    '    objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Save", objDBParameters)
-    '    cConnectionManager.CloseConnection(objConnection)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinInstType_Del", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
 
-    'End Sub
+    End Sub
 
-    'Public Sub EditFinTypeCode()
+    Public Sub SaveFinTypeCode()
 
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
-
-
-    '    objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
-
-    '    objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
-    '    objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
 
 
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
 
-    '    objDBParameters.AddParameter("@EditOn", EditOn, "nvarchar")
-    '    objDBParameters.AddParameter("@EditBy", EditBy, "nvarchar")
+        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
 
-    '    objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Edit", objDBParameters)
-    '    cConnectionManager.CloseConnection(objConnection)
 
-    'End Sub
-    'Public Function GenFinTypeCode() As String
-    '    Dim dt As New DataTable
+        objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
+        objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
 
-    '    objConnection = cConnectionManager.GetConnection()
-    '    Dim objDatabaseManager As IDatabaseManager
-    '    Dim objDBParameters As New cDBParameterList
-    '    objDatabaseManager = cDataBaseManager.GetDatabaseManager()
-    '    objDatabaseManager.SetConnection(objConnection)
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Save", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
 
-    '    dt = objDatabaseManager.GetDataTable("PortFolio_FinTypeCode_Gen", objDBParameters)
-    '    If dt.Rows.Count <> 0 Then
-    '        If Len(Trim(dt.Rows(0).Item(0))) = 1 Then
-    '            Return "0" & CStr(dt.Rows(0).Item(0))
-    '        Else
-    '            Return CStr(dt.Rows(0).Item(0))
-    '        End If
-    '        'Else
-    '        '    Return "0001"
-    '    End If
-    '    Return ""
-    'End Function
+    End Sub
+
+    Public Sub EditFinTypeCode()
+
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+
+
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
+
+        objDBParameters.AddParameter("@TypeName", TypeName, "varchar")
+        objDBParameters.AddParameter("@TypeDescription", TypeDescription, "varchar")
+
+
+
+        objDBParameters.AddParameter("@EditOn", EditOn, "nvarchar")
+        objDBParameters.AddParameter("@EditBy", EditBy, "nvarchar")
+
+        objDatabaseManager.ExecuteNonQuery("PortFolio_FinType_Edit", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
+
+    End Sub
+    Public Function GenFinInstTypeCode() As String
+        Dim dt As New DataTable
+
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+
+        dt = objDatabaseManager.GetDataTable("PortFolio_FinInstTypeCode_Gen", objDBParameters)
+        If dt.Rows.Count <> 0 Then
+            If Len(Trim(dt.Rows(0).Item(0))) = 1 Then
+                Return "0" & CStr(dt.Rows(0).Item(0))
+            Else
+                Return CStr(dt.Rows(0).Item(0))
+            End If
+            'Else
+            '    Return "0001"
+        End If
+        Return ""
+    End Function
 
 End Class

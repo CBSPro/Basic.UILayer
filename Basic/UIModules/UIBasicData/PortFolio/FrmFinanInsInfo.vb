@@ -8,7 +8,7 @@ Imports Basic.DAL.Utils
 Public Class FrmFinanInsInfo
 
     Dim objFinanInfo As New cFinanInsInfo
-    Dim dtAccount As New DataTable
+    Dim dtMaster As New DataTable
 
     'Dim objProper As New cProper
 
@@ -67,7 +67,7 @@ Public Class FrmFinanInsInfo
     End Sub
 
 
-    Private Sub txtDesc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc.KeyDown, TextBox1.KeyDown
+    Private Sub txtDesc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -75,91 +75,91 @@ Public Class FrmFinanInsInfo
 
 
 
-    Private Sub CBCounter_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBCounter.KeyDown, CheckBox1.KeyDown
+    Private Sub CBCounter_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles CBCounter.KeyDown, cbCounPart.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cbDepositry_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cbDepositry.KeyDown, CheckBox3.KeyDown
+    Private Sub cbDepositry_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles cbDepositry.KeyDown, cbDepBnk.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub CBSettlement_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles CBSettlement.KeyDown, CheckBox2.KeyDown
+    Private Sub CBSettlement_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles CBSettlement.KeyDown, cbSetBnk.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cmbComp_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbComp.KeyDown, ComboBox1.KeyDown
+    Private Sub cmbComp_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles cmbCom.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub cmbInstituteType_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles cmbInstituteType.KeyDown, ComboBox2.KeyDown
+    Private Sub cmbInstituteType_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles cmbInstType.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub rbBank_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbBank.KeyDown, RadioButton2.KeyDown
+    Private Sub rbBank_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles rbBank.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub rbSGL_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles rbSGL.KeyDown, RadioButton1.KeyDown
+    Private Sub rbSGL_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles rbChk.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtAddr_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtAddr.KeyDown, TextBox15.KeyDown
+    Private Sub txtAddr_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtAddr.KeyDown, txtBrAddr.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBankAc_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBankAc.KeyDown, TextBox2.KeyDown
+    Private Sub txtBankAc_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBnkAcc.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBic_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBic.KeyDown, TextBox6.KeyDown
+    Private Sub txtBic_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBic.KeyDown, txtBrBIC.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtBranchName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBranchName.KeyDown, TextBox14.KeyDown
+    Private Sub txtBranchName_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBranchName.KeyDown, txtBrName.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtContPer_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtContPer.KeyDown, TextBox13.KeyDown
+    Private Sub txtContPer_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtContPer.KeyDown, txtBrContPer.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtDesc2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown, TextBox8.KeyDown
+    Private Sub txtDesc2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown, txtBrIPS.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtEmail_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown, TextBox10.KeyDown
+    Private Sub txtEmail_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtEmail.KeyDown, txtBrEmail.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtFax_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown, TextBox9.KeyDown
+    Private Sub txtFax_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtFax.KeyDown, txtBrFax.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -171,19 +171,19 @@ Public Class FrmFinanInsInfo
         End If
     End Sub
 
-    Private Sub txtName_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtName.KeyDown, TextBox4.KeyDown
+    Private Sub txtName_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSysName.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtPH_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtPH.KeyDown, TextBox11.KeyDown
+    Private Sub txtPH_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtPH.KeyDown, txtBrPh.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtrate_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtrate.KeyDown, TextBox3.KeyDown
+    Private Sub txtrate_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtrate.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -195,13 +195,13 @@ Public Class FrmFinanInsInfo
         End If
     End Sub
 
-    Private Sub txtsysCode_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtsysCode.KeyDown, TextBox5.KeyDown
+    Private Sub txtsysCode_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSysCode.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
     End Sub
 
-    Private Sub txtSysCode2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtSysCode2.KeyDown, TextBox16.KeyDown
+    Private Sub txtSysCode2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtSysCode2.KeyDown, txtBranCode.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -224,7 +224,7 @@ Public Class FrmFinanInsInfo
 
     Private Sub btnBottom_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnBottom.Click
         If rowNum > 0 Then
-            'rowNum = dtAccount.Rows.Count - 1
+
             btnBottom.Enabled = False
             btnNext.Enabled = False
             btnTop.Enabled = True
@@ -258,7 +258,7 @@ Public Class FrmFinanInsInfo
     End Sub
 
     Private Sub btnNext_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnNext.Click
-        ' If rowNum < dtAccount.Rows.Count - 1 Then
+
         rowNum = rowNum + 1
         btnNext.Enabled = True
         btnBottom.Enabled = True
@@ -267,7 +267,7 @@ Public Class FrmFinanInsInfo
         Call SetButtonPrinciple()
         Call SetButton()
         ' Else
-        'rowNum = dtAccount.Rows.Count - 1
+
         btnNext.Enabled = False
         btnBottom.Enabled = False
         btnPrevious.Enabled = True
@@ -318,17 +318,130 @@ Public Class FrmFinanInsInfo
         AddMode = True
         EditMode = False
         Flag = False
-        ' mskCode.Enabled = True
+
         Call SetEntryMode()
         btnSave.Enabled = True
         btnCancel.Enabled = True
         EmptyControls(Me)
         Call ClearAll()
-        GpData.Enabled = True
-        ' GpACDef.Enabled = True
-        'Me.txtsysCode.Text = objFinanInfo.GenFinTypeCode()
+        GPMain.Enabled = True
+
+        Me.txtSysCode.Text = objFinanInfo.GenFinInstTypeCode()
         lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
         lblToolTip.Text = "Add New Record"
         lblBy.Text = "Recorded By : " & SysUserID
     End Sub
+
+    Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+        lblToolTip.Text = "Edit Current Record"
+        EditMode = True
+        AddMode = False
+        Flag = False
+        ' mskCode.Enabled = True
+        Call SetEntryMode()
+        GPMain.Enabled = True
+        GPBRanch.Enabled = True
+        ' mskCode.Enabled = False
+        txtSysName.Focus()
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+    End Sub
+
+    Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
+        lblToolTip.Text = "Delete Current Record"
+        Opt = MsgBox("Are You Sure To Delete Current Record", MsgBoxStyle.YesNo)
+
+        If Opt = MsgBoxResult.Yes Then
+            objFinanInfo.DelFinInstTypeCode()
+            dtMaster = objFinanInfo.LoadAllMaster()
+            Call MenuGridLoad(mMenuStr)
+            rowNum = dtMaster.Rows.Count - 1
+            If rowNum >= 0 Then
+                Call LoadMaster()
+
+                objFinanInfo. = Trim(txtSysCode.Text)
+                objFinanInfo.Type = mType
+                objFinanInfo.VNo = lblVNo.Text
+                dtDetail = objFinanInfo.LoadAllDetail()
+                Call LoadDetail()
+                btnExit.Focus()
+            Else
+                MsgBox("No Record Found", MsgBoxStyle.Information)
+                Call ClearAll()
+            End If
+        End If
+    End Sub
+    Sub LoadMaster()
+        Try
+
+            Dim PrintOp As String
+            '==================Master data===============================================
+            txtSysCode.Text = dtMaster.Rows(rowNum).Item("InstCode")
+            txtSysName.Text = dtMaster.Rows(rowNum).Item("InstName") & "" 'objFinanInfo.Description
+            txtDesc.Text = dtMaster.Rows(rowNum).Item("Descrip") & "" 'objFinanInfo.Desc2
+            cmbInstType.Text = dtMaster.Rows(rowNum).Item("FinTypeCode")
+            txtrate.Text = dtMaster.Rows(rowNum).Item("Rating")
+            cmbCom.Text = dtMaster.Rows(rowNum).Item("CompCode")
+            PrintOp = dtMaster.Rows(rowNum).Item("PrintOp")
+            txtBankAccNo.Text = dtMaster.Rows(rowNum).Item("BnkAccNo")
+            '======================detail data=====================================
+            'txtBranCode.Text=
+
+            '=================================================================
+            lblCompany.Text = "Recorded On : " & dtMaster.Rows(rowNum).Item("AddOn") & "" 'objFinanInfo.AddOn
+            lblBy.Text = "Recorded By : " & dtMaster.Rows(rowNum).Item("AddBy") & "" 'objFinanInfo.AddBy
+            lblToolTip.Text = "Close Form"
+            lblCompany.Text = "Recorded On : " & dtMaster.Rows(rowNum).Item("AddOn")
+            lblBy.Text = "Recorded By : " & dtMaster.Rows(rowNum).Item("AddBy")
+            lblToolTip.Text = "Close Form"
+        Catch ex As Exception
+            'MsgBox(ex.Message, MsgBoxStyle.Information)
+        End Try
+    End Sub
+    Private Sub MenuGridLoad(ByVal mQuery As String)
+        Dim mcol As Integer
+        Dim mcolName As String
+        Try
+            If mQuery <> "" Or mQuery Is Nothing Then
+                dtLookup = Lookup(mQuery).Tables(0)
+                Me.GVHelp.DataSource = dtLookup.DefaultView
+
+                Dim header_style As New DataGridViewCellStyle
+                header_style.BackColor = Color.Yellow
+                GVHelp.Columns(2).HeaderCell.Style = header_style
+                GVHelp.Columns(0).Visible = 0
+                If GVHelp.Columns.Count > 0 Then
+                    For mcol = 1 To GVHelp.Columns.Count - 1
+                        mcolName = GVHelp.Columns(mcol).Name
+                        If GVHelp.Columns(mcol).Name = "RefRemarks" Then
+                            GVHelp.Columns(mcol).Width = 160
+                        ElseIf GVHelp.Columns(mcol).Name <> "BrCode" And GVHelp.Columns(mcol).Name <> "Type" And GVHelp.Columns(mcol).Name <> "TaxRate" And GVHelp.Columns(mcol).Name <> "Posted" Then
+                            GVHelp.Columns(mcol).Width = 80
+
+                        Else
+                            GVHelp.Columns(mcol).Width = 40
+                        End If
+                    Next
+                End If
+                GVHelp.Columns(0).Visible = 0
+                If GVHelp.Rows.Count > 0 Then
+                    For mRow = 0 To GVHelp.Rows.Count - 1
+                        If mRow Mod 2 = 0 Then
+                            GVHelp.Rows(mRow).DefaultCellStyle.BackColor = Color.White
+                        Else
+                            GVHelp.Rows(mRow).DefaultCellStyle.BackColor = Color.PowderBlue
+                        End If
+                    Next
+                End If
+                GVHelp.Columns(0).Visible = 0
+            End If
+        Catch ex As Exception
+            'MsgBox(ex.Message)
+        End Try
+    End Sub
+    Sub LoadValue()
+       
+    End Sub
+
 End Class
