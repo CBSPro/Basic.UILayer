@@ -84,6 +84,7 @@
     <Compile Include="DALModules\PortFolio\cBroker.vb" />
     <Compile Include="DALModules\PortFolio\cCustodian.vb" />
     <Compile Include="DALModules\PortFolio\cFinanInfo.vb" />
+    <Compile Include="DALModules\PortFolio\cFinanInsInfo.vb" />
     <Compile Include="DALModules\PortFolio\Class1.vb" />
     <Compile Include="DALModules\PortFolio\cScrip.vb" />
     <Compile Include="DALProjStandard\cChangePassword.vb" />

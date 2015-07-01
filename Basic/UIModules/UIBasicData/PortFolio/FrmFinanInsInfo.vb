@@ -7,7 +7,33 @@ Imports Basic.DAL.Utils
 
 Public Class FrmFinanInsInfo
 
+    Dim objFinanInfo As New cFinanInsInfo
+    Dim dtAccount As New DataTable
 
+    'Dim objProper As New cProper
+
+    Dim mAdd As Boolean
+    Dim mEdit As Boolean
+    Dim mDelete As Boolean
+    Dim mPost As Boolean
+    Dim mPrint As Boolean
+
+    Dim PODS As New DataSet
+    Dim objRow As Data.DataRow
+    Dim ObjFind As Grid_Help
+    Dim tableName As String = "FinInstitute"
+    Dim strFind As String
+    Dim mOpen As String
+    Dim Flag As Boolean
+    Dim mMenuStr As String
+    Dim AddMode As Boolean
+    Dim EditMode As Boolean
+
+    Dim rowNum As Integer
+    Dim dtLookup As DataTable
+    Dim vColumn As Integer
+    Private sqlquery As String
+    Private strPKValue As String
 
 
 
@@ -286,5 +312,23 @@ Public Class FrmFinanInsInfo
     Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
         lblToolTip.Text = "Close Form"
         Me.Close()
+    End Sub
+
+    Private Sub btnAdd_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAdd.Click
+        AddMode = True
+        EditMode = False
+        Flag = False
+        ' mskCode.Enabled = True
+        Call SetEntryMode()
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
+        EmptyControls(Me)
+        Call ClearAll()
+        GpData.Enabled = True
+        ' GpACDef.Enabled = True
+        'Me.txtsysCode.Text = objFinanInfo.GenFinTypeCode()
+        lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
+        lblToolTip.Text = "Add New Record"
+        lblBy.Text = "Recorded By : " & SysUserID
     End Sub
 End Class

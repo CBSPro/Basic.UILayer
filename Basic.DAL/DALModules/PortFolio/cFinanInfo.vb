@@ -6,6 +6,7 @@
     Dim objConnection As Object
     Dim objTransaction As SqlClient.SqlTransaction
     Dim objDatabaseManager As IDatabaseManager
+   
 
     Dim dtLookup As DataTable
     Public FinTypeCode As String

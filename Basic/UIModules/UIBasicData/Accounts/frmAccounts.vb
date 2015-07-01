@@ -260,16 +260,16 @@ Public Class frmAccounts
     End Sub
 
     Private Sub btnTop_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnTop.Click
-        If rowNum > 0 Then
-            btnTop.Enabled = False
-            btnPrevious.Enabled = False
-            btnNext.Enabled = True
-            btnBottom.Enabled = True
-            Call LoadValue()
-            lblToolTip.Text = "Move To First Record"
-            Call SetButtonPrinciple()
-            Call SetButton()
-        End If
+        rowNum = 0
+        btnTop.Enabled = False
+        btnPrevious.Enabled = False
+        btnNext.Enabled = True
+        btnBottom.Enabled = True
+        Call LoadValue()
+        lblToolTip.Text = "Move To First Record"
+        Call SetButtonPrinciple()
+        Call SetButton()
+
     End Sub
 
     Private Sub btnBottom_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnBottom.Click
