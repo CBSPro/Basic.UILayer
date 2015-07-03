@@ -70,7 +70,7 @@ Public Class FrmFinanInsInfo
         txtBankAccNo.Text = ""
         txtBic.Text = ""
         txtBranchName.Text = ""
-
+        BoundData()
     End Sub
 
 
@@ -496,13 +496,35 @@ Public Class FrmFinanInsInfo
         AddMode = False
         EditMode = False
     End Sub
+    Private Sub BoundData()
+        '=========BOUND DATA OF NAME===================
 
+        Me.cmbInstType.Text = ""
+        'select FinTypeCode,TypeName from FinType
+
+        Dim strSql As String = "SELECT TypeName+'  |  '+FinTypeCode as name,FinTypeCode from FinType order by TypeName"
+        Dim da As New SqlDataAdapter(strSQL, strConec)
+        Dim Dts, dts2 As New DataSet
+        da.Fill(Dts, "FinType")
+
+        cmbInstType.DisplayMember = "name"
+        cmbInstType.ValueMember = "FinTypeCode"
+        cmbInstType.DataSource = Dts.Tables("FinType")
+
+
+    
+
+        '==================================
+
+
+
+    End Sub
     Private Sub FrmFinanInsInfo_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Me.MdiParent = frmMdi
         Me.Top = 0
         Me.Left = 0
         Me.WindowState = FormWindowState.Maximized
-
+        BoundData()
         LblTypeValid.Text = "Financial Institute Information"
 
         mQuery = "select fi.instcode,fi.InstName,fb.InsBranCode,fb.InsBrName from FinInstitute fi " & _
@@ -633,14 +655,14 @@ Public Class FrmFinanInsInfo
         objFinanInfo.Ph = Me.txtBrPh.Text
         objFinanInfo.Email = Me.txtBrEmail.Text
         objFinanInfo.Fax = Me.txtBrFax.Text
-        objFinanInfo.Description = Me.txteBrDes.Text
+        objFinanInfo.Description = Me.txtBrDes.Text
         objFinanInfo.BISPNo = Me.txtBrIPS.Text
         objFinanInfo.BICCode = Me.txtBrBIC.Text
         If Me.cbDepBnk.Checked = True Then
             objFinanInfo.DepBnk = "T"
         End If
         If cbSetBnk.Checked = True Then
-            objFinanInfo.SetBnk=="T"
+            objFinanInfo.SetBnk = "T"
         End If
 
         If Me.cbCounPart.Checked = True Then
@@ -650,17 +672,21 @@ Public Class FrmFinanInsInfo
             objFinanInfo.PrimDeal = "T"
         End If
 
+        objFinanInfo.InstCode = Me.txtSysCode.Text
+        If AddMode Then
+            objFinanInfo.AddOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.AddBy = SysUserID
+        ElseIf EditMode Then
+            objFinanInfo.EditOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.EditBy = SysUserID
+        End If
 
-        objFinanInfo.AddOn=
-        objFinanInfo.AddBy=
-        objFinanInfo.InstCode=
 
 
 
     End Sub
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
-        Dim mi As Integer
-        Dim mTmpNo As String
+       
         lblToolTip.Text = "Save Current Record"
 
 
@@ -672,6 +698,7 @@ Public Class FrmFinanInsInfo
                     SetDataMaster()         'Set Master Object Variables
                     objFinanInfo.SaveMaster()  'Save Master Object Variables
                     SetDetail()
+                    objFinanInfo.SaveDetail()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                     objFinanInfo.RollBack()
@@ -680,8 +707,8 @@ Public Class FrmFinanInsInfo
             ElseIf EditMode Then
                 Try
 
-                    EditSet()
-                    objFinanInfo.EditMaster()
+                    'EditSet()
+                    'objFinanInfo.EditMaster()
                     'SetData(mi)             ' Save(Detail)
                 Catch ex As Exception
                     MsgBox(ex.Message)
