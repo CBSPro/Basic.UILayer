@@ -1324,8 +1324,7 @@ Public Class frmJV
         btnPost.Enabled = mPost
     End Sub
 
-    Private Sub GVHelp_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GVHelp.CellContentClick
-
-    End Sub
+   
+   
 End Class
 

@@ -95,9 +95,9 @@ Partial Class FrmFinanInsInfo
         Me.cbSetBnk = New System.Windows.Forms.CheckBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.txtBrBIC = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.txtBrIPS = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.txtBrDes = New System.Windows.Forms.TextBox()
         Me.txtBrFax = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.txtBrEmail = New System.Windows.Forms.TextBox()
@@ -116,6 +116,7 @@ Partial Class FrmFinanInsInfo
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtBranCode = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
+        Me.CBPrimDeal = New System.Windows.Forms.CheckBox()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -845,13 +846,14 @@ Partial Class FrmFinanInsInfo
         '
         'GPBRanch
         '
+        Me.GPBRanch.Controls.Add(Me.CBPrimDeal)
         Me.GPBRanch.Controls.Add(Me.cbCounPart)
         Me.GPBRanch.Controls.Add(Me.cbSetBnk)
         Me.GPBRanch.Controls.Add(Me.Label27)
         Me.GPBRanch.Controls.Add(Me.txtBrBIC)
-        Me.GPBRanch.Controls.Add(Me.TextBox7)
-        Me.GPBRanch.Controls.Add(Me.Label28)
         Me.GPBRanch.Controls.Add(Me.txtBrIPS)
+        Me.GPBRanch.Controls.Add(Me.Label28)
+        Me.GPBRanch.Controls.Add(Me.txtBrDes)
         Me.GPBRanch.Controls.Add(Me.txtBrFax)
         Me.GPBRanch.Controls.Add(Me.Label29)
         Me.GPBRanch.Controls.Add(Me.txtBrEmail)
@@ -918,14 +920,14 @@ Partial Class FrmFinanInsInfo
         Me.txtBrBIC.Size = New System.Drawing.Size(164, 20)
         Me.txtBrBIC.TabIndex = 17
         '
-        'TextBox7
+        'txtBrIPS
         '
-        Me.TextBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(181, 177)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(108, 20)
-        Me.TextBox7.TabIndex = 16
+        Me.txtBrIPS.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtBrIPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBrIPS.Location = New System.Drawing.Point(181, 177)
+        Me.txtBrIPS.Name = "txtBrIPS"
+        Me.txtBrIPS.Size = New System.Drawing.Size(108, 20)
+        Me.txtBrIPS.TabIndex = 16
         '
         'Label28
         '
@@ -938,14 +940,14 @@ Partial Class FrmFinanInsInfo
         Me.Label28.Text = "Bank IPS Acc No"
         Me.Label28.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'txtBrIPS
+        'txtBrDes
         '
-        Me.txtBrIPS.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtBrIPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBrIPS.Location = New System.Drawing.Point(181, 147)
-        Me.txtBrIPS.Name = "txtBrIPS"
-        Me.txtBrIPS.Size = New System.Drawing.Size(528, 20)
-        Me.txtBrIPS.TabIndex = 15
+        Me.txtBrDes.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtBrDes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtBrDes.Location = New System.Drawing.Point(181, 147)
+        Me.txtBrDes.Name = "txtBrDes"
+        Me.txtBrDes.Size = New System.Drawing.Size(528, 20)
+        Me.txtBrDes.TabIndex = 15
         '
         'txtBrFax
         '
@@ -998,7 +1000,7 @@ Partial Class FrmFinanInsInfo
         'cbDepBnk
         '
         Me.cbDepBnk.AutoSize = True
-        Me.cbDepBnk.Location = New System.Drawing.Point(181, 214)
+        Me.cbDepBnk.Location = New System.Drawing.Point(72, 214)
         Me.cbDepBnk.Name = "cbDepBnk"
         Me.cbDepBnk.Size = New System.Drawing.Size(125, 17)
         Me.cbDepBnk.TabIndex = 37
@@ -1123,6 +1125,16 @@ Partial Class FrmFinanInsInfo
         Me.Label38.TabIndex = 46
         Me.Label38.Text = " System Code"
         '
+        'CBPrimDeal
+        '
+        Me.CBPrimDeal.AutoSize = True
+        Me.CBPrimDeal.Location = New System.Drawing.Point(201, 214)
+        Me.CBPrimDeal.Name = "CBPrimDeal"
+        Me.CBPrimDeal.Size = New System.Drawing.Size(114, 17)
+        Me.CBPrimDeal.TabIndex = 68
+        Me.CBPrimDeal.Text = "Primary Dealers"
+        Me.CBPrimDeal.UseVisualStyleBackColor = True
+        '
         'FrmFinanInsInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1226,9 +1238,9 @@ Partial Class FrmFinanInsInfo
     Friend WithEvents cbSetBnk As System.Windows.Forms.CheckBox
     Friend WithEvents Label27 As System.Windows.Forms.Label
     Friend WithEvents txtBrBIC As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents txtBrIPS As System.Windows.Forms.TextBox
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents txtBrDes As System.Windows.Forms.TextBox
     Friend WithEvents txtBrFax As System.Windows.Forms.TextBox
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents txtBrEmail As System.Windows.Forms.TextBox
@@ -1247,4 +1259,5 @@ Partial Class FrmFinanInsInfo
     Friend WithEvents Label37 As System.Windows.Forms.Label
     Friend WithEvents txtBranCode As System.Windows.Forms.TextBox
     Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents CBPrimDeal As System.Windows.Forms.CheckBox
 End Class

@@ -17,7 +17,7 @@ Public Class FrmFinanInsInfo
     Dim mDelete As Boolean
     Dim mPost As Boolean
     Dim mPrint As Boolean
-
+    Dim mQuery As String
     Dim PODS As New DataSet
     Dim objRow As Data.DataRow
     Dim ObjFind As Grid_Help
@@ -154,7 +154,7 @@ Public Class FrmFinanInsInfo
         End If
     End Sub
 
-    Private Sub txtDesc2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown, txtBrIPS.KeyDown
+    Private Sub txtDesc2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtDesc2.KeyDown, txtBrDes.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -172,7 +172,7 @@ Public Class FrmFinanInsInfo
         End If
     End Sub
 
-    Private Sub txtIpsAccNo_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtIpsAccNo.KeyDown, TextBox7.KeyDown
+    Private Sub txtIpsAccNo_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtIpsAccNo.KeyDown, txtBrIPS.KeyDown
         If e.KeyCode = Keys.Enter Then
             SendKeys.Send("{Tab}")
         End If
@@ -332,7 +332,7 @@ Public Class FrmFinanInsInfo
         EmptyControls(Me)
         Call ClearAll()
         GPMain.Enabled = True
-
+        GPBRanch.Enabled = True
         Me.txtSysCode.Text = objFinanInfo.GenFinInstTypeCode()
         lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
         lblToolTip.Text = "Add New Record"
@@ -504,10 +504,13 @@ Public Class FrmFinanInsInfo
         Me.WindowState = FormWindowState.Maximized
 
         LblTypeValid.Text = "Financial Institute Information"
-        'mQuery = "select G.Vno,CONVERT(varchar(13),G.Vdate,106) As Date,G.Refremarks,G.Rfcode,C.Description " & _
-        '        "from Glhead G inner join Codes c on G.Rfcode = c.Code"
-        Me.WindowState = FormWindowState.Maximized
 
+        mQuery = "select fi.instcode,fi.InstName,fb.InsBranCode,fb.InsBrName from FinInstitute fi " & _
+                "left outer join FinInstBranch fb on  fi.InstCode=fb.InstCode"
+        Call MenuGridLoad(mQuery)
+        If rowNum >= 0 Then
+            Call LoadMaster()
+        End If
         GPMain.Enabled = False
         GPBRanch.Enabled = False
         Flag = True
@@ -544,9 +547,9 @@ Public Class FrmFinanInsInfo
                 If rowNum >= 0 Then
                     Call LoadMaster()
                     'objFinanInfo.BrCode = Trim(txtBrCode.Text)
-                    'objJV.Type = mType
-                    'objJV.VNo = lblVNo.Text
-                    'dtDetail = objJV.LoadAllDetail()
+                    'objFinanInfo.Type = mType
+                    'objFinanInfo.VNo = lblVNo.Text
+                    'dtDetail = objFinanInfo.LoadAllDetail()
                     'Call LoadDetail()
                 End If
                 If rowNum = 0 Then
@@ -568,5 +571,144 @@ Public Class FrmFinanInsInfo
             End If
         End If
 
+    End Sub
+    Private Sub SetDataMaster()
+
+        objFinanInfo.InstCode = Trim(txtSysCode.Text)
+        objFinanInfo.InstName = Me.txtSysName.Text
+       
+        objFinanInfo.FinTypeCode = cmbInstType.Text
+        objFinanInfo.Rating = txtrate.Text
+        objFinanInfo.CompCode = cmbCom.Text
+        If Me.rbBank.Checked = True Then
+            objFinanInfo.PrintOp = "B"
+
+        ElseIf Me.rbChk.Checked = True Then
+            objFinanInfo.PrintOp = "C"
+
+        
+        End If
+
+        objFinanInfo.BnkAccNo = txtBankAccNo.Text
+        objFinanInfo.Descrip = txtDesc.Text
+
+
+        If AddMode Then
+            objFinanInfo.AddOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.AddBy = SysUserID
+        ElseIf EditMode Then
+            objFinanInfo.EditOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.EditBy = SysUserID
+        End If
+    End Sub
+    Private Sub EditSet()
+
+        mSQL = "DELETE FROM FinInstBranch WHERE instcode = '" & Trim(txtSysCode.Text) & "' And InsBranCode = '" & _
+                txtBranCode.Text & "' "
+        ExecQuery(mSQL)
+    End Sub
+    Private Function CheckValidation() As Boolean
+        If txtSysName.Text = "" Then
+            MsgBox("Please Enter Name.", MsgBoxStyle.Information, SysCompany)
+            txtSysName.Focus()
+            Return False
+        End If
+        'If LBLTotDr.Text <> LBLTotCr.Text Then
+        '    MsgBox("Total Debit & Credit must be same", MsgBoxStyle.Information, SysCompany)
+        '    Return False
+        'End If
+        'If (LBLTotDr.Text = 0 Or LBLTotDr.Text = mEmpty Or LBLTotCr.Text = 0 Or LBLTotCr.Text = mEmpty) Then
+        '    MsgBox("Voucher With No Detail Lines Can't be Saved", MsgBoxStyle.Information, SysCompany)
+        '    Return False
+        'End If
+        Return True
+    End Function
+    Private Sub SetDetail()
+
+        objFinanInfo.InsBranCode = Me.txtBranCode.Text
+        objFinanInfo.InsBrName = Me.txtBranchName.Text
+        objFinanInfo.InsBrAddres=Me.txtBrAddr.Text
+        objFinanInfo.ContPer = Me.txtBrContPer.Text
+        objFinanInfo.InsBrBnkAccNo = Me.txtBrBnkAc.Text
+        objFinanInfo.Ph = Me.txtBrPh.Text
+        objFinanInfo.Email = Me.txtBrEmail.Text
+        objFinanInfo.Fax = Me.txtBrFax.Text
+        objFinanInfo.Description = Me.txteBrDes.Text
+        objFinanInfo.BISPNo = Me.txtBrIPS.Text
+        objFinanInfo.BICCode = Me.txtBrBIC.Text
+        If Me.cbDepBnk.Checked = True Then
+            objFinanInfo.DepBnk = "T"
+        End If
+        If cbSetBnk.Checked = True Then
+            objFinanInfo.SetBnk=="T"
+        End If
+
+        If Me.cbCounPart.Checked = True Then
+            objFinanInfo.CounPart = "T"
+        End If
+        If Me.CBPrimDeal.Checked = True Then
+            objFinanInfo.PrimDeal = "T"
+        End If
+
+
+        objFinanInfo.AddOn=
+        objFinanInfo.AddBy=
+        objFinanInfo.InstCode=
+
+
+
+    End Sub
+    Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        Dim mi As Integer
+        Dim mTmpNo As String
+        lblToolTip.Text = "Save Current Record"
+
+
+        If CheckValidation() Then
+            objFinanInfo.getConnection()
+            objFinanInfo.BeginTransaction()
+            If AddMode Then
+                Try
+                    SetDataMaster()         'Set Master Object Variables
+                    objFinanInfo.SaveMaster()  'Save Master Object Variables
+                    SetDetail()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    objFinanInfo.RollBack()
+                    Exit Sub
+                End Try
+            ElseIf EditMode Then
+                Try
+
+                    EditSet()
+                    objFinanInfo.EditMaster()
+                    'SetData(mi)             ' Save(Detail)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    objFinanInfo.RollBack()
+                    Exit Sub
+                End Try
+            End If
+            objFinanInfo.CommitTransction()
+            'If Trim(lblVNo.Text) <> Trim(mTmpNo) Then
+            '    MsgBox("Your Transaction Is Saved With Voucher " & mType & " " & lblVNo.Text, vbInformation, SysCompany)
+            'End If
+            If AddMode Then
+                Call btnAdd_Click(Nothing, Nothing)
+                If mMenuStr <> "" Then
+                    Call MenuGridLoad(mMenuStr)
+                    rowNum = dtMaster.Rows.Count - 1
+                End If
+            ElseIf EditMode Then
+                Flag = True
+                Call SetEntryMode()
+                GPMain.Enabled = False
+                GPBRanch.Enabled = False
+                btnSave.Enabled = False
+                btnCancel.Enabled = False
+                EditMode = False
+            End If
+
+        End If
     End Sub
 End Class

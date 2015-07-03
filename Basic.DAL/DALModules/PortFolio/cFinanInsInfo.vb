@@ -80,7 +80,61 @@
 #End Region
 
 
+    Public Sub SaveMaster()
 
+      
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+        objDatabaseManager.SetTransaction(objTransaction)
+
+        objDBParameters.AddParameter("@InstCode", InstCode, "char")
+        objDBParameters.AddParameter("@InstName", InstName, "varchar")
+        objDBParameters.AddParameter("@FinTypeCode", FinTypeCode, "char")
+        objDBParameters.AddParameter("@CompCode", CompCode, "char")
+        objDBParameters.AddParameter("@PrintOp", PrintOp, "char")
+        objDBParameters.AddParameter("@BnkAccNo", BnkAccNo, "varchar")
+
+        objDBParameters.AddParameter("@Descrip", Descrip, "varchar")
+        objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
+        objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
+
+        objDatabaseManager.ExecuteNonQuery("PF_MastFinInstType_Save", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
+
+    End Sub
+    Public Sub SaveDetail()
+
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+        objDatabaseManager.SetTransaction(objTransaction)
+        objDBParameters.AddParameter("@InsBranCode", InsBranCode, "char")
+        objDBParameters.AddParameter("@InsBrName", InsBrName, "char")
+        objDBParameters.AddParameter("@InsBrAddres", InsBrAddres, "varchar")
+        objDBParameters.AddParameter("@ContPer", ContPer, "varchar")
+        objDBParameters.AddParameter("@InsBrBnkAccNo", InsBrBnkAccNo, "varchar")
+        objDBParameters.AddParameter("@Ph", Ph, "varchar")
+
+        objDBParameters.AddParameter("@Email", Email, "varchar")
+        objDBParameters.AddParameter("@Fax", Fax, "varchar")
+        objDBParameters.AddParameter("@Description", Description, "varchar")
+        objDBParameters.AddParameter("@BISPNo", BISPNo, "varchar")
+        objDBParameters.AddParameter("@BICCode", BICCode, "char")
+        objDBParameters.AddParameter("@DepBnk", DepBnk, "char")
+        objDBParameters.AddParameter("@SetBnk", SetBnk, "char")
+        objDBParameters.AddParameter("@PrimDeal", PrimDeal, "char")
+        objDBParameters.AddParameter("@CounPart", CounPart, "char")
+
+   
+
+        objDatabaseManager.ExecuteNonQuery("PF_FinInstBranch_Save", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
+
+    End Sub
     Public Sub LoadFirstRec()
         Dim dt As New DataTable
 
