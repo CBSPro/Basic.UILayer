@@ -68,7 +68,7 @@ Public Class frmLogin
         Constants.ProjConst.SysDataBase = Trim(txtDatabase.Text)
         Constants.ProjConst.SysUser = Trim(txtUserName.Text)
         Constants.ProjConst.SysPassword = Trim(txtPassword.Text)
-        Dim obj As New Utils(Trim(txtServer.Text), Trim(txtDatabase.Text))
+
         Try
             objConnection = cConnectionManager.GetConnection()
             frmMdi.mnuTransactions.Enabled = True

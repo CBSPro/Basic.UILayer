@@ -91,6 +91,7 @@ Partial Class FrmFinanInsInfo
         Me.txtSysCode = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.GPBRanch = New System.Windows.Forms.GroupBox()
+        Me.CBPrimDeal = New System.Windows.Forms.CheckBox()
         Me.cbCounPart = New System.Windows.Forms.CheckBox()
         Me.cbSetBnk = New System.Windows.Forms.CheckBox()
         Me.Label27 = New System.Windows.Forms.Label()
@@ -116,7 +117,7 @@ Partial Class FrmFinanInsInfo
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtBranCode = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.CBPrimDeal = New System.Windows.Forms.CheckBox()
+        Me.btnAddBranch = New System.Windows.Forms.Button()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -650,6 +651,7 @@ Partial Class FrmFinanInsInfo
         '
         'GPMain
         '
+        Me.GPMain.Controls.Add(Me.btnAddBranch)
         Me.GPMain.Controls.Add(Me.rbChk)
         Me.GPMain.Controls.Add(Me.rbBank)
         Me.GPMain.Controls.Add(Me.txtDesc)
@@ -880,13 +882,23 @@ Partial Class FrmFinanInsInfo
         Me.GPBRanch.TabStop = False
         Me.GPBRanch.Text = "Branch Details"
         '
+        'CBPrimDeal
+        '
+        Me.CBPrimDeal.AutoSize = True
+        Me.CBPrimDeal.Location = New System.Drawing.Point(201, 214)
+        Me.CBPrimDeal.Name = "CBPrimDeal"
+        Me.CBPrimDeal.Size = New System.Drawing.Size(114, 17)
+        Me.CBPrimDeal.TabIndex = 12
+        Me.CBPrimDeal.Text = "Primary Dealers"
+        Me.CBPrimDeal.UseVisualStyleBackColor = True
+        '
         'cbCounPart
         '
         Me.cbCounPart.AutoSize = True
         Me.cbCounPart.Location = New System.Drawing.Point(526, 214)
         Me.cbCounPart.Name = "cbCounPart"
         Me.cbCounPart.Size = New System.Drawing.Size(103, 17)
-        Me.cbCounPart.TabIndex = 67
+        Me.cbCounPart.TabIndex = 14
         Me.cbCounPart.Text = "Counter Party"
         Me.cbCounPart.UseVisualStyleBackColor = True
         '
@@ -896,7 +908,7 @@ Partial Class FrmFinanInsInfo
         Me.cbSetBnk.Location = New System.Drawing.Point(358, 214)
         Me.cbSetBnk.Name = "cbSetBnk"
         Me.cbSetBnk.Size = New System.Drawing.Size(125, 17)
-        Me.cbSetBnk.TabIndex = 66
+        Me.cbSetBnk.TabIndex = 13
         Me.cbSetBnk.Text = "Settlement Banks"
         Me.cbSetBnk.UseVisualStyleBackColor = True
         '
@@ -918,7 +930,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrBIC.Location = New System.Drawing.Point(358, 179)
         Me.txtBrBIC.Name = "txtBrBIC"
         Me.txtBrBIC.Size = New System.Drawing.Size(164, 20)
-        Me.txtBrBIC.TabIndex = 17
+        Me.txtBrBIC.TabIndex = 10
         '
         'txtBrIPS
         '
@@ -927,7 +939,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrIPS.Location = New System.Drawing.Point(181, 177)
         Me.txtBrIPS.Name = "txtBrIPS"
         Me.txtBrIPS.Size = New System.Drawing.Size(108, 20)
-        Me.txtBrIPS.TabIndex = 16
+        Me.txtBrIPS.TabIndex = 9
         '
         'Label28
         '
@@ -947,7 +959,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrDes.Location = New System.Drawing.Point(181, 147)
         Me.txtBrDes.Name = "txtBrDes"
         Me.txtBrDes.Size = New System.Drawing.Size(528, 20)
-        Me.txtBrDes.TabIndex = 15
+        Me.txtBrDes.TabIndex = 8
         '
         'txtBrFax
         '
@@ -956,7 +968,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrFax.Location = New System.Drawing.Point(614, 118)
         Me.txtBrFax.Name = "txtBrFax"
         Me.txtBrFax.Size = New System.Drawing.Size(95, 20)
-        Me.txtBrFax.TabIndex = 14
+        Me.txtBrFax.TabIndex = 7
         '
         'Label29
         '
@@ -976,7 +988,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrEmail.Location = New System.Drawing.Point(334, 116)
         Me.txtBrEmail.Name = "txtBrEmail"
         Me.txtBrEmail.Size = New System.Drawing.Size(149, 20)
-        Me.txtBrEmail.TabIndex = 13
+        Me.txtBrEmail.TabIndex = 6
         '
         'txtBrPh
         '
@@ -985,7 +997,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrPh.Location = New System.Drawing.Point(181, 117)
         Me.txtBrPh.Name = "txtBrPh"
         Me.txtBrPh.Size = New System.Drawing.Size(108, 20)
-        Me.txtBrPh.TabIndex = 12
+        Me.txtBrPh.TabIndex = 5
         '
         'Label31
         '
@@ -1003,7 +1015,7 @@ Partial Class FrmFinanInsInfo
         Me.cbDepBnk.Location = New System.Drawing.Point(72, 214)
         Me.cbDepBnk.Name = "cbDepBnk"
         Me.cbDepBnk.Size = New System.Drawing.Size(125, 17)
-        Me.cbDepBnk.TabIndex = 37
+        Me.cbDepBnk.TabIndex = 11
         Me.cbDepBnk.Text = "Depository Banks"
         Me.cbDepBnk.UseVisualStyleBackColor = True
         '
@@ -1034,7 +1046,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrBnkAc.Location = New System.Drawing.Point(614, 87)
         Me.txtBrBnkAc.Name = "txtBrBnkAc"
         Me.txtBrBnkAc.Size = New System.Drawing.Size(95, 20)
-        Me.txtBrBnkAc.TabIndex = 11
+        Me.txtBrBnkAc.TabIndex = 4
         '
         'Label34
         '
@@ -1063,7 +1075,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrContPer.Location = New System.Drawing.Point(181, 87)
         Me.txtBrContPer.Name = "txtBrContPer"
         Me.txtBrContPer.Size = New System.Drawing.Size(302, 20)
-        Me.txtBrContPer.TabIndex = 10
+        Me.txtBrContPer.TabIndex = 3
         '
         'txtBrName
         '
@@ -1072,7 +1084,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrName.Location = New System.Drawing.Point(349, 26)
         Me.txtBrName.Name = "txtBrName"
         Me.txtBrName.Size = New System.Drawing.Size(360, 20)
-        Me.txtBrName.TabIndex = 8
+        Me.txtBrName.TabIndex = 1
         '
         'Label36
         '
@@ -1091,7 +1103,7 @@ Partial Class FrmFinanInsInfo
         Me.txtBrAddr.Location = New System.Drawing.Point(181, 57)
         Me.txtBrAddr.Name = "txtBrAddr"
         Me.txtBrAddr.Size = New System.Drawing.Size(528, 20)
-        Me.txtBrAddr.TabIndex = 9
+        Me.txtBrAddr.TabIndex = 2
         '
         'Label37
         '
@@ -1125,15 +1137,14 @@ Partial Class FrmFinanInsInfo
         Me.Label38.TabIndex = 46
         Me.Label38.Text = " System Code"
         '
-        'CBPrimDeal
+        'btnAddBranch
         '
-        Me.CBPrimDeal.AutoSize = True
-        Me.CBPrimDeal.Location = New System.Drawing.Point(201, 214)
-        Me.CBPrimDeal.Name = "CBPrimDeal"
-        Me.CBPrimDeal.Size = New System.Drawing.Size(114, 17)
-        Me.CBPrimDeal.TabIndex = 68
-        Me.CBPrimDeal.Text = "Primary Dealers"
-        Me.CBPrimDeal.UseVisualStyleBackColor = True
+        Me.btnAddBranch.Location = New System.Drawing.Point(241, 31)
+        Me.btnAddBranch.Name = "btnAddBranch"
+        Me.btnAddBranch.Size = New System.Drawing.Size(128, 23)
+        Me.btnAddBranch.TabIndex = 52
+        Me.btnAddBranch.Text = "Add Branch"
+        Me.btnAddBranch.UseVisualStyleBackColor = True
         '
         'FrmFinanInsInfo
         '
@@ -1260,4 +1271,5 @@ Partial Class FrmFinanInsInfo
     Friend WithEvents txtBranCode As System.Windows.Forms.TextBox
     Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents CBPrimDeal As System.Windows.Forms.CheckBox
+    Friend WithEvents btnAddBranch As System.Windows.Forms.Button
 End Class

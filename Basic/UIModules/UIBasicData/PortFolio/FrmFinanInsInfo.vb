@@ -560,7 +560,7 @@ Public Class FrmFinanInsInfo
         Call SetButtonsSurity(Me)
         Call SetButtonPrinciple()
         Call SetButton()
-        BoundData()
+        ' BoundData()
     End Sub
 
     Private Sub GVHelp_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GVHelp.CellClick
@@ -622,7 +622,7 @@ Public Class FrmFinanInsInfo
 
 
         If AddMode Then
-            objFinanInfo.AddOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.AddOn = "2015/07/07" 'Format(SySDate, "dd-MMM-yyyy")
             objFinanInfo.AddBy = SysUserID
         ElseIf EditMode Then
             objFinanInfo.EditOn = Format(SySDate, "dd-MMM-yyyy")
@@ -680,7 +680,7 @@ Public Class FrmFinanInsInfo
 
         objFinanInfo.InstCode = Me.txtSysCode.Text
         If AddMode Then
-            objFinanInfo.AddOn = Format(SySDate, "dd-MMM-yyyy")
+            objFinanInfo.AddOn = "2015/07/07" 'Format(SySDate, "dd-MMM-yyyy")
             objFinanInfo.AddBy = SysUserID
         ElseIf EditMode Then
             objFinanInfo.EditOn = Format(SySDate, "dd-MMM-yyyy")
@@ -743,5 +743,9 @@ Public Class FrmFinanInsInfo
             End If
 
         End If
+    End Sub
+
+    Private Sub btnAddBranch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddBranch.Click
+
     End Sub
 End Class

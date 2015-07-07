@@ -9,11 +9,12 @@
     Public InstCode As String
     Public InstName As String
     Public FinTypeCode As String
-    Public Rating As String
+
     Public CompCode As String
     Public PrintOp As String
     Public BnkAccNo As String
     Public Descrip As String
+    Public Rating As Double
     '=========BRANCH DATA======================
     Public InsBranCode As String
     Public InsBrName As String
@@ -95,10 +96,10 @@
         objDBParameters.AddParameter("@CompCode", CompCode, "char")
         objDBParameters.AddParameter("@PrintOp", PrintOp, "char")
         objDBParameters.AddParameter("@BnkAccNo", BnkAccNo, "varchar")
-
+        objDBParameters.AddParameter("@Rating", Rating, "double")
         objDBParameters.AddParameter("@Descrip", Descrip, "varchar")
-        objDBParameters.AddParameter("@AddOn", AddOn, "nvarchar")
-        objDBParameters.AddParameter("@AddBy", AddBy, "nvarchar")
+        objDBParameters.AddParameter("@AddOn", AddOn, "datetime")
+        objDBParameters.AddParameter("@AddBy", AddBy, "char")
 
         objDatabaseManager.ExecuteNonQuery("PF_MastFinInstType_Save", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)
@@ -129,7 +130,8 @@
         objDBParameters.AddParameter("@PrimDeal", PrimDeal, "char")
         objDBParameters.AddParameter("@CounPart", CounPart, "char")
 
-   
+        objDBParameters.AddParameter("@AddOn", AddOn, "datetime")
+        objDBParameters.AddParameter("@AddBy", AddBy, "char")
 
         objDatabaseManager.ExecuteNonQuery("PF_FinInstBranch_Save", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)

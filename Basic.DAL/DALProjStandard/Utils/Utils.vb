@@ -581,14 +581,7 @@ Public Class Utils
 
         
     End Sub
-    Public Sub New(ByVal a As String, ByVal b As String)
-        SystemPassword = Constants.ProjConst.SysPassword
-        DataBaseName = Constants.ProjConst.SysDataBase
-        ServerName = Constants.ProjConst.SysServer
-        '  DSN = "DSN" & DataBaseName
-        StrConec = "Data Source=" & DataBaseName & ";Initial Catalog=" & ServerName & ";User ID=sa;password=" & SystemPassword & ";"
-        'StrConec = "Data Source=" & a & ";Initial Catalog=" & b & ";User ID=sa;password=" & SystemPassword & ";"
-    End Sub
+   
     Public Shared Sub Main()
         BuiltInUser = "SA"
         SysSystem = "ERP System"
