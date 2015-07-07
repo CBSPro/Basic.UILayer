@@ -170,7 +170,7 @@
         Dim objDBParameters As New cDBParameterList
         objDatabaseManager = cDataBaseManager.GetDatabaseManager()
         objDatabaseManager.SetConnection(objConnection)
-        objDBParameters.AddParameter("@InstCode", InstCode, "char")
+        'objDBParameters.AddParameter("@InstCode", InstCode, "char")
 
         dt = objDatabaseManager.GetDataTable("PortFolio_GetFinInstType_All", objDBParameters)
         cConnectionManager.CloseConnection(objConnection)

@@ -73,6 +73,7 @@ Partial Class FrmFinanInsInfo
         Me.lblToolTip = New System.Windows.Forms.Label()
         Me.lblCompany = New System.Windows.Forms.Label()
         Me.GPMain = New System.Windows.Forms.GroupBox()
+        Me.btnAddBranch = New System.Windows.Forms.Button()
         Me.rbChk = New System.Windows.Forms.RadioButton()
         Me.rbBank = New System.Windows.Forms.RadioButton()
         Me.txtDesc = New System.Windows.Forms.TextBox()
@@ -117,7 +118,6 @@ Partial Class FrmFinanInsInfo
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtBranCode = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.btnAddBranch = New System.Windows.Forms.Button()
         Me.Search.SuspendLayout()
         CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GpBtns.SuspendLayout()
@@ -676,6 +676,15 @@ Partial Class FrmFinanInsInfo
         Me.GPMain.TabIndex = 42
         Me.GPMain.TabStop = False
         '
+        'btnAddBranch
+        '
+        Me.btnAddBranch.Location = New System.Drawing.Point(241, 31)
+        Me.btnAddBranch.Name = "btnAddBranch"
+        Me.btnAddBranch.Size = New System.Drawing.Size(128, 23)
+        Me.btnAddBranch.TabIndex = 52
+        Me.btnAddBranch.Text = "Add Branch"
+        Me.btnAddBranch.UseVisualStyleBackColor = True
+        '
         'rbChk
         '
         Me.rbChk.AutoSize = True
@@ -881,6 +890,7 @@ Partial Class FrmFinanInsInfo
         Me.GPBRanch.TabIndex = 43
         Me.GPBRanch.TabStop = False
         Me.GPBRanch.Text = "Branch Details"
+        Me.GPBRanch.Visible = False
         '
         'CBPrimDeal
         '
@@ -1136,15 +1146,6 @@ Partial Class FrmFinanInsInfo
         Me.Label38.Size = New System.Drawing.Size(84, 13)
         Me.Label38.TabIndex = 46
         Me.Label38.Text = " System Code"
-        '
-        'btnAddBranch
-        '
-        Me.btnAddBranch.Location = New System.Drawing.Point(241, 31)
-        Me.btnAddBranch.Name = "btnAddBranch"
-        Me.btnAddBranch.Size = New System.Drawing.Size(128, 23)
-        Me.btnAddBranch.TabIndex = 52
-        Me.btnAddBranch.Text = "Add Branch"
-        Me.btnAddBranch.UseVisualStyleBackColor = True
         '
         'FrmFinanInsInfo
         '

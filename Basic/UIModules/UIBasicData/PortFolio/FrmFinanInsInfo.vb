@@ -392,6 +392,12 @@ Public Class FrmFinanInsInfo
             cmbCom.Text = dtMaster.Rows(rowNum).Item("CompCode")
             PrintOp = dtMaster.Rows(rowNum).Item("PrintOp")
             txtBankAccNo.Text = dtMaster.Rows(rowNum).Item("BnkAccNo")
+            If PrintOp = "B" Then
+                rbBank.Checked = True
+            ElseIf PrintOp = "C" Then
+                rbChk.Checked = True
+            End If
+            ' rbBank
             '======================detail data=====================================
             'txtBranCode.Text=
 
@@ -747,5 +753,27 @@ Public Class FrmFinanInsInfo
 
     Private Sub btnAddBranch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddBranch.Click
 
+    End Sub
+
+    Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
+        lblToolTip.Text = "Refresh Records"
+        dtMaster = objFinanInfo.LoadAllMaster()
+        Call MenuGridLoad(mMenuStr)
+        rowNum = dtMaster.Rows.Count - 1
+        If rowNum >= 0 Then
+            Call LoadMaster()
+            objFinanInfo.FinTypeCode = Trim(txtSysCode.Text)
+            'objFinanInfo.Type = mType
+            'objFinanInfo.VNo = lblVNo.Text
+            'dtDetail = objFinanInfo.LoadAllDetail()
+            ' Call LoadDetail()
+            LoadMaster()
+            btnExit.Focus()
+            Call MenuGridLoad(mMenuStr)
+            rowNum = dtMaster.Rows.Count - 1
+        Else
+            MsgBox("No Record Found", MsgBoxStyle.Information)
+            Call ClearAll()
+        End If
     End Sub
 End Class
