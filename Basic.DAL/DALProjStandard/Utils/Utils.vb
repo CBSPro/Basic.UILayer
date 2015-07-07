@@ -6,8 +6,21 @@ Imports System.Windows.Forms
 Imports System.Windows.Forms.VisualStyles
 
 Public Class Utils
-
-
+    Public Shared LoggedInUserName As String
+    Public Shared LoggedInUserID As String
+    Public Shared ServerName As String
+    Public Shared DataBaseName As String
+    'Public Shared Company As String = "Tariq Glass Industries Limited_II"
+    Public Shared SystemPassword As String
+    Public Shared UserPassword As String
+    Public Shared PPAram As Integer
+    'Public Sub New(ByVal a As String, ByVal b As String)
+    '    SystemPassword = "sql123"
+    '    DataBaseName = b
+    '    ServerName = a
+    '    ' DSN = "DSN" & DataBaseName
+    '    strConec = "Data Source=" & a & ";Initial Catalog=" & b & ";User ID=sa;password=" & SystemPassword & ";"
+    'End Sub
 
     Public Shared Function GetFldValue(ByVal strSQl As String, ByVal Field As String) As Object
 
@@ -568,7 +581,14 @@ Public Class Utils
 
         
     End Sub
-
+    Public Sub New(ByVal a As String, ByVal b As String)
+        SystemPassword = Constants.ProjConst.SysPassword
+        DataBaseName = Constants.ProjConst.SysDataBase
+        ServerName = Constants.ProjConst.SysServer
+        '  DSN = "DSN" & DataBaseName
+        StrConec = "Data Source=" & DataBaseName & ";Initial Catalog=" & ServerName & ";User ID=sa;password=" & SystemPassword & ";"
+        'StrConec = "Data Source=" & a & ";Initial Catalog=" & b & ";User ID=sa;password=" & SystemPassword & ";"
+    End Sub
     Public Shared Sub Main()
         BuiltInUser = "SA"
         SysSystem = "ERP System"
@@ -585,6 +605,11 @@ Public Class Utils
         AVIPath = "G:\Vb Projects\Professional Projects\Projects.Net\Accounts\AviFiles\"
         SysDsn = "ERP"
         'frmLogin.ShowDialog()
+
+
+        ' Constants.ProjConst.SysUser = Trim(txtUserName.Text)
+
+     
     End Sub
 
 

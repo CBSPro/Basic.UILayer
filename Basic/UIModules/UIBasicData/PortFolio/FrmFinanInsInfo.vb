@@ -70,7 +70,7 @@ Public Class FrmFinanInsInfo
         txtBankAccNo.Text = ""
         txtBic.Text = ""
         txtBranchName.Text = ""
-        BoundData()
+        'BoundData()
     End Sub
 
 
@@ -498,20 +498,26 @@ Public Class FrmFinanInsInfo
     End Sub
     Private Sub BoundData()
         '=========BOUND DATA OF NAME===================
-
+        Dim Dts, dts2 As New DataSet
         Me.cmbInstType.Text = ""
         'select FinTypeCode,TypeName from FinType
 
         Dim strSql As String = "SELECT TypeName+'  |  '+FinTypeCode as name,FinTypeCode from FinType order by TypeName"
-        Dim da As New SqlDataAdapter(strSQL, strConec)
-        Dim Dts, dts2 As New DataSet
+        If sqlCon.State = ConnectionState.Closed Then
+            sqlCon.Open()
+        End If
+        Dim da As New SqlDataAdapter(strSql, sqlCon)
+
+
         da.Fill(Dts, "FinType")
 
         cmbInstType.DisplayMember = "name"
         cmbInstType.ValueMember = "FinTypeCode"
         cmbInstType.DataSource = Dts.Tables("FinType")
 
-
+        If sqlCon.State = ConnectionState.Open Then
+            sqlCon.Close()
+        End If
     
 
         '==================================
@@ -524,7 +530,7 @@ Public Class FrmFinanInsInfo
         Me.Top = 0
         Me.Left = 0
         Me.WindowState = FormWindowState.Maximized
-        BoundData()
+
         LblTypeValid.Text = "Financial Institute Information"
 
         mQuery = "select fi.instcode,fi.InstName,fb.InsBranCode,fb.InsBrName from FinInstitute fi " & _
@@ -554,7 +560,7 @@ Public Class FrmFinanInsInfo
         Call SetButtonsSurity(Me)
         Call SetButtonPrinciple()
         Call SetButton()
-
+        BoundData()
     End Sub
 
     Private Sub GVHelp_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles GVHelp.CellClick

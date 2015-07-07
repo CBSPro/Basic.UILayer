@@ -9,7 +9,9 @@ Public Module SetUp
     ''Public Dt As New DataTable
     ''Public objRow As Data.DataRow
     ''Public Reader As SqlDataReader
-
+    '======================
+    
+    '==============================
     Public StrConec As String
     Public sqlCon As New SqlConnection
     Public SqlTrans As SqlTransaction

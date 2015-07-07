@@ -7,7 +7,7 @@ Public Class ProjConst
 
 
     'Public Shared SqlCon As SqlClient.SqlConnection
-    Public Shared sqlconn As New SqlConnection
+    ' Public Shared sqlconn As New SqlConnection
     Public Shared DAdp As New SqlDataAdapter
     Public Shared strConec As String
     Public Shared mStr As String
