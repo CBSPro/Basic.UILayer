@@ -40,6 +40,8 @@ Partial Class frmFinInsBranch
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.GPBRanch = New System.Windows.Forms.GroupBox()
+        Me.txtSysCode = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
         Me.CBPrimDeal = New System.Windows.Forms.CheckBox()
         Me.cbCounPart = New System.Windows.Forms.CheckBox()
         Me.cbSetBnk = New System.Windows.Forms.CheckBox()
@@ -66,10 +68,17 @@ Partial Class frmFinInsBranch
         Me.Label37 = New System.Windows.Forms.Label()
         Me.txtBranCode = New System.Windows.Forms.TextBox()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.txtSysCode = New System.Windows.Forms.TextBox()
-        Me.Label25 = New System.Windows.Forms.Label()
+        Me.lblBy = New System.Windows.Forms.Label()
+        Me.lblToolTip = New System.Windows.Forms.Label()
+        Me.lblCompany = New System.Windows.Forms.Label()
+        Me.LblTypeValid = New System.Windows.Forms.Label()
+        Me.Search = New System.Windows.Forms.GroupBox()
+        Me.GVHelp = New System.Windows.Forms.DataGridView()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.GpBtns.SuspendLayout()
         Me.GPBRanch.SuspendLayout()
+        Me.Search.SuspendLayout()
+        CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GpBtns
@@ -89,7 +98,7 @@ Partial Class frmFinInsBranch
         Me.GpBtns.Controls.Add(Me.btnView)
         Me.GpBtns.Controls.Add(Me.btnEdit)
         Me.GpBtns.Controls.Add(Me.btnAdd)
-        Me.GpBtns.Location = New System.Drawing.Point(12, 3)
+        Me.GpBtns.Location = New System.Drawing.Point(293, 68)
         Me.GpBtns.Name = "GpBtns"
         Me.GpBtns.Size = New System.Drawing.Size(722, 58)
         Me.GpBtns.TabIndex = 42
@@ -292,12 +301,34 @@ Partial Class frmFinInsBranch
         Me.GPBRanch.Controls.Add(Me.txtBranCode)
         Me.GPBRanch.Controls.Add(Me.Label38)
         Me.GPBRanch.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GPBRanch.Location = New System.Drawing.Point(15, 67)
+        Me.GPBRanch.Location = New System.Drawing.Point(296, 132)
         Me.GPBRanch.Name = "GPBRanch"
         Me.GPBRanch.Size = New System.Drawing.Size(719, 293)
         Me.GPBRanch.TabIndex = 44
         Me.GPBRanch.TabStop = False
         Me.GPBRanch.Text = "Branch Details"
+        '
+        'txtSysCode
+        '
+        Me.txtSysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtSysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSysCode.Location = New System.Drawing.Point(181, 27)
+        Me.txtSysCode.MaxLength = 3
+        Me.txtSysCode.Name = "txtSysCode"
+        Me.txtSysCode.Size = New System.Drawing.Size(46, 22)
+        Me.txtSysCode.TabIndex = 67
+        Me.txtSysCode.Tag = "Enter Description"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(91, 31)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(84, 13)
+        Me.Label25.TabIndex = 66
+        Me.Label25.Text = " System Code"
         '
         'CBPrimDeal
         '
@@ -554,33 +585,90 @@ Partial Class frmFinInsBranch
         Me.Label38.TabIndex = 46
         Me.Label38.Text = "Branch Code"
         '
-        'txtSysCode
+        'lblBy
         '
-        Me.txtSysCode.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtSysCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSysCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSysCode.Location = New System.Drawing.Point(181, 27)
-        Me.txtSysCode.MaxLength = 3
-        Me.txtSysCode.Name = "txtSysCode"
-        Me.txtSysCode.Size = New System.Drawing.Size(46, 22)
-        Me.txtSysCode.TabIndex = 67
-        Me.txtSysCode.Tag = "Enter Description"
+        Me.lblBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblBy.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBy.Location = New System.Drawing.Point(854, 427)
+        Me.lblBy.Name = "lblBy"
+        Me.lblBy.Size = New System.Drawing.Size(170, 23)
+        Me.lblBy.TabIndex = 49
         '
-        'Label25
+        'lblToolTip
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(91, 31)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(84, 13)
-        Me.Label25.TabIndex = 66
-        Me.Label25.Text = " System Code"
+        Me.lblToolTip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblToolTip.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblToolTip.Location = New System.Drawing.Point(477, 427)
+        Me.lblToolTip.Name = "lblToolTip"
+        Me.lblToolTip.Size = New System.Drawing.Size(372, 23)
+        Me.lblToolTip.TabIndex = 48
+        '
+        'lblCompany
+        '
+        Me.lblCompany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCompany.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCompany.Location = New System.Drawing.Point(301, 428)
+        Me.lblCompany.Name = "lblCompany"
+        Me.lblCompany.Size = New System.Drawing.Size(170, 23)
+        Me.lblCompany.TabIndex = 47
+        '
+        'LblTypeValid
+        '
+        Me.LblTypeValid.BackColor = System.Drawing.Color.PowderBlue
+        Me.LblTypeValid.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTypeValid.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.LblTypeValid.Location = New System.Drawing.Point(1, -1)
+        Me.LblTypeValid.Name = "LblTypeValid"
+        Me.LblTypeValid.Size = New System.Drawing.Size(1023, 52)
+        Me.LblTypeValid.TabIndex = 50
+        Me.LblTypeValid.Text = "Financial Institution Information"
+        Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Search
+        '
+        Me.Search.Controls.Add(Me.GVHelp)
+        Me.Search.Controls.Add(Me.txtSearch)
+        Me.Search.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Search.Location = New System.Drawing.Point(0, 79)
+        Me.Search.Name = "Search"
+        Me.Search.Size = New System.Drawing.Size(287, 366)
+        Me.Search.TabIndex = 51
+        Me.Search.TabStop = False
+        Me.Search.Text = "Search"
+        '
+        'GVHelp
+        '
+        Me.GVHelp.AllowUserToAddRows = False
+        Me.GVHelp.AllowUserToDeleteRows = False
+        Me.GVHelp.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GVHelp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GVHelp.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.GVHelp.Location = New System.Drawing.Point(6, 45)
+        Me.GVHelp.Name = "GVHelp"
+        Me.GVHelp.ReadOnly = True
+        Me.GVHelp.RowHeadersWidth = 20
+        Me.GVHelp.Size = New System.Drawing.Size(265, 312)
+        Me.GVHelp.StandardTab = True
+        Me.GVHelp.TabIndex = 43
+        '
+        'txtSearch
+        '
+        Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(7, 19)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(264, 20)
+        Me.txtSearch.TabIndex = 41
         '
         'frmFinInsBranch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(789, 372)
+        Me.ClientSize = New System.Drawing.Size(1019, 459)
+        Me.Controls.Add(Me.Search)
+        Me.Controls.Add(Me.LblTypeValid)
+        Me.Controls.Add(Me.lblBy)
+        Me.Controls.Add(Me.lblToolTip)
+        Me.Controls.Add(Me.lblCompany)
         Me.Controls.Add(Me.GPBRanch)
         Me.Controls.Add(Me.GpBtns)
         Me.Name = "frmFinInsBranch"
@@ -588,6 +676,9 @@ Partial Class frmFinInsBranch
         Me.GpBtns.ResumeLayout(False)
         Me.GPBRanch.ResumeLayout(False)
         Me.GPBRanch.PerformLayout()
+        Me.Search.ResumeLayout(False)
+        Me.Search.PerformLayout()
+        CType(Me.GVHelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -636,4 +727,11 @@ Partial Class frmFinInsBranch
     Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents txtSysCode As System.Windows.Forms.TextBox
     Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents lblBy As System.Windows.Forms.Label
+    Friend WithEvents lblToolTip As System.Windows.Forms.Label
+    Friend WithEvents lblCompany As System.Windows.Forms.Label
+    Friend WithEvents LblTypeValid As System.Windows.Forms.Label
+    Friend WithEvents Search As System.Windows.Forms.GroupBox
+    Friend WithEvents GVHelp As System.Windows.Forms.DataGridView
+    Friend WithEvents txtSearch As System.Windows.Forms.TextBox
 End Class

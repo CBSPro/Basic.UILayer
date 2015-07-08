@@ -709,8 +709,8 @@ Public Class FrmFinanInsInfo
                 Try
                     SetDataMaster()         'Set Master Object Variables
                     objFinanInfo.SaveMaster()  'Save Master Object Variables
-                    SetDetail()
-                    objFinanInfo.SaveDetail()
+                    'SetDetail()
+                    'objFinanInfo.SaveDetail()
                 Catch ex As Exception
                     MsgBox(ex.Message)
                     objFinanInfo.RollBack()
