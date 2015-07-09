@@ -315,4 +315,9 @@ Public Class frmFinInsBranch
             Call SetButton()
         End If
     End Sub
+
+    Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        lblToolTip.Text = "Close Form"
+        Me.Close()
+    End Sub
 End Class
