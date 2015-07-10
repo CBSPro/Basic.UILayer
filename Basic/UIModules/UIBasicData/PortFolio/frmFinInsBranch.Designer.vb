@@ -621,7 +621,7 @@ Partial Class frmFinInsBranch
         Me.LblTypeValid.Name = "LblTypeValid"
         Me.LblTypeValid.Size = New System.Drawing.Size(1023, 52)
         Me.LblTypeValid.TabIndex = 50
-        Me.LblTypeValid.Text = "Financial Institution Information"
+        Me.LblTypeValid.Text = "Financial Institution Branch"
         Me.LblTypeValid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Search

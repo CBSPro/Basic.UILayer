@@ -473,3 +473,4 @@ D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basi
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmOrderAdjust.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmSettlementProces.resources
 D:\Merege Data Folder(2014-08-29)\2015 ( Working Folder )\NAMCO(26-03-2015)\Basic\obj\x86\Debug\Basic.FrmShareAnnounce.resources
+E:\Basic\Basic.UILayer.git\Basic\obj\x86\Debug\Basic.frmFinInsBranch.resources

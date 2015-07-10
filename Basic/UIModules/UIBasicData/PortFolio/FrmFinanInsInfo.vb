@@ -398,8 +398,7 @@ Public Class FrmFinanInsInfo
                 rbChk.Checked = True
             End If
             ' rbBank
-            '======================detail data=====================================
-            'txtBranCode.Text=
+           
 
             '=================================================================
             lblCompany.Text = "Recorded On : " & dtMaster.Rows(rowNum).Item("AddOn") & "" 'objFinanInfo.AddOn
@@ -752,7 +751,8 @@ Public Class FrmFinanInsInfo
     End Sub
 
     Private Sub btnAddBranch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAddBranch.Click
-
+        frmFinInsBranch.FinInsSysCode = Me.txtSysCode.Text
+        frmFinInsBranch.ShowDialog()
     End Sub
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click

@@ -11,7 +11,7 @@ Public Class frmFinInsBranch
     Dim dtMaster As New DataTable
 
     'Dim objProper As New cProper
-
+    Public Shared FinInsSysCode As String
     Dim mAdd As Boolean
     Dim mEdit As Boolean
     Dim mDelete As Boolean
@@ -46,7 +46,9 @@ Public Class frmFinInsBranch
         Call ClearAll()
 
         GPBRanch.Enabled = True
-        Me.txtSysCode.Text = objFinanInfo.GenFinInstTypeCode()
+        sqlquery = "select isnull(MAX(InsBranCode),0) from FinInstBranch where InstCode='" & Me.txtSysCode.Text & "'"
+
+        Me.txtBranCode.Text = objFinanInfo.GenFinInstTypeCode()
         lblCompany.Text = "Recorded On " & Format(SySDate, "dd-MMM-yyyy")
         lblToolTip.Text = "Add New Record"
         lblBy.Text = "Recorded By : " & SysUserID
@@ -90,7 +92,19 @@ Public Class frmFinInsBranch
     End Sub
 
     Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+        lblToolTip.Text = "Edit Current Record"
+        EditMode = True
+        AddMode = False
+        Flag = False
+        ' mskCode.Enabled = True
+        Call SetEntryMode()
 
+        GPBRanch.Enabled = True
+        ' mskCode.Enabled = False
+        txtBrName.Focus()
+        btnEdit.Enabled = False
+        btnSave.Enabled = True
+        btnCancel.Enabled = True
     End Sub
 
     Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
@@ -103,7 +117,7 @@ Public Class frmFinInsBranch
             Call MenuGridLoad(mMenuStr)
             rowNum = dtMaster.Rows.Count - 1
             If rowNum >= 0 Then
-                'Call LoadMaster()
+                Call LoadMaster()
 
                 objFinanInfo.InstCode = Trim(txtSysCode.Text)
                 'objFinanInfo.FinTypeCode = mType
@@ -177,12 +191,9 @@ Public Class frmFinInsBranch
             Call SetButtonPrinciple()
             Call SetButton()
             rowNum = dtMaster.Rows.Count - 1
-            'Call LoadMaster()
+            Call LoadMaster()
             objFinanInfo.InstCode = Trim(txtSysCode.Text)
-            ' objFinanInfo.Type = mType
-            'objFinanInfo.VNo = lblVNo.Text
-            'dtDetail = objFinanInfo.LoadAllDetail()
-            'Call LoadDetail()
+           
         Else
             Flag = True
             Call SetEntryMode()
@@ -191,7 +202,7 @@ Public Class frmFinInsBranch
             Call SetButtonsSurity(Me)
             Call SetButtonPrinciple()
             Call SetButton()
-            'Call LoadMaster()
+            Call LoadMaster()
             'dtMasterMenu = objFinanInfo.LoadAllMaster()
 
             'Call LoadDetail()
@@ -228,17 +239,12 @@ Public Class frmFinInsBranch
 
     Private Sub btnRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRefresh.Click
         lblToolTip.Text = "Refresh Records"
-        dtMaster = objFinanInfo.LoadAllMaster()
+        dtMaster = objFinanInfo.LoadAllDetail(Me.txtSysCode.Text)
         Call MenuGridLoad(mMenuStr)
         rowNum = dtMaster.Rows.Count - 1
         If rowNum >= 0 Then
-            'Call LoadMaster()
-            'objFinanInfo.FinTypeCode = Trim(txtSysCode.Text)
-            ''objFinanInfo.Type = mType
-            ''objFinanInfo.VNo = lblVNo.Text
-            ''dtDetail = objFinanInfo.LoadAllDetail()
-            '' Call LoadDetail()
-            'LoadMaster()
+            Call LoadMaster()
+           
             btnExit.Focus()
             Call MenuGridLoad(mMenuStr)
             rowNum = dtMaster.Rows.Count - 1
@@ -319,5 +325,98 @@ Public Class frmFinInsBranch
     Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
         lblToolTip.Text = "Close Form"
         Me.Close()
+    End Sub
+
+    Private Sub frmFinInsBranch_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        Constants.ProjConst.mFinanInsBranch = False
+    End Sub
+    Sub LoadMaster()
+        Try
+
+            Dim PrintOp As String
+            txtSysCode.Text = dtMaster.Rows(rowNum).Item("InstCode")
+            txtBrAddr.Text = ""
+            txtBranCode.Text = dtMaster.Rows(rowNum).Item("InsBranCode")
+            txtBrBIC.Text = dtMaster.Rows(rowNum).Item("BICCode")
+            txtBrBnkAc.Text = dtMaster.Rows(rowNum).Item("InsBrBnkAccNo")
+            txtBrContPer.Text = dtMaster.Rows(rowNum).Item("ContPer")
+            txtBrDes.Text = dtMaster.Rows(rowNum).Item("Description")
+            txtBrEmail.Text = dtMaster.Rows(rowNum).Item("Email")
+            txtBrFax.Text = dtMaster.Rows(rowNum).Item("Fax")
+            txtBrIPS.Text = dtMaster.Rows(rowNum).Item("BISPNo")
+            txtBrName.Text = dtMaster.Rows(rowNum).Item("InsBrName")
+            txtBrPh.Text = dtMaster.Rows(rowNum).Item("Ph")
+
+            If dtMaster.Rows(rowNum).Item("SetBnk") = "T" Then
+                cbSetBnk.Checked = True
+            Else
+                cbSetBnk.Checked = False
+            End If
+
+            If dtMaster.Rows(rowNum).Item("DepBnk") = "T" Then
+                cbDepBnk.Checked = True
+            Else
+                cbDepBnk.Checked = False
+            End If
+
+            If dtMaster.Rows(rowNum).Item("CounPart") = "T" Then
+                cbCounPart.Checked = True
+            Else
+                cbCounPart.Checked = False
+            End If
+
+
+            If dtMaster.Rows(rowNum).Item("PrimDeal") = "T" Then
+                CBPrimDeal.Checked = True
+            Else
+                CBPrimDeal.Checked = False
+            End If
+        
+            '=================================================================
+            lblCompany.Text = "Recorded On : " & dtMaster.Rows(rowNum).Item("AddOn") & "" 'objFinanInfo.AddOn
+            lblBy.Text = "Recorded By : " & dtMaster.Rows(rowNum).Item("AddBy") & "" 'objFinanInfo.AddBy
+            lblToolTip.Text = "Close Form"
+            lblCompany.Text = "Recorded On : " & dtMaster.Rows(rowNum).Item("AddOn")
+            lblBy.Text = "Recorded By : " & dtMaster.Rows(rowNum).Item("AddBy")
+            lblToolTip.Text = "Close Form"
+        Catch ex As Exception
+            'MsgBox(ex.Message, MsgBoxStyle.Information)
+        End Try
+    End Sub
+    Private Sub frmFinInsBranch_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        ' Me.MdiParent = frmMdi
+        'Me.Top = 0
+        'Me.Left = 0
+        Me.WindowState = FormWindowState.Maximized
+
+        LblTypeValid.Text = "Financial Institute Branch"
+        Me.txtSysCode.Text = FinInsSysCode
+        objFinanInfo.LoadAllDetail(Me.txtSysCode.Text)
+        Call MenuGridLoad(mQuery)
+        If rowNum >= 0 Then
+            Call LoadMaster()
+        End If
+
+        GPBRanch.Enabled = False
+        Flag = True
+        Call SetAccParam()
+        Call SetEntryMode()
+        btnSave.Enabled = False
+        btnCancel.Enabled = False
+        btnEdit.Enabled = False
+        Call ClearAll()
+        btnStatus(False)
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        btnAdd.Enabled = True
+        btnView.Enabled = True
+        btnStatus(False)
+        Call ClearAll()
+        Call SetFormSecurity(Me)
+        Call SetButtonsSurity(Me)
+        Call SetButtonPrinciple()
+        Call SetButton()
+        ' BoundData()
     End Sub
 End Class

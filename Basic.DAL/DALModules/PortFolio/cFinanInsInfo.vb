@@ -161,7 +161,21 @@
             'AddBy = "" & dt.Rows(0).Item("AddBy")
         End If
     End Sub
+    Public Function LoadAllDetail(ByVal InstCode As String) As DataTable
+        Dim dt As New DataTable
 
+        objConnection = cConnectionManager.GetConnection()
+        Dim objDatabaseManager As IDatabaseManager
+        Dim objDBParameters As New cDBParameterList
+        objDatabaseManager = cDataBaseManager.GetDatabaseManager()
+        objDatabaseManager.SetConnection(objConnection)
+        objDBParameters.AddParameter("@InstCode", InstCode, "char")
+        'objDBParameters.AddParameter("@InsBranCode", InsBranCode, "char")
+
+        dt = objDatabaseManager.GetDataTable("PortFolio_GetFinInstBranch_All", objDBParameters)
+        cConnectionManager.CloseConnection(objConnection)
+        Return dt
+    End Function
     Public Function LoadAllMaster() As DataTable
         Dim dt As New DataTable
 
