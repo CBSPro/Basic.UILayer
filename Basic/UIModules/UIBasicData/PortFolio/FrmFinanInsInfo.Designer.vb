@@ -733,6 +733,7 @@ Partial Class FrmFinanInsInfo
         Me.txtrate.Name = "txtrate"
         Me.txtrate.Size = New System.Drawing.Size(146, 22)
         Me.txtrate.TabIndex = 4
+        Me.txtrate.Text = "0.00"
         '
         'cmbCom
         '

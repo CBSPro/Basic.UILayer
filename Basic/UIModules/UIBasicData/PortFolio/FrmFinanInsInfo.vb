@@ -426,11 +426,14 @@ Public Class FrmFinanInsInfo
                 If GVHelp.Columns.Count > 0 Then
                     For mcol = 1 To GVHelp.Columns.Count - 1
                         mcolName = GVHelp.Columns(mcol).Name
-                        If GVHelp.Columns(mcol).Name = "RefRemarks" Then
+                        If GVHelp.Columns(mcol).Name = "InstName" Then
                             GVHelp.Columns(mcol).Width = 160
                         ElseIf GVHelp.Columns(mcol).Name <> "BrCode" And GVHelp.Columns(mcol).Name <> "Type" And GVHelp.Columns(mcol).Name <> "TaxRate" And GVHelp.Columns(mcol).Name <> "Posted" Then
                             GVHelp.Columns(mcol).Width = 80
-
+                        ElseIf GVHelp.Columns(mcol).Name = "InsBranCode" Then
+                            GVHelp.Columns(mcol).Width = 80
+                        ElseIf GVHelp.Columns(mcol).Name = "InsBrName" Then
+                            GVHelp.Columns(mcol).Width = 80
                         Else
                             GVHelp.Columns(mcol).Width = 40
                         End If
@@ -579,11 +582,7 @@ Public Class FrmFinanInsInfo
                 rowNum = sqlquery - 1
                 If rowNum >= 0 Then
                     Call LoadMaster()
-                    'objFinanInfo.BrCode = Trim(txtBrCode.Text)
-                    'objFinanInfo.Type = mType
-                    'objFinanInfo.VNo = lblVNo.Text
-                    'dtDetail = objFinanInfo.LoadAllDetail()
-                    'Call LoadDetail()
+                    
                 End If
                 If rowNum = 0 Then
                     btnTop.Enabled = False
@@ -646,10 +645,10 @@ Public Class FrmFinanInsInfo
             txtSysName.Focus()
             Return False
         End If
-        'If LBLTotDr.Text <> LBLTotCr.Text Then
-        '    MsgBox("Total Debit & Credit must be same", MsgBoxStyle.Information, SysCompany)
-        '    Return False
-        'End If
+        If Me.txtrate.Text <> txtrate.Text = "" Then
+            MsgBox("Must Enter rate", MsgBoxStyle.Information, SysCompany)
+            Return False
+        End If
         'If (LBLTotDr.Text = 0 Or LBLTotDr.Text = mEmpty Or LBLTotCr.Text = 0 Or LBLTotCr.Text = mEmpty) Then
         '    MsgBox("Voucher With No Detail Lines Can't be Saved", MsgBoxStyle.Information, SysCompany)
         '    Return False
