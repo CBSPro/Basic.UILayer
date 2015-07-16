@@ -58,7 +58,7 @@ Public Class frmLogin
         'txtPassword.Text = "147"
 
     End Sub
-
+    
     Private Sub btnConnect_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnConnect.Click
         Dim mdiMain As New frmMdi
         mdiMain.Text = Constants.ProjConst.SysSystem
@@ -76,6 +76,8 @@ Public Class frmLogin
             frmMdi.mnuReports.Enabled = True
             frmMdi.mnuAdmin.Enabled = True
             ' objConnection = cConnectionManager.GetConnection(SysServer, SysDataBase, SysUser, SysPassword)
+
+
         Catch ex As SqlException
         Finally
             dtLogin = objUsers.LoadUsers
